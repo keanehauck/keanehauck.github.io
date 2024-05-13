@@ -3,15 +3,15 @@ layout: default
 tags: home
 ---
 
-# 👋 Hi there, <br/> I'm Jonathon Belotti.
+# 👋 Hi there, <br/> I'm Keane Hauck.
 
-### I'm a software engineer with a focus on data & platform engineering.
+### I'm an amateur quantitative psychologist, computer scientist, mathematician, and chess player. Welcome to my website! 
 
-### Currently, I help build [Modal](https://modal.com/), a dream cloud platform for data & ML engineers.
+### Below, you can find links to my research, teaching experience, and contact information.
 
 <br>
 
-I can usually be found in a programming IDE or reading.
+I can usually be found playing chess or reading.
 I'm bullish on, and a big booster of:
 
 - 🌿💚 [@bazelbuild](https://github.com/bazelbuild/) and generally using functional principles to keep things sane. (I've open-sourced a few tools for the Bazel ecosystem, see [/projects]({{ site.baseurl }}/projects))
