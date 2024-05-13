@@ -7,17 +7,20 @@ tags: home
 
 ### I'm an amateur quantitative psychologist, computer scientist, mathematician, and chess player. Welcome to my website! 
 
-### Below, you can find links to my research, teaching experience, and contact information.
+### Here, you can find links to my research, teaching experience, and contact information.
 
 <br>
 
-I can usually be found playing chess or reading.
-I'm bullish on, and a big booster of:
+I can usually be found playing chess or reading. (note, this is  index.md)
+Please enjoy a few things I find important:
 
-- 🌿💚 [@bazelbuild](https://github.com/bazelbuild/) and generally using functional principles to keep things sane. (I've open-sourced a few tools for the Bazel ecosystem, see [/projects]({{ site.baseurl }}/projects))
-- Good old-fashioned books 📖. Two recent favourites are [_The Dispossessed_](https://www.goodreads.com/book/show/13651.The_Dispossessed) and [_Coders at Work_](https://www.goodreads.com/book/show/6713575-coders-at-work)
-- [Effective Altruism](https://www.vox.com/future-perfect/2019/12/6/20992100/peter-singer-effective-altruism-lives-you-can-save-animal-liberation). Helping, not harming. Doing, not having. Building, not consuming.
+- 🌿💚 [How to do what you love.](https://www.paulgraham.com/love.html) As an undergraduate currently navigating the wild world of career self-discovery, I appreciate the perspective of someone wiser than I in finding a way to love life. 
+- Good old-fashioned books 📖. Two recent favourites are [_Cat's Cradle_](https://www.goodreads.com/book/show/135479.Cat_s_Cradle) and [_Coders at Work_](https://www.goodreads.com/book/show/41811.The_Caves_of_Steel)
+- [The Fermi Paradox](https://waitbutwhy.com/2014/05/fermi-paradox.html). One of my favorite topics to ponder.
 
 <br>
 
-[**See latest blog posts →**]({{ site.baseurl }}/blog)
+[**Take a look at my research →**]({{ site.baseurl }}/blog)
+
+
+Thank you to Jonathon Belotti for letting me completely steal his source code for a website. I would not have been smart enough to set this up on my own.
