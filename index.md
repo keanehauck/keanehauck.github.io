@@ -23,4 +23,6 @@ Please enjoy a few things I find important:
 [**Take a look at my research →**]({{ site.baseurl }}/blog)
 
 
+
+
 Thank you to Jonathon Belotti for letting me completely steal his source code for a website. I would not have been smart enough to set this up on my own.
