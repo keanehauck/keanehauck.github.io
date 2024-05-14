@@ -1,9 +1,9 @@
 ---
-layout: default 
+layout: research
 permalink: /research/
 title: Research
 tags: research
-headshot: /images/headshot.jpg
+headshot: /images/ops.jpg
 ---
 
 ### My research
