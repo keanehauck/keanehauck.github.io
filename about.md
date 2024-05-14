@@ -8,7 +8,7 @@ headshot: /images/headshot.jpg
 
 ### Where I'm from
 
-🇦🇺 I was born and raised in the city of Cincinnati, Ohio — right next to train tracks and a creek where I could catch ['crawdads.'](https://www.nationalgeographic.com/animals/invertebrates/facts/crawdads)
+I was born and raised in the city of Cincinnati, Ohio — right next to train tracks and a creek where I could catch [crawdads.](https://www.nationalgeographic.com/animals/invertebrates/facts/crawdads)
 
 I moved to Kansas when I was around 8 years old - and from there made my way to the University of Oklahoma, where I currently am pursuing a Bachelor's of Science in psychology, alongside computer science and music courses.
 
