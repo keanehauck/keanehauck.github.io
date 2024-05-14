@@ -15,3 +15,6 @@ changing the 'layout' in the .md file for a page changes what it looks like...
 to add a blog post, we can just add an .md file to the collections_posts
 
 social icon links in config.yml
+
+for each markdown (.md) file, there are certain ways to do things. for one, we can create a layout html file if we want, and set it with layout: our_layout. we can also set permalink, title, and other variables we want. To insert an inline picture, use ![Alt text](/images/research/ops.jpg "a title") (a title is optional).
+
