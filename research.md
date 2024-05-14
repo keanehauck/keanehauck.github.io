@@ -3,17 +3,14 @@ layout: research
 permalink: /research/
 title: My Research!
 tags: research
-picture1: /images/ops.jpg
+picture1: /images/research/ops.jpg
 ---
 
 ### My research
 
 Test
 
-<img 
-    style="border-radius: 1em; max-width: 800px; float: right; margin: 1.25em;" 
-    src="{{ page.picture1 }}"
-  >
+![Alt text](/images/research/ops.jpg "a title")
 
 will this show up ^
 
