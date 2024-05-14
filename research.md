@@ -10,6 +10,13 @@ picture1: /images/ops.jpg
 
 Test
 
+<img 
+    style="border-radius: 1em; max-width: 800px; float: right; margin: 1.25em;" 
+    src="{{ page.picture1 }}"
+  >
+
+will this show up ^
+
 <div id="stats" class="hidden">
 
 <h3 id="dashboard"><code>#dashboard</code></h3>
