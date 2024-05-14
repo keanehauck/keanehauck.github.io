@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default 
 permalink: /research/
 title: Research
 tags: research
