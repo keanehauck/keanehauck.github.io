@@ -1,9 +1,9 @@
 ---
 layout: research
 permalink: /research/
-title: Research
+title: My Research!
 tags: research
-headshot: /images/ops.jpg
+picture1: /images/ops.jpg
 ---
 
 ### My research
