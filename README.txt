@@ -13,3 +13,5 @@ How to put hyperlink in text: [Acquired’s history of the Taiwan Semiconductor 
 changing the 'layout' in the .md file for a page changes what it looks like...
 
 to add a blog post, we can just add an .md file to the collections_posts
+
+social icon links in config.yml
