@@ -22,3 +22,8 @@ the isbn number listed in the library file is specifically formatted in isbn-10.
 
 colors for the background and other variables are stored in both _color-base.scss for the general background and _variables.scss for the other colors. post colors are in _posts.scss.
 
+page footer is stored in footer.html bottom-margin (default was 30px.)
+
+in the html file, the style sheet thingy in CSS is signified by starting <style> and ending with </style>. 
+
+git token needed permissions after a while of writing? I changed it in settings, but confused
