@@ -13,4 +13,4 @@ The rapid emergence of artificial intelligence (AI) in higher education has spar
 Can you tell you just read an abstract?
 
 This project composed my honors thesis, and is currently out for publication. The full text
-of our manuscript can be found [here](/images/research/chatgpt-goes-to-college/ChatGPT Goes To College Manuscript.pdf)
+of our manuscript can be found [here.](/images/research/chatgpt-goes-to-college/ChatGPT Goes To College Manuscript.pdf)
