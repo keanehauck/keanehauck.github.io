@@ -20,7 +20,7 @@ Please enjoy a few things I find important:
 
 <br>
 
-[**Take a look at my research →**]({{ site.baseurl }}/blog)
+[**Take a look at my research →**]({{ site.baseurl }}/research)
 
 
 <br>

@@ -24,6 +24,9 @@ colors for the background and other variables are stored in both _color-base.scs
 
 page footer is stored in footer.html bottom-margin (default was 30px.)
 
+page header is stored in header, I edited in a style sheet
+
 in the html file, the style sheet thingy in CSS is signified by starting <style> and ending with </style>. 
 
 git token needed permissions after a while of writing? I changed it in settings, but confused
+

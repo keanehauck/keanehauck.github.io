@@ -2,7 +2,7 @@
 layout: research
 permalink: /research/
 title: My Research!
-tags: research, AI, chatgpt, math
+tags: research, academia
 ---
 
 ### Still in development....
