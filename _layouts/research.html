@@ -12,15 +12,15 @@ tags: research
     {{ content }}
   </article>
     
-  <h1>Active Projects</h1>
+  <h2>Active Projects</h2>
   {% if activeresearch_count > 0 %}
   <div class="activeresearch">
     {% for activeresearch in site.activeresearch %}
-      <h2>
+      <h3>
         <a href="{{ activeresearch.url }}">
           {{ activeresearch.title }}
         </a>
-      </h2>
+      </h3>
       <p>
         {{ activeresearch.summary }}
       </p>
@@ -30,15 +30,15 @@ tags: research
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
   {% endif %}
 
-  <h1>Retired Projects</h1>
+  <h2>Retired Projects</h2>
   {% if previousresearch_count > 0 %}
   <div class="previousresearch">
     {% for previousresearch in site.previousresearch %}
-      <h2>
+      <h3>
         <a href="{{ previousresearch.url }}">
           {{ previousresearch.title }}
         </a>
-      </h2>
+      </h3>
       <p>
         {{ previousresearch.summary }}
       </p>
