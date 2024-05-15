@@ -18,7 +18,7 @@ Just my website, completely stolen from thundergolfer. The theme is [thundergolf
 ### Other places you can find me
 
 * Twitter @ [keane_hauck](https://twitter.com/keane_hauck)
-* LinkedIn @ [Jonathon Belotti](https://www.linkedin.com/in/keane-hauck/)
+* LinkedIn @ [keane-hauck](https://www.linkedin.com/in/keane-hauck/)
 
 ----
 
