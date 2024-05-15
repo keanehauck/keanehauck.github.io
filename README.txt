@@ -30,3 +30,6 @@ in the html file, the style sheet thingy in CSS is signified by starting <style>
 
 git token needed permissions after a while of writing? I changed it in settings, but confused
 
+So, I don't really know how it works, but the research html in _layouts is what is displaying on the research page. I believe I have it set up
+correctly to display the various projects in activeresearch and previousresearch, but I could be doing it inefficiently. Each research project .md file needs
+a summary to display.

@@ -7,8 +7,10 @@ tags: research, academia
 
 ### Still in development....
 
-<h2>Active Projects</h2>
+<h1>My Research!</h1>
 
+I conduct various types of research. Feel free to investigate both
+active projects and previous work of mine!
 
 Test
 
@@ -16,7 +18,5 @@ Test
 
 will this show up ^
 
-
-<h2>Previous Work</h2>
 
 test test test

@@ -6,14 +6,12 @@ tags: research
 {% assign activeresearch_count = site.activeresearch | size %}
 {% assign previousresearch_count = site.previousresearch | size %}
 
-<h1>My Research!</h1>
-<p> 
-I conduct various types of research. Feel free to investigate both
-active projects and previous work of mine!
-</p>
 
 <div class="home">
-
+  <article class="post-content">
+    {{ content }}
+  </article>
+    
   <h1>Active Projects</h1>
   {% if activeresearch_count > 0 %}
   <div class="activeresearch">
