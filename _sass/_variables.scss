@@ -32,7 +32,7 @@ $viewport-medium: 48em;
 $viewport-large: 64em;
 
 // Header Colors
-$header-bg: darkgray !default;
+$header-bg: lightgray !default;
 $header-fg: black !default;
 
 // Colors
@@ -119,6 +119,6 @@ $hljs-chunk: $light-gray;
 // Footer
 $footer-padding: $space-3;
 $footer-color: #000;
-$footer-bg-color: darkgray;
+$footer-bg-color: lightgray;
 $footer-font-weight: 300;
 $footer-font-size: .75rem;
