@@ -33,3 +33,7 @@ git token needed permissions after a while of writing? I changed it in settings,
 So, I don't really know how it works, but the research html in _layouts is what is displaying on the research page. I believe I have it set up
 correctly to display the various projects in activeresearch and previousresearch, but I could be doing it inefficiently. Each research project .md file needs
 a summary to display.
+
+the html file in layouts is the base research layout? I shifted the content to the md file so that they are disctinct from one another.
+
+
