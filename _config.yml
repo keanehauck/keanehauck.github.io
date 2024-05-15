@@ -64,5 +64,7 @@ collections:
     output: true
   portfolio:
     output: true
-  research:
+  activeresearch:
+    output: true
+  previousresearch:
     output: true
