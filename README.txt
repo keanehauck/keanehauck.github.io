@@ -36,4 +36,4 @@ a summary to display.
 
 the html file in layouts is the base research layout? I shifted the content to the md file so that they are disctinct from one another.
 
-
+research posts are sorted by date: earliest is first
