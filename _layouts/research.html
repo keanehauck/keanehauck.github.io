@@ -14,17 +14,19 @@ tags: research
     
   <h2>Active Projects</h2>
   {% if activeresearch_count > 0 %}
-  <div class="activeresearch">
-    {% for activeresearch in site.activeresearch %}
-      <h3>
-        <a href="{{ activeresearch.url }}">
-          {{ activeresearch.title }}
-        </a>
-      </h3>
-      <p>
-        {{ activeresearch.summary }}
-      </p>
-    {% endfor %}
+  <div class="post py3">
+    <div class="activeresearch">
+      {% for activeresearch in site.activeresearch %}
+        <h3>
+          <a href="{{ activeresearch.url }}">
+            {{ activeresearch.title }}
+          </a>
+        </h3>
+        <p>
+          {{ activeresearch.summary }}
+        </p>
+      {% endfor %}
+      </div>
   </div>
   {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
@@ -32,17 +34,19 @@ tags: research
 
   <h2>Retired Projects</h2>
   {% if previousresearch_count > 0 %}
-  <div class="previousresearch">
-    {% for previousresearch in site.previousresearch %}
-      <h3>
-        <a href="{{ previousresearch.url }}">
-          {{ previousresearch.title }}
-        </a>
-      </h3>
-      <p>
-        {{ previousresearch.summary }}
-      </p>
-    {% endfor %}
+  <div class="post py3">
+    <div class="previousresearch">
+      {% for previousresearch in site.previousresearch %}
+        <h3>
+          <a href="{{ previousresearch.url }}">
+            {{ previousresearch.title }}
+          </a>
+        </h3>
+        <p>
+          {{ previousresearch.summary }}
+        </p>
+      {% endfor %}
+      </div>
   </div>
   {% include pagination.html %} {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
