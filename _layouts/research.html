@@ -23,6 +23,9 @@ active projects and previous work of mine!
           {{ activeresearch.title }}
         </a>
       </h2>
+      <p>
+        {{ activeresearch.summary }}
+      </p>
     {% endfor %}
   </div>
   {% else %}
@@ -38,10 +41,12 @@ active projects and previous work of mine!
           {{ previousresearch.title }}
         </a>
       </h2>
+      <p>
+        {{ previousresearch.summary }}
+      </p>
     {% endfor %}
   </div>
-  {% include pagination.html %} {% if site.show_subscribe_cta %} {% include
-  subscribe.html %} {% endif %} {% else %}
+  {% include pagination.html %} {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
   {% endif %}
 </div>
