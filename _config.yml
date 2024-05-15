@@ -64,3 +64,5 @@ collections:
     output: true
   portfolio:
     output: true
+  research:
+    output: true

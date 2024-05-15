@@ -3,9 +3,10 @@ layout: default
 tags: research
 ---
 
-{% assign research_count = site.categories.research | size %}
+{% assign research_count = site.research | size %}
 
 <h1>My Research....</h1>
+<h2>research_count</h2>
 
 <div class="home">
   {% if research_count > 0 %}
