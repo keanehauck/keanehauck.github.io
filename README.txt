@@ -20,4 +20,5 @@ for each markdown (.md) file, there are certain ways to do things. for one, we c
 
 the isbn number listed in the library file is specifically formatted in isbn-10. you can use isbn portal to lookup isbn number.
 
-colors for the background and other variables are stored in both _color-base.scss for the general background and _variables.scss for the other colors.
+colors for the background and other variables are stored in both _color-base.scss for the general background and _variables.scss for the other colors. post colors are in _posts.scss.
+
