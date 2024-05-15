@@ -14,7 +14,6 @@ tags: research
     
   <h2>Active Projects</h2>
   {% if activeresearch_count > 0 %}
-  <div class="post py3">
     <div class="activeresearch">
       {% for activeresearch in site.activeresearch %}
         <h3>
@@ -26,7 +25,6 @@ tags: research
           {{ activeresearch.summary }}
         </p>
       {% endfor %}
-      </div>
   </div>
   {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
@@ -34,7 +32,6 @@ tags: research
 
   <h2>Retired Projects</h2>
   {% if previousresearch_count > 0 %}
-  <div class="post py3">
     <div class="previousresearch">
       {% for previousresearch in site.previousresearch %}
         <h3>
@@ -46,7 +43,6 @@ tags: research
           {{ previousresearch.summary }}
         </p>
       {% endfor %}
-      </div>
   </div>
   {% include pagination.html %} {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
