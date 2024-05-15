@@ -3,7 +3,7 @@ layout: default
 tags: home
 ---
 
-# 👋 Hi there, <br/> I'm Keane Hauck.
+# Hi there, <br/> I'm Keane Hauck.
 
 ### I'm an amateur quantitative psychologist, computer scientist, mathematician, and chess player. Welcome to my website! 
 

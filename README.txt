@@ -18,4 +18,4 @@ social icon links in config.yml
 
 for each markdown (.md) file, there are certain ways to do things. for one, we can create a layout html file if we want, and set it with layout: our_layout. we can also set permalink, title, and other variables we want. To insert an inline picture, use ![Alt text](/images/research/ops.jpg "a title") (a title is optional).
 
-the isbn number listed in the library file is actually the number of the link to librarything
+the isbn number listed in the library file is specifically formatted in isbn-10. you can use isbn portal to lookup isbn number.
