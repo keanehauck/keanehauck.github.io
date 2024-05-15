@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Investigations into 3-color Peg Solitaire"
-date: 2024-05-16
+date: 2024-05-15
 summary: Analyzing the solvability of variations of classic peg solitaire.
 tags: research, game theory, peg solitaire, proofs
 ---
