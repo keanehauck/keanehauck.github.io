@@ -10,21 +10,20 @@ headshot: /images/headshot.jpg
 
 I was born and raised in the city of Cincinnati, Ohio — right next to train tracks and a creek where I could catch [crawdads.](https://www.nationalgeographic.com/animals/invertebrates/facts/crawdads)
 
-I moved to Kansas when I was around 8 years old - and from there made my way to the University of Oklahoma, where I currently am pursuing a Bachelor's of Science in psychology, alongside computer science and music courses.
+I moved to Kansas when I was around 8 years old - and completed my pre-college education at the Andover school district. The bulk of my passions in high school concerned computers and coding; however, I also appreciated the soft sciences. From there, I made my way to the University of Oklahoma, where I currently am pursuing a Bachelor's of Science in psychology and taking computer science and music courses on the side.
 
 ### What I do now
 
-Currently, I conduct research in a variety of subdisciplines. I also spend my time playing video games and chess. Scroll down to see some of my research!
+Currently, I conduct research in a variety of subdisciplines; however, my interest lies in quantitative methodology. I also spend my time building keyboards and playing chess (when I'm not playing video games). [Take a look at my research!]({{ site.baseurl }}/research)
 
 ### Where I'm at now
 
-Today, I live in Norman, OK. When I'm not working, you can find me walking around Main street or nearly entering cardiac arrest on a bicycle. I also love to frequent some of the coffee shops around the city, especially Gray Owl and Yellow Dog.
+Today, I live in Norman, OK. When I'm not working or attending class, you can find me walking around Main street or nearly entering cardiac arrest on a bicycle. I also love to frequent some of the coffee shops around the city, especially Gray Owl and Yellow Dog.
 
-### What I used to do
+### Why quantitative methodology?
 
-I spent 4 years at Andover High School, spending most of my time with my nose in a book or sitting in a development IDE. 
+When I was a freshman, I entered college as a double-major in piano and psychology. I wanted to be able to pursue my artistic passions through music alongside achieving my dream of being a therapist. However, two roadblocks hit me almost immediately. I didn't realize the amount of practice required to major in musical performance, and I also realized that I could have conversations of the nature I appreciated without needing to be formally trained in clinical methodology. I witnessed myself being able to help others simply by talking to them as a friend. On top of these observations, I also noticed that I missed doing the math and coding I did in high school. So, my junior year of college, I immersed myself in a variety of research experiences. The more I lived in this world, the more I appreciated merging the applied nature of my psychology education with the mathematical nature of statistical modeling. It might be a little bit nerdy, but I'm glad to be where I'm at. 
 
-When not doing academic stuff, I spent quite a bit of time working with the something... this is in about.md 
 
 <div id="stats" class="hidden">
 
