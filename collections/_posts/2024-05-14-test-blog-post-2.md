@@ -2,7 +2,7 @@
 layout: post
 title: Test Blog Post 2
 date: 2024-05-14
-summary: Seeing how much I can directly rip off.
+summary: Second test post
 categories: blog post test 2
 ---
 

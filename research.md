@@ -7,6 +7,6 @@ tags: research, academia
 <h1>My Research!</h1>
 
 I conduct various types of research. Feel free to investigate both
-active projects and previous work of mine.
+active projects and previous work of mine via the links below. 
 
 ![Presenting at OPS 2024](/images/research/ops.jpg "Presenting at OPS 2024")
