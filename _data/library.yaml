@@ -1,9 +1,185 @@
 [
     {
+        "title": "Slob",
+        "author": "Ellen Potter",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9924705",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Cardturner: A Novel about a King, a Queen, and a Joker",
+        "author": "Louis Sachar",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "8573662",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Twelve Angry Men",
+        "author": "Reginald Rose",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "4310440",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Swiss Family Robinson",
+        "author": "Johann David Wyss",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0272602",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "20000 Leagues Under the Sea",
+        "author": "Jules Verne",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "7960253",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Food of the Gods",
+        "author": "H.G. Wells",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "7002015",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Nine Tomorrows",
+        "author": "Isaac Asimov",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "4534604",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Wind in the Willows",
+        "author": "Kenneth Grahame",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "4303909",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Anthem",
+        "author": "Ayn Rand",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "5228125",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780358439196",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Prince",
+        "author": "Niccol\u00f2 Machiavelli",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "3783238",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Republic",
+        "author": "Plato",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "4044914",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Silmarillion",
+        "author": "J.R.R. Tolkien",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1839111",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Till We Have Faces",
+        "author": "C.S. Lewis",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9780062565419",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Speaker for the Dead (Ender's Saga, #2)",
+        "author": "Orson Scott Card",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "1255075",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Giving Tree",
+        "author": "Shel Silverstein",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "6025665",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The War of the Worlds",
+        "author": "H.G. Wells",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "7575923",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Siddhartha",
+        "author": "Hermann Hesse",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "9781774267547",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Raisin in the Sun",
+        "author": "Lorraine Hansberry",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "7550833",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Hatchet (Brian's Saga, #1)",
+        "author": "Gary Paulsen",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "8984092",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Things They Carried",
+        "author": "Tim O'Brien",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "6790289",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Charlotte\u2019s Web",
+        "author": "E.B. White",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "6441093",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Flatland: A Romance of Many Dimensions",
         "author": "Edwin A. Abbott",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "048627263X",
+        "isbn": "8627263",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -11,7 +187,7 @@
         "title": "Treasure Island",
         "author": "Robert Louis Stevenson",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0753453800",
+        "isbn": "5345380",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -19,7 +195,7 @@
         "title": "Tuesdays with Morrie",
         "author": "Mitch Albom",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780767905923",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -27,7 +203,7 @@
         "title": "Moby-Dick or, The Whale",
         "author": "Herman Melville",
         "rating": "\u2605\u2605",
-        "isbn": "0142437247",
+        "isbn": "4243724",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -35,7 +211,7 @@
         "title": "The Adventures of Tom Sawyer",
         "author": "Mark Twain",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780143039563",
+        "isbn": "8014303956",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -43,7 +219,7 @@
         "title": "The Old Man and the Sea",
         "author": "Ernest Hemingway",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0684830493",
+        "isbn": "8483049",
         "review_path": "the-old-man-and-the-sea-ernest-hemingway/",
         "year_i_finished_reading": null
     },
@@ -51,7 +227,7 @@
         "title": "Matilda",
         "author": "Roald Dahl",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780142410370",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -59,7 +235,7 @@
         "title": "Brave New World",
         "author": "Aldous Huxley",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0060929871",
+        "isbn": "6092987",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -75,7 +251,7 @@
         "title": "Dr. Jekyll and Mr. Hyde",
         "author": "Robert Louis Stevenson",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0451528956",
+        "isbn": "5152895",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -83,15 +259,15 @@
         "title": "Journey to the Center of the Earth",
         "author": "Jules Verne",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0553213970",
+        "isbn": "5321397",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Gulliver\u00e2\u20ac\u2122s Travels",
+        "title": "Gulliver\u2019s Travels",
         "author": "Jonathan Swift",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0141439491",
+        "isbn": "4143949",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -99,7 +275,7 @@
         "title": "The Call of the Wild",
         "author": "Jack London",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781954839144",
         "review_path": "the-call-of-the-wild-jack-london/",
         "year_i_finished_reading": null
     },
@@ -107,7 +283,7 @@
         "title": "The Adventures of Huckleberry Finn",
         "author": "Mark Twain",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0142437174",
+        "isbn": "4243717",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -115,7 +291,7 @@
         "title": "The Scarlet Letter",
         "author": "Nathaniel Hawthorne",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0142437263",
+        "isbn": "4243726",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -123,7 +299,7 @@
         "title": "Mark Twain: Huckleberry Finn",
         "author": "Coles Editorial Board",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0774036656",
+        "isbn": "7403665",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -131,7 +307,7 @@
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780141439518",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -139,7 +315,7 @@
         "title": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0316769177",
+        "isbn": "1676917",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -147,7 +323,7 @@
         "title": "The Invisible Man",
         "author": "H.G. Wells",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0451528522",
+        "isbn": "5152852",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -163,7 +339,7 @@
         "title": "All Quiet on the Western Front",
         "author": "Erich Maria Remarque",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0449213943",
+        "isbn": "4921394",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -171,7 +347,7 @@
         "title": "The Sun Also Rises",
         "author": "Ernest Hemingway",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781501121968",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -179,7 +355,7 @@
         "title": "The Stranger",
         "author": "Albert Camus",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780679720201",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -187,23 +363,23 @@
         "title": "Holes (Holes, #1)",
         "author": "Louis Sachar",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0439244196",
+        "isbn": "3924419",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
         "title": "The Little Prince",
-        "author": "Antoine de Saint-Exup\u00c3\u00a9ry",
+        "author": "Antoine de Saint-Exup\u00e9ry",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "9780156012195",
-        "review_path": null,
+        "review_path": "the-little-prince-antoine-de-saint-exup\u00e9ry/",
         "year_i_finished_reading": null
     },
     {
         "title": "Animal Farm",
         "author": "George Orwell",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0451526341",
+        "isbn": "5152634",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -211,15 +387,15 @@
         "title": "The Hobbit (The Lord of the Rings, #0)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780063347533",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
         "title": "Wuthering Heights",
-        "author": "Emily Bront\u00c3\u00ab",
+        "author": "Emily Bront\u00eb",
         "rating": "\u2605",
-        "isbn": "",
+        "isbn": "9780141439556",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -243,7 +419,7 @@
         "title": "Slaughterhouse-Five",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0385333846",
+        "isbn": "8533384",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -251,15 +427,15 @@
         "title": "Foundation (Foundation, #1)",
         "author": "Isaac Asimov",
         "rating": "\u2605\u2605",
-        "isbn": "0553803719",
+        "isbn": "5380371",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "Ender\u00e2\u20ac\u2122s Game (Ender's Saga, #1)",
+        "title": "Ender\u2019s Game (Ender's Saga, #1)",
         "author": "Orson Scott Card",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0812550706",
+        "isbn": "1255070",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -267,7 +443,7 @@
         "title": "Fahrenheit 451",
         "author": "Ray Bradbury",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9781451673265",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -275,7 +451,7 @@
         "title": "Green Eggs and Ham",
         "author": "Dr. Seuss",
         "rating": "\u2605\u2605",
-        "isbn": "0394800168",
+        "isbn": "9480016",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -283,7 +459,7 @@
         "title": "Where the Sidewalk Ends",
         "author": "Shel Silverstein",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060513039",
+        "isbn": "6051303",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -299,7 +475,7 @@
         "title": "Of Mice and Men",
         "author": "John Steinbeck",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0142000671",
+        "isbn": "4200067",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -307,12 +483,12 @@
         "title": "Lord of the Flies",
         "author": "William Golding",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0140283331",
+        "isbn": "4028333",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "The Hitchhiker\u00e2\u20ac\u2122s Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+        "title": "The Hitchhiker\u2019s Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",
@@ -331,7 +507,7 @@
         "title": "Catching Fire (The Hunger Games, #2)",
         "author": "Suzanne Collins",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0439023491",
+        "isbn": "3902349",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -339,7 +515,7 @@
         "title": "Divergent (Divergent, #1)",
         "author": "Veronica Roth",
         "rating": "\u2605\u2605",
-        "isbn": "0062024035",
+        "isbn": "6202403",
         "review_path": null,
         "year_i_finished_reading": null
     },

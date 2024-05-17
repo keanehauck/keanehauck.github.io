@@ -1,1 +1,186 @@
-[]
+[
+    {
+        "title": "The Color Purple",
+        "author": "Alice Walker",
+        "rating": "",
+        "isbn": "4313569",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "In Cold Blood",
+        "author": "Truman Capote",
+        "rating": "",
+        "isbn": "7974558",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "rating": "",
+        "isbn": "9780141439570",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Tropic of Cancer (Tropic, #1)",
+        "author": "Henry Miller",
+        "rating": "",
+        "isbn": "0213178",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Middlemarch",
+        "author": "George Eliot",
+        "rating": "",
+        "isbn": "5152917",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "One Flew Over the Cuckoo\u2019s Nest",
+        "author": "Ken Kesey",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Master and Margarita",
+        "author": "Mikhail Bulgakov",
+        "rating": "",
+        "isbn": "7976080",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Name of the Rose",
+        "author": "Umberto Eco",
+        "rating": "",
+        "isbn": "5600131",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Secret History",
+        "author": "Donna Tartt",
+        "rating": "",
+        "isbn": "0003170",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Wide Sargasso Sea",
+        "author": "Jean Rhys",
+        "rating": "",
+        "isbn": "9335256",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel Garc\u00eda M\u00e1rquez",
+        "rating": "",
+        "isbn": "9780061120091",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky",
+        "rating": "",
+        "isbn": "9780374528379",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "East of Eden",
+        "author": "John Steinbeck",
+        "rating": "",
+        "isbn": "4200065",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Oliver Twist",
+        "author": "Charles Dickens",
+        "rating": "",
+        "isbn": "9780374528379",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Lost World (Professor Challenger, #1)",
+        "author": "Arthur Conan Doyle",
+        "rating": "",
+        "isbn": "1296725",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Time Machine",
+        "author": "H.G. Wells",
+        "rating": "",
+        "isbn": "9780553213515",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Frankenstein: The 1818 Text",
+        "author": "Mary Wollstonecraft Shelley",
+        "rating": "",
+        "isbn": "9781734029284",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "A Tale of Two Cities",
+        "author": "Charles Dickens",
+        "rating": "",
+        "isbn": "4143960",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Dracula",
+        "author": "Bram Stoker",
+        "rating": "",
+        "isbn": "9397012",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "rating": "",
+        "isbn": "9780679734505",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "rating": "",
+        "isbn": "7001690",
+        "review_path": "the-grapes-of-wrath-john-steinbeck/",
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Secret Garden",
+        "author": "Frances Hodgson Burnett",
+        "rating": "",
+        "isbn": "1718960",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "rating": "",
+        "isbn": "4044926",
+        "review_path": null,
+        "year_i_finished_reading": null
+    }
+]

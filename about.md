@@ -24,6 +24,9 @@ Today, I live in Norman, OK. When I'm not working or attending class, you can fi
 
 When I was a freshman, I entered college as a double-major in piano and psychology. I had dual aspirations with this degree combination: I wanted to be able to pursue my artistic passions through music, and I wanted to acheive my dream of being a therapist. However, two roadblocks hit me almost immediately. I didn't realize the amount of practice required to major in musical performance, and I also discovered that I could have conversations of the nature I appreciated without needing to be formally trained in clinical methodology (albeit not as professionally). I initially wanted to be a therapist to be able to improve the lives of others, but I witnessed myself being able to help people simply by talking to them as a friend. On top of these observations, I also noticed that I missed doing the math and coding I conducted in high school. So, my junior year of college, I immersed myself in a variety of research experiences. The more I lived in the world of research, the more I appreciated merging the applied nature of my psychology education with the mathematical nature of statistical modeling. It might be a little bit nerdy, but I'm glad to be where I'm at. 
 
+### Get in touch!
+
+The easiest way to contact me is through email: [keane@ou.edu](mailto:keane@ou.edu). Please allow up to 2 business days for a response due to the unfortunate user error of chronically failing to notice new emails in my inbox.
 
 <div id="stats" class="hidden">
 

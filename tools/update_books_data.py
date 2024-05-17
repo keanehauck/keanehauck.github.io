@@ -28,6 +28,29 @@ IGNORED_AUTHORS = {
 # For some reason Goodreads left out ISBN information for some of the books in my collection,
 # even though the ISBN info is available in Goodreads if you look up the data on their website.
 TITLE_TO_ISBN = {
+    "The Picture of Dorian Gray": "9780141439570",
+    "The Lord of the Rings": "9780358439196",
+    "One Flew Over the Cuckoo's Nest": "9780451163967",
+    "One Hundred Years of Solitude": "9780061120091",
+    "Till We Have Faces": "9780062565419",
+    "The Brothers Karamazov": "9780374528379",
+    "Oliver Twist": "9780374528379",
+    "The Time Machine": "9780553213515",
+    "Frankenstein: The 1818 Text": "9781734029284",
+    "Crime and Punishment": "9780679734505",
+    "Siddhartha": "9781774267547",
+    "Tuesdays with Morrie": "9780767905923",
+    "Matilda": "9780142410370",
+    "Little Women": "9781441342157",
+    "The Call of the Wild": "9781954839144",
+    "Pride and Prejudice": "9780141439518",
+    "Flowers for Algernon": "9781407234717",
+    "The Sun Also Rises": "9781501121968",
+    "The Stranger": "9780679720201",
+    "The Little Prince": "9780156012195",
+    "The Hobbit (The Lord of the Rings, #0)": "9780063347533",
+    "Wuthering Heights": "9780141439556",
+    "Fahrenheit 451": "9781451673265",
     "China in Ten Words": "9780307739797",
     "Priestdaddy": "9780399573262",
     "The Man in the High Castle": "9780141186672",
@@ -157,10 +180,21 @@ if __name__ == "__main__":
     reading_data_csv_path = pathlib.Path(repo_root, "_data", "goodreads_library_export.csv")
 
     entries = []
-    with open(reading_data_csv_path, newline="") as csvfile:
-        spamreader = csv.DictReader(csvfile, delimiter=",", quotechar='"')
-        for row in spamreader:
-            entries.append(row)
+    with open(reading_data_csv_path, "rb") as csvfile:
+        # Read binary data
+        raw_data = csvfile.read()
+
+    # Decode the binary data with error handling
+    decoded_data = raw_data.decode("utf-8", errors="replace")
+
+    # Use csv.reader on the decoded data
+    import io
+    csvfile = io.StringIO(decoded_data)
+    spamreader = csv.DictReader(csvfile, delimiter=",", quotechar='"')
+    for row in spamreader:
+        entries.append(row)
+
+    # The rest of the script processing entries and writing YAML files remains unchanged
 
     library_data = []
     antilibrary_data = []
@@ -195,7 +229,7 @@ if __name__ == "__main__":
 
         have_read = (
             # All books I've at least started will pass this filter
-            read_count > 0 and
+            #read_count > 0 and #deleted this line because read_count was being weird for some reason
             # only books that I've finished reading show up on this shelf in Goodreads
             row["Exclusive Shelf"] == "read"
         )
