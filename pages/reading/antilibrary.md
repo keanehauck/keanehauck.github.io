@@ -5,7 +5,7 @@ permalink: /anti-library/
 tags: antilibrary library
 ---
 
-Books I haven't read, but like the idea of having read, and plan to read in the future.
+Books I haven't read, but plan to read in the future. I'm also open to any suggestions!
 
 <section style="display: flex; justify-content: space-between; flex-wrap: wrap">
 {% for member in site.data.antilibrary limit:60 %}
