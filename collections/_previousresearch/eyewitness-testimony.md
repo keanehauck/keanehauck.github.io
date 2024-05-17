@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Eyewitness Testimony"
-date: 2022-01-22
+date: 2022-02-23
 summary: Are people accurate reporters of their own experiences?
 tags: eyewitness testimony, AUC curves, wrongful convictions, research
 ---

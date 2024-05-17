@@ -17,7 +17,7 @@ advisor and I extend this work to a variation on the traditional rules where the
 
 ![3-Color Rules](/images/research/peg-solitaire/3color.png "Davis et al., 2020")
 
-Adding this ruleset drastically changes what we know about the solvability of different types of graphs. My advisor and I have proven the solvability of all boards of height 4 and 5, and have inductively proven the number of starting positions on triangle boards up to symmetry.
+Adding this ruleset drastically changes what we know about the solvability of different types of graphs. Under the guidance of my advisor, Dr. Lauren Grimley, I have done work to prove the solvability of all boards of height 4 and 5, and have inductively proven the number of starting positions on triangle boards up to symmetry.
 
-A brief write-up of our work can be found [here.](/images/research/PegSolitaire.pdf)
+A brief write-up of our work can be found [here.](/images/research/peg-solitaire/PegSolitaire.pdf)
 
