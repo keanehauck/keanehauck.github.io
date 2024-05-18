@@ -28,11 +28,14 @@ IGNORED_AUTHORS = {
 # For some reason Goodreads left out ISBN information for some of the books in my collection,
 # even though the ISBN info is available in Goodreads if you look up the data on their website.
 TITLE_TO_ISBN = {
+    "The Great Divorce": "9780060652951",
+    "Milkweed": "0440420059",
+    "The Naked Sun (Robot, #2)": "0553293397",
     "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)": "9780345418913",
     "Night (The Night Trilogy, #1)": "9780374500016",
     "20000 Leagues Under the Sea": "9780553212525",
-    "The Food of the Gods": "9781953649218",
-    "Nine Tomorrows": "9781434404237",
+    "The Food of the Gods": "1570020159",
+    "Nine Tomorrows": "0345320727",
     "The Picture of Dorian Gray": "9780141439570",
     "The Lord of the Rings": "9780358439196",
     "One Flew Over the Cuckoo's Nest": "9780451163967",
