@@ -22,6 +22,31 @@ After some thought, I realized that the answer was a resounding no. But _c'mon_,
 
 The first thing you realize when you walk into a café is that Starbucks has not well-prepared you to order coffee. I have a really bad habit of googling (again, the capitalization) things in front of me instead of experiencing them for myself, so I spent a few minutes during my inaugural voyage to a coffee shop researching what the different drinks were. Woah. Why were some of them so small?
 
-So, Italian coffee drinks are all espresso-based, meaning that they have a stronger and more-concentrated base than typical coffee. 
+So, Italian coffee drinks are all espresso-based, but what exactly is espresso? According to GOOGLE, it is a type of coffee made with a fine grind of beans, less water, and a pressurized brew. Espresso is typically much richer and intense than traditional coffee, and contains a much larger amount of caffeine. It's made by packing the finely ground beans into a filter, through which pressurized, boiling water is pulled to get the prized liquid. Basically it's just concentrated coffee.
 
-.talk about the looks from starbucks barista and the talk from normal barista
+With that is mind, here are a few drinks that are important to know, in no particular order. 
+
+## Espresso (shot)
+
+The classic. An espresso shot is a small, 1oz drink of pure espresso. Honestly, despite writing an entire blog post about it, pure espresso is still a little bit intense for me. I've only had it once or twice, and each time I wished I was drinking something else. It's not like espresso tastes _bad_ (I actually enjoy the earthy taste), but other drinks contain milk or other flavorings that balance it out nicely. 4/10 stars.
+
+## Macchiato
+
+Now we're talking. The term "macchiato" is the Italian word for "marked," signifying the nature of the drink as "stained coffee." Macchiato is made by adding a small amount of warm milk to an espresso shot, thereby marking the espresso with the splash of milk. I love this drink. It's amazing how much the experience is improved simply by adding a small amount of milk to neutralize and balance the intensity of the espresso. It's creamy, it's rich, and I like to add a little cinnamon on top, which really pushes it over the edge. 8/10.
+
+## Cortado
+
+Cortados are pretty similar to macchiatos, but they have a higher ratio of milk to espresso. Macchiatos are typically 1 espresso shot and a very small amount of milk, while cortados have a roughly 1-to-1 ratio of milk to espresso. All the previously-discussed benefits of milk in the macchiato translate just as well to a cortado, bringing all of the creaminess and fulfillment you would expect. I love to get these earlier in the morning, as the milk often mixes well with the espresso and warms me up nicely. 7/10.
+
+## Cappuccino
+
+DO NOT get these after 11:00am. Apparently. I have a friend studying abroad in Europe, and this is the one thing he told me about Italian coffee culture as a hard rule: you never order a cappuccino after 11. It's true, too. I forgot to tell one of my friends when we went out for coffee and the barista took him behind the store and broke his kneecaps. 8/10 - they have very pretty milk art (Oh yeah, they're made from espresso, steamed milk, and milk _foam_, which is delightful). 
+
+## Americano
+
+Well, this one's boring. Apparently, this drink originated during World War II, when some American soldiers stationed in Italy discovered espresso and quickly realized they were too wimpy to drink it directly. This beverage is made from a shot of espresso watered down with lots of hot water, to mimic drip coffee. Can you think of a more boring way to drink espresso? This drink does help me live up to my American heritage, however: I admittedly enjoy it more than pure espresso. 6/10.
+
+![My favorite shop](/images/posts/coffee-dreams/shop.jpg)
+*One of my favorite coffee places in Norman.*
+
+Well, those are the main drinks. There are also lattes, which are made from a little espresso and a lot of steamed milk, but I have never gotten one because I don't get to feel snobby when I drink it. They're too common. And, really, that's what drinking coffee is all about: being pretentious. I went to the Starbucks in the OU Student Union a few weeks ago and asked for a black coffee (all of the other drinks were too sugary for my mature tastes, obviously). The barista looked a bit confused and asked twice to confirm that I really just wanted a black coffee instead of an actual drink, and I've never responded "yes" with more conviction to any other question in my life. Thank you, bitter, black coffee, for providing me validation from inconveniencing minimum-wage student employees. 
