@@ -1,17 +1,41 @@
 [
     {
-        "title": "Slob",
-        "author": "Ellen Potter",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "039924705X",
+        "title": "The Great Divorce",
+        "author": "C.S. Lewis",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
     {
-        "title": "The Cardturner: A Novel about a King, a Queen, and a Joker",
-        "author": "Louis Sachar",
+        "title": "Milkweed",
+        "author": "Jerry Spinelli",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0385736622",
+        "isbn": "0440420059",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Naked Sun (Robot, #2)",
+        "author": "Isaac Asimov",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Utopia",
+        "author": "Thomas More",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0140449108",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Slob",
+        "author": "Ellen Potter",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "039924705X",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -35,7 +59,7 @@
         "title": "20000 Leagues Under the Sea",
         "author": "Jules Verne",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "0679602534",
+        "isbn": "9780553212525",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -43,7 +67,7 @@
         "title": "The Food of the Gods",
         "author": "H.G. Wells",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "1570020159",
+        "isbn": "9781953649218",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -51,7 +75,7 @@
         "title": "Nine Tomorrows",
         "author": "Isaac Asimov",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0345346041",
+        "isbn": "9781434404237",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -139,7 +163,7 @@
         "title": "Siddhartha",
         "author": "Hermann Hesse",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9781774267547",
+        "isbn": "9780553208849",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -275,7 +299,7 @@
         "title": "The Call of the Wild",
         "author": "Jack London",
         "rating": "\u2605\u2605\u2605",
-        "isbn": "9781954839144",
+        "isbn": "9781673349511",
         "review_path": "the-call-of-the-wild-jack-london/",
         "year_i_finished_reading": null
     },
@@ -387,7 +411,7 @@
         "title": "The Hobbit (The Lord of the Rings, #0)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780063347533",
+        "isbn": "9780547928227",
         "review_path": null,
         "year_i_finished_reading": null
     },
