@@ -49,4 +49,6 @@ Well, this one's boring. Apparently, this drink originated during World War II, 
 ![My favorite shop](/images/posts/coffee-dreams/shop.jpg)
 *One of my favorite coffee places in Norman.*
 
+## Closing Remarks
+
 Well, those are the main drinks. There are also lattes, which are made from a little espresso and a lot of steamed milk, but I have never gotten one because I don't get to feel snobby when I drink it. They're too common. And, really, that's what drinking coffee is all about: being pretentious. I went to the Starbucks in the OU Student Union a few weeks ago and asked for a black coffee (all of the other drinks were too sugary for my mature tastes, obviously). The barista looked a bit confused and asked twice to confirm that I really just wanted a black coffee instead of an actual drink, and I've never responded "yes" with more conviction to any other question in my life. Thank you, bitter, black coffee, for providing me validation when I inconvenience minimum-wage student employees. 
