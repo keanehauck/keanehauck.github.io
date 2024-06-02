@@ -7,7 +7,7 @@ tags: home
 
 ![Me](/images/keanelondon.jpg)
 
-<img src="/images/keanelondon.jpg" alt="Taken outside the British National Gallery" title="Me" width="150" height="100" /> 
+<img src="/images/keanelondon.jpg" alt="Taken outside the British National Gallery" title="Me" width="300" height="200" ALIGN="left" /> 
 
 ### I'm an amateur quantitative psychologist, computer scientist, and chess connoisseur (I had to look up how to spell that word). Welcome to my website! 
 
