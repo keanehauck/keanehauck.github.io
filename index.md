@@ -5,6 +5,8 @@ tags: home
 
 # Hi there, <br/> I'm Keane Hauck.
 
+![Me](/images/keanelondon.jpg)
+
 ### I'm an amateur quantitative psychologist, computer scientist, and chess connoisseur (I had to look up how to spell that word). Welcome to my website! 
 
 ### Here, you can find links to my research, teaching experience, and contact information. Please keep in mind that this website is a work in progress, and there may be multiple placeholder links!
