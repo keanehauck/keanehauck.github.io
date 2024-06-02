@@ -5,9 +5,7 @@ tags: home
 
 # Hi there, <br/> I'm Keane Hauck.
 
-![Me](/images/keanelondon.jpg)
-
-<img src="/images/keanelondon.jpg" alt="Taken outside the British National Gallery" title="Me" width="300" height="200" ALIGN="left" /> 
+<img src="/images/keanelondon.jpg" alt="Taken outside the British National Gallery" title="Me" width="300" height="200" ALIGN="left" HSPACE=”50” /> 
 
 ### I'm an amateur quantitative psychologist, computer scientist, and chess connoisseur (I had to look up how to spell that word). Welcome to my website! 
 
