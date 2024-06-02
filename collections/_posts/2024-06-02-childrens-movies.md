@@ -52,4 +52,6 @@ You know what movie I don't think holds up? Disney's *Atlantis*. I loved this mo
 
 Take *Kung Fu Panda*, on the other hand. I also loved this movie as a kid, yet still do now. So much so, in fact, that my high-school friends and I would host a monthly *Kung Fu Panda* watch party where we would get together and enjoy the masterful performance of Jack Black. It's funny, it's relevant, and it's entertaining. *SKADOOSH*
 
+Enjoyability for all ages is the property that allows a movie to really be classic. When we, as children, have beloved movies, it is important that our parents can truly enjoy them with us (even for no other reason than us being allowed to watch the movies). 
+
 ### They have to be actually funny
