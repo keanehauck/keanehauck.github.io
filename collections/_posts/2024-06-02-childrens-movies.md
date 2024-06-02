@@ -2,7 +2,7 @@
 layout: post
 title: A Good Children's Movie Is Hard to Find
 date: 2024-06-02
-summary: Why making good movies for kids is so dang important (and so dang *hard*)
+summary: Why making good movies for kids is so dang important (and so dang hard)
 categories: movies, film, media
 ---
 
@@ -10,7 +10,11 @@ categories: movies, film, media
 
 One of the things I respect about my father is his knack for appreciating a good kid's movie. When I was growing up, he would watch classics such as *Cars* or *Finding Nemo* right alongside my brother and me, and honestly probably enjoyed them more than either of us did. Quotes (normally, particularly funny jokes or gags) from these movies became an integral part of daily life in our household, and I still reference many of them to this day.
 
-*The laaaaaast melon...*
+"The laaaaaast melon..."
+
 -Unnamed Dodo, *Ice Age*
 
-The thing is, calling movies such as *The Emperor's New Groove* and 
+
+The thing is, describing movies such as *The Emperor's New Groove* and *Kung Fu Panda* as "good movies" isn't simply convention or some vestigial remnant from my childhood. They're legitimately good movies, and they hold up well. 
+
+Recently, I was reading a book of ghost stories 
