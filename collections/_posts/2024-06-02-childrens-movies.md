@@ -49,7 +49,7 @@ It's important that the moral values ingrained in a kids' movie are communicated
 
 ### They have to fit within an appropriate source material
 
-One of the difficult things about marketing media to children is that they can be very fickle consumers. I have very high regard for the film/screenplay [*12 Angry Men*](https://www.imdb.com/title/tt0050083/): if you're unfamiliar, the narrative concerns the murder trial of a teenager and the jury's deliberations behind his eventual conviction or acquittal. The story is very dramatic and gripping, and is extremely well-written. Unfortunately, no child on the face of planet Earth is going to be interested in a movie of this nature. Watching 12 men sit around talk about law? *Boooooorrrrriiinnnngg...* 
+One of the difficult things about marketing media to children is that they can be very fickle consumers. I have very high regard for the film/screenplay [*12 Angry Men*](https://www.imdb.com/title/tt0050083/); if you're unfamiliar, the narrative concerns the murder trial of a teenager and the jury's deliberations behind his eventual conviction or acquittal. The story is very dramatic and gripping, and is extremely well-written. Unfortunately, no child on the face of planet Earth is going to be interested in a movie of this nature. Watching 12 men sit around talk about law? *Boooooorrrrriiinnnngg...* 
 
 Unsurprisingly, most popular kids' movies are set within some fantastic universe where the characters are all animals, or toys, or superheroes, or something else of a similar nature. When you come up with one of the original and moral plot devices previously mentioned, it's not enough to simply craft a good story around it. The narrative has to be woven into a world that children will find interesting at surface level, which is presumably easier said than done. Think about *The Lion King*. The decision to set [*Hamlet*](https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/shakespeares-plays/hamlet/#:~:text=The%20ghost%20of%20the%20King,devises%20plots%20to%20kill%20Hamlet.) in a world of animal life is ingenious, and communicates a classic story in a manner that is appealing to children. Honestly, this even works for adults. How many of us would rather have analyzed *The Lion King* than *Hamlet* in our high school English class? I know I would've. I wonder why *The Lion King* was so successful... 
 
@@ -63,7 +63,7 @@ Despite being fickle in some ways, kids are mostly an easy audience. As long as 
 
 You know what movie I don't think holds up? Disney's *Atlantis*. I loved this movie as a kid: I would watch it over and over and I loved the big monsters and cool magic. A few years ago (when I was quarantined with COVID, actually), I decided to rewatch it for old time's sake, and I still remember the feeling of stark disappointment I had at discovering how much worse it was than I remembered. The dialogue was cheesy, the plot was lackluster, and I wasn't as entertained as I was as a kid. It just wasn't very good!
 
-Take *Kung Fu Panda*, on the other hand. I also loved this movie as a kid, yet still do now. So much so, in fact, that my high-school friends and I would host a monthly *Kung Fu Panda* watch party where we would get together and enjoy the masterful performance of Jack Black. It's funny, it's relevant, and it's entertaining. *SKADOOSH*
+Take *Kung Fu Panda*, on the other hand. I also loved this movie as a kid, yet still do now. So much so, in fact, that my high-school friends and I would host a monthly *Kung Fu Panda* watch party where we would get together and enjoy the masterful performance of Jack Black. It's funny, it's relevant, and it's entertaining. *SKADOOSH!*
 
 Enjoyability for all ages is the property that allows a movie to really be classic. When we, as children, have beloved movies, it feels so good when we can rewatch them as adults and still get the same enjoyment. 
 
@@ -86,7 +86,7 @@ To provide a more positive perspective than I have been espousing, I think it ap
 * *Big Hero 6* (2014) was a fun and action-packed story that also wrestles with grief in a compelling manner. 
 * *Coco* (2017) was very well-animated and memorable in its tribute to family and culture.
 * *Frozen* (2013) has obviously seen much commercial success, and I think it is mostly deserved.
-* *The Lego Movie* (2014) is a masterpiece. For kids, it is obviously very entertaining, but also holds some satirical themes that adults can appreciate.
+* *The Lego Movie* (2014) is a masterpiece. For kids, it is obviously very entertaining, but it also holds some satirical themes that adults can appreciate.
 
 Anyway, there's my take on kids' movies. I've probably spent too much time watching them, but what can I say? That time was only wasted if the experience of watching the movies didn't help grow me into the (obviously hilarious) human being I am today.
 
