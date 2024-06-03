@@ -63,9 +63,9 @@ Despite being fickle in some ways, kids are mostly an easy audience. As long as 
 
 You know what movie I don't think holds up? Disney's *Atlantis*. I loved this movie as a kid: I would watch it over and over and I loved the big monsters and cool magic. A few years ago (when I was quarantined with COVID, actually), I decided to rewatch it for old time's sake, and I still remember the feeling of stark disappointment I had at discovering how much worse it was than I remembered. The dialogue was cheesy, the plot was lackluster, and I wasn't as entertained as I was as a kid. It just wasn't very good!
 
-Take *Kung Fu Panda*, on the other hand. I also loved this movie as a kid, yet still do now. So much so, in fact, that my high-school friends and I would host a monthly *Kung Fu Panda* watch party where we would get together and enjoy the masterful performance of Jack Black. It's funny, it's relevant, and it's entertaining. *SKADOOSH!*
+Take *Kung Fu Panda*, on the other hand. I also loved this movie as a kid, yet still do now. So much so, in fact, that my high-school friends and I used to host a monthly *Kung Fu Panda* watch party where we would get together and enjoy the masterful performance of Jack Black. It's funny, it's relevant, and it's entertaining. *SKADOOSH!*
 
-Enjoyability for all ages is the property that allows a movie to really be classic. When we, as children, have beloved movies, it feels so good when we can rewatch them as adults and still get the same enjoyment. 
+Enjoyability for all ages is the property that allows a movie to really be classic. When we, as children, have beloved movies, it feels amazing when we can rewatch them as adults and still get the same enjoyment. 
 
 <br>
 
@@ -73,7 +73,7 @@ Enjoyability for all ages is the property that allows a movie to really be class
 
 Key to a movie's rewatchability is its humor. If you look at the most critically-acclaimed kids' movies, they all have one thing in common: the jokes are good. I wholeheartedly believe that *The Emperor's New Groove* is funnier than most of the modern comedy films I've recently watched. *Is there anything on this menu that isn't swimming in gravy?* Similarly, I was getting a tattoo a few days ago, and I was laughing out loud talking to the artist about [some of the scenes from *Monsters vs. Aliens*](https://www.youtube.com/watch?v=XNzsPZ5cqkk).
 
-One of the last movies I've seen in theaters was *Kung Fu Panda 4*, the most recent addition to the *Kung Fu Panda* series. Unfortunately, it did not live up to the hype: I found it lackluster and unenjoyable. Why? Simply put: it wasn't funny! Even though the plot was subpar, I would have walked out of the theater with a smile on my face if it had maintained the consistency and potency of the humor from the first movie, but it didn't (the pacing of the dialogue was also weird, but that relates to a separate theory I have concerning children's media and the shortening of the American attention span). 
+One of the last movies I've seen in theaters was *Kung Fu Panda 4*, the most recent addition to the *Kung Fu Panda* series. Unfortunately, it did not live up to the standard of the first installments: I found it lackluster and unenjoyable. Why? Simply put: it wasn't funny! Even though the plot was subpar, I would have walked out of the theater with a smile on my face if it had maintained the consistency and potency of the humor from the first movie, but it didn't (the pacing of the dialogue was also weird, but that relates to a separate theory I have concerning children's media and the shortening of the American attention span). 
 
 If a movie is only funny when you're 7, it's not good!
 
