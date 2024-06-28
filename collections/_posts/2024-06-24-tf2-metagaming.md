@@ -61,7 +61,7 @@ The stickybomb launcher warrants closer inspection. This weapon is probably the 
   <img src="/images/posts/tf2-strategy/medic.png" />
 </p>
 
-The final Sixes class is medic. Medic plays the role of healing the rest of the team with his Medi Gun and healing crossbow. Medic has 150 health and a fast move-speed, albeit not as fast as a scout. 
+The final Sixes class is medic. Medic plays the role of healing the rest of the team with his Medi Gun and healing crossbow. He has 150 health and a fast move-speed, albeit not as fast as a scout. 
 
 It would be an understatement to call medic powerful. Without a medic, a team is effectively crippled. Scouts and demoman can do chip damage at far range, meaning that the un-healed team is prevented from even reaching the fight at full power. Additionally, medic possesses 2 abilities that change the flow of an entire game:
 * Overheal. When healing a target at full health, medics can give them extra health equal to 50% of their total maximum health. So, a fully-overhealed soldier goes from 200 health to 300. Needless to say, overhealing a player gives them a massive advantage in any 1v1 or fight they might be in. A fully overhealed team engaging with a non-overhealed team should win every time.
@@ -99,3 +99,5 @@ The player on the low ground is also disadvantaged in that it becomes harder to 
 The scout vs. soldier duel is a strategic one, with each class attempting to move the duel into an environment that most benefits them. 
 
 ### Scout vs. Demoman
+
+This is probably the most one-sided duel in a Sixes match. Unlike the soldier, demoman does not have any splash damage for his grenades, so he has to hit the scout directly for them to be effective. Stickies are similarly problematic, as their charge-up time before detonation makes them predictable for a skilled scout to avoid. The task of a demoman is to use his explosive capabilities to wall out the scout before the scout can close the gap between them. If the scout gets in close proximity, the demo is usually dead. 
