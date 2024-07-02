@@ -8,13 +8,13 @@ categories: TF2, gaming, strategy, video games
 
 **WARNING: This post is extremely long, verbose, nerdy, and niche.** Not recommended for the faint of heart (or anyone that doesn't really care about my hobbies). 
 
-## Continue at ye own peril...
+### Continue at ye own peril...
 
 I recently turned 22, and alongside [other phenomenal birthday gifts I received](https://imgur.com/a/gGPzWlR) my brother got me a Professional Killstreak Australium Medi Gun.
 
 ![Medic](/images/posts/tf2-strategy/australium.jpg "Shorty got the bling bling")
 
-What is that, you ask? Well, let me enlighten you. The Medi Gun is a weapon from one of the most masterfully-crafted video games to ever grace humanity with its presence: **Team Fortress 2** (and an Australium one is simply a cool-looking and expensive golden version of the same weapon). I have played Team Fortress 2 (TF2) since I was in middle school, and this game has somehow found a foothold in my life no matter the circumstances I find myself in. As a child, its casual appeal gave me hours of sitting around laughing at funny-looking taunts and gamemodes. As an adolescent, its trade economy gave me a way to try and make a little bit of money and barter for better and better items. Finally, when I was a bit older and gaming became a more competitive and serious hobby, it functioned as a fantastic platform for competition with an extremely competent and experienced playerbase. After 3000 hours of this game, I consider myself somewhat well-prepared to speak on the strategies that players utilize (this isn't me being modest: some people I play with have *tens of thousands* of hours). As I am currently in one of the inevitable phases where TF2 recaptures my attention and pulls me towards the competitive scene for a few months, I wanted to provide a rundown of exactly what is behind a competitive TF2 match, and, by extension, why I love this game so much. 
+What is that, you ask? Well, let me enlighten you. The Medi Gun is a weapon from one of the most masterfully-crafted video games to ever grace humanity with its presence: **Team Fortress 2** (and an Australium one is simply a cool-looking and expensive golden version of the same weapon). I have played Team Fortress 2 (TF2) since I was in middle school, and this game has somehow found a foothold in my life no matter the circumstances I find myself in. As a child, its casual appeal gave me hours of sitting around laughing at funny-looking taunts and gamemodes. As an adolescent, its trade economy gave me a way to try and make a little bit of money and barter for better and better items. Finally, when I was a bit older and gaming became a more competitive and serious hobby, it functioned as a fantastic platform for competition with an extremely competent and experienced playerbase. After 3000 hours of this game, I consider myself somewhat well-prepared to speak on the strategies that players utilize (this isn't me being modest: some people I play with have *tens of thousands* of hours of experience). As I am currently in one of the inevitable phases where TF2 recaptures my attention and pulls me towards the competitive scene for a few months, I wanted to provide a rundown of exactly what is behind a competitive TF2 match, and, by extension, why I love this game so much. 
 
 ## The History of TF2
 
@@ -65,7 +65,7 @@ The final Sixes class is medic. Medic plays the role of healing the rest of the 
 
 It would be an understatement to call medic powerful. Without a medic, a team is effectively crippled. Scouts and demoman can do chip damage at far range, meaning that the un-healed team is prevented from even reaching the fight at full power. Additionally, medic possesses 2 abilities that change the flow of an entire game:
 * Overheal. When healing a target at full health, medics can give them extra health equal to 50% of their total maximum health. So, a fully-overhealed soldier goes from 200 health to 300. Needless to say, overhealing a player gives them a massive advantage in any 1v1 or fight they might be in. A fully overhealed team engaging with a non-overhealed team should win every time.
-* ÜberCharge (I will not be using the umlaut for the rest of this post, but I wanted to use it at least once). Ubercharge (or Uber) is medic's special ability that allows him to make his heal target invincible for 8 seconds. In a fast-paced game such as TF2, invincibility is nothing to sneeze at. An invincible demoman jumping straight into your team is an unconditional recipe for destruction. Each medic possesses an Uber meter that charges by healing players. When the meter reaches 100%, they will be able to use their Ubercharge. It takes around a minute to build an Uber, and this rate is influenced by how consistently the medic is healing. 
+* ÜberCharge (I will not be using the umlaut for the rest of this post, but I wanted to use it at least once). Ubercharge (or Uber) is medic's special ability that allows him to make his heal target invincible for 8 seconds. In a fast-paced game such as TF2, invincibility is nothing to sneeze at. An invincible demoman jumping straight into your team is an unconditional recipe for destruction. Each medic possesses an Uber meter that charges by healing players. When the meter reaches 100%, they will be able to use their Ubercharge. It takes around a minute to build an Uber, and this rate is influenced by how consistently the medic is healing (additionally, healing injured players builds uber quicker, which leads to a strategy where players will intentionally hurt themselves to let their medic get uber faster: known as *building*).
 
 These two abilities of medic mean that the entire meta of competitive TF2 revolves around keeping your medic alive. If you have Uber and the enemy team doesn't, you are almost guaranteed to win the fight, and vice versa. At the macro level, team strategy is structured around maintaining Uber advantage above the enemy team, but I will discuss this later. Sixes only allows one medic per team, for obvious reasons. 
 
@@ -101,3 +101,67 @@ The scout vs. soldier duel is a strategic one, with each class attempting to mov
 ### Scout vs. Demoman
 
 This is probably the most one-sided duel in a Sixes match. Unlike the soldier, demoman does not have any splash damage for his grenades, so he has to hit the scout directly for them to be effective. Stickies are similarly problematic, as their charge-up time before detonation makes them predictable for a skilled scout to avoid. The task of a demoman is to use his explosive capabilities to wall out the scout before the scout can close the gap between them. If the scout gets in close proximity, the demo is usually dead. 
+
+### Other Duels
+
+Most of the other duels contain variations of the strategies found in the previously listed matchups. Soldier vs. soldier is determined by who hits the most accurate rockets, demo vs. demo is determined by who hits the most accurate stickies. If either of them has the high ground, they typically win. Soldier vs. demo is interesting in that it is decided similarly to scout vs. demoman. If the soldier can use his high mobility to close the gap between him and the demoman, he can usually use his high burst damage to outmatch his opponent. These duels highlight an important fact about demoman: despite being the best class at controlling choke points in a map, demo is the worst class for duelling. 
+
+It almost goes without saying that any damage class will demolish medic in a 1v1. This is an intentional part of game balance and adds an additional layer of strategy to the game. If you, as a lone scout, encounter a medic and a soldier, what should you do? Killing the medic is the most important part of the engagement, but do you risk trying to pick him off before the soldier gets you? Or do you attempt to defeat an overhealed soldier so that you can finish off the medic? Questions such as these arise frequently throughout the course of a match, adding strategy to arena-style duels.
+
+## Team Composition and Roles
+
+I've danced around the composition of a Sixes team throughout the post, but here it is in its entirety: 2 scouts, 2 soldiers, 1 demoman, and 1 medic.
+
+As I've mentioned previously, these classes stand above the other 5 in terms of power level, and so they form the basis for competitive strategy. What makes them powerful? Well, in TF2, mobility is king. The other 5 classes lack the movement abilities of scout's double-jump and run speed alongside the explosion jumping of soldier and demo. Mobility allows a class to choose when they want to engage in a duel: if they find themself in a disadvantageous situation, they have the option of attempting to escape. The other classes, on the other hand, are sitting ducks. Similarly, speedy classes make a speedy team. The ability to mobilize your team to whatever part of the battlefield is best for the fight you find yourselves in is incredibly helpful. 
+
+Let's take a closer look into the specific roles that the classes play on a team.
+
+Each team is composed of 2 parts: the *combo* and the *flank*. Generally, the combo comprises the medic, the demo, a scout, and sometimes a soldier. Each competitive TF2 map contains a main pathway to each point, known as "choke," and a flank route. The combo's job is to watch the choke and prevent the enemy combo from pushing through; or, if the enemy team rotates to flank, their job is to rotate with them in order to prevent them from pushing. Each team's flank, which is 1 scout and 1 soldier, is tasked with information-spotting and guarding the entrance that the combo is not watching. 
+
+Under this framework, despite teams having 2 scouts and 2 soldiers, each player performs an individual role. The scout that sticks with the combo is known as the pocket scout, and the scout that stays on the flank is called the flank scout. Similarly, the combo soldier is known as the pocket (no *soldier* in the name), while the flank soldier gets a special title: the *roamer*. 
+
+I'll provide a brief overview of the different responsibilities each role performs for a team:
+**Pocket scout**
+* Protects the medic from enemy soldiers
+* Builds uber with the medic with the use of a melee weapon that hurts the user
+* Provides movement speed to the medic (when a medic heals a scout, the medic gains movement speed equal to the scout)
+* Participates in the uber push alongside the demoman
+* *Maincalls*: verbally commands the positioning and strategy of the rest of the team
+
+**Flank scout**
+* Patrols the flank alongside the roamer
+* Picks off out-of-position enemies
+* Captures control points
+* Cleans up kills during teamfights
+
+**Pocket**
+* Protects the medic
+* Spams fire at chokepoints alongside the demoman to prevent enemy team pushes
+* Outputs consistent damage on called targets
+* Assists the roamer in "bombing" (rocket-jumping directly onto the enemy team to deal massive damage and eliminate key targets such as the medic)
+
+**Roamer**
+* Suicide-bombs the enemy team to attempt to kill the medic or get him to use uber prematurely to save his life
+* Watches the flank alongside the flank scout
+* Makes space and distracts by rocket-jumping through and behind the enemy team
+* Generally act as an assassin
+
+**Demoman**
+* Spams chokepoints to prevent the enemy from pushing
+* Deals huge amount of damage in a wide area
+* Arrives first at most team fights
+* Primary target for ubercharge
+* Lays sticky traps in key areas for point denial
+
+**Medic**
+* Heals teammates
+* Overheals key targets for bombing / survivability
+* Builds and uses ubercharge
+* Maincalls alongside the pocket scout
+* Tracks the enemy uber percentage
+
+In analyzing the responsibilities of each role, we can see how critical the medic is for each team. A large percentage of the responsibilies for each role (and almost an entire role itself in roamer) are dedicated simply to either killing the enemy medic or ensuring the survivability of one's own. 
+
+## Macro-level strategies
+
+ow might be a good time to describe exactly how a match is won. Each Sixes match is played on TF2 maps that contain a total of 5 control points. Each
