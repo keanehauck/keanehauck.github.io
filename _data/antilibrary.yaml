@@ -1,5 +1,13 @@
 [
     {
+        "title": "Stoner",
+        "author": "John  Williams",
+        "rating": "",
+        "isbn": "1590171993",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Color Purple",
         "author": "Alice Walker",
         "rating": "",

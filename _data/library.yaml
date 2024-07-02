@@ -1,5 +1,21 @@
 [
     {
+        "title": "Cannery Row (Cannery Row, #1)",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "014200068X",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "Cat\u2019s Cradle",
+        "author": "Kurt Vonnegut Jr.",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0140285601",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Great Divorce",
         "author": "C.S. Lewis",
         "rating": "\u2605\u2605\u2605\u2605",
@@ -11,7 +27,7 @@
         "title": "Milkweed",
         "author": "Jerry Spinelli",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0440420059",
+        "isbn": "9780375861475",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -140,14 +156,6 @@
         "author": "Orson Scott Card",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0812550757",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Giving Tree",
-        "author": "Shel Silverstein",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0060256656",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -472,14 +480,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Green Eggs and Ham",
-        "author": "Dr. Seuss",
-        "rating": "\u2605\u2605",
-        "isbn": "0394800168",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "Where the Sidewalk Ends",
         "author": "Shel Silverstein",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -523,7 +523,7 @@
         "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780547928210",
         "review_path": null,
         "year_i_finished_reading": null
     },

@@ -164,4 +164,4 @@ In analyzing the responsibilities of each role, we can see how critical the medi
 
 ## Macro-level strategies
 
-ow might be a good time to describe exactly how a match is won. Each Sixes match is played on TF2 maps that contain a total of 5 control points. Each
+Now might be a good time to describe exactly how a match is won. Each Sixes match is played on TF2 maps that contain a total of 5 control points. Each

@@ -29,7 +29,7 @@ IGNORED_AUTHORS = {
 # even though the ISBN info is available in Goodreads if you look up the data on their website.
 TITLE_TO_ISBN = {
     "The Great Divorce": "9780060652951",
-    "Milkweed": "0440420059",
+    "Milkweed": "9780375861475",
     "The Naked Sun (Robot, #2)": "0553293397",
     "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)": "9780345418913",
     "Night (The Night Trilogy, #1)": "9780374500016",
@@ -38,6 +38,7 @@ TITLE_TO_ISBN = {
     "Nine Tomorrows": "0345320727",
     "The Picture of Dorian Gray": "9780141439570",
     "The Lord of the Rings": "9780358439196",
+    "The Fellowship of the Ring (The Lord of the Rings, #1)": "9780547928210",
     "One Flew Over the Cuckoo's Nest": "9780451163967",
     "One Hundred Years of Solitude": "9780061120091",
     "Till We Have Faces": "9780062565419",
