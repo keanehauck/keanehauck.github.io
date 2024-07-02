@@ -121,6 +121,7 @@ Each team is composed of 2 parts: the *combo* and the *flank*. Generally, the co
 Under this framework, despite teams having 2 scouts and 2 soldiers, each player performs an individual role. The scout that sticks with the combo is known as the pocket scout, and the scout that stays on the flank is called the flank scout. Similarly, the combo soldier is known as the pocket (no *soldier* in the name), while the flank soldier gets a special title: the *roamer*. 
 
 I'll provide a brief overview of the different responsibilities each role performs for a team:
+
 **Pocket scout**
 * Protects the medic from enemy soldiers
 * Builds uber with the medic with the use of a melee weapon that hurts the user
