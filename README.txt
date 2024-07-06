@@ -40,4 +40,4 @@ research posts are sorted by date: earliest is first
 
 how to add a book to library: go to goodreads and export. then, move the goodreads export file to _data. Then, run the updatelibrary.py script in tools. should work.
 
-IF you want a review with a book that has '#' in its title, I modified the updater so it handles that. just remove it in the review file name.
+IF you want a review with a book that has '#' in its title, I modified the updater so it handles that. just remove it in the review file name. Same for ',' '(' ')'.
