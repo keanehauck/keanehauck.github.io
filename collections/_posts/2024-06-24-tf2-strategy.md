@@ -186,4 +186,4 @@ talk about
 
 At the end of the day, TF2 is a shooter game. And what better to highlight in a shooter game than some shots.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EvT8FZziy-U?si=MbD19P9ff1s6bZYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/EvT8FZziy-U?si=MbD19P9ff1s6bZYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
