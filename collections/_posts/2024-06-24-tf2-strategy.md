@@ -182,3 +182,8 @@ This is why getting to mid first is so important: it gives you defender's advant
 talk about roll out
 
 talk about 
+
+
+At the end of the day, TF2 is a shooter game. And what better to highlight in a shooter game than some shots.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EvT8FZziy-U?si=MbD19P9ff1s6bZYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
