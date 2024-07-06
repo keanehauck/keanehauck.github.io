@@ -171,7 +171,7 @@ Now might be a good time to describe exactly how a match is won. Each Sixes matc
 
 This first fight, known as "Mid," is critically important for determining the flow of the rest of the game. If team A wipes the entire enemy team B on mid without suffering any losses of their own, team A normally has enough time to capture the 2nd point before the enemy team respawns as well as build uber before the enemy medic can prevent their push into last. If such a catastrophic mid is allowed to happen, the round is usually over. Conversely, if a team loses the mid fight but manages to escape with the majority of their players and their medic alive, they are now in a position of playing defense on their 2nd point, which is a much more advantageous state to be in. If a fight is lost on 2nd while both teams use uber, the losing team normally has time to respawn and hold their last point (known as "last") while building uber at the same rate as the enemy team. 
 
-One of the reasons why holding last and holding 2nd after a lost mid fight are considered to be reasonable and successful positions for your team to be in relates to the concept of *defender's advantage*. When a team is defending a point rather than attacking, there are multiple factors that swing the fight in their favor. For example, 
+One of the reasons why holding last and holding 2nd after a lost mid fight are considered to be reasonable and successful positions for your team to be in relates to the concept of *defender's advantage*. When a team is defending a point rather than attacking, there are multiple factors that swing the fight in their favor. For example, the attacking team must first close the gap between themselves and the defending team in order to initiate a fight, either by pushing through a chokepoint or 
 
 This is why getting to mid first is so important: it gives you defender's advantage in an otherwise even fight.
 
@@ -186,4 +186,4 @@ talk about
 
 At the end of the day, TF2 is a shooter game. And what better to highlight in a shooter game than some shots.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/EvT8FZziy-U?si=MbD19P9ff1s6bZYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/EvT8FZziy-U?si=MbD19P9ff1s6bZYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
