@@ -2,7 +2,7 @@
   <h3>Want to get blog posts over email?</h3>
   <p>Enter your email address and get notified when there's a new post!</p>
   
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRPFbBnXIQN1OzsjauH_xLDyZ3Q38IlLkaY_8j_S0_IWzz9Q/viewform?embedded=true" width="100%" height="431" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <button class="open-button" onclick="openForm()">Sign-Up</button>
   
   <p>(I know using Google Forms for this might seem a bit... uncouth. I'm still figuring out how to accept user responses to a database - cut me some slack)</p>
 </section>
@@ -84,125 +84,21 @@
   }
 </style>
 
-<script>
-  /**
-   * @param {String} HTML representing a single element
-   * @return {Element}
-   */
-  const htmlToElement = (html) => {
-    var template = document.createElement("template");
-    /* Never return a text node of whitespace as the result */
-    html = html.trim();
-    template.innerHTML = html;
-    return template.content.firstChild;
-  };
 
-  let subscriptionSignupForm = (
-    elemSelector,
-    subscriptionCreateEndpoint,
-    wakeEndpoint
-  ) => {
-    let state = {
-      loading: true,
-      woke: false,
-      success: false,
-    };
 
-    let $form = document.querySelector(elemSelector);
-    const $submitButton = $form.querySelector("input[type=submit]");
-    const errorMessageId = "subscription-signup-error";
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRPFbBnXIQN1OzsjauH_xLDyZ3Q38IlLkaY_8j_S0_IWzz9Q/viewform?embedded=true" width="100%" height="431" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-    const clearError = () => {
-      $submitButton.classList.remove("error");
-      let errMsg = document.getElementById(errorMessageId);
-      if (errMsg !== null) errMsg.outerHTML = "";
-    };
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 
-    const showError = (err) => {
-      $submitButton.classList.add("error");
-      const errorParaStyle =
-        "color: #f70f1c; display: flex; align-items: center; margin-top: 1em;";
-      $form.appendChild(
-        htmlToElement(`
-            <p id="${errorMessageId}" style="${errorParaStyle}">${err}</p>
-        `)
-      );
-    };
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-    const render = () => {
-      if (state.loading) {
-        $submitButton.classList.add("pulse");
-        $submitButton.innerText = "Wait…";
-        clearError();
-      } else if (state.success) {
-        clearError();
-        $submitButton.classList.remove("pulse");
-        $submitButton.innerText = "Done!";
-        $submitButton.disabled = true;
-        const successParaStyle =
-          "color: rgb(21 128 61); display: flex; align-items: center; margin-top: 1em;";
-        const successSvgStyle = "height: 20px; padding-right: 4px";
-        $form.appendChild(
-          htmlToElement(`
-                    <p style="${successParaStyle}">
-                        <svg style="${successSvgStyle}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="mr-2 h-4 w-4"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        Hooray! You're now on the list.
-                    </p>
-                `)
-        );
-      } else if (state.error) {
-        $submitButton.classList.remove("pulse");
-        $submitButton.disabled = false;
-        showError(state.error);
-      } else {
-        $submitButton.classList.remove("pulse");
-        $submitButton.innerText = "Submit";
-      }
-    };
-
-    $form.addEventListener("mouseover", (event) => {
-      if (state.woke) return;
-
-      state.woke = true;
-      fetch(wakeEndpoint).then((response) => {
-        if (!response.ok) {
-          console.log("Failed to wake serverless endpoint.");
-        }
-      });
-    });
-
-    $form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const formData = new FormData(event.target);
-      const formProps = Object.fromEntries(formData);
-      console.log("Form submitted!");
-      console.log(formProps);
-      state.loading = true;
-
-      render();
-
-      fetch(`${subscriptionCreateEndpoint}?email=${formProps.useremail}`)
-        .then((response) => {
-          state.loading = false;
-          if (!response.ok) {
-            state.error = `HTTP error! Apologies for the poor service (status: ${response.status}).`;
-            render();
-            throw new Error(state.error);
-          } else {
-            state.error = null;
-          }
-          return response.json();
-        })
-        .then((data) => {
-          state.success = true;
-          render();
-        });
-    });
-  };
-
-  const endpointRootURL =
-    "https://keanehauck.com";
-  const subscribeEndpoint = `${endpointRootURL}/subscribe`;
-  const wakeEndpoint = `${endpointRootURL}/wake`;
-  subscriptionSignupForm("#subscribe-cta", subscribeEndpoint, wakeEndpoint);
-</script>
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
