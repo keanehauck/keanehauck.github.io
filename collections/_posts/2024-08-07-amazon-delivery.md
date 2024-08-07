@@ -3,7 +3,7 @@ layout: post
 title: The Perks of Delivering
 date: 2024-08-07
 summary: Amazon packages, not babies.
-categories: college, work, jobs, amazon
+categories: college work jobs amazon
 ---
 
 If you know me, you know I like oddball jobs. I've never been one to feel content with some of the more traditional types of college employment such as fast-food or retail, and, as such, I have held a couple of interesting employment positions throughout the past few years. In high school, I worked at a lake as a paddleboard instructor:
