@@ -6,7 +6,7 @@ summary: Amazon packages, not babies.
 categories: college, work, jobs, amazon
 ---
 
-If you know me, you know I like oddball jobs. I've never been one to feel content with some of the more traditional types of college employment such as fast-food or retail, and as such I have held a couple of interesting employment positions throughout the past few years. In high school, I worked at a lake as a paddleboard instructor:
+If you know me, you know I like oddball jobs. I've never been one to feel content with some of the more traditional types of college employment such as fast-food or retail, and, as such, I have held a couple of interesting employment positions throughout the past few years. In high school, I worked at a lake as a paddleboard instructor:
 
 ![FFF](/images/posts/amazon-delivery/fff.png "Not pictured: the 5 snakes that lived on the shoreline")
 *The team*
@@ -70,6 +70,8 @@ On my second-to-last day, the e-brake got stuck for one of the wheels on my van 
 
 If you're curious, I did pee in water bottles. It's a stereotype of delivery drivers for a reason.
 
+
+
 Also, customers can leave delivery instructions for how they wish their packages to arrive, which are often ridiculous for so many reasons. Some are funny:
 
 ![Huskies](/images/posts/amazon-delivery/huskies.png)
@@ -93,10 +95,13 @@ Some are messing with me:
 Some don't realize that their instructions apply to every order:
 
 ![Christmas](/images/posts/amazon-delivery/christmas.png)
+*This was in July*
 
 And some just have funny names:
 
 ![Bob](/images/posts/amazon-delivery/bob.png)
+
+
 
 The most ridiculous thing that happened to me was the airstrip incident. 
 
