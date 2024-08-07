@@ -11,6 +11,8 @@ If you know me, you know I like oddball jobs. I've never been one to feel conten
 ![FFF](/images/posts/amazon-delivery/fff.png "Not pictured: the 5 snakes that lived on the shoreline")
 *The team*
 
+
+
 Last summer, I **Cable Mapped**: an extremely taxing and independent job that comprised land surveying and system design of fiber internet systems for Comcast. It sounds complex, which it was, but it was extremely fun. I got to live out of my car and not talk to anyone for weeks straight.
 
 ![Donkey](/images/posts/amazon-delivery/donkey.jpg)
@@ -29,12 +31,16 @@ Packages are provided to us by the warehouse in 2 different forms: totes and ove
 ![Packages](/images/posts/amazon-delivery/packages.jpg "Prime week")
 *Pictured on the right: totes. Pictured on the left: overflow.*
 
+
+
 The one saving grace of overflow packages is that they have a 50-pound limit, which is good, because I also have around a 50-pound limit. 
 
 After loadout, you're on your way. You are also provided a phone with the Amazon app, which directs you to each stop sequentially. The app works fairly well overall, but the built-in GPS is *ass*. It frequently directs you through non-existent roads, points you to the wrong houses, and just flat-out stops working. Get used to pulling up Google Maps on your own phone, because you're gonna need it.
 
 ![Example route](/images/posts/amazon-delivery/route.jpg)
 *An example route with stops numbered*
+
+
 
 Speaking of your own phone, you're not allowed to use it. Kind of. The rules for delivery change based on the type of van you get. 
 
@@ -62,11 +68,15 @@ There's just so much random and hilarious stuff that happens while you're delive
 
 ![Backpack](/images/posts/amazon-delivery/backpack.jpeg "I got really jealous")
 
+
+
 One day I delivered 7 different bidets to various homes. I affectionately called it the Bidetpocalypse.
 
 On my second-to-last day, the e-brake got stuck for one of the wheels on my van while I was in the warehouse. I couldn't get it to move, so my supervisor hopped in the van and *gunned* it out of the warehouse, leaving a huge skidmark and demolishing a speedbump in the process. 
 
 ![Skidmark](/images/posts/amazon-delivery/skidmark.jpg "I should've taken a picture of the speedbump.")
+
+
 
 If you're curious, I did pee in water bottles. It's a stereotype of delivery drivers for a reason.
 
