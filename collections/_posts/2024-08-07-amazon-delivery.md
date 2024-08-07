@@ -11,7 +11,7 @@ If you know me, you know I like oddball jobs. I've never been one to feel conten
 ![FFF](/images/posts/amazon-delivery/fff.png "Not pictured: the 5 snakes that lived on the shoreline")
 *The team*
 
-
+<br>
 
 Last summer, I **Cable Mapped**: an extremely taxing and independent job that comprised land surveying and system design of fiber internet systems for Comcast. It sounds complex, which it was, but it was extremely fun. I got to live out of my car and not talk to anyone for weeks straight.
 
@@ -19,6 +19,8 @@ Last summer, I **Cable Mapped**: an extremely taxing and independent job that co
 *A typical mapping experience. Not joking.*
 
 Honestly, the entire cable mapping experience could be a post of its own. It was condensed chaos.
+
+<br>
 
 This summer, I continued the trend of outside, independent jobs by working as a delivery driver for Amazon. Way to stick it to the big corporations, right? My name is Keane Hauck and in this essay I will explain why offbeat jobs are ideal alongside why working for Amazon is *really not as bad as it could have been please don't hurt me I'm not a corporate shill*
 
@@ -68,7 +70,7 @@ There's just so much random and hilarious stuff that happens while you're delive
 
 ![Backpack](/images/posts/amazon-delivery/backpack.jpeg "I got really jealous")
 
-
+<br>
 
 One day I delivered 7 different bidets to various homes. I affectionately called it the Bidetpocalypse.
 
@@ -76,11 +78,11 @@ On my second-to-last day, the e-brake got stuck for one of the wheels on my van 
 
 ![Skidmark](/images/posts/amazon-delivery/skidmark.jpg "I should've taken a picture of the speedbump.")
 
-
+<br>
 
 If you're curious, I did pee in water bottles. It's a stereotype of delivery drivers for a reason.
 
-
+<br>
 
 Also, customers can leave delivery instructions for how they wish their packages to arrive, which are often ridiculous for so many reasons. Some are funny:
 
@@ -111,7 +113,7 @@ And some just have funny names:
 
 ![Bob](/images/posts/amazon-delivery/bob.png)
 
-
+<br>
 
 The most ridiculous thing that happened to me was the airstrip incident. 
 
