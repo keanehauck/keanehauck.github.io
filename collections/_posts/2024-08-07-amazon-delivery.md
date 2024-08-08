@@ -26,14 +26,14 @@ This summer, I continued the trend of outside, independent jobs by working as a 
 
 ## How it worked
 
-Delivery driving is *hard*. Every day, we would be assigned a specific route to follow and a van which we would have to load ourselves. In the mornings, we would meet at an offsite location to prep the vans, and then drive in waves over to the warehouse for package loading. So, in intervals, a fleet of vans would drive up to the warehouse, all the drivers would hop out, and everyone would load all 200-odd packages into the van in the span of about 15 minutes. This is probably the most chaotic part of the day - each wave is on an extremely tight time requirement so that the following waves don't fall behind on schedule. This results in a lot of drivers running around the warehouse with carts of packages like chickens with their heads cut off. 
+Delivery driving is *hard*. Every day, we would be assigned a specific route to follow and a van which we would have to load ourselves. In the mornings, we would meet at an offsite location to prep the vans, and then drive in waves over to the warehouse for package loading. So, in intervals, a fleet of vans would drive up to the warehouse, all the drivers would hop out, and everyone would load their 200-odd packages into the van in the span of about 15 minutes. This is probably the most chaotic part of the day - each wave is on an extremely tight time requirement so that the following waves don't fall behind on schedule. This results in a lot of drivers running around the warehouse with carts of packages like chickens with their heads cut off. 
+
+![Cartguy](/images/posts/amazon-delivery/cartguy.jpg "Get to stackin'")
 
 Packages are provided to us by the warehouse in 2 different forms: totes and overflow. Totes are big bags of 20-30 packages each, which are easy to load because they're just one big thing to pick up. Overflow, on the other hand, are all the other miscellaneous packages that do not fit in totes (think: furniture, tools, etc.). The overflow are a nightmare to load - you are provided the order in which you will be delivering them, but they aren't sorted for you at the warehouse. So, each morning, you have to frantically search through entire carts full of assorted packages to find the specific sequence of delivery numbers. If you don't load them in order, you will waste large amounts of time on the road by having to sift through the entire van to find the right package. Remember, you gotta get all this done in 15 minutes.
 
 ![Packages](/images/posts/amazon-delivery/packages.jpg "Prime week")
 *Pictured on the right: totes. Pictured on the left: overflow.*
-
-
 
 The one saving grace of overflow packages is that they have a 50-pound limit, which is good, because I also have around a 50-pound limit. 
 
@@ -42,11 +42,14 @@ After loadout, you're on your way. You are also provided a phone with the Amazon
 ![Example route](/images/posts/amazon-delivery/route.jpg)
 *An example route with stops numbered*
 
-
+<br>
 
 Speaking of your own phone, you're not allowed to use it. Kind of. The rules for delivery change based on the type of van you get. 
 
 About a quarter of the vans were non-branded vans (like Penske or Ryder), which were the desired ones. The branded Prime vans, on the other hand, all contained truckloads (pun intended) of metric-monitoring hardware: the worst offender of which is the *Netradyne Driveri*. The Netradyne Driveri is an AI-powered camera system that tracks your speed, following distance, stop sign compliance, phone usage, and many other metrics. If you are found to be in violation of any of these metrics (such as driving over the speed limit, not providing enough following distance, picking up any cellular device, etc.), you get a violation. 3 violations and you're suspended. 
+
+![Stopsign](/images/posts/amazon-delivery/stopsign.jpg "Don't ask about the rabbits.")
+*The approximate distance you need to stop before a stop sign in order to not get a violation*
 
 As you can imagine, it's incredibly preferable to get a non-branded van each day. Unfortunately, I only was lucky enough to get them a couple times. I think they prioritize giving them to the senior drivers. 
 
@@ -58,7 +61,7 @@ Once you get settled into the daily rhythm, they'll find a consistent route to g
 
 Each route has an expected completion time assigned by the Great Amazon Algorithm. Each route is estimated to take 10 hours - if you spend too much time between your stops, you fall behind. If you fall behind, you get in trouble from Dispatch. This is one of the main things about the job that sucks: you aren't as work-independent as you think you are. If it's a busy route, you have to constantly be moving: if you stop, or take time at your own pace, you won't finish in time. You're forced to work at the pace that Amazon expects.
 
-One critical job skill you'll soon develop is the skill of estimating how long a route will take. They don't block pay for the full 10 hour shift, so on slow days a large portion of the job is wasting time to get your hours in. On slow days I would dump all of the packages in one big pile instead of sorting them so that it would take me longer to find each package for my stops. There's always this weird push-and-pull of slow days being boring but busy days being frantic. It would be rare to have days nicely in the middle.
+Slow routes can be tedious too. One critical job skill you'll soon develop is the skill of estimating the pace you need to work at. They don't block pay for the full 10 hour shift, so on slow days a large portion of the job consists of wasting time to get your full hours in. On slow days I would dump all of the packages in one big pile instead of sorting them so that it would take me longer to find each package for my stops. There's always this weird push-and-pull of slow days being boring but busy days being frantic. It would be rare to have days nicely in the middle.
 
 The worst part of the job, by far, is the lack of self-advocacy. The camera that tracks infractions is often wrong/unfair, and there's no real way to stand up for yourself. If someone cuts you off on the highway, you get lit up for not leaving enough following distance, even though it was no fault of your own. If you think your road rage is bad currently, wait until shitty drivers make you get actively punished at your workplace. 
 
