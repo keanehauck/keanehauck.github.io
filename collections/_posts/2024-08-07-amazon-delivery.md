@@ -48,7 +48,7 @@ Speaking of your own phone, you're not allowed to use it. Kind of. The rules for
 
 About a quarter of the vans were non-branded vans (like Penske or Ryder), which were the desired ones. The branded Prime vans, on the other hand, all contained truckloads (pun intended) of metric-monitoring hardware: the worst offender of which is the *Netradyne Driveri*. The Netradyne Driveri is an AI-powered camera system that tracks your speed, following distance, stop sign compliance, phone usage, and many other metrics. If you are found to be in violation of any of these metrics (such as driving over the speed limit, not providing enough following distance, picking up any cellular device, etc.), you get a violation. 3 violations and you're suspended. 
 
-![Stopsign](/images/posts/amazon-delivery/stopsign.jpg "Don't ask about the rabbits.")
+![Stopsign](/images/posts/amazon-delivery/stopsign.png "Don't ask about the rabbits.")
 *The approximate distance you need to stop before a stop sign in order to not get a violation*
 
 As you can imagine, it's incredibly preferable to get a non-branded van each day. Unfortunately, I only was lucky enough to get them a couple times. I think they prioritize giving them to the senior drivers. 
