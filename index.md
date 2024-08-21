@@ -15,13 +15,11 @@ tags: home
 
 <br>
 
-Currently, I'm an undergraduate student studying Psychology at the University of Oklahoma. I conduct research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Faculty I've worked closely with include Dr. Jenel Cavazos, Dr. Robert Terry, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
+Currently, I'm an undergraduate student studying Psychology at the University of Oklahoma. I conduct research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Faculty I've worked closely with include Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
 
 Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
-Alternatively, for my publications and more details about my academics, please see my [**CV →**](/images/CV.pdf)
-
- <a href="/images/CV.pdf" target="_blank">Opens in new tab</a>
+Alternatively, for my publications and more details about my academics, please see my  <a href="/images/CV.pdf" target="_blank">**CV →**</a>
 
 <br>
 
