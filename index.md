@@ -21,6 +21,8 @@ Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
 Alternatively, for my publications and more details about my academics, please see my [**CV →**](/images/CV.pdf)
 
+ <a href="/images/CV.pdf" target="_blank">Opens in new tab</a>
+
 <br>
 
 I can usually be found on my computer or reading!
