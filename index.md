@@ -7,19 +7,19 @@ tags: home
 
 <img src="/images/keanelondon.jpg" alt="Me" title="Taken outside the British National Gallery" width="300" height="200" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
-### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (I had to look up how to spell that word). Welcome to my website! 
+### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (kind of). Welcome to my website! 
 
 <br>
 
-### Here, you can find links to my research, blog, and contact information. Please keep in mind that this website is a work in progress, and there may be multiple placeholder links!
+### Here, you can find links to my research, blog, and contact information.
 
 <br>
 
-Currently, I'm an undergraduate student studying Psychology at the University of Oklahoma. I conduct research utilizing factor analysis and machine learning with an applied focus in AI usage among college students and student retention patterns. Faculty I've worked closely with include Dr. Jenel Cavazos, Dr. Robert Terry, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
+Currently, I'm an undergraduate student studying Psychology at the University of Oklahoma. I conduct research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Faculty I've worked closely with include Dr. Jenel Cavazos, Dr. Robert Terry, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
 
 Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
-Alternatively, for my publications and more details about my academic life, please see my [**CV →**](/images/CV.pdf)
+Alternatively, for my publications and more details about my academics, please see my [**CV →**](/images/CV.pdf)
 
 <br>
 
