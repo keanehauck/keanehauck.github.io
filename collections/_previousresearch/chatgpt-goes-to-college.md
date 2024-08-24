@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ChatGPT goes to College
-date: 2024-05-14
+date: 2021-05-14
 summary: Exploring student perspectives on artificial intelligence in the classrooom.
 tags: Research, AI, academics, social psychology
 ---
