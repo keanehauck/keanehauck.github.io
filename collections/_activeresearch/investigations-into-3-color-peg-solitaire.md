@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Investigations into 3-color Peg Solitaire"
+title: "Investigations into Multicolor Peg Solitaire"
 date: 2024-05-15
 summary: Analyzing the solvability of variations of classic peg solitaire.
 tags: research, game theory, peg solitaire, proofs
@@ -17,7 +17,9 @@ advisor and I extend this work to a variation on the traditional rules where the
 
 ![3-Color Rules](/images/research/peg-solitaire/3color.png "Davis et al., 2020")
 
-Adding this ruleset drastically changes what we know about the solvability of different types of graphs. Under the guidance of my advisor, Dr. Lauren Grimley, I have done work to prove the solvability of all boards of height 4 and 5, and have inductively proven the number of starting positions on triangle boards up to symmetry.
+Adding this ruleset drastically changes what we know about the solvability of different types of graphs. Until recently, this section was titled "Investigations into 3-color Peg Solitaire," but recently we expanded our focus to all numbers of colors through a generalization of the ruleset.
 
-A brief write-up of our work can be found [here.](/images/research/peg-solitaire/PegSolitaire.pdf)
+Under the guidance of my advisor, Dr. Lauren Grimley, I have done work to prove the solvability of all triangle boards for all colors, and have inductively proven the number of starting positions on triangle boards up to symmetry.
+
+Our work is currently quite volatile, as new solution strategies are uncovered quite frequently. For the most current information available, feel free to email me.
 
