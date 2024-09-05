@@ -2,7 +2,7 @@
 layout: page
 title: Dynamic Exploration-Exploitation Learning Model
 date: 2024-05-13
-summary: Exploring workplace learning patterns through a dynamic model 
+summary: Exploring workplace learning patterns through a dynamic model.
 tags: Research, student, academics, learning, coding
 ---
 
