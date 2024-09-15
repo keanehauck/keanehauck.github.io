@@ -3,7 +3,7 @@ layout: post
 title: "How to Win at TF2"
 date: 2024-06-24
 summary: A basic overview of the competitive strategy in my favorite game, ranging from the micro-level all the way to the macro.
-categories: TF2, gaming, strategy, video games
+categories: TF2 gaming strategy video games
 ---
 
 **WARNING: This post is extremely long, verbose, nerdy, and niche.** Not recommended for the faint of heart (or anyone that doesn't really care about my hobbies). 

@@ -3,7 +3,7 @@ layout: post
 title: A Good Children's Movie Is Hard to Find
 date: 2024-06-02
 summary: Why making good movies for kids is so dang important (and so dang hard).
-categories: movies, film, media
+categories: movies film media
 ---
 
 ![Emperor Kuzco](/images/posts/childrens-movies/llama.jpg)

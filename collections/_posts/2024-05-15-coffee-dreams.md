@@ -3,7 +3,7 @@ layout: post
 title: Coffee Dreams
 date: 2024-05-15
 summary: Getting into coffee as a pure-blooded American.
-categories: coffee, food, drink
+categories: coffee food drink
 ---
 
 ![Coffee Guide](/images/posts/coffee-dreams/coffee.jpg)
