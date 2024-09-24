@@ -9,6 +9,8 @@ tags: home
 
 <img src="/images/keaneheadshot.png" alt="Me" title="Reminds me of 8th grade" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
+<br>
+
 ### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (kind of). Welcome to my website! 
 
 <br>
