@@ -7,7 +7,7 @@ tags: home
 
 *Now with a cheesy school picture!
 
-<img src="/images/keaneheadshot.png" alt="Me" title="Reminds me of 8th grade" width="300" height="200" ALIGN="left" HSPACE="50" VSPACE="25"/> 
+<img src="/images/keaneheadshot.png" alt="Me" title="Reminds me of 8th grade" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
 ### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (kind of). Welcome to my website! 
 
