@@ -3,7 +3,7 @@ layout: default
 tags: home
 ---
 
-# Keane A. Hauck*
+# Keane A. Hauck
 
 *Now with a cheesy school picture!
 
