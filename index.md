@@ -11,7 +11,7 @@ tags: home
 
 <br>
 
-### I'm an amateur quantitative methodologist, computer scientist, and TF2 enthusiast. Welcome to my website! 
+### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (kind of). Welcome to my website! 
 
 <br>
 
