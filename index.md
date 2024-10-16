@@ -27,8 +27,5 @@ Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 Alternatively, for my publications and more details about my academics, please see my  <a href="/images/CV.pdf" target="_blank">**CV →**</a>
 
 
-
-<br>
-
 _____________________________________________________________________
 > "So long as you always maintain your sense of exploration, you will someday find the way out." - Unknown, *Cave Story*
