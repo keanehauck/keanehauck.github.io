@@ -39,4 +39,4 @@ A few things I've enjoyed recently:
 <br>
 
 
-> "So long as you always maintain your sense of exploration, you will someday find the way out." - Unknown, Cave Story
+> "So long as you always maintain your sense of exploration, you will someday find the way out." - Unknown, *Cave Story*
