@@ -26,14 +26,6 @@ Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
 Alternatively, for my publications and more details about my academics, please see my  <a href="/images/CV.pdf" target="_blank">**CV →**</a>
 
-<br>
-
-I can usually be found on my computer or reading!
-A few things I've enjoyed recently:
-
-- [How to do what you love.](https://www.paulgraham.com/love.html) As an undergraduate currently navigating the wild world of career self-discovery, I appreciate the perspective of someone wiser than I in finding a way to love life. 
-- Good old-fashioned books 📖. Two recent favourites are [_Cat's Cradle_](https://www.goodreads.com/book/show/135479.Cat_s_Cradle) and [_The Caves of Steel._](https://www.goodreads.com/book/show/41811.The_Caves_of_Steel)
-- [The Fermi Paradox](https://waitbutwhy.com/2014/05/fermi-paradox.html). One of my favorite topics to ponder.
 
 <br>
 <br>

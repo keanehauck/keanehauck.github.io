@@ -10,10 +10,10 @@ Just my website, completely stolen from thundergolfer. The theme is [thundergolf
 
 ### What you can find there
 
-* [Blog posts](http://thundergolfer.com/)
-* [My 'library' and 'antilibrary'](http://thundergolfer.com/library)
-* [A crude summary of my research](http://thundergolfer.com/projects/)
-* [A basic about me page](http://thundergolfer.com/about/)
+* [Homepage](http://keanehauck.com/)
+* [My blog posts](http://keanehauck.com/blog)
+* [A crude summary of my research](http://keanehauck.com/research/)
+* [A basic about me page](http://keanehauck.com/about/)
 
 ### Other places you can find me
 
