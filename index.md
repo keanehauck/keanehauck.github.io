@@ -39,4 +39,4 @@ A few things I've enjoyed recently:
 <br>
 
 
-Thank you to Jonathon Belotti for publishing and letting me use his source code for a website. I would not have been smart enough to set this up on my own.
+> "So long as you always maintain your sense of exploration, you will someday find the way out." - Unknown, Cave Story
