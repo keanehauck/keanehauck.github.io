@@ -1,6 +1,6 @@
 # keanehauck.github.io
 
-Just my website, completely stolen from thundergolfer. The theme is [thundergolfer/**junior-theme**](https://github.com/thundergolfer/junior-theme)
+Just my website. The theme is [thundergolfer/**junior-theme**](https://github.com/thundergolfer/junior-theme)
 
 ----
 
@@ -22,7 +22,3 @@ Just my website, completely stolen from thundergolfer. The theme is [thundergolf
 
 ----
 
-### Development
-
-Development documentation is in [DEVELOPMENT.md](DEVELOPMENT.md)
- keanehauck.github.io
