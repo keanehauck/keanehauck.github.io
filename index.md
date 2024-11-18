@@ -7,7 +7,7 @@ tags: home
 
 *Now with a cheesy school picture!
 
-<img src="/images/keaneheadshot.png" alt="Me" title="Reminds me of 8th grade" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
+<img src="/images/mountain.jpg" alt="Me" title="Grand Teton National Park" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
 <br>
 
