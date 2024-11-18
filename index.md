@@ -5,8 +5,6 @@ tags: home
 
 # Keane A. Hauck
 
-*Now with a cheesy school picture!
-
 <img src="/images/mountain.jpg" alt="Me" title="Grand Teton National Park" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
 <br>
