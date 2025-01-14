@@ -5,7 +5,7 @@ tags: home
 
 # Keane A. Hauck
 
-<img src="/images/mountain.jpg" alt="Me" title="Grand Teton National Park" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
+<img src="/images/budapest.jpg" alt="Me" title="Budapest" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
 <br>
 
@@ -18,7 +18,7 @@ tags: home
 <br>
 <br>
 
-Currently, I'm an undergraduate student studying Psychology at the University of Oklahoma. I conduct research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Faculty I've worked closely with include Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
+I recently graduated from the University of Oklahoma with my B.S. in Psychology. As a student, I conducted research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Now, I do data science work for the university. Faculty I've worked closely with include Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
 
 Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
