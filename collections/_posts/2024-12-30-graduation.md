@@ -119,7 +119,7 @@ Alongside my senior thesis, I also conducted work on student retention data with
 
 Overall, this year really was just a bunch of academics. It was SO, SO fun, though. More than anything, it opened my eyes to the opportunities that are available to individuals pursuing research. Some of my favorite memories from the year are from presenting my paper at conferences like SWPA or OPS (I won 'Best Undergraduate Paper' at one!). It helped me solidify my certainty that I was on a good path for me.
 
-> 2022-2023 Notable Classes/Professors:
+> 2023-2024 Notable Classes/Professors:
 > * Great Books of Western Civ with Dr. Robert Lifset
 > * Psychology Capstone with Dr. Robert Terry
 > * Discrete Structures with Dr. Lauren Grimley
