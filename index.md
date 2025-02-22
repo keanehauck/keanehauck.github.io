@@ -9,7 +9,7 @@ tags: home
 
 <br>
 
-### I'm an amateur quantitative methodologist, computer scientist, and chess connoisseur (kind of). Welcome to my website! 
+### I'm an amateur quantitative methodologist, computer scientist, and an avid Pokémon player (the card game). Welcome to my website! 
 
 <br>
 
