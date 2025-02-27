@@ -216,6 +216,8 @@ We can sum the squares of these $3$ values: $(.143)^{2}+(-.214)^{2}+(.071)^{2}\a
 
 Finally, we divide this value by $n-p=3-2=1$. Dividing by $1$ does not change the number, and so our $\hat{σ}^2=0.071$.
 
+So, all together, we have the following formula for our linear model: $y=\frac{1}{2}+\frac{19}{14}x+e$ with $\hat{σ}^2=0.071$.
+
 ## Verification
 
 Let's see how we did. Here is code which runs it in R:
