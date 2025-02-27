@@ -21,7 +21,7 @@ show_post_footers: True
 show_subscribe_cta: True
 show_social_icons: True
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: true
 
@@ -45,8 +45,6 @@ text:
 
 # Build settings
 markdown: kramdown
-kramdown:
-  math_engine: mathjax
 redcarpet:
   extensions: ["smart", "tables", "with_toc_data", "footnotes"]
 permalink: pretty
