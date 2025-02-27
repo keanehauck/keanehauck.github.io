@@ -47,9 +47,7 @@ For example, in this picture the purple curve shows the range of values we would
 
 Regression accounts for this in the following manner: If we want to predict $Y$, we can do so by predicting it from two measures—a function of $X$, and an error term $ε$. If our function of $X$ is linear, we get the following form:
 
-```math
-Y_i=β_0+β_1X_i+ε_i
-```
+$Y_i=β_0+β_1X_i+ε_i$
 
 where $β_1$ is basically the $m$ and $β_0$ is basically the $b$ in $y=mx+b$. The "spread" of data around the line is accounted for by $ε$.
 
