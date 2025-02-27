@@ -47,7 +47,9 @@ For example, in this picture the purple curve shows the range of values we would
 
 Regression accounts for this in the following manner: If we want to predict $Y$, we can do so by predicting it from two measures—a function of $X$, and an error term $ε$. If our function of $X$ is linear, we get the following form:
 
-$Y_i=β_0+β_1X_i+ε_i$
+```math
+Y_i=β_0+β_1X_i+ε_i
+```
 
 where $β_1$ is basically the $m$ and $β_0$ is basically the $b$ in $y=mx+b$. The "spread" of data around the line is accounted for by $ε$.
 
@@ -234,7 +236,7 @@ And here is the output:
 
 ![data9](/images/posts/ordinary-least-squares/data9.png)
 
-Holy mackerel. That looks pretty good. Notice that under "Coefficients" we can see the estimate for the intercept at $0.5000$, which is exactly what we predicted. Similarly, the estimate for the slope is $1.3571$, which is approx. $\frac{19}{14}$. Spot on.
+Holy mackerel. That looks great. Notice that under "Coefficients" we can see the estimate for the intercept at $0.5000$, which is exactly what we predicted. Similarly, the estimate for the slope is $1.3571$, which is approx. $\frac{19}{14}$. Spot on.
 
 Also, notice the residuals: $0.14$, $-0.21$, $0.07$. Do those numbers look familiar? Finally, we can observe the `sigma**2` value at the end, and notice that it is incredibly close to the value we predicted of $0.071$.
 
