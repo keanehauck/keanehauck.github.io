@@ -7,7 +7,7 @@ summary: Part 1 of a multi-part series dedicated to investigating quant topics i
 categories: quantitative methodology statistics data science
 ---
 
-[sun devils image]
+![asu](/images/posts/ordinary-least-squares/asu.png)
 
 I am incredibly proud to announce that in the fall I will be pursuing a PhD in Quantitative Psychology from Arizona State University under the guidance of Dr. Kevin Grimm. Go Sun Devils! (at least it's less problematic than *Sooners*?)
 
