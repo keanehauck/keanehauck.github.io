@@ -7,7 +7,9 @@ summary: Part 1 of a multi-part series dedicated to investigating quant topics i
 categories: quantitative methodology statistics data science
 ---
 
-If you know me well, you are fully aware of the fact that the quantitive psychology PhD application process has been all-consuming. I recently finished my final grad school visit/interview. In total, I was invited to 6 of the 7 programs I applied to: UMD, ASU, UNC, UBC, UW-Madison, and UMN-Twin Cities. Each of these programs flew me out to experience campus and the program culture, and each one was a delight. I'm currently leaning towards one program in particular, but you'll have to wait for a future blog post to find out which one 😈
+![mountain](/images/posts/ordinary-least-squares/mountain.jpg)
+
+If you know me well, you are fully aware of the fact that the quantitive psychology PhD application process has been all-consuming. I recently finished my final grad school visit/interview. In total, I was invited to 6 of the 7 programs I applied to: UMD, ASU, UNC, UBC, UW-Madison, and UMN-Twin Cities. Each of these programs flew me out to experience campus and the program culture, and each one was a delight. I'm currently heavily leaning towards one program in particular, but you'll have to wait for a future blog post to find out which one 😈
 
 To prepare for grad school, I figured that it would be helpful and cathartic (and a little bit exposing) to use the blog to revisit some of the beginner topics in quantitative psychology that I am not incredibly well-versed in. Thus: Welcome to the birth of **Grad School Scramble**!!! In each installment of this multi-part series, I will attempt to learn and explain some area, subject, or topic of quantitative psychology that I had previously not understood well. *Important disclaimer*: this is a judgement-free zone! If I cover some concept that makes you say, "Hey, shouldn't an incoming *PhD student* have a better understanding of this subject matter?" then, well, too bad! In this pastel-gray and baby-blue blog page, we can all find solace together in the fact that we are amateurs.
 
