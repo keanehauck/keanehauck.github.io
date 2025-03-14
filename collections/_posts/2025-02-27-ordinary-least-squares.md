@@ -7,15 +7,15 @@ summary: Part 1 of a multi-part series dedicated to investigating quant topics i
 categories: quantitative methodology statistics data science
 ---
 
-![mountain](/images/posts/ordinary-least-squares/mountain.jpg)
+![logo](/images/posts/ordinary-least-squares/logo.png)
 
-If you know me well, you are fully aware of the fact that the quantitive psychology PhD application process has been all-consuming. I recently finished my final grad school visit/interview. In total, I was invited to 6 of the 7 programs I applied to: UMD, ASU, UNC, UBC, UW-Madison, and UMN-Twin Cities. Each of these programs flew me out to experience campus and the program culture, and each one was a delight. I'm currently heavily leaning towards one program in particular, but you'll have to wait for a future blog post to find out which one 😈
+I am proud to announce that I will be attending ASU in the fall to pursue a PhD in quantitative psychology under the guidance of Kevin Grimm! This decision was arrived at after a long and arduous application process wherein I flew to 7 different programs to interview. After all of my traveling, ASU was the one that felt most like home.
 
 To prepare for grad school, I figured that it would be helpful and cathartic (and a little bit exposing) to use the blog to revisit some of the beginner topics in quantitative psychology that I am not incredibly well-versed in. Thus: Welcome to the birth of **Grad School Scramble**!!! In each installment of this multi-part series, I will attempt to learn and explain some area, subject, or topic of quantitative psychology that I had previously not understood well. *Important disclaimer*: this is a judgement-free zone! If I cover some concept that makes you say, "Hey, shouldn't an incoming *PhD student* have a better understanding of this subject matter?" then, well, too bad! In this pastel-gray and baby-blue blog page, we can all find solace together in the fact that we are amateurs.
 
 ## Today's topic: Ordinary Least Squares Estimation in Linear Regression (And Other Methods)
 
-One of my potential advisors, Kevin Grimm, has been doing this awesome thing where he sends me small coding assignments designed to introduce me to the field of data simulation in advance of my first semester. These assignments are typically in R, and they normally involve me simulating some data on which I perform some statistical technique. For the first one, here was the task: Generate $n=500$ where $x_{1i}$ follows a standard normal distribution (mean = 0, std = 1), and $y_i=.5⋅x_{1i}+e_i$ where $e_i$ is normally distributed with a mean of 0 and a variance of .75. It was a nice little foray into data simulation, and I also calculated an estimated slope coefficient each time the data were generated. 
+Kevin has been doing this awesome thing where he sends me small coding assignments designed to introduce me to the field of data simulation in advance of my first semester. These assignments are typically in R, and they normally involve me simulating some data on which I perform some statistical technique. For the first one, here was the task: Generate $n=500$ where $x_{1i}$ follows a standard normal distribution (mean = 0, std = 1), and $y_i=.5⋅x_{1i}+e_i$ where $e_i$ is normally distributed with a mean of 0 and a variance of .75. It was a nice little foray into data simulation, and I also calculated an estimated slope coefficient each time the data were generated. 
 
 However, this got me thinking. To determine the coefficient I used the `lm` function, which states the following as one of its parameters:
 
