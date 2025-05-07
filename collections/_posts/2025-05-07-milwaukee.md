@@ -3,7 +3,7 @@ layout: post
 title: The Gholdengo Experience
 date: 2025-05-07
 summary: Detailing my run at the Milwaukee Pokémon Regional Championship 2025.
-categories: pokemon, gaming, cards, strategy
+categories: pokemon gaming cards strategy
 ---
 
 ![selfie](/images/posts/milwaukee/selfie.jpg "Top tables, baby")
