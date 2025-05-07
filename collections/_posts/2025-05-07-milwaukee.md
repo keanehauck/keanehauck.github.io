@@ -16,7 +16,7 @@ In wanting to day 2, I am wanting to place in the top 10% of a group of serious 
 
 The first step to doing well at a big tournament like this is selecting a deck that you believe will give you the best chance of success. For a few reasons which I will outline later, I chose Gholdengo Dragapult as the deck for the regional. 
 
-![gholdengo](/images/posts/milwaukee/gholdengo.jpg "The boy")
+<img src="/images/posts/milwaukee/gholdengo.jpg" alt="The boy" width="200"/>
 
 The strategy behind this deck is to run 1 of every type of basic energy card, search them out with [energy search pro], and swing for huge damage numbers using Gholdengo ex's Make It Rain attack. This deck mainly attacks with Gholdengo, but also runs a thin line of [Dragapult ex](https://www.tcgplayer.com/product/550174/pokemon-sv06-twilight-masquerade-dragapult-ex-130167?country=US&utm_campaign=18099737719&utm_source=google&utm_medium=cpc&utm_content=&utm_term=&adgroupid=&gad_source=1&gad_campaignid=17428625972&gbraid=0AAAAADHLWY30i0iftExF3hs_AmD-0ez_S&gclid=CjwKCAjwiezABhBZEiwAEbTPGAY1gkX0q14Hz3GQ8cFRchrBrA-amLPcJ8DePqmZbixn94HunA8LLBoCcNsQAvD_BwE) for draw power and as an additional attacker. Pokémon like [cornerstone mask ogerpon] are a huge issue for Gholdengo, and having the option to attack with an additional Pokémon can make a huge difference in some matchups. Dragapult only needs 1 psychic and 1 fire to attack—both of which are already being run in the deck.
 
@@ -61,7 +61,7 @@ I was in the pits this game. I wasn't feeling good about the tournament, and sta
 
 I was facing a deck which used [Blissey ex](https://www.tcgplayer.com/product/550178/pokemon-sv06-twilight-masquerade-blissey-ex-134-167?srsltid=AfmBOorOuS6aLRvBIcEJalJdgmvUfqXRwrqXuoPXAYplowTNt9Ugs6zU&Language=English) alongside cards like [Munkidori](https://www.tcgplayer.com/product/550139/pokemon-sv06-twilight-masquerade-munkidori?srsltid=AfmBOorsNEskicvkRe4GUfjhy5DfKZ2UcQGRjH3BPgzGch8ZAZlSt9tD&Language=English) to outlive and take KO's on the opponent. Gholdengo doesn't leave any damage on the board for Munkidori to manipulate, so theoretically I have a good matchup into this list. The one problem was Cornerstone Mask Ogerpon:
 
-![cornerstone](/images/posts/milwaukee/genesect.jpg "Gholdengo's worst nightmare")
+![cornerstone](/images/posts/milwaukee/cornerstone.jpg "Gholdengo's worst nightmare")
 
 Gholdengo is unable to hit this Pokémon. So, if they leave this guy in the active and don't play any Blissey, I am pretty screwed. However, this is where the Dragapult part of my deck comes into play: It can hit Cornerstone. However (again), I prized my Dragapult on the first game. However (again again), my opponent misplayed and benched two Blissey. This allowed me to gust and KO both for 4 prizes, and take snipe KO's on Munkidoris with [Fezandipiti ex](https://www.tcgplayer.com/product/560348/pokemon-sv-shrouded-fable-fezandipiti-ex-038-064?srsltid=AfmBOoqkdEdDzd13KWGIMb2r27oF0_qb_i30K7ojHXgixWUeDDugZVnF) for the last 2. Dragapult was the last prize...
 
@@ -81,7 +81,7 @@ Game 1 he bricked—not much to say. However, the second game was very interesti
 
 ### Round 7: WIN again Poison Arch
 
-![pecharunt](/images/posts/milwaukee/genesect.jpg "The worst card in the format")
+![pecharunt](/images/posts/milwaukee/pecharunt.jpg "The worst card in the format")
 
 This round was horrifying. One reason is that the deck my opponent was playing, Poison Archaludon, has the ability to win before you can even play a card. With a combo involving poison damage-modifying cards and Pecharunt, the deck can take a KO on your only Pokémon in play if they have 80 health or less: winning the game on turn 1. As my Gimmighouls have 70 health, I am a prime target for this donk strategy. Luckily, I was able to start Genesect in game 1, which is unable to be donked. I took a win when he missed a gust effect on his second turn to take a 2-prize kill.
 
@@ -103,7 +103,7 @@ I'm facing Alex Schemanske this round: a professional player. He is absolutely a
 
 ### Round 9: Win against N's Box
 
-![darmanitan](/images/posts/milwaukee/genesect.jpg "Notice the fire typing?")
+![darmanitan](/images/posts/milwaukee/darmanitan.jpg "Notice the fire typing?")
 
 This round was the first of day 2. I am pretty nervous—the players who qualify for day 2 are some of the best in the world, and I don't know how well I'm prepared to hang with them. In addition, this deck has an absolutely brutal matchup against mine: Darmanitan can hit Gholdengo for weakness, spreading massive damage across the board and one-shotting if I discard too many energy.
 
