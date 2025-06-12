@@ -21,7 +21,7 @@ The reason for this has a lot to do with probability theory and other unintuitiv
 
 As we can see, 2/3 scenarios win the car by swapping. 
 
-After (unsuccessfully) trying to explain this to my grandfather and other family, it got me thinking about the topic of probability in general. I have actually never taken a probability course, and it's one of the areas of quantitative methodology that I'm probably weakest in. So, I figured that it would be a good idea to get a basic intro to some of the ideas in probability theory.
+After (unsuccessfully) trying to explain this to my grandfather and other family, it got me thinking about the topic of probability in general. I have actually never taken a probability course, and it's one of the areas of quantitative methodology that I'm probably weakest in. So, I figured that it would be a good idea to get a basic intro to some of the ideas in probability theory. Thus the second installment of Grad School Scramble™ was born.
 
 ### Preparation
 
