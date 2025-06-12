@@ -35,7 +35,7 @@ At its core, the idea of conditional probability answers the question "how does 
 
 A formal definition of conditional probability is as follows:
 
-$P(A|B) = \frac{P(A\cap B)}{P(B)}$
+$P(A\mid B)=\frac{P(A\cap B)}{P(B)}$
 
 This reads as "the probability of $A$ given $B$ is equal to the probability of $A$ *and* $B$ divided by the probability of $B$."
 
@@ -47,13 +47,13 @@ Another way to interpret this is by considering venn diagrams.
 
 When we state that $B$ has already occurred, we can discard the entire region outside of $B$ (everything in pink). Thus, we are left with $\frac{P(A\cap B)}{P(B)}$ as the total probability of $A$ occurring.
 
-One important consideration to make is that we can rewrite the formula as $P(A|B)P(B)=P(A\cap B)$ by simple multiplication. Thus, if we know the conditional probability of something we can use this formula to find the probability of event intersections. 
+One important consideration to make is that we can rewrite the formula as $P(A\mid B)P(B)=P(A\cap B)$ by simple multiplication. Thus, if we know the conditional probability of something we can use this formula to find the probability of event intersections. 
 
-Let's use this formula to solve a problem. Approximately 10% of cars are red. What is the probability that two red cars get into an accident on the highway given that one of the cars is red? We can define $P(A)$ as the probability that the crash has two red cars and $P(B)$ as the probability that at least one car is red. Because $A$ is necessarily a subset of $B$ (for both cars to be red, at least one must be red), we can see that $P(A\cap B)=A=.01$. $P(B)$ is the complement of neither car being red, so $P(B)=1-(.9\cdot.9)=.19$. Because $\frac{.01}{.19}\approx.053$, the overall probability $P(A|B)\approx.053$. 
+Let's use this formula to solve a problem. Approximately 10% of cars are red. What is the probability that two red cars get into an accident on the highway given that one of the cars is red? We can define $P(A)$ as the probability that the crash has two red cars and $P(B)$ as the probability that at least one car is red. Because $A$ is necessarily a subset of $B$ (for both cars to be red, at least one must be red), we can see that $P(A\cap B)=A=.01$. $P(B)$ is the complement of neither car being red, so $P(B)=1-(.9\cdot.9)=.19$. Because $\frac{.01}{.19}\approx.053$, the overall probability $P(A\mid B)\approx.053$. 
 
 It seems a bit counterintuitive that the answer isn't just $.1$. After all, it seems like we know one of the cars is red, so the probability of the other car being red as well should just be $.1$. However, we don't specifically know *which* car is red. Imagine that we specify the cars as Car 1 and Car 2. Our event space is as follows (for $R=red$ and $N=not red$): ${(R,N), (N,R), (R,R), (N,N)}$. When we use the logic of "one of the cars is red, so the probability of the other one being red as well should just be $.1$", we implicitly make the assumption that we're talking about Car 1 being the red one. However, the event that at least one of the cars is red comprises the set ${(R,N), (N,R), (R,R)}$ while the event that Car 1 is red comprises ${(R,N),(R,R)}$. Because $(N,R)$ is non-empty (we know that it could be the case that Car 2 is the red one), we know that the probability of both cars being red is *smaller* when we only know one car is red compared to when we know Car 1 is red (because in the first scenario $(R,R)$ is selected from a larger event space than in the second).
 
-> Another note: Two events can be considered formally independent if $P(A|B)=P(A)$. This is because they are independent if knowing that $B$ has occurred does not change the probability of $A$. It then follows that if two events are independent then $P(A\cap B)=P(A|B)\cdot P(B)=P(A)\cdot P(B)$, which follows our prior understanding of probability.
+> Another note: Two events can be considered formally independent if $P(A\mid B)=P(A)$. This is because they are independent if knowing that $B$ has occurred does not change the probability of $A$. It then follows that if two events are independent then $P(A\cap B)=P(A\mid B)\cdot P(B)=P(A)\cdot P(B)$, which follows our prior understanding of probability.
 
 
 ## Bayes' Theorem
@@ -62,19 +62,19 @@ Throughout the murky, dark waters of statistics and probability, one beast lies 
 
 Much like conditional probability, I hadn't much experience with Bayes' Theorem before looking into it. In one of my undergraduate psych classes with Dr. Terry, we discussed the famous Kahneman and Tversky base rate fallacy in terms of Bayes' Theorem: where individuals fail to incorporate the base rate of an event and obtain incorrect probabilistic deductions. Here is the theorem in all its glory:
 
-$P(A|B)=\frac{P(B|A)\cdot P(A)}{P(B)}$.
+$P(A\mid B)=\frac{P(B\mid A)\cdot P(A)}{P(B)}$.
 
 This theorem lets us find the inverse of a conditional probability: If we know the probability of $A$ given $B$, we can now find the probability of $B$ given $A$. The proof follows from our previous conditional probability formula:
 
 $P(A\cap B)$ is symmetric with respect to $A$ and $B$, so
 
-$P(B|A)\cdot P(A)=P(A\cap B)=P(A|B)\cdot P(B)$.
+$P(B\mid A)\cdot P(A)=P(A\cap B)=P(A\mid B)\cdot P(B)$.
 
 Then, if we divide by $P(A)$ we obtain Bayes' Theorem.
 
 We can use this tool to answer the Monty Hall problem discussed earlier. If event $A$ is that the car is behind our door (door 1), and event $B$ is that the host opened door 3, we find the probabilities and substitute them in:
 
-$P(B|A)$ will be $.5$ because the probability of the host opening door 3 *given* that the car is behind our door is $.5$ (he could have chosen either door 2 or door 3).
+$P(B\mid A)$ will be $.5$ because the probability of the host opening door 3 *given* that the car is behind our door is $.5$ (he could have chosen either door 2 or door 3).
 
 $P(A)=\frac{1}{3}$
 
@@ -82,7 +82,7 @@ $P(B)=.5$ (There are three scenarios: the car is behind our door, which gives Mo
 
 So:
 
-$P(A|B)=\frac{.5 \cdot \frac{1}{3}}{.5}=\frac{1}{3}$.
+$P(A\mid B)=\frac{.5 \cdot \frac{1}{3}}{.5}=\frac{1}{3}$.
 
 In other words, the probability of the car being behind our door *given* that Monty opened door 3 is $\frac{1}{3}$. Thus, it is in our interest to switch doors.
 
