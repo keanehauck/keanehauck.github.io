@@ -1,5 +1,61 @@
 [
     {
+        "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
+        "author": "Erik Larson",
+        "rating": "",
+        "isbn": "0609608444",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "This Is How You Lose the Time War",
+        "author": "Amal El-Mohtar",
+        "rating": "",
+        "isbn": "",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Paul Street Boys",
+        "author": "Ferenc Moln\u00e1r",
+        "rating": "",
+        "isbn": "9631345343",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Hunchback of Notre-Dame",
+        "author": "Victor Hugo",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0451527887",
+        "review_path": "the-hunchback-of-notre-dame-victor-hugo/",
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Count of Monte Cristo",
+        "author": "Alexandre Dumas",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0140449264",
+        "review_path": "the-count-of-monte-cristo-alexandre-dumas/",
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Pearl",
+        "author": "John Steinbeck",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9782070364282",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "What's Eating Gilbert Grape",
+        "author": "Peter Hedges",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0671038540",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
         "title": "Cannery Row (Cannery Row, #1)",
         "author": "John Steinbeck",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -11,7 +67,7 @@
         "title": "Cat\u2019s Cradle",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "0140285601",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -44,14 +100,6 @@
         "author": "Thomas More",
         "rating": "\u2605\u2605\u2605",
         "isbn": "0140449108",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "Slob",
-        "author": "Ellen Potter",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "039924705X",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -224,10 +272,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Tuesdays with Morrie",
+        "title": "Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson",
         "author": "Mitch Albom",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780767905923",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -272,11 +320,11 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Little Women",
+        "title": "Little Women (Little Women, #1)",
         "author": "Louisa May Alcott",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780451529305",
-        "review_path": "little-women-louisa-may-alcott/",
+        "isbn": "",
+        "review_path": null,
         "year_i_finished_reading": null
     },
     {
@@ -329,7 +377,7 @@
     },
     {
         "title": "Mark Twain: Huckleberry Finn",
-        "author": "Coles Editorial Board",
+        "author": "Coles Notes",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0774036656",
         "review_path": null,
@@ -416,10 +464,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Hobbit (The Lord of the Rings, #0)",
+        "title": "The Hobbit, or There and Back Again",
         "author": "J.R.R. Tolkien",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "9780547928227",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -451,7 +499,7 @@
         "title": "Slaughterhouse-Five",
         "author": "Kurt Vonnegut Jr.",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "0385333846",
+        "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -488,10 +536,10 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "Night  (The Night Trilogy, #1)",
+        "title": "Night",
         "author": "Elie Wiesel",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "0374500010",
         "review_path": null,
         "year_i_finished_reading": null
     },
@@ -516,14 +564,6 @@
         "author": "Douglas Adams",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
-        "author": "J.R.R. Tolkien",
-        "rating": "\u2605\u2605\u2605\u2605\u2605",
-        "isbn": "9780547928210",
         "review_path": null,
         "year_i_finished_reading": null
     },

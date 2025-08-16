@@ -64,14 +64,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Name of the Rose",
-        "author": "Umberto Eco",
-        "rating": "",
-        "isbn": "0156001314",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Secret History",
         "author": "Donna Tartt",
         "rating": "",
@@ -180,14 +172,6 @@
         "author": "Frances Hodgson Burnett",
         "rating": "",
         "isbn": "0517189607",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Count of Monte Cristo",
-        "author": "Alexandre Dumas",
-        "rating": "",
-        "isbn": "0140449264",
         "review_path": null,
         "year_i_finished_reading": null
     }
