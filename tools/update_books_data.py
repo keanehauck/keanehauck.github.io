@@ -143,9 +143,9 @@ TITLE_TO_ISBN = {
     "Between the World and Me": "9780812993547",
     "No One Is Talking About This": "9780593332542",
     "God Bless You, Mr. Rosewater": "9780440129295",
-    "This Is How You Lose The Time War": "1534430997",
-    "The Paul Street Boys": "9631345343",
-    "Cat's Cradle": "9780385333481",
+    "This Is How You Lose the Time War": "9781534430990",
+    "The Paul Street Boys": "9789631338010",
+    "Cat\u2019s Cradle": "9780385333481",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
@@ -183,8 +183,10 @@ def get_book_review_path(book_reviews_directory: pathlib.Path, title: str, autho
     if ')' in title:
     # Remove the character from the string. This is the format that handles weird edge cases with special characters in the title...
         title = title.replace(')', "")
-    if '\'' in title:
-        title = title.replace('\'', "")
+
+    # Attempt to remove other bad characters
+    for bad_char in ["'", "’", "‘", "ʼ", "′"]:
+        title = title.replace(bad_char, "")
     
     cleaned_title = "-".join(re.sub("[!'.:]", "", title).split()).lower()
     cleaned_author = "-".join(re.sub("[!'.:]", "", author).split()).lower()
