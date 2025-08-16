@@ -23,6 +23,8 @@ IGNORED_AUTHORS = {
     "Neil Strauss",  # Eugh, bit gross
     "Christopher Paolini",  # Young Adult
     "Jeremy Clarkson",  # Blurgh
+    "Veronica Roth", # Young Adult
+    "Suzanne Collins", # Young Adult
 }
 
 # For some reason Goodreads left out ISBN information for some of the books in my collection,
@@ -48,7 +50,7 @@ TITLE_TO_ISBN = {
     "Frankenstein: The 1818 Text": "9781734029284",
     "Crime and Punishment": "9780679734505",
     "Siddhartha": "9780553208849",
-    "Tuesdays with Morrie": "9780767905923",
+    "Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson": "9780767905923",
     "Matilda": "9780142410370",
     "Little Women": "9781441342157",
     "The Call of the Wild": "9781673349511",
@@ -57,7 +59,7 @@ TITLE_TO_ISBN = {
     "The Sun Also Rises": "9781501121968",
     "The Stranger": "9780679720201",
     "The Little Prince": "9780156012195",
-    "The Hobbit (The Lord of the Rings, #0)": "9780547928227",
+    "The Hobbit, or There and Back Again": "9780547928227",
     "Wuthering Heights": "9780141439556",
     "Fahrenheit 451": "9781451673265",
     "China in Ten Words": "9780307739797",
@@ -95,7 +97,7 @@ TITLE_TO_ISBN = {
     "The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy, #2)": "9780671442682",
     "The Handmaid's Tale (The Handmaid's Tale, #1)": "9780449212608",
     "The Trial": "9781529021073",
-    "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)": "9780434023394",
+    "The Hitchhiker\u2019s Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)": "9780434023394",
     # NOTE: The ISBN is actually for 'Orwell's England'. 'Road to Wigan Pier' does have a cover in Open Cover
     "The Road to Wigan Pier": "0141185171",
     # Analogie is missing its ISBN.
@@ -146,6 +148,8 @@ TITLE_TO_ISBN = {
     "This Is How You Lose the Time War": "9781534430990",
     "The Paul Street Boys": "9789631338010",
     "Cat\u2019s Cradle": "9780385333481",
+    "Slaughterhouse-Five": "9780385333849",
+
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.
