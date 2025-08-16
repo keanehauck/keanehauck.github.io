@@ -10,15 +10,15 @@ headshot: /images/headshot.jpg
 
 I was born and raised in the city of Cincinnati, Ohio — right next to train tracks and a creek where I could catch [crawdads](https://www.nationalgeographic.com/animals/invertebrates/facts/crawdads) (_definitely_ not "crayfish").
 
-I moved to Kansas when I was around 8 years old - and completed my pre-college education at the Andover school district. The bulk of my passions in high school concerned computers and coding; however, I also appreciated the soft sciences. From there, I made my way to the University of Oklahoma, where I currently am pursuing a Bachelor's of Science in psychology and taking computer science and music courses on the side.
+I moved to Kansas when I was around 8 years old - and completed my pre-college education at the Andover school district. The bulk of my passions in high school concerned computers and coding; however, I also appreciated the soft sciences. From there, I made my way to the University of Oklahoma, where I graduated with Bachelor's of Science in psychology and Minors in computer science and music.
 
 ### What I do now
 
-Currently, I conduct research in a variety of subdisciplines; however, my area of specialty lies in quantitative methodology. I also spend my time building keyboards and writing music (when I'm not playing video games). [Take a look at my research!]({{ site.baseurl }}/research)
+Currently, I study Quantitative Psychology at Arizona State University under the mentorship of Dr. Kevin Grimm. I conduct research in a variety of subdisciplines; however, my area of specialty lies in quantitative methodology. I also spend my time building keyboards and writing music (when I'm not playing video games). [Take a look at my research!]({{ site.baseurl }}/research)
 
 ### Where I'm at now
 
-Today, I live in Norman, OK. When I'm not working or attending class, you can find me walking around Main street or nearly entering cardiac arrest on a bicycle. I also love to frequent some of the coffee shops around the city, especially Gray Owl and Yellow Dog.
+Today, I live in Phoenix, AZ. When I'm not working or attending class, you can find me walking around the ASU campus or nearly entering cardiac arrest on a bicycle. I also love to frequent some of the coffee shops around the city.
 
 ### Why quantitative methodology?
 
@@ -26,7 +26,7 @@ My answer for "why" spans three levels: the micro, the macro, and the philosophi
 
 ### Get in touch!
 
-The easiest way to contact me is through email: [keane@ou.edu](mailto:keane@ou.edu). Please allow up to 2 business days for a response due to the unfortunate user error of chronically failing to notice new emails in my inbox.
+The easiest way to contact me is through email: [hauckkeane@gmail.com](mailto:hauckkeane@gmail.com). Please allow up to 2 business days for a response due to the unfortunate user error of chronically failing to notice new emails in my inbox.
 
 <div id="stats" class="hidden">
 

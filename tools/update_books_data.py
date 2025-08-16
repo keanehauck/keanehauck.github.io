@@ -183,6 +183,8 @@ def get_book_review_path(book_reviews_directory: pathlib.Path, title: str, autho
     if ')' in title:
     # Remove the character from the string. This is the format that handles weird edge cases with special characters in the title...
         title = title.replace(')', "")
+    if '\'' in title:
+        title = title.replace('\'', "")
     
     cleaned_title = "-".join(re.sub("[!'.:]", "", title).split()).lower()
     cleaned_author = "-".join(re.sub("[!'.:]", "", author).split()).lower()

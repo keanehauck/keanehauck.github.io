@@ -18,7 +18,7 @@ tags: home
 <br>
 <br>
 
-I recently graduated from the University of Oklahoma with my B.S. in Psychology. As a student, I conducted research utilizing machine learning and factor analysis with an applied focus in student retention patterns and AI use among college students. Now, I do data science work for the university. Faculty I've worked closely with include Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day. Thank you to all of those who have helped me thus far in my academic journey!
+I'm currently completing my PhD in Quantitive Psychology at Arizona State University under the mentorship of Dr. Kevin Grimm! My research interests include statistical modeling and psychometrics. Thank you to all of those who have helped me thus far in my academic journey, including Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day.
 
 Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
