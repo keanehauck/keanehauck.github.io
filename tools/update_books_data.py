@@ -125,7 +125,7 @@ TITLE_TO_ISBN = {
     "Gorgias": "0140440941",
     "Flowers for Algernon": "9781474605731",
     "The Nickel Boys": "0345804341",
-    "Little Women": "9780451529305",
+    "Little Women (Little Women, #1)": "9780451529305",
     "The Dispossessed (Hainish Cycle, #6)": "9781857988826",
     "Snow Crash": "9780241953181",
     "An Elegant Puzzle: Systems of Engineering Management": "9781732265189",
@@ -143,6 +143,9 @@ TITLE_TO_ISBN = {
     "Between the World and Me": "9780812993547",
     "No One Is Talking About This": "9780593332542",
     "God Bless You, Mr. Rosewater": "9780440129295",
+    "This Is How You Lose The Time War": "1534430997",
+    "The Paul Street Boys": "9631345343",
+    "Cat's Cradle": "9780385333481",
 }
 
 # Goodreads didn't allow 1/2 stars in ratings annoyingly, but I want to try them.

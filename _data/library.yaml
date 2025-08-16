@@ -2,7 +2,7 @@
     {
         "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
         "author": "Erik Larson",
-        "rating": "",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
         "isbn": "0609608444",
         "review_path": null,
         "year_i_finished_reading": null
@@ -10,7 +10,7 @@
     {
         "title": "This Is How You Lose the Time War",
         "author": "Amal El-Mohtar",
-        "rating": "",
+        "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "",
         "review_path": null,
         "year_i_finished_reading": null
@@ -18,9 +18,9 @@
     {
         "title": "The Paul Street Boys",
         "author": "Ferenc Moln\u00e1r",
-        "rating": "",
+        "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "9631345343",
-        "review_path": null,
+        "review_path": "the-paul-street-boys-ferenc-moln\u00e1r/",
         "year_i_finished_reading": null
     },
     {
@@ -323,7 +323,7 @@
         "title": "Little Women (Little Women, #1)",
         "author": "Louisa May Alcott",
         "rating": "\u2605\u2605\u2605\u2605",
-        "isbn": "",
+        "isbn": "9780451529305",
         "review_path": null,
         "year_i_finished_reading": null
     },
