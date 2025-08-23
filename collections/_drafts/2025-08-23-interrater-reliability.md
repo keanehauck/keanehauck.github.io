@@ -18,4 +18,6 @@ Psychological studies and tests can often require responses that are long, invol
 
 How can we determine if raters are doing a good job? One method is by evaluating the *inter-rater reliability*: a measure of how much the raters are agreeing with each other. If they display a large amount of agreement, we have reason to believe that their judgments are valid; conversely, if they disagree frequently, there might be reason to doubt the validity of their ratings. With that said, how do we measure their agreement?
 
-#### 
+#### Simple Probability of Agreement
+
+Before diving into agreement measures, it's important to discuss what we even mean by "agreement." Some 
