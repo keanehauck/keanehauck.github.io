@@ -45,7 +45,7 @@ TITLE_TO_ISBN = {
     "One Hundred Years of Solitude": "9780061120091",
     "Till We Have Faces": "9780062565419",
     "The Brothers Karamazov": "9780374528379",
-    "Oliver Twist": "9780374528379",
+    "Oliver Twist": "9781403764980",
     "The Time Machine": "9780553213515",
     "Frankenstein: The 1818 Text": "9781734029284",
     "Crime and Punishment": "9780679734505",
