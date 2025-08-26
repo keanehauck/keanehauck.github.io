@@ -90,7 +90,9 @@ To solve this problem, in 1968 Cohen published [an extension to kappa](https://d
 
 How does it work? Well, the formula for weighted kappa is as follows:
 
-$\kappa{_w}=1-\frac{\Sigma{v_{ij}p_{oij}}}{\Sigma{v_{ij}p_{eij}}}$
+```math
+\kappa{_w}=1-\frac{\Sigma v_{ij}p_{oij}}{\Sigma v_{ij}p_{eij}}
+```
 
 To obtain this formula, Cohen began with some simple algebra from the formula for $\kappa$. As a reminder,
 
