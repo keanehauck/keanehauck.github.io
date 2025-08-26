@@ -125,13 +125,13 @@ Another alternative is to use quadratic weighting, which is when the distance be
 
 $\kappa{_w}$ simply represents the original kappa formula with $p_o$ and $p_e$ replaced by weighted proportions of disagreement. So, for each cell, we multiply the proportion (or frequency) by the weight, and get our weighted proportion. When we add this weighting factor back into our modified kappa formula we get the final $\kappa{_w}$ formula, which is:
 
-$\kappa{_w}=1-\frac{\Sigma v_{ij}p_{oij}}{\Sigma v_{ij}p_{eij}}$
+$\kappa \_w=1-\frac{\Sigma v\_{ij}p\_{oij}}{\Sigma v\_{ij}p\_{eij}}$
 
 where $v_{ij}$ represents the weighting factor for cell $i,j$.
 
 Finally, we want to prove that this recovers the original kappa formula when all weights are equal. If we assume that all cells are weighted equally, then $v_{ij}$ becomes some non-zero constant, which can then be pulled out of the summation. After that, the constant can be cancelled out of the numerator and denominator, giving the formula:
 
-$\kappa{_w}=1-\frac{p_{oij}}{p_{eij}}$,
+$\kappa \_w=1-\frac{p\_{oij}}{p\_{eij}}$,
 
 which can be understood as our original kappa proportion of disagreement.
 
