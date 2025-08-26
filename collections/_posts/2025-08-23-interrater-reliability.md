@@ -18,9 +18,9 @@ Psychological studies and tests can often require responses that are long, invol
 
 How can we determine if raters are doing a good job? One method is by evaluating the *inter-rater reliability*: a measure of how much the raters are agreeing with each other. If they display a large amount of agreement, we have reason to believe that their judgments are valid; conversely, if they disagree frequently, there might be reason to doubt the validity of their ratings. With that said, how do we measure their agreement?
 
-#### Simple probability of agreement
+Before diving into agreement measures, it's important to discuss what we even mean by "agreement." When scoring is categorical, agreement is simple: the raters either agree or they don't. When scoring is [ordinal or better](https://en.wikipedia.org/wiki/Ordinal_data), however, the question of "scoring distance" comes into play. Raters who score an essay 5 and 6 respectively seem to agree more than raters who score an essay 1 and 6, but they still disagreed. How do we account for that? Furthermore, there are different types of rating. There exists the aforementioned scoring where raters are agreeing/disagreeing with a single rating, but what about if they're both confirming an official score? What if they're ranking different options? What if there are more than 2 raters? There are a variety of different measures to quantify agreement in each of these situations.
 
-Before diving into agreement measures, it's important to discuss what we even mean by "agreement." When scoring is categorical, agreement is simple: the raters either agree or they don't. When scoring is [ordinal or better](https://en.wikipedia.org/wiki/Ordinal_data), however, the question of "scoring distance" comes into play. Raters who score an essay 5 and 6 respectively seem to agree more than raters who score an essay 1 and 6, but they still disagreed. How do we account for that? Furthermore, there are different types of rating. There exists the aforementioned scoring where raters are agreeing/disagreeing with a single rating, but what about if they're both confirming an official score? What if they're ranking different options? What if there are more than 2 raters?
+### Simple probability of agreement
 
 The first and easiest example of an agreement measure is the probability of agreement. This measure is only applicable for nominal data, but it was the standard method of determining inter-rater reliability for a lengthy era of quantitative methodology. When there are 2 or more raters scoring a response, it is easy to calculate the percentage of the time that they agree. We simply divide the number of identical scores by the total number of scores and obtain the percent agreement. When there are more than two raters, we can set up a matrix in which each row represents a variable of interest and each column is a rater score.
 
@@ -37,7 +37,7 @@ $$
 
 According to [McHugh (2012)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3900052/) (who I shamelessly stole the matrix example from), the direct interpretation of the probability of agreement is the percent of valid data. That is, if you have 90% percent agreement, then 10% of the data in your study are erroneous.
 
-#### Cohen's kappa
+### Cohen's kappa
 
 As we can see from the previous example, the joint probability of agreement has some issues as a measure of inter-rater reliability. For one, it is only applicable for nominal data. Furthermore, its interpretation is overly simplistic and doesn't tell you much about the direction of erroneous data. The biggest issue, however, is the one that statistician [Jacob Cohen](https://en.wikipedia.org/wiki/Jacob_Cohen_(statistician)) pointed out in the '60s: it doesn't account for agreement that arises due to chance. For example, if two professors were to rate student performance on a test as either pass/fail, and we asked them to give scores *completely randomly*, we would still expect them to coincidentally give the same rating about half of the time. On paper, they would seem to exhibit 50% congruence, but in reality there would be no systematic agreement between the two raters.
 
@@ -82,7 +82,7 @@ $$
 \end{array}
 $$
 
-#### Weighted Cohen's kappa
+### Weighted Cohen's kappa
 
 In situations where raters need to make ordinal scorings with more than 2 categories—such as ranking patient pain from mild/moderate/severe—Cohen's kappa has another issue: It does not differentiate between "levels" of disagreement. In the example of patient pain, we might want to quantify the disagreement between a doctor recording "mild pain" and a second doctor recording "severe pain" as a more extreme disagreement than "mild pain" and "moderate pain." However, if we set up our 3x3 contingency table and calculate the expected percentages of agreement/disagreement, all disagreements are weighted equally.
 
@@ -137,11 +137,11 @@ which can be understood as our original kappa proportion of disagreement.
 
 For the purposes of space and time, I won't be going through a full hand-calculated example of weighted kappa, but I hope that this run-through of the formulae was enough to serve as a decent introduction.
 
-#### Pearson's r
+### Pearson's r
 
 If ratings are continuous, then Pearson's r can be used pairwise as a measure of inter-rater reliability. However, this is mostly a poor choice, because it fails to take into account systematic biases between the two raters. For example, if one rater scores a measure (1, 2, 3, 4, 5) while another rater scores pairwise the same measure (2, 3, 4, 5, 6), then their correlation will be 1, but there will be difference in their agreement. So, I'm not going to go very in-depth into the usage of r as a measure of inter-rater reliability. Just know that it's technically an option.
 
-#### Intraclass Correlation Coefficient
+### Intraclass Correlation Coefficient
 
 So, what should we use if ratings are continuous (interval or ratio)? One option is to use the [Intraclass Correlation Coefficient (ICC)](https://en.wikipedia.org/wiki/Intraclass_correlation). From a mixed-models standpoint (as was explained to me by the amazing Catherine Bain), the ICC is the amount of variance of the intercepts divided by the total variance (which comprises the variance of the intercepts + the unwanted variance). So, if the unwanted variance is higher than the variance of the intercepts, then the ICC is lower than $.5$ (which is a poor result). On the other hand, if the variance of the intercepts composes a large amount of the variance than the ICC will be higher.
 
