@@ -4,21 +4,60 @@
 <meta charset="UTF-8">
 <title>Rainbow Gradient Draw</title>
 <style>
-  body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-  canvas { border: 1px solid #ccc; cursor: crosshair; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* space between canvas and button */
+    width: 90%;
+    max-width: 800px; /* maximum canvas width */
+  }
+
+  canvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+    width: 100%;   /* responsive width */
+    height: auto;  /* keep aspect ratio */
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
 
-<canvas id="canvas" width="800" height="600"></canvas>
-<button id="refreshButton">Refresh Canvas</button>
+<div class="container">
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <button id="refreshButton">Refresh Canvas</button>
+</div>
 
 <script>
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let drawing = false;
-let points = []; // stores all path points
+let points = [];
+
+// Adjust canvas size to CSS size
+function resizeCanvas() {
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width;
+  canvas.height = rect.height;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
 
 canvas.addEventListener('mousedown', e => {
   drawing = true;
@@ -27,7 +66,7 @@ canvas.addEventListener('mousedown', e => {
 
 canvas.addEventListener('mouseup', () => {
   drawing = false;
-  points = []; // reset after each stroke
+  points = [];
 });
 
 canvas.addEventListener('mouseout', () => {
@@ -40,7 +79,6 @@ canvas.addEventListener('mousemove', e => {
 
   points.push({x: e.offsetX, y: e.offsetY});
 
-  // Draw line segment with gradient
   if (points.length > 1) {
     const p1 = points[points.length - 2];
     const p2 = points[points.length - 1];
@@ -60,14 +98,9 @@ canvas.addEventListener('mousemove', e => {
   }
 });
 
-// Get the refresh button
-const refreshButton = document.getElementById('refreshButton');
-
-// Add an event listener to the button
-refreshButton.addEventListener('click', () => {
-  ctx.clearRect(0, 0, canvas.width, canvas.height) // Call the drawing function to refresh the canvas
+document.getElementById('refreshButton').addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
-
 </script>
 
 </body>

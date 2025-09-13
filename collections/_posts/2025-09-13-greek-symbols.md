@@ -8,6 +8,6 @@ categories: test
 
 test
 
-<iframe src="rainbow-draw.html" width="800" height="600" style="border:none;"></iframe>
+<iframe src="/images/posts/greek-symbols/rainbow-draw.html" width="800" height="600" style="border:none;"></iframe>
 
 testie
