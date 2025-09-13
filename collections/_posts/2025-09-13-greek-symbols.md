@@ -6,18 +6,6 @@ summary: Test
 categories: test
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Rainbow Gradient Draw</title>
-<style>
-  body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-  canvas { border: 1px solid #ccc; cursor: crosshair; }
-</style>
-</head>
-<body>
-
 <canvas id="canvas" width="800" height="600"></canvas>
 
 <script>
