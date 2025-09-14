@@ -158,13 +158,14 @@ document.getElementById('refreshButton').addEventListener('click', () => {
 });
 
 function resizeIframe() {
-  const height = document.documentElement.scrollHeight;
+  const height = document.body.offsetHeight; // safer than scrollHeight here
   window.parent.postMessage({ type: "resize-iframe", height }, "*");
 }
 
-// Resize on load and whenever window resizes
+// Resize on load and whenever things change
 window.addEventListener("load", resizeIframe);
 window.addEventListener("resize", resizeIframe);
+
 
 </script>
 
