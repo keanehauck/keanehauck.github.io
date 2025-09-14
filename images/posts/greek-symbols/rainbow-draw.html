@@ -33,7 +33,7 @@
     align-items: center;  /* center canvas and button horizontally */
     gap: 10px;
     padding: 8px;         /* optional inner padding */
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     background: transparent;
   }
 
@@ -60,6 +60,7 @@
   <div id="wrapper">
     <canvas id="canvas" width="800" height="600"></canvas>
     <button id="refreshButton">Refresh Canvas</button>
+    <button id="crazyButton">Go Crazy!</button>
   </div>
 
 <script>
@@ -70,10 +71,12 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const wrapper = document.getElementById('wrapper');
 const refreshBtn = document.getElementById('refreshButton');
+const crazyBtn = document.getElementById('crazyButton');
 
 let drawing = false;
 let points = [];
 let hue = 0;
+let crazyInterval = null;
 const aspect = 3/4; // canvas height = width * aspect (4:3 width:height is width*0.75)
 
 /* debounce helper so parent doesn't get rapid messages */
@@ -142,6 +145,19 @@ function getTouchPos(touchEvent) {
   };
 }
 
+function randomPoint() {
+  return {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height
+  };
+}
+
+function goCrazy() {
+  const p1 = randomPoint();
+  const p2 = randomPoint();
+  drawLineSegment(p1, p2);
+  
+}
 /* -------------------------
    Mouse event handlers
    ------------------------- */
@@ -194,6 +210,19 @@ refreshBtn.addEventListener('click', () => {
   hue = 0; // reset hue per request
   // resizing might not have changed the wrapper height, but we re-run notification
   debouncedNotifyParent();
+});
+
+crazyBtn.addEventListener('click', () => {
+  if (crazyInterval) {
+    clearInterval(crazyInterval);
+    crazyInterval = null;
+    crazyBtn.textContent = "Go Crazy"; // reset label
+  } else {
+    crazyBtn.textContent = "Stop Crazy"; // toggle label
+    crazyInterval = setInterval(() => {
+      goCrazy();
+    }, 25); // speed (ms) — smaller = faster madness
+  }
 });
 
 /* -------------------------
