@@ -17,11 +17,11 @@ test
 </iframe>
 
 <script>
-window.addEventListener("message", function(event) {
-if (event.data.type === "resize-iframe") {
+window.addEventListener("message", (ev) => {
+  if (ev.data && ev.data.type === "resize-iframe") {
     const iframe = document.getElementById("rainbowFrame");
-    iframe.style.height = event.data.height + "px";
-}
+    if (iframe) iframe.style.height = ev.data.height + "px";
+  }
 });
 </script>
 
