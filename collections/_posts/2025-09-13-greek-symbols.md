@@ -8,6 +8,22 @@ categories: test
 
 test
 
-<iframe src="/images/posts/greek-symbols/rainbow-draw.html" width="100%" height="600" style="border:none;overflow:hidden;"></iframe>
+<iframe 
+  id="rainbowFrame"
+  src="/images/posts/greek-symbols/rainbow-draw.html" 
+  width="100%" 
+  style="border:none; overflow:hidden;" 
+  scrolling="no">
+</iframe>
+
+<script>
+window.addEventListener("message", function(event) {
+if (event.data.type === "resize-iframe") {
+    const iframe = document.getElementById("rainbowFrame");
+    iframe.style.height = event.data.height + "px";
+}
+});
+</script>
+
 
 testie

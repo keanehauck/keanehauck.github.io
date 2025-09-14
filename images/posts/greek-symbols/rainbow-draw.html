@@ -156,6 +156,16 @@ document.getElementById('refreshButton').addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   hue = 0; // reset hue
 });
+
+function resizeIframe() {
+  const height = document.documentElement.scrollHeight;
+  window.parent.postMessage({ type: "resize-iframe", height }, "*");
+}
+
+// Resize on load and whenever window resizes
+window.addEventListener("load", resizeIframe);
+window.addEventListener("resize", resizeIframe);
+
 </script>
 
 </body>
