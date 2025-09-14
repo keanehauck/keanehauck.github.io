@@ -1,12 +1,18 @@
 ---
 layout: post
-title: How to Write Greek Symbols
+title: How to Write Greek Letters
 date: 2025-09-13
-summary: Test
+summary: Now with a fun rainbow sketchpad.
 categories: test
 ---
 
-test
+![spikedmath](/images/posts/greek-symbols/spikedmath.jpg)
+
+What does every great statistician need the ability to do? If you answered *easily explain complicated theorems* or *derive complex formulae by hand*, you are incorrect. The true answer is that every stats person needs to be able to draw Greek letters on a whiteboard without them looking like scribbly blobs.
+
+This is something I am unsurprisingly bad at. 
+
+
 
 <iframe 
   id="rainbowFrame"
@@ -26,4 +32,3 @@ window.addEventListener("message", (ev) => {
 </script>
 
 
-testie

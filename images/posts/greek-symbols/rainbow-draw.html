@@ -5,62 +5,75 @@
 <title>Rainbow Gradient Draw</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <style>
-  /* Page background + safe top padding */
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #f5f5f5; /* restored background */
-    overflow: hidden;    /* prevent inner scrollbars inside iframe */
+    background: #f5f5f5;
+    overflow: hidden;
   }
 
-  /* outer container - centers the wrapper in the iframe */
   body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* top aligned so top padding works */
-    padding-top: 10px;       /* tiny buffer at top */
+    align-items: flex-start;
+    padding: 10px;
     box-sizing: border-box;
   }
 
-  /* wrapper: the thing we measure and center */
   #wrapper {
-    width: 95%;           /* side padding on small screens */
-    max-width: 800px;     /* desktop max width */
+    width: 95%;
+    max-width: 800px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* center canvas and button horizontally */
+    align-items: center;
     gap: 10px;
-    padding: 8px;         /* optional inner padding */
-    padding-bottom: 30px;
     background: transparent;
   }
 
-  /* responsive canvas */
   canvas {
     width: 100%;
-    display: block;       /* remove inline spacing */
+    display: block;
     border: 1px solid #ccc;
     cursor: crosshair;
-    touch-action: none;   /* prevent scrolling while drawing */
+    touch-action: none;
     box-sizing: border-box;
   }
 
-  /* centered button */
-  #refreshButton {
+  /* Button container for side-by-side layout */
+  #buttonRow {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* wrap on small screens */
+  }
+
+  button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    align-self: center;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background-color: #ddd;
   }
 </style>
+
 </head>
 <body>
   <div id="wrapper">
     <canvas id="canvas" width="800" height="600"></canvas>
-    <button id="refreshButton">Refresh Canvas</button>
-    <button id="crazyButton">Go Crazy!</button>
+    <div id="buttonRow">
+      <button id="refreshButton">Refresh Canvas</button>
+      <button id="crazyButton">Go Crazy!</button>
+      <button id="drawButton">Draw something amazing!</button>
+    </div>
+
   </div>
 
 <script>
@@ -72,11 +85,13 @@ const ctx = canvas.getContext('2d');
 const wrapper = document.getElementById('wrapper');
 const refreshBtn = document.getElementById('refreshButton');
 const crazyBtn = document.getElementById('crazyButton');
+const drawBtn = document.getElementById('drawButton');
 
 let drawing = false;
 let points = [];
 let hue = 0;
 let crazyInterval = null;
+let drawInterval = null;
 const aspect = 3/4; // canvas height = width * aspect (4:3 width:height is width*0.75)
 
 /* debounce helper so parent doesn't get rapid messages */
@@ -108,7 +123,7 @@ function drawLineSegment(p1, p2) {
   const dx = p2.x - p1.x;
   const dy = p2.y - p1.y;
   const distance = Math.hypot(dx, dy);
-  const steps = Math.max(1, Math.ceil(distance / 2)); // smaller -> smoother
+   steps = Math.max(1, Math.ceil(distance / 2)); // smaller -> smoother
 
   for (let i = 0; i < steps; i++) {
     const t = i / steps;
@@ -158,6 +173,540 @@ function goCrazy() {
   drawLineSegment(p1, p2);
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------
+// Random Connect-the-Dots Shapes (~100 points max each)
+// -------------------------
+
+// -------------------------
+// Refined Connect-the-Dots Shapes
+// -------------------------
+
+const refinedImages = [];
+
+// 1. Rocket (classic simple silhouette)
+refinedImages.push([
+  {x:50,y:0},{x:60,y:20},{x:55,y:60},{x:65,y:80},{x:50,y:70},{x:35,y:80},{x:45,y:60},{x:40,y:20},{x:50,y:0}
+]);
+
+// 2. Tree (triangular pine tree)
+refinedImages.push([
+  {x:50,y:0},{x:70,y:30},{x:80,y:50},{x:60,y:50},{x:65,y:70},{x:50,y:60},
+  {x:35,y:70},{x:40,y:50},{x:20,y:50},{x:30,y:30},{x:50,y:0}
+]);
+
+// 3. House (simple rectangle + roof)
+refinedImages.push([
+  {x:30,y:60},{x:30,y:40},{x:50,y:20},{x:70,y:40},{x:70,y:60},{x:30,y:60},
+  {x:45,y:60},{x:45,y:50},{x:55,y:50},{x:55,y:60} // door
+]);
+
+// 4. Star
+refinedImages.push([
+  {x:50,y:0},{x:60,y:35},{x:100,y:35},{x:65,y:60},{x:80,y:100},{x:50,y:75},
+  {x:20,y:100},{x:35,y:60},{x:0,y:35},{x:40,y:35},{x:50,y:0}
+]);
+
+// 5. Heart
+refinedImages.push([
+  {x:50,y:15},{x:60,y:5},{x:70,y:5},{x:80,y:15},{x:80,y:30},{x:70,y:45},
+  {x:50,y:60},{x:30,y:45},{x:20,y:30},{x:20,y:15},{x:30,y:5},{x:40,y:5},{x:50,y:15}
+]);
+
+
+
+const refinedSun = [];
+
+ centerX = 50;
+ centerY = 50;
+ radius = 15;
+ rayLength = 10;
+ numRays = 12;
+
+// We'll interleave circle points and ray tips
+for (let i = 0; i < numRays; i++) {
+  const angle = (i / numRays) * 2 * Math.PI;
+  
+  // Circle point
+  const circleX = centerX + radius * Math.cos(angle);
+  const circleY = centerY + radius * Math.sin(angle);
+  refinedSun.push({ x: circleX, y: circleY });
+  
+  // Ray endpoint (alternating long/short)
+  const length = i % 2 === 0 ? radius + rayLength : radius + rayLength / 2;
+  const rayX = centerX + length * Math.cos(angle);
+  const rayY = centerY + length * Math.sin(angle);
+  refinedSun.push({ x: rayX, y: rayY });
+}
+
+// Optional: close the shape by connecting last ray back to first circle point
+refinedSun.push(refinedSun[0]);
+
+
+const starburst = [];
+ centerX = 50;
+ centerY = 50;
+ baseRadius = 10;
+ spikeLength = 20;
+ points = 16;
+
+for (let i = 0; i < points; i++) {
+  const angle = (i / points) * 2 * Math.PI;
+  
+  // Base point
+  const x1 = centerX + baseRadius * Math.cos(angle);
+  const y1 = centerY + baseRadius * Math.sin(angle);
+  starburst.push({ x: x1, y: y1 });
+  
+  // Spike tip
+  const length = i % 2 === 0 ? baseRadius + spikeLength : baseRadius + spikeLength / 2;
+  const x2 = centerX + length * Math.cos(angle);
+  const y2 = centerY + length * Math.sin(angle);
+  starburst.push({ x: x2, y: y2 });
+}
+
+starburst.push(starburst[0]); // Close shape
+
+
+const polygons = [];
+ centerX = 50;
+ centerY = 50;
+const layers = 4;
+const sides = 8;
+
+for (let layer = 1; layer <= layers; layer++) {
+  const radius = 5 * layer;
+  for (let i = 0; i < sides; i++) {
+    const angle = (i / sides) * 2 * Math.PI;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    polygons.push({ x, y });
+  }
+  polygons.push(polygons[polygons.length - sides]); // Close layer
+}
+const radialWaves = [];
+ centerX = 50;
+ centerY = 50;
+const waves = 5;
+const pointsPerWave = 36;
+ maxRadius = 30;
+
+for (let i = 0; i < pointsPerWave; i++) {
+  const angle = (i / pointsPerWave) * 2 * Math.PI;
+  for (let w = 1; w <= waves; w++) {
+    const radius = maxRadius * Math.sin((i / pointsPerWave) * Math.PI * w / waves) + 10;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    radialWaves.push({ x, y });
+  }
+}
+
+
+const spiral = [];
+ centerX = 50;
+ centerY = 50;
+const turns = 3;
+ points = 60;
+ maxRadius = 30;
+
+for (let i = 0; i < points; i++) {
+  const t = i / points;
+  const angle = 2 * Math.PI * turns * t;
+  const radius = maxRadius * t;
+  const x = centerX + radius * Math.cos(angle);
+  const y = centerY + radius * Math.sin(angle);
+  spiral.push({ x, y });
+}
+
+const snowflake = [];
+centerX = 50;
+centerY = 50;
+const arms = 6;
+const levels = 4;
+const step = 8;
+
+for (let i = 0; i < arms; i++) {
+  const angle = (i / arms) * 2 * Math.PI;
+  for (let l = 1; l <= levels; l++) {
+    const radius = step * l;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    snowflake.push({ x, y });
+
+    // little branches at 45° offsets
+    if (l < levels) {
+      const branchAngle1 = angle + Math.PI/6;
+      const branchAngle2 = angle - Math.PI/6;
+      const branchRadius = radius * 0.7;
+      snowflake.push({
+        x: centerX + branchRadius * Math.cos(branchAngle1),
+        y: centerY + branchRadius * Math.sin(branchAngle1)
+      });
+      snowflake.push({
+        x: centerX + branchRadius * Math.cos(branchAngle2),
+        y: centerY + branchRadius * Math.sin(branchAngle2)
+      });
+    }
+  }
+}
+
+const koch = [];
+centerX = 50;
+centerY = 50;
+const size = 40;
+for (let i = 0; i < 3; i++) {
+  const angle1 = (i / 3) * 2 * Math.PI - Math.PI/2;
+  const angle2 = ((i+1) / 3) * 2 * Math.PI - Math.PI/2;
+  const x1 = centerX + size * Math.cos(angle1);
+  const y1 = centerY + size * Math.sin(angle1);
+  const x2 = centerX + size * Math.cos(angle2);
+  const y2 = centerY + size * Math.sin(angle2);
+
+  // subdivide into 4 segments (like Koch curve)
+  const dx = (x2 - x1) / 3;
+  const dy = (y2 - y1) / 3;
+  const p1 = { x: x1, y: y1 };
+  const p2 = { x: x1 + dx, y: y1 + dy };
+  const peak = {
+    x: (x1 + x2)/2 + Math.sqrt(3)/6 * (y1 - y2),
+    y: (y1 + y2)/2 + Math.sqrt(3)/6 * (x2 - x1)
+  };
+  const p3 = { x: x1 + 2*dx, y: y1 + 2*dy };
+  const p4 = { x: x2, y: y2 };
+
+  koch.push(p1, p2, peak, p3, p4);
+}
+
+
+const mandala = [];
+centerX = 50;
+centerY = 50;
+const layersM = 6;
+const sidesM = 5;
+for (let layer = 1; layer <= layersM; layer++) {
+  const radius = 7 * layer;
+  for (let i = 0; i < sidesM; i++) {
+    const angle = (i / sidesM) * 2 * Math.PI + layer * 0.2;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    mandala.push({ x, y });
+  }
+  mandala.push(mandala[mandala.length - sidesM]); // close loop
+}
+
+
+const web = [];
+centerX = 50;
+centerY = 50;
+const rings = 8;
+const sidesW = 12;
+
+for (let r = 1; r <= rings; r++) {
+  const radius = 5 * r;
+  for (let i = 0; i < sidesW; i++) {
+    const angle = (i / sidesW) * 2 * Math.PI + r * 0.2;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    web.push({ x, y });
+  }
+}
+
+
+
+
+const sierpinski = [];
+function sier(x, y, size, depth) {
+  if (depth === 0) {
+    sierpinski.push({x, y});
+  } else {
+    const newSize = size/2;
+    sier(x, y, newSize, depth-1);
+    sier(x + newSize, y, newSize, depth-1);
+    sier(x + newSize/2, y - newSize, newSize, depth-1);
+  }
+}
+sier(30, 80, 40, 4);
+
+// -------------------------
+// Super Cool Pattern Makers
+// -------------------------
+
+function makeRoseCurve() {
+  const pts = [];
+  const centerX = 50, centerY = 50;
+  const k = 7; // try 5, 7, 9
+  const steps = 100;
+  const scale = 30;
+
+  for (let i = 0; i <= steps; i++) {
+    const angle = (i / steps) * 2 * Math.PI;
+    const r = Math.cos(k * angle) * scale;
+    const x = centerX + r * Math.cos(angle);
+    const y = centerY + r * Math.sin(angle);
+    pts.push({x, y});
+  }
+  return pts;
+}
+
+function makeSpirograph() {
+  const pts = [];
+  const centerX = 50, centerY = 50;
+  const R = 30, r = 9, d = 15;
+  const steps = 100;
+
+  for (let t = 0; t < steps; t++) {
+    const angle = (t / steps) * 20 * Math.PI;
+    const x = centerX + (R - r) * Math.cos(angle) + d * Math.cos(((R - r) / r) * angle);
+    const y = centerY + (R - r) * Math.sin(angle) - d * Math.sin(((R - r) / r) * angle);
+    pts.push({x, y});
+  }
+  return pts;
+}
+
+function makeFractalTree() {
+  const pts = [];
+  function branch(x, y, length, angle, depth) {
+    if (depth === 0) return;
+    const x2 = x + length * Math.cos(angle);
+    const y2 = y + length * Math.sin(angle);
+    pts.push({x, y}, {x: x2, y: y2});
+    branch(x2, y2, length * 0.7, angle - Math.PI/6, depth - 1);
+    branch(x2, y2, length * 0.7, angle + Math.PI/6, depth - 1);
+  }
+  branch(50, 90, 20, -Math.PI/2, 7);
+  return pts;
+}
+
+function makeLissajous() {
+  const pts = [];
+  const centerX = 50, centerY = 50;
+  const A = 30, B = 30, a = 5, b = 4;
+  const delta = Math.PI/2;
+  const steps = 100;
+
+  for (let t = 0; t <= steps; t++) {
+    const angle = (t / steps) * 2 * Math.PI;
+    const x = centerX + A * Math.sin(a * angle + delta);
+    const y = centerY + B * Math.sin(b * angle);
+    pts.push({x, y});
+  }
+  return pts;
+}
+
+function makePolygonWeb() {
+  const pts = [];
+  const centerX = 50, centerY = 50;
+  const layers = 12, sides = 12;
+
+  for (let layer = 1; layer <= layers; layer++) {
+    const radius = 5 * layer;
+    for (let i = 0; i < sides; i++) {
+      const angle = (i / sides) * 2 * Math.PI;
+      const x = centerX + radius * Math.cos(angle);
+      const y = centerY + radius * Math.sin(angle);
+      pts.push({x, y});
+    }
+    pts.push(pts[pts.length - sides]); // close loop
+  }
+  return pts;
+}
+
+function makeLightningTree() {
+  const points = [];
+  function branch(x, y, length, angle, depth) {
+    if (depth === 0) return;
+    const x2 = x + length * Math.cos(angle);
+    const y2 = y + length * Math.sin(angle);
+    points.push({x, y}, {x: x2, y: y2});
+    // uneven splits for lightning effect
+    branch(x2, y2, length * 0.7, angle + (Math.random() * 0.6), depth - 1);
+    branch(x2, y2, length * 0.7, angle - (Math.random() * 0.6), depth - 1);
+  }
+  branch(50, 100, 25, -Math.PI / 2, 6); // root in center-bottom
+  return points;
+}
+function makeKochSnowflake(iterations = 3) {
+  const points = [];
+  // Start with equilateral triangle
+  let shape = [
+    {x: 20, y: 80},
+    {x: 80, y: 80},
+    {x: 50, y: 20},
+    {x: 20, y: 80}
+  ];
+  
+  function subdivide(a, b) {
+    const dx = (b.x - a.x) / 3;
+    const dy = (b.y - a.y) / 3;
+    const p1 = {x: a.x + dx, y: a.y + dy};
+    const p2 = {x: a.x + 2*dx, y: a.y + 2*dy};
+    const px = (p1.x + p2.x)/2 - (Math.sqrt(3)/6)*(p2.y - p1.y);
+    const py = (p1.y + p2.y)/2 + (Math.sqrt(3)/6)*(p2.x - p1.x);
+    return [a, p1, {x: px, y: py}, p2];
+  }
+
+  for (let i = 0; i < iterations; i++) {
+    const newShape = [];
+    for (let j = 0; j < shape.length - 1; j++) {
+      const seg = subdivide(shape[j], shape[j+1]);
+      newShape.push(...seg);
+    }
+    newShape.push(shape[0]);
+    shape = newShape;
+  }
+  return shape;
+}
+function makeGalaxy(arms = 5, pointsPerArm = 100) {
+  const points = [];
+  for (let arm = 0; arm < arms; arm++) {
+    const offset = (arm / arms) * 2 * Math.PI;
+    for (let i = 0; i < pointsPerArm; i++) {
+      const t = i / pointsPerArm;
+      const angle = t * 6 * Math.PI + offset;
+      const radius = t * 40;
+      points.push({
+        x: 50 + radius * Math.cos(angle),
+        y: 50 + radius * Math.sin(angle)
+      });
+    }
+  }
+  return points;
+}
+function makeSpiralTree() {
+  const points = [];
+  function branch(x, y, length, angle, depth) {
+    if (depth === 0) return;
+    const x2 = x + length * Math.cos(angle);
+    const y2 = y + length * Math.sin(angle);
+    points.push({x, y}, {x: x2, y: y2});
+    // spiral out
+    branch(x2, y2, length * 0.7, angle + 0.4, depth - 1);
+    branch(x2, y2, length * 0.7, angle - 0.4, depth - 1);
+  }
+  branch(50, 90, 20, -Math.PI / 2, 7);
+  return points;
+}
+
+
+// -------------------------
+// Add them into refinedImages
+// -------------------------
+
+refinedImages.push(makeRoseCurve());
+refinedImages.push(makeSpirograph());
+refinedImages.push(makeFractalTree());
+refinedImages.push(makeLissajous());
+refinedImages.push(makePolygonWeb());
+
+
+refinedImages.push(sierpinski);
+refinedImages.push(web);
+refinedImages.push(mandala);
+refinedImages.push(koch);
+refinedImages.push(snowflake);
+// 5. Simple sun Silhouette
+refinedImages.push(refinedSun);
+refinedImages.push(starburst);
+refinedImages.push(polygons);
+refinedImages.push(radialWaves);
+refinedImages.push(spiral);
+
+
+// -------------------------
+// Helper: Center and scale points
+// -------------------------
+function centerAndScale(points, canvasWidth, canvasHeight, scale = 5) {
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const p of points) {
+    if (p.x < minX) minX = p.x;
+    if (p.y < minY) minY = p.y;
+    if (p.x > maxX) maxX = p.x;
+    if (p.y > maxY) maxY = p.y;
+  }
+
+  const width = maxX - minX;
+  const height = maxY - minY;
+
+  const offsetX = canvasWidth/2 - (width*scale)/2 - minX*scale;
+  const offsetY = canvasHeight/2 - (height*scale)/2 - minY*scale;
+
+  return points.map(p => ({
+    x: p.x*scale + offsetX,
+    y: p.y*scale + offsetY
+  }));
+}
+
+// -------------------------
+// Draw a connect-the-dots shape
+let currentTimer = null;
+
+function drawConnectTheDots(points, interval = 10) {
+  // Stop previous animation if still running
+  if (currentTimer) {
+    clearInterval(currentTimer);
+    currentTimer = null;
+  }
+
+  let i = 0;
+  currentTimer = setInterval(() => {
+    if (i >= points.length - 1) {
+      clearInterval(currentTimer);
+      currentTimer = null;
+      return;
+    }
+    drawLineSegment(points[i], points[i + 1]);
+    i++;
+  }, interval);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------
    Mouse event handlers
    ------------------------- */
@@ -223,6 +772,14 @@ crazyBtn.addEventListener('click', () => {
       goCrazy();
     }, 25); // speed (ms) — smaller = faster madness
   }
+});
+
+drawBtn.addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const idx = Math.floor(Math.random()*refinedImages.length);
+  const shape = refinedImages[idx];
+  const centered = centerAndScale(shape, canvas.width, canvas.height, 6);
+  drawConnectTheDots(centered);
 });
 
 /* -------------------------
