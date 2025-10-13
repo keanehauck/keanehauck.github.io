@@ -33,12 +33,35 @@ window.addEventListener("message", (ev) => {
 
 If we get the term *alphabet* from the Greek system, do we really need to clarify that we're using the Greek alphabet? Technically, we should be calling our system the "English Alphabet."
 
-Here's a list of all the letters and how I write them. As a disclaimer, these depictions are gotten from use in mathematics or statistics, not everyday handwriting. So, some of them might be needlessly complex or not follow convention.
+Here's a list of all the letters and how I write them (starting on red). As a disclaimer, these depictions are gotten from use in mathematics or statistics, not everyday handwriting. So, some of them might be needlessly complex or not follow convention.
 
 | Uppercase | Lowercase |
 |----------|----------|
-| ![](/images/posts/greek-letters/ualpha.png)<br>Comment about image 1 | ![](/images/posts/greek-letters/lalpha.png)<br>Comment about image 2 |
-| ![](/images/posts/greek-letters/ubeta.png)<br>**Strong caption** here | ![](/images/posts/greek-letters/lbeta.png)<br>*Italic caption* here |
+| ![](/images/posts/greek-letters/ualpha.png)<br>**Alpha** | ![](/images/posts/greek-letters/lalpha.png)<br>I used to draw it starting from the bottom, but starting from the top seems to give it a more full circle. |
+| ![](/images/posts/greek-letters/ubeta.png)<br>**Beta** | ![](/images/posts/greek-letters/lbeta.png)<br>The slant is important. |
+| ![](/images/posts/greek-letters/ugamma.png)<br>**Gamma** | ![](/images/posts/greek-letters/lgamma.png)<br> |
+| ![](/images/posts/greek-letters/udelta.png)<br>**Delta** | ![](/images/posts/greek-letters/ldelta.png)<br> |
+| ![](/images/posts/greek-letters/uepsilon.png)<br>**Epsilon** | ![](/images/posts/greek-letters/lepsilon.png)<br> |
+| ![](/images/posts/greek-letters/uzeta.png)<br>**Zeta** | ![](/images/posts/greek-letters/lzeta.png)<br> |
+| ![](/images/posts/greek-letters/ueta.png)<br>**Eta** | ![](/images/posts/greek-letters/leta.png)<br> |
+| ![](/images/posts/greek-letters/utheta.png)<br>**Theta** | ![](/images/posts/greek-letters/ltheta.png)<br> |
+| ![](/images/posts/greek-letters/uiota.png)<br>**Iota** | ![](/images/posts/greek-letters/liota.png)<br> |
+| ![](/images/posts/greek-letters/ukappa.png)<br>**Kappa** | ![](/images/posts/greek-letters/lkappa.png)<br> |
+| ![](/images/posts/greek-letters/ulambda.png)<br>**Lambda** | ![](/images/posts/greek-letters/llambda.png)<br> |
+| ![](/images/posts/greek-letters/umu.png)<br>**Mu** | ![](/images/posts/greek-letters/lmu.png)<br> |
+| ![](/images/posts/greek-letters/unuu.png)<br>**Nu** | ![](/images/posts/greek-letters/lnu.png)<br> |
+| ![](/images/posts/greek-letters/uxi.png)<br>**Xi** | ![](/images/posts/greek-letters/lxi.png)<br> |
+| ![](/images/posts/greek-letters/uomicron.png)<br>**Omicron** | ![](/images/posts/greek-letters/lomicron.png)<br> |
+| ![](/images/posts/greek-letters/upie.png)<br>**Pi** | ![](/images/posts/greek-letters/lpi.png)<br> |
+| ![](/images/posts/greek-letters/urho.png)<br>**Rho** | ![](/images/posts/greek-letters/lrho.png)<br> |
+| ![](/images/posts/greek-letters/usigma.png)<br>**Sigma** | ![](/images/posts/greek-letters/lsigma.png)<br> |
+| ![](/images/posts/greek-letters/utau.png)<br>**Tau** | ![](/images/posts/greek-letters/ltau.png)<br> |
+| ![](/images/posts/greek-letters/uu.png)<br>**Upsilon** | ![](/images/posts/greek-letters/lupsilon.png)<br> |
+| ![](/images/posts/greek-letters/uphi.png)<br>**Phi** | ![](/images/posts/greek-letters/lphi.png)<br> |
+| ![](/images/posts/greek-letters/uchi.png)<br>**Chi** | ![](/images/posts/greek-letters/lchi.png)<br> |
+| ![](/images/posts/greek-letters/upsi.png)<br>**Psi** | ![](/images/posts/greek-letters/lpsi.png)<br> |
+| ![](/images/posts/greek-letters/uomega.png)<br>**Omega** | ![](/images/posts/greek-letters/lomega.png)<br> |
+
 
 
 
