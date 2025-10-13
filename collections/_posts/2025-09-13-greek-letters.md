@@ -37,8 +37,8 @@ Here's a list of all the letters and how I write them. As a disclaimer, these de
 
 | Uppercase | Lowercase |
 |----------|----------|
-| ![](/images/posts/greek-letters/ualpha.jpg)<br>Comment about image 1 | ![](/images/posts/greek-letters/lalpha.jpg)<br>Comment about image 2 |
-| ![](/images/posts/greek-letters/ubeta.jpg)<br>**Strong caption** here | ![](/images/posts/greek-letters/lbeta.jpg)<br>*Italic caption* here |
+| ![](/images/posts/greek-letters/ualpha.png)<br>Comment about image 1 | ![](/images/posts/greek-letters/lalpha.png)<br>Comment about image 2 |
+| ![](/images/posts/greek-letters/ubeta.png)<br>**Strong caption** here | ![](/images/posts/greek-letters/lbeta.png)<br>*Italic caption* here |
 
 
 
