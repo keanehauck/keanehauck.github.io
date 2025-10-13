@@ -37,59 +37,31 @@ Here's a list of all the letters and how I write them (starting on red). As a di
 
 | Uppercase | Lowercase |
 |----------|----------|
-| **Alpha**<br>![](/images/posts/greek-letters/ualpha.png)<br>I used to draw it starting from the bottom, but starting from the top seems to give it a more full circle. | **Alpha**<br>![](/images/posts/greek-letters/lalpha.png)<br>I used to draw it starting from the bottom, but starting from the top seems to give it a more full circle. |
-| **Beta**<br>![](/images/posts/greek-letters/ubeta.png)<br>The slant is important. | **Beta**<br>![](/images/posts/greek-letters/lbeta.png)<br>The slant is important. |
+| **Alpha**<br>![](/images/posts/greek-letters/ualpha.png)<br> | **Alpha**<br>![](/images/posts/greek-letters/lalpha.png)<br>I used to draw it starting from the bottom, but starting from the top seems to give it a more full circle. |
+| **Beta**<br>![](/images/posts/greek-letters/ubeta.png)<br>| **Beta**<br>![](/images/posts/greek-letters/lbeta.png)<br>The slant is important. |
 | **Gamma**<br>![](/images/posts/greek-letters/ugamma.png)<br> | **Gamma**<br>![](/images/posts/greek-letters/lgamma.png)<br> |
 | **Delta**<br>![](/images/posts/greek-letters/udelta.png)<br> | **Delta**<br>![](/images/posts/greek-letters/ldelta.png)<br> |
 | **Epsilon**<br>![](/images/posts/greek-letters/uepsilon.png)<br> | **Epsilon**<br>![](/images/posts/greek-letters/lepsilon.png)<br> |
-| **Zeta**<br>![](/images/posts/greek-letters/uzeta.png)<br> | **Zeta**<br>![](/images/posts/greek-letters/lzeta.png)<br> |
-| **Eta**<br>![](/images/posts/greek-letters/ueta.png)<br> | **Eta**<br>![](/images/posts/greek-letters/leta.png)<br> |
+| **Zeta**<br>![](/images/posts/greek-letters/uzeta.png)<br> | **Zeta**<br>![](/images/posts/greek-letters/lzeta.png)<br> I have no clue how to write this one, really. I don't think I've ever used it. |
+| **Eta**<br>![](/images/posts/greek-letters/ueta.png)<br> I think the slant makes it look more "Greek." | **Eta**<br>![](/images/posts/greek-letters/leta.png)<br> |
 | **Theta**<br>![](/images/posts/greek-letters/utheta.png)<br> | **Theta**<br>![](/images/posts/greek-letters/ltheta.png)<br> |
-| **Iota**<br>![](/images/posts/greek-letters/uiota.png)<br> | **Iota**<br>![](/images/posts/greek-letters/liota.png)<br> |
-| **Kappa**<br>![](/images/posts/greek-letters/ukappa.png)<br> | **Kappa**<br>![](/images/posts/greek-letters/lkappa.png)<br> |
-| **Lambda**<br>![](/images/posts/greek-letters/ulambda.png)<br> | **Lambda**<br>![](/images/posts/greek-letters/llambda.png)<br> |
+| **Iota**<br>![](/images/posts/greek-letters/uiota.png)<br> Tough one. | **Iota**<br>![](/images/posts/greek-letters/liota.png)<br> |
+| **Kappa**<br>![](/images/posts/greek-letters/ukappa.png)<br> | **Kappa**<br>![](/images/posts/greek-letters/lkappa.png)<br> I like to put a little tail at the top of the main stroke to distinguish it from a "k." |
+| **Lambda**<br>![](/images/posts/greek-letters/ulambda.png)<br> | **Lambda**<br>![](/images/posts/greek-letters/llambda.png)<br> Half-Life reference. |
 | **Mu**<br>![](/images/posts/greek-letters/umu.png)<br> | **Mu**<br>![](/images/posts/greek-letters/lmu.png)<br> |
-| **Nu**<br>![](/images/posts/greek-letters/unu.png)<br> | **Nu**<br>![](/images/posts/greek-letters/lnu.png)<br> |
-| **Xi**<br>![](/images/posts/greek-letters/uxi.png)<br> | **Xi**<br>![](/images/posts/greek-letters/lxi.png)<br> |
-| **Omicron**<br>![](/images/posts/greek-letters/uomicron.png)<br> | **Omicron**<br>![](/images/posts/greek-letters/lomicron.png)<br> |
-| **Pi**<br>![](/images/posts/greek-letters/upi.png)<br> | **Pi**<br>![](/images/posts/greek-letters/lpi.png)<br> |
+| **Nu**<br>![](/images/posts/greek-letters/unu.png)<br> | **Nu**<br>![](/images/posts/greek-letters/lnu.png)<br> Again, the slight curve distinguishes it from a "v." |
+| **Xi**<br>![](/images/posts/greek-letters/uxi.png)<br> What in the world is this thing? | **Xi**<br>![](/images/posts/greek-letters/lxi.png)<br> The most feared of them all. Known far and wide by matrix algebraists. Not too bad if you think of it as a lowercase zeta with an extra loop. |
+| **Omicron**<br>![](/images/posts/greek-letters/uomicron.png)<br> Yippee! Easy. | **Omicron**<br>![](/images/posts/greek-letters/lomicron.png)<br> |
+| **Pi**<br>![](/images/posts/greek-letters/upi.png)<br> Looks like a [Torii](https://en.wikipedia.org/wiki/Torii). | **Pi**<br>![](/images/posts/greek-letters/lpi.png)<br> |
 | **Rho**<br>![](/images/posts/greek-letters/urho.png)<br> | **Rho**<br>![](/images/posts/greek-letters/lrho.png)<br> |
 | **Sigma**<br>![](/images/posts/greek-letters/usigma.png)<br> | **Sigma**<br>![](/images/posts/greek-letters/lsigma.png)<br> |
-| **Tau**<br>![](/images/posts/greek-letters/utau.png)<br> | **Tau**<br>![](/images/posts/greek-letters/ltau.png)<br> |
+| **Tau**<br>![](/images/posts/greek-letters/utau.png)<br> | **Tau**<br>![](/images/posts/greek-letters/ltau.png)<br> Another little curve to make it look more Greek than a "t." |
 | **Upsilon**<br>![](/images/posts/greek-letters/uupsilon.png)<br> | **Upsilon**<br>![](/images/posts/greek-letters/lupsilon.png)<br> |
-| **Phi**<br>![](/images/posts/greek-letters/uphi.png)<br> | **Phi**<br>![](/images/posts/greek-letters/lphi.png)<br> |
+| **Phi**<br>![](/images/posts/greek-letters/uphi.png)<br> Sometimes serifs are used at the top and bottom to distinguish it from the lowercase phi. | **Phi**<br>![](/images/posts/greek-letters/lphi.png)<br> |
 | **Chi**<br>![](/images/posts/greek-letters/uchi.png)<br> | **Chi**<br>![](/images/posts/greek-letters/lchi.png)<br> |
-| **Psi**<br>![](/images/posts/greek-letters/upsi.png)<br> | **Psi**<br>![](/images/posts/greek-letters/lpsi.png)<br> |
+| **Psi**<br>![](/images/posts/greek-letters/upsi.png)<br> The serif on the right side (and size of the symbol) differentiate it from the lowercase version. | **Psi**<br>![](/images/posts/greek-letters/lpsi.png)<br> |
 | **Omega**<br>![](/images/posts/greek-letters/uomega.png)<br> | **Omega**<br>![](/images/posts/greek-letters/lomega.png)<br> |
 
+And there you have it. Realistically, most of these aren't very common in stats, but I figured it was a good idea to list them all anyway. It was definitely an adventure to try and write them all with my computer mouse instead of actually being able to draw them on paper, but I thought the rainbow line was too fun to pass up. Hopefully, some of these depictions will be a little useful to those of us who are still stats novices.
 
-
-
-
-alpha: I used to draw it starting from the bottom, but starting from the top seems to give it a "fuller" circle 
-
-lzeta: I have no clue how to write this one, really. I don't think i've ever used it
-
-ueta: I think the slant makes it look more "Greek."
-
-uiota: Tough one.
-
-lkappa: I like to put a little tail at the top of the main stroke to distinguish it from a "k".
-
-llambda: halflife
-
-lnu: again, the slight curve distinguishes it from a "v."
-
-uxi: WTF is this thing?
-
-lxi: the most feared of them all. Known far and wide by matrix algebrists. It's not too bad if you think of it as lzeta with an extra loop
-
-omicrons: Yippee! Easy
-
-upi: Looks like a torii
-
-ltau: Curve to distinguish
-
-uphi: Sometimes serifs are used at the top and bottom to distinguish from the lowercase phi
-
-upsi: Serif on the right side (and size) distinguish it from the lowercase
+P.S. If you make any cool drawings with the sketchpad, send them to me!
