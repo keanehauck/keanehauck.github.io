@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to Write Greek Letters
-date: 2025-09-13
+date: 2025-10-13
 summary: Now with a fun rainbow sketchpad.
-categories: test
+categories: statistics math art
 ---
 
 ![spikedmath](/images/posts/greek-letters/spikedmath.jpg)
