@@ -5,11 +5,11 @@ tags: home
 
 # Keane A. Hauck
 
-<img src="/images/pokemon.jpg" alt="Me" title="Gaming" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
+<img src="/images/19.jpg" alt="Me" title="TCT" width="300" height="300" ALIGN="left" HSPACE="50" VSPACE="25"/> 
 
 <br>
 
-### I'm an amateur quantitative methodologist, computer scientist, and avid Pokémon player (the card game). Welcome to my website! 
+### I'm a quantitative psychology student and avid Pokémon player (the card game). Welcome to my website! 
 
 <br>
 
@@ -18,7 +18,7 @@ tags: home
 <br>
 <br>
 
-I'm currently completing my PhD in Quantitive Psychology at Arizona State University under the mentorship of Dr. Kevin Grimm! My research interests include statistical modeling and psychometrics. Thank you to all of those who have helped me thus far in my academic journey, including Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day.
+I'm currently completing my PhD in Quantitive Methods at Arizona State University under the mentorship of Dr. Kevin Grimm. My research interests include statistical modeling and psychometrics. Thank you to all of those who have helped me thus far in my academic journey, including Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day.
 
 Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
 
