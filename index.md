@@ -20,7 +20,7 @@ tags: home
 
 I'm currently completing my PhD in Quantitive Methods at Arizona State University under the mentorship of Dr. Kevin Grimm. My research interests include statistical modeling and psychometrics. Thank you to all of those who have helped me thus far in my academic journey, including Dr. Robert Terry, Dr. Jenel Cavazos, Dr. Lauren Grimley, and Dr. Eric Day.
 
-Feel free to take a look at my [**research →**]({{ site.baseurl }}/research)
+Feel free to take a look at my [**research →**](https://scholar.google.com/citations?user=Um6Rmm8AAAAJ&hl=en)
 
 Alternatively, for my publications and more details about my academics, please see my  <a href="/images/CV.pdf" target="_blank">**CV →**</a>
 
