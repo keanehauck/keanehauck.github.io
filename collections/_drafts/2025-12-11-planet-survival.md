@@ -42,6 +42,23 @@ Mother Earth really let us down here. If I could pick and choose the location I'
 
 An [atmospheric diving suit](https://en.wikipedia.org/wiki/Atmospheric_diving_suit#Current_suits) has just about everything I'd need to survive 24h in the ocean: thruster maneuverability, a maintained internal atmospheric pressure/temperature, and a 24-hour emergency backup oxygen tank. So, I'd just secure a bunch of life jackets to one of those suits. If the lifejackets fail, I should be able to jet around with the thrusters to avoid getting too deep. I can also use my year of time to learn how to maneuver my suit. And in the off-chance I get teleported to land, I can just walk around in my modern suit of armor to avoid any natural predators. Easy survival.
 
-### 3. 
+### 3. Mercury
 
+The [World Sauna Championships](https://en.wikipedia.org/wiki/World_Sauna_Championships) was an annual "heat-endurance" event held in Finland from 1999 to 2010. Each year, contestants would sit in an extremely hot sauna until they gave up, with the winner being the last person to be able to walk out of the sauna without outside assistance. Temperatures typically started at 110°C. In 2010, the event was permanently cancelled after a competitor unfortunately passed away due to complications from extreme heat. He had sat in the sauna for only 6 minutes. The moral? Surviving extreme heat is really difficult.
 
+This is the problem we run into with Mercury. Thanks to its nonexistent atmosphere and slow spin, the side of the planet facing away from the sun is extremely cold (-170°C) while the side facing the sun is extremely hot (420°C). A simple space suit isn't going to cut it. Most of the suits designed for Mars or other space exploration are designed with insulation from cold in mind, not insulation from pure heat. 
+
+Could a Honda Pilot be insulated enough to withstand 420°C for 24 hours? If so I could be teleported to Mercury in my car. I stumbled across a [website](https://www.modusadvanced.com/resources/blog/azw-la-ii-white-thermal-control-paint?utm_source=chatgpt.com) advertising *thermal control paint for spacecraft and satellite applications*, which has to have the smallest target audience of any marketing website I've ever seen. They report that their thermal control paint, AZW/LA-II, operates in temperatures ranging from -180°C to 1400°C, which is perfect for our Mercury use! On the website, they also describe the important components of an overall temperature control system, including radiator surfaces, heat pipes, and thermal isolation systems. This company seems like they know what they're talking about. So, all I'd have to do is contract with them to get my Pilot outfitted with the necessary components of an interstellar heat reduction system, and I'd be good to go! I could sit in my space suit for oxygen and for protection from the near-vacuum atmospheric conditions, and hang tight.
+
+![pilotv1](/images/posts/planet-survival/pilotv1.png)
+*My Pilot, complete with thermal shields, reflective coating, and a heat sink*
+
+Also, when reading the wikipedia page for Mercury I saw this:
+
+![badnews](/images/posts/planet-survival/badnews.png)
+
+Better start selling those stocks.
+
+### 4. Venus
+
+Now we're getting really tough. 
