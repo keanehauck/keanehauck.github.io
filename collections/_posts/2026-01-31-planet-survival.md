@@ -96,21 +96,23 @@ Here's me on Uranus:
 
 ### 6. Saturn
 
-Saturn is somehow orders of magnitude worse. The winds achieve speeds of up to *1,800 km/h*, which is just absurd. We can try and super-reinforce our Lockheed, but it's not looking good. Our only chance of survival is if we are teleported to a patch of the atmosphere where the storms are relatively tame. If we can fly with one long jet stream and not hit any vertical shear, we might not get torn to shreds instantly.
+Saturn is somehow orders of magnitude worse. The winds achieve speeds of up to *1,800 km/h*, which is just absurd. We can try and super-reinforce our Lockheed, but it's not looking good. Our only chance of survival is if we are teleported to a patch of the atmosphere where the storms are relatively tame. If we can fly with one long jet stream and not hit any vertical shear, we might be able to fly until we hit turbulence.
 
 ![saturn](/images/posts/planet-survival/saturn.png)
 
-### 7. Jupiter
+### 7. Neptune
 
-We're dead. Not only does Jupiter have immense storms with [lightning as strong as atomic bombs](https://web.archive.org/web/20111008010724/http://www.nasa.gov/vision/universe/solarsystem/galileo_end.html), but the gravity is 2.4g: our plane isn't staying in the air. The only possible solution is to add massive jet engines to our Lockheed to try and offset the massive gravity differential. Oh, did I also mention the constant bombardment of radiation?
+Not looking too good so far. Neptune has the strongest winds (2,200 km/h) and largest storms of any planet in the solar system. The good news is that gravity is only about 1.1g, which means we can still theoretically fly a plane. The bad news is that we don't know of any potential plane wing material strong enough to withstand these atmospheric conditions. Winds on Saturn are almost as fast as Neptunes, but Saturn's storms and cloud patterns are much less volatile. Our plane will get torn apart within minutes of trying to exist in such extreme storm conditions.
+
+![neptune](/images/posts/planet-survival/neptune.png)
+
+### 8. Jupiter
+
+We're dead. Not only does Jupiter have immense storms with [lightning as strong as atomic bombs](https://web.archive.org/web/20111008010724/http://www.nasa.gov/vision/universe/solarsystem/galileo_end.html) that strikes around [four times per second in some thunderheads](https://www.jpl.nasa.gov/news/juno-solves-39-year-old-mystery-of-jupiter-lightning/), but the gravity is 2.4g: our plane isn't staying in the air. The only possible solution is to try and add massive jet engines to our Lockheed to try and offset the massive gravity differential. Oh, did I also mention the constant bombardment of extremely lethal radiation? Teleporting to the atmosphere of Jupiter would result in our contraption being immediately shredded by unbelievably turbulent winds, blasted by giga-lightning, and rapidly pulled to crush depths, probably in that order.
 
 ![jupiter](/images/posts/planet-survival/jupiter.png)
 
-### 8. Neptune
-
-Neptune has the strongest winds (2,200 km/h) and largest storms of any planet in the solar system. The good news is that gravity is only about 1.1g, which means we can get rid of our jet engine. The bad news is that we don't know of any potential plane wing material strong enough to withstand these atmospheric conditions. 
-
-![neptune](/images/posts/planet-survival/neptune.png)
+Don't mess with Jupiter.
 
 ### Conclusion
 
