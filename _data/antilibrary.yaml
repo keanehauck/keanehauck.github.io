@@ -16,14 +16,6 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "In Cold Blood",
-        "author": "Truman Capote",
-        "rating": "",
-        "isbn": "0679745580",
-        "review_path": null,
-        "year_i_finished_reading": null
-    },
-    {
         "title": "The Picture of Dorian Gray",
         "author": "Oscar Wilde",
         "rating": "",
@@ -107,7 +99,7 @@
         "title": "Oliver Twist",
         "author": "Charles Dickens",
         "rating": "",
-        "isbn": "9780374528379",
+        "isbn": "9781403764980",
         "review_path": null,
         "year_i_finished_reading": null
     },

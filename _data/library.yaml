@@ -1,5 +1,37 @@
 [
     {
+        "title": "The Data Detective: Ten Easy Rules to Make Sense of Statistics",
+        "author": "Tim Harford",
+        "rating": "\u2605\u2605\u2605\u2605\u2605",
+        "isbn": "0593084675",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "rating": "\u2605\u2605\u2605",
+        "isbn": "0062315005",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "In Cold Blood",
+        "author": "Truman Capote",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "0679745580",
+        "review_path": null,
+        "year_i_finished_reading": null
+    },
+    {
+        "title": "The Call of the Wild",
+        "author": "Jack London",
+        "rating": "\u2605\u2605\u2605\u2605",
+        "isbn": "9781673349511",
+        "review_path": "the-call-of-the-wild-jack-london/",
+        "year_i_finished_reading": null
+    },
+    {
         "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
         "author": "Erik Larson",
         "rating": "\u2605\u2605\u2605\u2605\u2605",
@@ -352,15 +384,7 @@
         "year_i_finished_reading": null
     },
     {
-        "title": "The Call of the Wild",
-        "author": "Jack London",
-        "rating": "\u2605\u2605\u2605",
-        "isbn": "9781673349511",
-        "review_path": "the-call-of-the-wild-jack-london/",
-        "year_i_finished_reading": null
-    },
-    {
-        "title": "The Adventures of Huckleberry Finn",
+        "title": "The Adventures of Huckleberry Finn (Adventures of Tom and Huck, #2)",
         "author": "Mark Twain",
         "rating": "\u2605\u2605\u2605\u2605",
         "isbn": "0142437174",
