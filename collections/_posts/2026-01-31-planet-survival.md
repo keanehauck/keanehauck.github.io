@@ -22,7 +22,7 @@ Obviously I know nothing about building random machines. However, with unlimited
 
 * The contraptions need to be as simple as possible.
 
-It's totally uninteresting to just surround myself with a 1000-foot thick ball of steel and plop it on the surface of some random planet[^According to the [heat equation](https://en.wikipedia.org/wiki/Thermal_diffusivity) a 1000-foot thick ball of steel will definitely maintain a stable interior temperature for 24 hours. However, we can do better. The thermal diffusivity chart on wikipedia suggests that steel is a rather poor medium for our giant ball. Rubber actually fares really well, followed by glass.] Therefore, the challenge is as interesting as possible if our goal is to make a simple, exposed contraption.
+It's totally uninteresting to just surround myself with a 1000-foot thick ball of steel and plop it on the surface of some random planet (According to the [heat equation](https://en.wikipedia.org/wiki/Thermal_diffusivity) a 1000-foot thick ball of steel will definitely maintain a stable interior temperature for 24 hours. However, we can do better. The thermal diffusivity chart on wikipedia suggests that steel is a rather poor medium for our giant ball. Rubber actually fares really well, followed by glass). Therefore, the challenge is as interesting as possible if our goal is to make a simple, exposed contraption.
 
 * My contraption and I will be teleported to surface level of the planet (if it has a surface)
 
@@ -116,4 +116,4 @@ Neptune has the strongest winds (2,200 km/h) and largest storms of any planet in
 
 And there you have it. A definitive ranking of how easy each planet would be to survive for 24 hours. My main takeaway from all of this? Space is scary. Good thing we have Mother Earth.
 
-![boot](/images/posts/planet-survival/boot.jpg)
+![boot2](/images/posts/planet-survival/boot2.png)
