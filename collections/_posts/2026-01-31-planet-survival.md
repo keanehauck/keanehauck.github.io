@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 24 Hour Planet Survival Challenge
-date: 2025-01-31
+date: 2026-01-31
 summary: Ranking which planets in the solar system I could exist on for 24h.
 categories: hypothetical challenge
 ---
