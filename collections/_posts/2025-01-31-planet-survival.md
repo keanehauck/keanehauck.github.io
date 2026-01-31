@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 24 Hour Planet Survival Challenge
-date: 2025-12-11
+date: 2025-01-31
 summary: Ranking which planets in the solar system I could exist on for 24h.
 categories: hypothetical challenge
 ---
@@ -61,4 +61,59 @@ Better start selling those stocks.
 
 ### 4. Venus
 
-Now we're getting really tough. 
+Now we're getting really tough. Venus is the planet I mentioned in the introduction. As previously stated, Venus is very hot, albeit not as bad as Mercury. Surface temperatures are around 460°C, which is theoretically survivable in our heat-resistant Pilot. The problem(s) are twofold: the atmospheric pressure and the weather conditions.
+
+Venus' atmosphere is very dense—its pressure is about 93 times higher thatn Earth's atmosphere at [surface level](https://en.wikipedia.org/wiki/Venus). At these pressures, our current contraption will be instantly crushed. We might need to abandon the Pilot. 
+
+The [Deepsea Challenger](https://deepseachallenge.com/) is a submersible designed (with notably fewer critics than *Titan* had) to withstand the pressure at the deepest parts of the ocean (depths of around 11km). According to Wikipedia, the pressure on Venus is equatable to the pressure of a water depth on Earth of about 1km. So, this submersible is well above the threshold for pressure survivability. As a bonus, it comes with air tanks, so I don't need to worry about sitting in a space suit for the whole day. We could equip it with all the aforementioned heat shielding and be good.
+
+![challengerv1](/images/posts/planet-survival/challengerv1.png)
+
+The weather might be the bigger problem. According to the website for our thermal control coating, the coating is susceptible to degradation from radiation, atomic oxygen, thermal cycling, and micrometeoroid impacts. The first three aren't really a problem on Venus but the last one is an issue. Any surface exposed to the Venus weather will be constantly buffeted by rocks and other debris thanks to wind speeds of up to 300km/h. Also, it rains acid. Venus is a lovely place.
+
+One solution is to encase our contraption in a weather resistant dome shield. I have a cooler solution in mind.
+
+A [tunnel boring machine](https://en.wikipedia.org/wiki/Tunnel_boring_machine) is a large machine used for quickly drilling large tunnels. They're commonly used to excavate large amounts of earth for subway systems or traffic tunnels.
+
+![tbm](/images/posts/planet-survival/tbm.png)
+
+If we put one on the bottom of the Deepsea Challenger, could we dig ourselves into the ground quickly enough to escape the weather? Soil-tunneling machines can excavate at a rate of around 200m/week. This equates to 28.5m/day, and about 1.2 meters per hour. The dimensions of the submersible are 2.3m (7.7 ft.) X 1.7m (5.5 ft.) X 8.1m (26.6 ft.). If we laid it on its side, it would be dug underground in less than two hours with an industrial boring machine. Of course, the top would still be exposed, but we could just limit our weather shield to a disk at the top. I think this idea's a winner. 
+
+![challengerv2](/images/posts/planet-survival/challengerv2.png)
+
+### 5. Uranus
+
+To no one's surprise, the Gas Giants rank last. The final four planets have no defined surface, so it's hard to determine what altitude I'd get teleported to. For each, I think it's fair to teleport to the part of the atmosphere which corresponds to a pressure of about 1 Earth atmosphere. You may kvetch and say "well, that's ignoring pressure! No fair!" and to that I say "wait and see how bad these planets get." We'll speed through these, as the contraption is very similar for each.
+
+All of these planets will kill you. All feature astronomical wind speeds, massive storms, extreme radiation, huge temperature fluctuations, and no stable surface. These rankings are pretty much determined by how easy it would be to fly a plane in their atmosphere. In researching for this post, I found an [XKCD](https://what-if.xkcd.com/30/) that helpfully described the flight conditions for all the planets (there's always a relevant XKCD). I'll be agreeing with some of the rankings, but not all.
+
+Uranus is the calmest of the bunch, relatively speaking. At 1 atm (atmosphere), wind speeds range from 360 to 180 km/h, which is very very fast. There is relatively little radiation compared to the other gas giants—about 100 times weaker than Jupiter, but we still need the lead walls. The gravity of Uranus is around .9g, so flying/floating is still difficult. 
+
+The Lockheed WC-130 is an American military plane designed to [fly into the center of a hurricane](https://en.wikipedia.org/wiki/Lockheed_WC-130). This will be our base plane for surviving the planets. We'll redesign the walls to be lined with lead to block potential radiation rays, and add the thermal coating previously discussed.
+Here's me on Uranus: 
+
+![uranus](/images/posts/planet-survival/uranus.png)
+
+### 6. Saturn
+
+Saturn is somehow orders of magnitude worse. The winds achieve speeds of up to *1,800 km/h*, which is just absurd. We can try and super-reinforce our Lockheed, but it's not looking good. Our only chance of survival is if we are teleported to a patch of the atmosphere where the storms are relatively tame. If we can fly with one long jet stream and not hit any vertical shear, we might not get torn to shreds instantly.
+
+![saturn](/images/posts/planet-survival/saturn.png)
+
+### 7. Jupiter
+
+We're dead. Not only does Jupiter have immense storms with [lightning as strong as atomic bombs](https://web.archive.org/web/20111008010724/http://www.nasa.gov/vision/universe/solarsystem/galileo_end.html), but the gravity is 2.4g: our plane isn't staying in the air. The only possible solution is to add massive jet engines to our Lockheed to try and offset the massive gravity differential. Oh, did I also mention the constant bombardment of radiation?
+
+![jupiter](/images/posts/planet-survival/jupiter.png)
+
+### 8. Neptune
+
+Neptune has the strongest winds (2,200 km/h) and largest storms of any planet in the solar system. The good news is that gravity is only about 1.1g, which means we can get rid of our jet engine. The bad news is that we don't know of any potential plane wing material strong enough to withstand these atmospheric conditions. 
+
+![neptune](/images/posts/planet-survival/neptune.png)
+
+### Conclusion
+
+And there you have it. A definitive ranking of how easy each planet would be to survive for 24 hours. My main takeaway from all of this? Space is scary. Good thing we have Mother Earth.
+
+![boot](/images/posts/planet-survival/boot.jpg)
