@@ -44,3 +44,6 @@ IF you want a review with a book that has '#' in its title, I modified the updat
 
 To sync a review with a book, run the python script on the exported goodreads, and check what the review string is in the terminal.
 To sync ISBN, look at the library.yaml to see what the stored title is. If you match the stored title with the exceptions in TITLE_TO_ISBN, it should sync up. 
+
+
+To check/fix blog arrows, check pagination.html in original site repo.
