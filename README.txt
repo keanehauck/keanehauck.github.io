@@ -48,4 +48,6 @@ To sync ISBN, look at the library.yaml to see what the stored title is. If you m
 
 To check/fix blog arrows, check pagination.html in original site repo.
 
-_ underscores are interpreted as italics in the markdown, so this can break LATEX. Group them explicitly.
+_ underscores are interpreted as italics in the markdown, so this can break LATEX. Group them explicitly. or escape them by putting backslash infront of them.
+
+Can linebreak in latex with \\

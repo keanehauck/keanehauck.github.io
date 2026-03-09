@@ -50,13 +50,15 @@ The first step is to figure out what the denominator of the expression simplifie
 
 Again, with two groups,
 
-$SS_W= \sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}_i)^2=\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2 + \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2$.
+$SS_W= \sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}\_i)^2=\sum_{j=1}^{n_1}(y_{1j}-\overline{y}\_1)^2 + \sum\_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2$.
 
-Thus, $MS_{W}= \frac{\sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}\_i)^2}{N-k}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2}{N-2}$ for two groups.
+Thus, $MS_{W}= \frac{\sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}\_i)^2}{N-k}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}\_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}\_2)^2}{N-2}$ for two groups.
 
-The goal is to represent this equation in terms of something we recognize. We know that sample variance, $s^2_i$, is equal to $\frac{\sum_{j=1}^{n_i}(y_{ij}-\overline{y}_i)^2}{n_i-1}$ for group $i$. We might notice that the numerator of this equation shows up twice in our current $MS_{W}$ formula. We can make sample variance itself show up by multiplying both the numerator and denominator of $MS_W$ by $\frac{1}{(n_1-1)(n_2-1)}$.
+The goal is to represent this equation in terms of something we recognize. We know that sample variance, $s_i^2$, is equal to $\frac{\sum_{j=1}^{n_i}(y_{ij}-\overline{y}\_i)^2}{n_i-1}$ for group $i$. We might notice that the numerator of this equation shows up twice in our current $MS_W$ formula. We can make sample variance itself show up by multiplying both the numerator and denominator of $MS_W$ by $\frac{1}{(n_1-1)(n_2-1)}$.
 
-$MS_W \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2}{N-2} \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}} = \frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2/(n_1-1)(n_2-1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2/(n_1-1)(n_2-1)}{(N-2)/(n_1-1)(n_2-1)}=\frac{s^2_1 / (n_2-1) \ + \ s^2_2 / (n_1-1)}{(N-2)/(n_1-1)(n_2-1)}$.
+$MS_W \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}\_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}\_2)^2}{N-2} \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}}$
+
+$= \frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}\_1)^2/(n_1-1)(n_2-1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}\_2)^2/(n_1-1)(n_2-1)}{(N-2)/(n_1-1)(n_2-1)}=\frac{s^2_1 / (n_2-1) \ + \ s^2_2 / (n_1-1)}{(N-2)/(n_1-1)(n_2-1)}$.
 
 This is starting to look a lot like the pooled variance estimator for two groups, $s^2_p = \frac{s^2_1(n_1-1) \ + \ s^2_2(n_2-1)}{N-2}$. If we multiply our current equation by $\frac{(n_1-1)(n_2-1)}{(n_1-1)(n_2-1)}$ we obtain exactly this formula:
 
@@ -93,19 +95,40 @@ Thus, our first term $n_1(\overline{y}_1 - \frac{n_1 \overline{y}_1 + n_2 \overl
 
 So, our whole equation for $MS_B$ can be rewritten as $MS_B = n_1(\overline{y}_1 - \frac{n_1 \overline{y}_1 + n_2 \overline{y}_2}{N})^2 + n_2(\overline{y}_2 - \frac{n_1 \overline{y}_1 + n_2 \overline{y}_2}{N})^2 = \frac{n_1n_2^2}{N^2}(\overline{y}_1 - \overline{y}_2)^2 + \frac{n_2n_1^2}{N^2}(\overline{y}_2 - \overline{y}_1)^2$.
 
-By definition, $(\overline{y}_1 - \overline{y}_2)^2 = (\overline{y}_2 - \overline{y}_1)^2$, so the entire equation simplifies to $[\frac{n_1n_2^2}{N^2} + \frac{n_2n_1^2}{N^2}](\overline{y}_1 - \overline{y}_2)^2$.
+By definition, $(\overline{y}_1 - \overline{y}_2)^2 = (\overline{y}_2 - \overline{y}_1)^2$, so the entire equation simplifies to $\[\frac{n_1n_2^2}{N^2} + \frac{n_2n_1^2}{N^2}\](\overline{y}\_1 - \overline{y}\_2)^2$.
 
 We will conduct one final sequence of algebraic steps:
 
 $$
 \begin{align*}
-    [\frac{n_1n_2^2}{N^2} + \frac{n_2n_1^2}{N^2}](\overline{y}_1 - \overline{y}_2)^2 &= [\frac{n_1n_2^2+n_2n_1^2}{N^2}](\overline{y}_1 - \overline{y}_2)^2 \\
-            &= [\frac{n_1n_2n_2+n_2n_1n_1}{N^2}](\overline{y}_1 - \overline{y}_2)^2 \\
-            &= [\frac{n_1n_2(n_1+n_2)}{N^2}](\overline{y}_1 - \overline{y}_2)^2 \\
-            &= [\frac{n_1n_2(n_1+n_2)}{(n_1+n_2)^2}](\overline{y}_1 - \overline{y}_2)^2 \\
-            &= [\frac{n_1n_2}{(n_1+n_2)}](\overline{y}_1 - \overline{y}_2)^2 \\
-            &= [\frac{1}{\frac{1}{n_2}+\frac{1}{n_1}}](\overline{y}_1 - \overline{y}_2)^2 \ \ \ (\text{since} \ \frac{\frac{1}{n_1n_2}}{\frac{1}{n_1n_2}} \cdot \frac{n_1n_2}{(n_1+n_2)}=\frac{1}{\frac{n_1+n_2}{n_1n_2}}=\frac{1}{\frac{n_1}{n_1n_2}+\frac{n_2}{n_1n_2}}=\frac{1}{\frac{1}{n_2}+\frac{1}{n_1}}) \\
-            &= \frac{(\overline{y}_1 - \overline{y}_2)^2}{\frac{1}{n_2}+\frac{1}{n_1}}
+[\frac{n_1n_2^2}{N^2} + \frac{n_2n_1^2}{N^2}]
+(\overline{y}_1 - \overline{y}_2)^2
+&= [\frac{n_1n_2^2+n_2n_1^2}{N^2}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{n_1n_2n_2+n_2n_1n_1}{N^2}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{n_1n_2(n_1+n_2)}{N^2}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{n_1n_2(n_1+n_2)}{(n_1+n_2)^2}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{n_1n_2}{n_1+n_2}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{1}{\frac{n_1+n_2}{n_1n_2}}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{1}{\frac{n_1}{n_1n_2}+\frac{n_2}{n_1n_2}}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= [\frac{1}{\frac{1}{n_2}+\frac{1}{n_1}}]
+(\overline{y}_1 - \overline{y}_2)^2 \\
+
+&= \frac{(\overline{y}_1 - \overline{y}_2)^2}
+{\frac{1}{n_2}+\frac{1}{n_1}}.
 \end{align*}
 $$
 
