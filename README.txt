@@ -51,3 +51,6 @@ To check/fix blog arrows, check pagination.html in original site repo.
 _ underscores are interpreted as italics in the markdown, so this can break LATEX. Group them explicitly. or escape them by putting backslash infront of them.
 
 Can linebreak in latex with \\
+
+can run local server with the command 'bundle exec jekyll serve' in website directory
+after installing ruby and running 'gem install jekyll bundler'

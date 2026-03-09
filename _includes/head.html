@@ -54,10 +54,16 @@
     {% endif %}
 
     {% if site.enable_mathjax or page.mathjax == true %}
-    <!-- MathJax -->
+    <!-- MathJax , chtml and svg lines added -->
     <script>
       window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        chtml: {
+            linebreaks: { automatic: true }
+          },
+          svg: {
+            linebreaks: { automatic: true }
+          }
       };
     </script>
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
