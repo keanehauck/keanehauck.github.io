@@ -8,7 +8,7 @@ categories: statistics proof anova
 
 Possibly the most horrifying seven words you can encounter when reading a textbook are the following: "The proof is left to the reader." When learning ANOVA (Analysis of Variance), it is common to encounter the fact that the F-statistic is equal to the squared t-statistic when you are only comparing two groups. Unfortunately, this sentence is often followed by the previously-mentioned proof hand-waving, which can leave readers confused, myself included. Thus, I am going to clearly and concisely demonstrate how the F-test reduces to a t-test under certain conditions.
 
-Interestingly, this proof is elusive. In fact, while researching how to write this up, the only published proof I stumbled across was another blog post from a data scientist named [Juan Manuel](https://canovasjm.netlify.app/about/). Big shoutout to him for his post, which helped me double-check my results.
+Interestingly, this proof is quite elusive. In fact, while researching how to write this up, the only published proof I stumbled across was another blog post from a data scientist named [Juan Manuel](https://canovasjm.netlify.app/about/). Big shoutout to him for his post, which helped me double-check my results.
 
 This proof assumes familiarity with the ANOVA and t-test framework.
 
@@ -32,7 +32,7 @@ $t=\frac{\overline{y_1}-\overline{y_2}}{SE_{\overline{y_1}-\overline{y_2}}}$
 
 where $SE_{\overline{y_1}-\overline{y_2}}=s_p \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}$.
 
-Sample variance: $s^{2}_{i}=\frac{\sum_{j=1}^{n_i}(y_{ij}-\overline{y}_i)^2}{n_i-1}$ for group $i$.
+Sample variance: $s_i^2=\frac{\sum_{j=1}^{n_i}(y_{ij}-\overline{y}_i)^2}{n_i-1}$ for group $i$.
 
 Pooled sample variance for two groups: $s^2_p = \frac{s^2_1(n_1-1) \ + \ s^2_2(n_2-1)}{N-2}$.
 
