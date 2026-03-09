@@ -50,13 +50,13 @@ The first step is to figure out what the denominator of the expression simplifie
 
 Again, with two groups,
 
-$SS_W= \sum_{i=1}^{k} \sum_{j=1}^{n_i} \left(y_{ij} - \overline{y}_i \right)^2=\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1) + \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)$.
+$SS_W= \sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}_i)^2=\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2 + \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2$.
 
-Thus, $MS_{W}= \frac{\sum_{i=1}^{k} \sum_{j=1}^{n_i} \left(y_{ij} - \overline{y}_i \right)^2}{N-k}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)}{N-2}$ for two groups.
+Thus, $MS_{W}= \frac{\sum_{i=1}^{k} \sum_{j=1}^{n_i}(y_{ij} - \overline{y}\_i)^2}{N-k}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2}{N-2}$ for two groups.
 
 The goal is to represent this equation in terms of something we recognize. We know that sample variance, $s^2_i$, is equal to $\frac{\sum_{j=1}^{n_i}(y_{ij}-\overline{y}_i)^2}{n_i-1}$ for group $i$. We might notice that the numerator of this equation shows up twice in our current $MS_{W}$ formula. We can make sample variance itself show up by multiplying both the numerator and denominator of $MS_W$ by $\frac{1}{(n_1-1)(n_2-1)}$.
 
-$MS_W \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)}{N-2} \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}} = \frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)/(n_1-1)(n_2-1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)/(n_1-1)(n_2-1)}{(N-2)/(n_1-1)(n_2-1)}=\frac{s^2_1 / (n_2-1) \ + \ s^2_2 / (n_1-1)}{(N-2)/(n_1-1)(n_2-1)}$.
+$MS_W \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}}=\frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2}{N-2} \cdot \frac{\frac{1}{(n_1-1)(n_2-1)}}{\frac{1}{(n_1-1)(n_2-1)}} = \frac{\sum_{j=1}^{n_1}(y_{1j}-\overline{y}_1)^2/(n_1-1)(n_2-1)\ +\ \sum_{j=1}^{n_2}(y_{2j}-\overline{y}_2)^2/(n_1-1)(n_2-1)}{(N-2)/(n_1-1)(n_2-1)}=\frac{s^2_1 / (n_2-1) \ + \ s^2_2 / (n_1-1)}{(N-2)/(n_1-1)(n_2-1)}$.
 
 This is starting to look a lot like the pooled variance estimator for two groups, $s^2_p = \frac{s^2_1(n_1-1) \ + \ s^2_2(n_2-1)}{N-2}$. If we multiply our current equation by $\frac{(n_1-1)(n_2-1)}{(n_1-1)(n_2-1)}$ we obtain exactly this formula:
 
