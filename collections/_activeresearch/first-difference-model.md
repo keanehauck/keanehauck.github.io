@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A First Difference Approach to Studying Sequential Panel Data
-date: 2026=03-19
+date: 2026-03-19
 summary: Examining an econometric model under a Structural Equation Modeling framework.
 tags: longitudinal, analysis, modeling, SEM
 ---
