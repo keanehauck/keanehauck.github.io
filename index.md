@@ -22,7 +22,7 @@ I'm currently completing my PhD in Quantitive Methods at Arizona State Universit
 
 [**My Research →**]({{ site.baseurl }}/research)
 
-[**CV →**](/images/CV_9.pdf)
+[**CV →**](/images/CV.pdf)
 
 [**Google Scholar →**](https://scholar.google.com/citations?user=Um6Rmm8AAAAJ&hl=en)
 
