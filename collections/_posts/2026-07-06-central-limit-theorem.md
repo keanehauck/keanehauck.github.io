@@ -22,9 +22,13 @@ Following from this, another important concept is *moment-generating functions* 
 
 A moment-generating function allows us to calculate all of the moments of $X$. In addition, a MGF contains the same "information" as a probability density function (PDF) in the sense that if we know a variable's characteristic function, we know its probability density function. This means that two variables with the same MGFs have the same underlying distribution. Moment-generating functions index over $t$, not the random variable $X$ itself, but we can recover the moments of the original PDF of $X$ from them. 
 
-Do you remember your Taylor series? I certainly didn't. Here is one example of how they can be applied. The Taylor series expansion for $e^x$ is $$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = \sum_{k=0}^{\infty} \frac{x^k}{k!}.$$ 
+Do you remember your Taylor series? I certainly didn't. Here is one example of how they can be applied. The Taylor series expansion for $e^x$ is 
 
-Because the MGF of $X$ is defined as $E[e^{tX}]$, we can show $$M_X(t)=E[e^{tX}]=\sum_{k=0}^{\infty} E[X^k] \frac{t^k}{k!}.$$
+$$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = \sum_{k=0}^{\infty} \frac{x^k}{k!}.$$ 
+
+Because the MGF of $X$ is defined as $E[e^{tX}]$, we can show 
+
+$$M_X(t)=E[e^{tX}]=\sum_{k=0}^{\infty} E[X^k] \frac{t^k}{k!}.$$
 
 The *k*th moments of $X$ are equal to the coefficient of $ \frac{t^k}{k!}$ in the Taylor series expansion. 
 
@@ -55,9 +59,13 @@ Ok, so how does the math work in that equation? It still seems like a jumble of 
 
 Due to some limit math behind the scenes, it is the case that the expression indeed converges to the result we are interested in. This math works out IF the characteristic function for a a random variable $X_i$ is equal to $\phi_{X_i}(t) = 1 - \frac{\sigma^2}{2}t^2 + O(t^3).$ So, the problem becomes, why is that the characteristic function for $X_i$?
 
-It comes from a Taylor expansion of the characteristic function. Remember that the characteristic function is defined as $\phi_X(t)=E[e^{itX}]$. If we expand the exponential, we get $$e^{itX}=1+itX-\frac{t^2X^2}{2}+\cdots$$
+It comes from a Taylor expansion of the characteristic function. Remember that the characteristic function is defined as $\phi_X(t)=E[e^{itX}]$. If we expand the exponential, we get 
 
-We can then take expectations. Remember that $E[X^2]=\sigma^2$. So, the expectation of the Taylor series is $1-\frac{\sigma^2}{2}t^2+\cdots$. Because all higher-order terms involve $t^3$, we can represent them using the $O$ notation discussed earlier, and group them together like so: $$\phi_{X_i}(t) = 1 - \frac{\sigma^2}{2}t^2 + O(t^3).$$
+$$e^{itX}=1+itX-\frac{t^2X^2}{2}+\cdots$$
+
+We can then take expectations. Remember that $E[X^2]=\sigma^2$. So, the expectation of the Taylor series is $1-\frac{\sigma^2}{2}t^2+\cdots$. Because all higher-order terms involve $t^3$, we can represent them using the $O$ notation discussed earlier, and group them together like so:
+
+$$\phi_{X_i}(t) = 1 - \frac{\sigma^2}{2}t^2 + O(t^3).$$
 
 Which recovers our original hope for what the characteristic function for a random variable $X_i$ would be equal to. So, we have actually done most of what is required—it just needed a lot of definitions of what characteristic functions are and how they work.
 
@@ -65,7 +73,9 @@ Which recovers our original hope for what the characteristic function for a rand
 
 Now we can reverse my jumble of words and recap the process in order. We want to prove that the distribution of sample means will converge to the normal distribution as $n$ gets large. Using our new knowledge, we recognize that if we have a normalized sum of random variables $S_n=\frac{X_1+\cdots+X_n}{\sqrt n}$ then we can represent the characteristic function for a given $X_i$ as $\phi_{X_i}(t) = 1 - \frac{\sigma^2}{2}t^2 + O(t^3)$.
 
-If this is our characteristic function, we can represent the sequence of characteristic functions for all $X$ in our set as $$\phi_{\frac{X_1+\cdots+X_n}{\sqrt{n}}}(t)=\left(1-\frac{\sigma^2}{2n}t^2+O\!\left(\frac{t^3}{n^{3/2}}\right)\right)^n.$$
+If this is our characteristic function, we can represent the sequence of characteristic functions for all $X$ in our set as 
+
+$$\phi_{\frac{X_1+\cdots+X_n}{\sqrt{n}}}(t)=\left(1-\frac{\sigma^2}{2n}t^2+O\!\left(\frac{t^3}{n^{3/2}}\right)\right)^n.$$
 
 Then, we can perform some limit math to discover that it converges to the characteristic function for the normal distribution. Applying Lévy's Continuity Theorem tells us that the distributions of the sequence of random variables $X_n$ and the distribution represented by the characteristic function on the right-hand side of the equation converge. Thus, we have proven that our normalized sum of random variables (sampling distribution) converges to the normal distribution.
 
