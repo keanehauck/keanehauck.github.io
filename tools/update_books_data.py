@@ -149,6 +149,7 @@ TITLE_TO_ISBN = {
     "The Paul Street Boys": "9789631338010",
     "Cat\u2019s Cradle": "9780385333481",
     "Slaughterhouse-Five": "9780385333849",
+    "The Data Detective: Ten Easy Rules to Make Sense of Statistics": "9780593084663",
 
 }
 
