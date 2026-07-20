@@ -1,11 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "title": "Differentiation, Integration, and Linear Algebra Refresher",
-  "questionCount": 150,
+  "title": "Differentiation, Integration, Probability, and Linear Algebra Refresher",
+  "questionCount": 200,
   "categories": {
     "differentiation": 50,
     "integration": 50,
-    "linear-algebra": 50
+    "linear-algebra": 50,
+    "probability": 50
   },
   "mathFormat": "LaTeX",
   "questions": [
@@ -2590,6 +2591,839 @@
         "Check \\(Q^TQ\\) and compare with the standard rotation matrix."
       ],
       "sourceNumber": 150
+    },
+    {
+      "id": "prob-001",
+      "category": "probability",
+      "topic": "basic-probability",
+      "difficulty": "easy",
+      "question": "A fair six-sided die is rolled. Write the probability formula for rolling an even number. Do not evaluate it.",
+      "expression": "\\Omega=\\{1,2,3,4,5,6\\},\\quad E=\\{2,4,6\\}",
+      "answer": "P(E)=\\frac{|E|}{|\\Omega|}=\\frac{3}{6}",
+      "solutionSteps": [
+        "Identify the sample space \\(\\Omega\\) and the event \\(E\\).",
+        "For equally likely outcomes, use \\(P(E)=|E|/|\\Omega|\\)."
+      ],
+      "hints": [
+        "Use favorable outcomes divided by total outcomes."
+      ],
+      "sourceNumber": 151
+    },
+    {
+      "id": "prob-002",
+      "category": "probability",
+      "topic": "binomial-distribution",
+      "difficulty": "easy",
+      "question": "Two fair coins are tossed. Write a formula for the probability of getting exactly one head. Do not evaluate it.",
+      "expression": "n=2,\\quad k=1,\\quad p=\\frac12",
+      "answer": "P(X=1)=\\binom21\\left(\\frac12\\right)^1\\left(\\frac12\\right)^1",
+      "solutionSteps": [
+        "Recognize a binomial experiment with 2 independent trials.",
+        "Use \\(P(X=k)=\\binom nkp^k(1-p)^{n-k}\\)."
+      ],
+      "hints": [
+        "Use the binomial formula with \\(n=2\\) and \\(k=1\\)."
+      ],
+      "sourceNumber": 152
+    },
+    {
+      "id": "prob-003",
+      "category": "probability",
+      "topic": "complements",
+      "difficulty": "easy",
+      "question": "A card is drawn from a standard 52-card deck. Write a formula for the probability that it is not a heart. Do not evaluate it.",
+      "expression": "P(\\text{heart})=\\frac{13}{52}",
+      "answer": "P(\\text{not heart})=1-P(\\text{heart})=1-\\frac{13}{52}",
+      "solutionSteps": [
+        "The desired event is the complement of drawing a heart.",
+        "Use \\(P(A^c)=1-P(A)\\)."
+      ],
+      "hints": [
+        "Use the complement rule."
+      ],
+      "sourceNumber": 153
+    },
+    {
+      "id": "prob-004",
+      "category": "probability",
+      "topic": "union-of-events",
+      "difficulty": "easy",
+      "question": "A fair die is rolled. Let \\(A\\) be the event of rolling an even number and \\(B\\) the event of rolling a number greater than 4. Write the formula for \\(P(A\\cup B)\\). Do not evaluate it.",
+      "expression": "A=\\{2,4,6\\},\\quad B=\\{5,6\\}",
+      "answer": "P(A\\cup B)=P(A)+P(B)-P(A\\cap B)",
+      "solutionSteps": [
+        "The events overlap because 6 belongs to both \\(A\\) and \\(B\\).",
+        "Use the addition rule for a union."
+      ],
+      "hints": [
+        "Subtract the overlap so it is not counted twice."
+      ],
+      "sourceNumber": 154
+    },
+    {
+      "id": "prob-005",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "easy",
+      "question": "Five different books are arranged on a shelf. Write the counting formula for the number of possible arrangements. Do not evaluate it.",
+      "expression": "n=5",
+      "answer": "5!",
+      "solutionSteps": [
+        "All 5 objects are distinct and order matters.",
+        "Use the permutation count \\(n!\\)."
+      ],
+      "hints": [
+        "Arranging all distinct objects uses a factorial."
+      ],
+      "sourceNumber": 155
+    },
+    {
+      "id": "prob-006",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "easy",
+      "question": "A 3-person committee is selected from 8 people. Write the counting formula. Do not evaluate it.",
+      "expression": "n=8,\\quad r=3",
+      "answer": "\\binom83=\\frac{8!}{3!5!}",
+      "solutionSteps": [
+        "Order does not matter for a committee.",
+        "Use the combination formula \\(\\binom nr\\)."
+      ],
+      "hints": [
+        "Use combinations, not permutations."
+      ],
+      "sourceNumber": 156
+    },
+    {
+      "id": "prob-007",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "medium",
+      "question": "Write the counting formula for the number of distinct arrangements of the letters in LEVEL. Do not evaluate it.",
+      "expression": "5\\text{ letters total; }L\\text{ repeats twice and }E\\text{ repeats twice}",
+      "answer": "\\frac{5!}{2!2!}",
+      "solutionSteps": [
+        "Begin with \\(5!\\) arrangements.",
+        "Divide by the factorial of each repeated-letter count."
+      ],
+      "hints": [
+        "Use the repeated-permutation formula."
+      ],
+      "sourceNumber": 157
+    },
+    {
+      "id": "prob-008",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "medium",
+      "question": "Write the counting expression for the number of 4-digit numbers that can be formed from the digits 0 through 9 without repetition. Do not evaluate it.",
+      "expression": "\\text{The first digit cannot be }0",
+      "answer": "9\\cdot9\\cdot8\\cdot7",
+      "solutionSteps": [
+        "There are 9 choices for the first digit because zero is excluded.",
+        "Then use the multiplication rule for the remaining positions."
+      ],
+      "hints": [
+        "Treat the first digit separately."
+      ],
+      "sourceNumber": 158
+    },
+    {
+      "id": "prob-009",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "medium",
+      "question": "A group contains 6 women and 5 men. Write the counting formula for a 4-person committee containing exactly 2 women. Do not evaluate it.",
+      "expression": "\\text{Choose 2 women and 2 men}",
+      "answer": "\\binom62\\binom52",
+      "solutionSteps": [
+        "Choose the women and men independently.",
+        "Multiply the two combination counts."
+      ],
+      "hints": [
+        "Use one combination for each group."
+      ],
+      "sourceNumber": 159
+    },
+    {
+      "id": "prob-010",
+      "category": "probability",
+      "topic": "counting",
+      "difficulty": "hard",
+      "question": "Write the counting formula for the number of binary strings of length 8 containing exactly three 1s. Do not evaluate it.",
+      "expression": "\\text{Choose the positions of the three 1s}",
+      "answer": "\\binom83",
+      "solutionSteps": [
+        "Only the positions of the 1s need to be chosen.",
+        "The remaining positions are automatically 0s."
+      ],
+      "hints": [
+        "Choose 3 positions from 8."
+      ],
+      "sourceNumber": 160
+    },
+    {
+      "id": "prob-011",
+      "category": "probability",
+      "topic": "conditional-probability",
+      "difficulty": "easy",
+      "question": "A card is drawn from a standard deck. Given that it is a face card, write the conditional-probability formula for the probability that it is a king. Do not evaluate it.",
+      "expression": "F=\\text{face card},\\quad K=\\text{king}",
+      "answer": "P(K\\mid F)=\\frac{P(K\\cap F)}{P(F)}=\\frac{4}{12}",
+      "solutionSteps": [
+        "Restrict the sample space to face cards.",
+        "Use \\(P(A\\mid B)=P(A\\cap B)/P(B)\\)."
+      ],
+      "hints": [
+        "The condition becomes the denominator event."
+      ],
+      "sourceNumber": 161
+    },
+    {
+      "id": "prob-012",
+      "category": "probability",
+      "topic": "conditional-probability",
+      "difficulty": "medium",
+      "question": "Two fair dice are rolled. Given that the sum is 8, write the conditional-probability formula for the event that at least one die shows 3. Do not evaluate it.",
+      "expression": "S=\\{\\text{sum is }8\\},\\quad A=\\{\\text{at least one die is }3\\}",
+      "answer": "P(A\\mid S)=\\frac{P(A\\cap S)}{P(S)}=\\frac{2}{5}",
+      "solutionSteps": [
+        "Condition on the five ordered outcomes whose sum is 8.",
+        "Count the outcomes in that restricted space that contain a 3."
+      ],
+      "hints": [
+        "Build the conditional sample space first."
+      ],
+      "sourceNumber": 162
+    },
+    {
+      "id": "prob-013",
+      "category": "probability",
+      "topic": "independence",
+      "difficulty": "easy",
+      "question": "Events \\(A\\) and \\(B\\) satisfy \\(P(A)=0.4\\), \\(P(B)=0.5\\), and \\(P(A\\cap B)=0.2\\). Write the criterion used to test whether they are independent.",
+      "expression": "P(A)=0.4,\\quad P(B)=0.5,\\quad P(A\\cap B)=0.2",
+      "answer": "A\\text{ and }B\\text{ are independent iff }P(A\\cap B)=P(A)P(B)",
+      "solutionSteps": [
+        "Independence is checked by comparing the intersection probability with the product of the marginal probabilities."
+      ],
+      "hints": [
+        "Use the product criterion for independence."
+      ],
+      "sourceNumber": 163
+    },
+    {
+      "id": "prob-014",
+      "category": "probability",
+      "topic": "intersection-of-events",
+      "difficulty": "medium",
+      "question": "A fair coin is tossed three times. Let \\(A\\) be the event that the first toss is heads and \\(B\\) the event that exactly two heads occur. Write a formula for \\(P(A\\cap B)\\). Do not evaluate it.",
+      "expression": "A=\\{\\text{first toss is H}\\},\\quad B=\\{\\text{exactly two H}\\}",
+      "answer": "P(A\\cap B)=P(\\{HHT,HTH\\})=\\frac{2}{2^3}",
+      "solutionSteps": [
+        "List the outcomes satisfying both events.",
+        "Divide the number of favorable equally likely sequences by \\(2^3\\)."
+      ],
+      "hints": [
+        "The intersection must satisfy both conditions simultaneously."
+      ],
+      "sourceNumber": 164
+    },
+    {
+      "id": "prob-015",
+      "category": "probability",
+      "topic": "law-of-total-probability",
+      "difficulty": "medium",
+      "question": "Machine 1 makes 60% of a factory's items and has a 2% defect rate. Machine 2 makes 40% and has a 5% defect rate. Write the formula for the probability that a randomly selected item is defective. Do not evaluate it.",
+      "expression": "P(M_1)=0.60,\\ P(D\\mid M_1)=0.02,\\ P(M_2)=0.40,\\ P(D\\mid M_2)=0.05",
+      "answer": "P(D)=P(D\\mid M_1)P(M_1)+P(D\\mid M_2)P(M_2)",
+      "solutionSteps": [
+        "The machine events partition the production process.",
+        "Apply the law of total probability across the two machines."
+      ],
+      "hints": [
+        "Weight each conditional defect probability by the machine share."
+      ],
+      "sourceNumber": 165
+    },
+    {
+      "id": "prob-016",
+      "category": "probability",
+      "topic": "bayes-theorem",
+      "difficulty": "medium",
+      "question": "Machine 1 makes 60% of a factory's items and has a 2% defect rate. Machine 2 makes 40% and has a 5% defect rate. Write the formula for the probability that a defective item came from Machine 2. Do not evaluate it.",
+      "expression": "P(M_1)=0.60,\\ P(D\\mid M_1)=0.02,\\ P(M_2)=0.40,\\ P(D\\mid M_2)=0.05",
+      "answer": "P(M_2\\mid D)=\\frac{P(D\\mid M_2)P(M_2)}{P(D\\mid M_1)P(M_1)+P(D\\mid M_2)P(M_2)}",
+      "solutionSteps": [
+        "Use Bayes' theorem with \\(M_2\\) as the target event and \\(D\\) as the observed event.",
+        "Expand \\(P(D)\\) using the law of total probability."
+      ],
+      "hints": [
+        "The denominator is the total probability of a defect."
+      ],
+      "sourceNumber": 166
+    },
+    {
+      "id": "prob-017",
+      "category": "probability",
+      "topic": "bayes-theorem",
+      "difficulty": "hard",
+      "question": "A disease affects 1% of a population. A test has 95% sensitivity and 90% specificity. Write the Bayes' theorem formula for the probability that a person who tests positive has the disease. Do not evaluate it.",
+      "expression": "P(D)=0.01,\\quad P(+\\mid D)=0.95,\\quad P(-\\mid D^c)=0.90",
+      "answer": "P(D\\mid +)=\\frac{P(+\\mid D)P(D)}{P(+\\mid D)P(D)+P(+\\mid D^c)P(D^c)}",
+      "solutionSteps": [
+        "Convert specificity into the false-positive probability \\(P(+\\mid D^c)\\).",
+        "Use Bayes' theorem with a total-probability denominator."
+      ],
+      "hints": [
+        "Specificity determines the false-positive rate by complement."
+      ],
+      "sourceNumber": 167
+    },
+    {
+      "id": "prob-018",
+      "category": "probability",
+      "topic": "conditional-probability",
+      "difficulty": "medium",
+      "question": "A bag contains 4 red and 6 blue balls. Two balls are drawn without replacement. Write a formula for the probability that both are red. Do not evaluate it.",
+      "expression": "4\\text{ red},\\quad6\\text{ blue},\\quad2\\text{ draws without replacement}",
+      "answer": "P(RR)=\\frac{4}{10}\\cdot\\frac{3}{9}",
+      "solutionSteps": [
+        "Use the multiplication rule for sequential dependent events.",
+        "Update both the numerator and denominator after the first red ball is removed."
+      ],
+      "hints": [
+        "Without replacement, the second probability changes."
+      ],
+      "sourceNumber": 168
+    },
+    {
+      "id": "prob-019",
+      "category": "probability",
+      "topic": "conditional-probability",
+      "difficulty": "medium",
+      "question": "A bag contains 4 red and 6 blue balls. Two balls are drawn without replacement. Write a formula for the probability that exactly one ball is red. Do not evaluate it.",
+      "expression": "4\\text{ red},\\quad6\\text{ blue},\\quad2\\text{ draws without replacement}",
+      "answer": "P(\\text{exactly one red})=\\frac{4}{10}\\frac{6}{9}+\\frac{6}{10}\\frac{4}{9}",
+      "solutionSteps": [
+        "Exactly one red can occur in two disjoint orders: red-blue or blue-red.",
+        "Add the probabilities of those two paths."
+      ],
+      "hints": [
+        "Consider both possible orders."
+      ],
+      "sourceNumber": 169
+    },
+    {
+      "id": "prob-020",
+      "category": "probability",
+      "topic": "birthday-problem",
+      "difficulty": "hard",
+      "question": "Assuming 365 equally likely birthdays and no leap day, write a formula for the probability that at least two people in a group of 23 share a birthday. Do not evaluate it.",
+      "expression": "n=23,\\quad365\\text{ possible birthdays}",
+      "answer": "P(\\text{at least one match})=1-\\prod_{k=0}^{22}\\frac{365-k}{365}",
+      "solutionSteps": [
+        "Use the complement event that all birthdays are distinct.",
+        "Multiply the successive probabilities of avoiding a repeated birthday."
+      ],
+      "hints": [
+        "The complement is easier to model."
+      ],
+      "sourceNumber": 170
+    },
+    {
+      "id": "prob-021",
+      "category": "probability",
+      "topic": "expected-value",
+      "difficulty": "easy",
+      "question": "A random variable \\(X\\) has \\(P(X=0)=0.2\\), \\(P(X=1)=0.5\\), and \\(P(X=2)=0.3\\). Write the formula for \\(E[X]\\). Do not evaluate it.",
+      "expression": "x\\in\\{0,1,2\\}",
+      "answer": "E[X]=\\sum_xxP(X=x)=0(0.2)+1(0.5)+2(0.3)",
+      "solutionSteps": [
+        "Expected value is a probability-weighted average.",
+        "Multiply each possible value by its probability and sum."
+      ],
+      "hints": [
+        "Use \\(E[X]=\\sum_xxP(X=x)\\)."
+      ],
+      "sourceNumber": 171
+    },
+    {
+      "id": "prob-022",
+      "category": "probability",
+      "topic": "variance",
+      "difficulty": "medium",
+      "question": "A random variable \\(X\\) has \\(P(X=0)=0.2\\), \\(P(X=1)=0.5\\), and \\(P(X=2)=0.3\\). Write a formula for \\(\\operatorname{Var}(X)\\). Do not evaluate it.",
+      "expression": "x\\in\\{0,1,2\\}",
+      "answer": "\\operatorname{Var}(X)=E[X^2]-E[X]^2=\\sum_xx^2P(X=x)-\\left(\\sum_xxP(X=x)\\right)^2",
+      "solutionSteps": [
+        "Use the shortcut formula for variance.",
+        "Compute \\(E[X]\\) and \\(E[X^2]\\) from the same probability mass function."
+      ],
+      "hints": [
+        "Variance compares \\(E[X^2]\\) with \\(E[X]^2\\)."
+      ],
+      "sourceNumber": 172
+    },
+    {
+      "id": "prob-023",
+      "category": "probability",
+      "topic": "expected-value",
+      "difficulty": "easy",
+      "question": "A game pays $10 with probability 0.2 and loses $3 with probability 0.8. Write the expected-payoff formula. Do not evaluate it.",
+      "expression": "X=\\begin{cases}10&\\text{with probability }0.2\\\\-3&\\text{with probability }0.8\\end{cases}",
+      "answer": "E[X]=10(0.2)+(-3)(0.8)",
+      "solutionSteps": [
+        "Treat the loss as a negative payoff.",
+        "Form the probability-weighted sum of all possible payoffs."
+      ],
+      "hints": [
+        "Expected payoff is a weighted average."
+      ],
+      "sourceNumber": 173
+    },
+    {
+      "id": "prob-024",
+      "category": "probability",
+      "topic": "binomial-distribution",
+      "difficulty": "easy",
+      "question": "A fair coin is tossed 10 times. Write the binomial formula for the probability of exactly 6 heads. Do not evaluate it.",
+      "expression": "n=10,\\quad k=6,\\quad p=\\frac12",
+      "answer": "P(X=6)=\\binom{10}{6}\\left(\\frac12\\right)^6\\left(\\frac12\\right)^4",
+      "solutionSteps": [
+        "Recognize 10 independent Bernoulli trials.",
+        "Substitute \\(n=10\\), \\(k=6\\), and \\(p=1/2\\) into the binomial formula."
+      ],
+      "hints": [
+        "Use \\(\\binom nkp^k(1-p)^{n-k}\\)."
+      ],
+      "sourceNumber": 174
+    },
+    {
+      "id": "prob-025",
+      "category": "probability",
+      "topic": "binomial-distribution",
+      "difficulty": "medium",
+      "question": "A basketball player makes a free throw with probability 0.8. In 5 independent attempts, write the formula for the probability of making at least 4 shots. Do not evaluate it.",
+      "expression": "n=5,\\quad p=0.8",
+      "answer": "P(X\\ge4)=\\binom54(0.8)^4(0.2)+(0.8)^5",
+      "solutionSteps": [
+        "'At least 4' means the disjoint cases \\(X=4\\) and \\(X=5\\).",
+        "Add the two binomial probabilities."
+      ],
+      "hints": [
+        "Translate 'at least 4' into a sum of cases."
+      ],
+      "sourceNumber": 175
+    },
+    {
+      "id": "prob-026",
+      "category": "probability",
+      "topic": "binomial-distribution",
+      "difficulty": "easy",
+      "question": "For \\(X\\sim\\operatorname{Binomial}(20,0.3)\\), write the formulas for \\(E[X]\\) and \\(\\operatorname{Var}(X)\\).",
+      "expression": "n=20,\\quad p=0.3",
+      "answer": "E[X]=np,\\quad\\operatorname{Var}(X)=np(1-p)",
+      "solutionSteps": [
+        "Use the standard mean and variance formulas for a binomial random variable."
+      ],
+      "hints": [
+        "Identify \\(n\\) and \\(p\\)."
+      ],
+      "sourceNumber": 176
+    },
+    {
+      "id": "prob-027",
+      "category": "probability",
+      "topic": "geometric-distribution",
+      "difficulty": "easy",
+      "question": "A fair die is rolled repeatedly until a 6 appears. Write the geometric probability formula for the first 6 occurring on the fourth roll. Do not evaluate it.",
+      "expression": "p=\\frac16,\\quad k=4",
+      "answer": "P(X=4)=\\left(1-\\frac16\\right)^3\\frac16",
+      "solutionSteps": [
+        "The first three trials must fail and the fourth must succeed.",
+        "Use \\(P(X=k)=(1-p)^{k-1}p\\)."
+      ],
+      "hints": [
+        "Geometric probability is failures followed by one success."
+      ],
+      "sourceNumber": 177
+    },
+    {
+      "id": "prob-028",
+      "category": "probability",
+      "topic": "geometric-distribution",
+      "difficulty": "easy",
+      "question": "A trial succeeds with probability 0.2. Write the formula for the expected number of trials until the first success.",
+      "expression": "p=0.2",
+      "answer": "E[X]=\\frac1p",
+      "solutionSteps": [
+        "Use the standard mean formula for a geometric random variable counting trials until the first success."
+      ],
+      "hints": [
+        "The geometric mean is the reciprocal of the success probability."
+      ],
+      "sourceNumber": 178
+    },
+    {
+      "id": "prob-029",
+      "category": "probability",
+      "topic": "poisson-distribution",
+      "difficulty": "medium",
+      "question": "Calls arrive at an average rate of 3 per hour. Write the Poisson formula for the probability of exactly 5 calls in one hour. Do not evaluate it.",
+      "expression": "\\lambda=3,\\quad k=5",
+      "answer": "P(X=5)=e^{-3}\\frac{3^5}{5!}",
+      "solutionSteps": [
+        "Use the Poisson probability mass function \\(P(X=k)=e^{-\\lambda}\\lambda^k/k!\\)."
+      ],
+      "hints": [
+        "Identify the rate parameter \\(\\lambda\\)."
+      ],
+      "sourceNumber": 179
+    },
+    {
+      "id": "prob-030",
+      "category": "probability",
+      "topic": "poisson-distribution",
+      "difficulty": "medium",
+      "question": "Calls arrive at an average rate of 3 per hour. Write the Poisson formula for the probability of no calls in a 30-minute interval. Do not evaluate it.",
+      "expression": "\\lambda=3\\left(\\frac12\\right)=1.5,\\quad k=0",
+      "answer": "P(X=0)=e^{-1.5}\\frac{1.5^0}{0!}",
+      "solutionSteps": [
+        "Scale the hourly rate to a half-hour interval.",
+        "Then use the Poisson probability mass function with \\(k=0\\)."
+      ],
+      "hints": [
+        "Adjust the rate to the time interval first."
+      ],
+      "sourceNumber": 180
+    },
+    {
+      "id": "prob-031",
+      "category": "probability",
+      "topic": "continuous-random-variables",
+      "difficulty": "easy",
+      "question": "Let \\(X\\) have density \\(f(x)=2x\\) for \\(0\\le x\\le1\\). Write the integral for \\(P(X\\le0.5)\\). Do not evaluate it.",
+      "expression": "f(x)=2x,\\quad0\\le x\\le1",
+      "answer": "P(X\\le0.5)=\\int_0^{0.5}2x\\,dx",
+      "solutionSteps": [
+        "For a continuous random variable, probability is area under the density.",
+        "Integrate over the event interval."
+      ],
+      "hints": [
+        "Use the density as the integrand."
+      ],
+      "sourceNumber": 181
+    },
+    {
+      "id": "prob-032",
+      "category": "probability",
+      "topic": "continuous-random-variables",
+      "difficulty": "medium",
+      "question": "Let \\(f(x)=cx^2\\) for \\(0\\le x\\le2\\), and \\(f(x)=0\\) otherwise. Write the normalization equation used to determine \\(c\\).",
+      "expression": "f(x)=cx^2,\\quad0\\le x\\le2",
+      "answer": "\\int_0^2cx^2\\,dx=1",
+      "solutionSteps": [
+        "A probability density must integrate to 1 over its full support."
+      ],
+      "hints": [
+        "Set the total area under the density equal to 1."
+      ],
+      "sourceNumber": 182
+    },
+    {
+      "id": "prob-033",
+      "category": "probability",
+      "topic": "continuous-random-variables",
+      "difficulty": "medium",
+      "question": "Let \\(X\\) have density \\(f(x)=\\frac38x^2\\) on \\(0\\le x\\le2\\). Write the integral formula for \\(E[X]\\). Do not evaluate it.",
+      "expression": "f(x)=\\frac38x^2,\\quad0\\le x\\le2",
+      "answer": "E[X]=\\int_0^2x f(x)\\,dx=\\int_0^2x\\left(\\frac38x^2\\right)\\,dx",
+      "solutionSteps": [
+        "For a continuous random variable, use \\(E[X]=\\int x f(x)\\,dx\\)."
+      ],
+      "hints": [
+        "Multiply the density by \\(x\\) before integrating."
+      ],
+      "sourceNumber": 183
+    },
+    {
+      "id": "prob-034",
+      "category": "probability",
+      "topic": "uniform-distribution",
+      "difficulty": "easy",
+      "question": "If \\(X\\sim\\operatorname{Uniform}(2,8)\\), write the formula for \\(P(3\\le X\\le5)\\). Do not evaluate it.",
+      "expression": "a=2,\\quad b=8,\\quad c=3,\\quad d=5",
+      "answer": "P(c\\le X\\le d)=\\frac{d-c}{b-a}=\\frac{5-3}{8-2}",
+      "solutionSteps": [
+        "For a continuous uniform distribution, probability is interval length divided by total length."
+      ],
+      "hints": [
+        "Compare the desired interval length with the full support length."
+      ],
+      "sourceNumber": 184
+    },
+    {
+      "id": "prob-035",
+      "category": "probability",
+      "topic": "uniform-distribution",
+      "difficulty": "easy",
+      "question": "If \\(X\\sim\\operatorname{Uniform}(2,8)\\), write the formulas for \\(E[X]\\) and \\(\\operatorname{Var}(X)\\).",
+      "expression": "a=2,\\quad b=8",
+      "answer": "E[X]=\\frac{a+b}{2},\\quad\\operatorname{Var}(X)=\\frac{(b-a)^2}{12}",
+      "solutionSteps": [
+        "Use the standard continuous-uniform mean and variance formulas."
+      ],
+      "hints": [
+        "Identify the lower and upper endpoints."
+      ],
+      "sourceNumber": 185
+    },
+    {
+      "id": "prob-036",
+      "category": "probability",
+      "topic": "exponential-distribution",
+      "difficulty": "easy",
+      "question": "The waiting time \\(X\\) is exponential with rate \\(\\lambda=0.5\\) per minute. Write the formula for \\(P(X>4)\\). Do not evaluate it.",
+      "expression": "\\lambda=0.5,\\quad t=4",
+      "answer": "P(X>t)=e^{-\\lambda t}=e^{-0.5(4)}",
+      "solutionSteps": [
+        "Use the survival function of an exponential random variable."
+      ],
+      "hints": [
+        "The exponential tail probability is \\(e^{-\\lambda t}\\)."
+      ],
+      "sourceNumber": 186
+    },
+    {
+      "id": "prob-037",
+      "category": "probability",
+      "topic": "exponential-distribution",
+      "difficulty": "medium",
+      "question": "For an exponential random variable with rate \\(\\lambda=0.5\\), write the formulas for the expected value and variance.",
+      "expression": "\\lambda=0.5",
+      "answer": "E[X]=\\frac1\\lambda,\\quad\\operatorname{Var}(X)=\\frac1{\\lambda^2}",
+      "solutionSteps": [
+        "Use the standard exponential-distribution formulas."
+      ],
+      "hints": [
+        "Both formulas are powers of the reciprocal rate."
+      ],
+      "sourceNumber": 187
+    },
+    {
+      "id": "prob-038",
+      "category": "probability",
+      "topic": "normal-distribution",
+      "difficulty": "easy",
+      "question": "Let \\(X\\sim N(100,15^2)\\). Write the standardization formula used to convert \\(X=130\\) to a \\(z\\)-score. Do not evaluate it.",
+      "expression": "x=130,\\quad\\mu=100,\\quad\\sigma=15",
+      "answer": "z=\\frac{x-\\mu}{\\sigma}=\\frac{130-100}{15}",
+      "solutionSteps": [
+        "Subtract the mean from the observation and divide by the standard deviation."
+      ],
+      "hints": [
+        "Use \\(z=(x-\\mu)/\\sigma\\)."
+      ],
+      "sourceNumber": 188
+    },
+    {
+      "id": "prob-039",
+      "category": "probability",
+      "topic": "normal-distribution",
+      "difficulty": "medium",
+      "question": "Let \\(Z\\sim N(0,1)\\). Write the notation for the probability \\(P(Z\\le1.96)\\) using the standard normal cumulative distribution function.",
+      "expression": "Z\\sim N(0,1)",
+      "answer": "P(Z\\le1.96)=\\Phi(1.96)",
+      "solutionSteps": [
+        "The standard normal cumulative distribution function is denoted by \\(\\Phi\\)."
+      ],
+      "hints": [
+        "Express the probability with \\(\\Phi\\)."
+      ],
+      "sourceNumber": 189
+    },
+    {
+      "id": "prob-040",
+      "category": "probability",
+      "topic": "normal-distribution",
+      "difficulty": "medium",
+      "question": "Let \\(X\\sim N(50,10^2)\\). Write the standardized probability expression for \\(P(40\\le X\\le60)\\). Do not evaluate it.",
+      "expression": "\\mu=50,\\quad\\sigma=10",
+      "answer": "P(40\\le X\\le60)=P\\left(\\frac{40-50}{10}\\le Z\\le\\frac{60-50}{10}\\right)",
+      "solutionSteps": [
+        "Standardize both endpoints using the same mean and standard deviation."
+      ],
+      "hints": [
+        "Transform both bounds to \\(z\\)-scores."
+      ],
+      "sourceNumber": 190
+    },
+    {
+      "id": "prob-041",
+      "category": "probability",
+      "topic": "joint-distributions",
+      "difficulty": "medium",
+      "question": "A joint distribution satisfies \\(P(X=0,Y=0)=0.2\\), \\(P(0,1)=0.3\\), \\(P(1,0)=0.1\\), and \\(P(1,1)=0.4\\). Write the formula for the marginal probability \\(P(X=1)\\). Do not evaluate it.",
+      "expression": "X,Y\\in\\{0,1\\}",
+      "answer": "P(X=1)=\\sum_yP(X=1,Y=y)=P(1,0)+P(1,1)",
+      "solutionSteps": [
+        "Marginalize over all possible values of \\(Y\\)."
+      ],
+      "hints": [
+        "Sum the joint probabilities across the relevant row."
+      ],
+      "sourceNumber": 191
+    },
+    {
+      "id": "prob-042",
+      "category": "probability",
+      "topic": "joint-distributions",
+      "difficulty": "medium",
+      "question": "A joint distribution satisfies \\(P(X=0,Y=0)=0.2\\), \\(P(0,1)=0.3\\), \\(P(1,0)=0.1\\), and \\(P(1,1)=0.4\\). Write the criterion used to test whether \\(X\\) and \\(Y\\) are independent.",
+      "expression": "X,Y\\in\\{0,1\\}",
+      "answer": "X\\text{ and }Y\\text{ are independent iff }P(X=x,Y=y)=P(X=x)P(Y=y)\\text{ for all }x,y",
+      "solutionSteps": [
+        "Independence requires every joint probability to factor into the corresponding marginals."
+      ],
+      "hints": [
+        "Check the factorization for all possible pairs."
+      ],
+      "sourceNumber": 192
+    },
+    {
+      "id": "prob-043",
+      "category": "probability",
+      "topic": "covariance",
+      "difficulty": "medium",
+      "question": "Suppose \\(E[X]=2\\), \\(E[Y]=3\\), and \\(E[XY]=8\\). Write the covariance formula. Do not evaluate it.",
+      "expression": "E[X]=2,\\quad E[Y]=3,\\quad E[XY]=8",
+      "answer": "\\operatorname{Cov}(X,Y)=E[XY]-E[X]E[Y]",
+      "solutionSteps": [
+        "Use the covariance shortcut formula."
+      ],
+      "hints": [
+        "Covariance compares the joint expectation with the product of the means."
+      ],
+      "sourceNumber": 193
+    },
+    {
+      "id": "prob-044",
+      "category": "probability",
+      "topic": "linearity-of-expectation",
+      "difficulty": "easy",
+      "question": "Suppose \\(E[X]=4\\) and \\(E[Y]=-1\\). Write the formula for \\(E[3X-2Y+5]\\). Do not evaluate it.",
+      "expression": "E[X]=4,\\quad E[Y]=-1",
+      "answer": "E[3X-2Y+5]=3E[X]-2E[Y]+5",
+      "solutionSteps": [
+        "Apply linearity of expectation term by term.",
+        "Independence is not required."
+      ],
+      "hints": [
+        "Constants pass through expectation linearly."
+      ],
+      "sourceNumber": 194
+    },
+    {
+      "id": "prob-045",
+      "category": "probability",
+      "topic": "variance-properties",
+      "difficulty": "medium",
+      "question": "Suppose \\(\\operatorname{Var}(X)=9\\). Write the formula for \\(\\operatorname{Var}(4X-7)\\). Do not evaluate it.",
+      "expression": "\\operatorname{Var}(X)=9",
+      "answer": "\\operatorname{Var}(4X-7)=4^2\\operatorname{Var}(X)",
+      "solutionSteps": [
+        "Adding a constant does not affect variance.",
+        "Multiplying by a constant scales variance by the square of that constant."
+      ],
+      "hints": [
+        "Use \\(\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)\\)."
+      ],
+      "sourceNumber": 195
+    },
+    {
+      "id": "prob-046",
+      "category": "probability",
+      "topic": "markov-inequality",
+      "difficulty": "medium",
+      "question": "A nonnegative random variable has \\(E[X]=10\\). Write Markov's inequality for \\(P(X\\ge25)\\). Do not evaluate it.",
+      "expression": "X\\ge0,\\quad E[X]=10,\\quad a=25",
+      "answer": "P(X\\ge25)\\le\\frac{E[X]}{25}",
+      "solutionSteps": [
+        "Markov's inequality applies to nonnegative random variables.",
+        "Substitute the threshold into \\(P(X\\ge a)\\le E[X]/a\\)."
+      ],
+      "hints": [
+        "The threshold appears in the denominator."
+      ],
+      "sourceNumber": 196
+    },
+    {
+      "id": "prob-047",
+      "category": "probability",
+      "topic": "chebyshev-inequality",
+      "difficulty": "medium",
+      "question": "A random variable has mean 50 and standard deviation 4. Write Chebyshev's inequality for \\(P(|X-50|\\ge12)\\). Do not evaluate it.",
+      "expression": "\\mu=50,\\quad\\sigma=4,\\quad12=3\\sigma",
+      "answer": "P(|X-\\mu|\\ge3\\sigma)\\le\\frac1{3^2}",
+      "solutionSteps": [
+        "Express the distance from the mean as a multiple of the standard deviation.",
+        "Apply \\(P(|X-\\mu|\\ge k\\sigma)\\le1/k^2\\)."
+      ],
+      "hints": [
+        "First identify \\(k\\)."
+      ],
+      "sourceNumber": 197
+    },
+    {
+      "id": "prob-048",
+      "category": "probability",
+      "topic": "law-of-large-numbers",
+      "difficulty": "easy",
+      "question": "Write the mathematical statement describing the law of large numbers for the sample mean of independent observations with finite mean \\(\\mu\\).",
+      "expression": "\\bar X_n=\\frac1n\\sum_{i=1}^nX_i",
+      "answer": "\\bar X_n\\xrightarrow{P}\\mu\\quad\\text{as }n\\to\\infty",
+      "solutionSteps": [
+        "The sample mean converges in probability to the population mean."
+      ],
+      "hints": [
+        "Use convergence in probability notation."
+      ],
+      "sourceNumber": 198
+    },
+    {
+      "id": "prob-049",
+      "category": "probability",
+      "topic": "central-limit-theorem",
+      "difficulty": "hard",
+      "question": "A population has mean 80 and standard deviation 12. For samples of size 36, write the central-limit-theorem standardization for \\(P(\\bar X>83)\\). Do not evaluate it.",
+      "expression": "\\mu=80,\\quad\\sigma=12,\\quad n=36",
+      "answer": "P(\\bar X>83)\\approx P\\left(Z>\\frac{83-80}{12/\\sqrt{36}}\\right)",
+      "solutionSteps": [
+        "The sample mean has approximate standard error \\(\\sigma/\\sqrt n\\).",
+        "Standardize the sample-mean threshold using that standard error."
+      ],
+      "hints": [
+        "Use \\(\\sigma/\\sqrt n\\), not \\(\\sigma\\)."
+      ],
+      "sourceNumber": 199
+    },
+    {
+      "id": "prob-050",
+      "category": "probability",
+      "topic": "normal-approximation",
+      "difficulty": "hard",
+      "question": "For \\(X\\sim\\operatorname{Binomial}(100,0.5)\\), write the normal approximation with continuity correction for \\(P(X\\le55)\\). Do not evaluate it.",
+      "expression": "\\mu=np=50,\\quad\\sigma=\\sqrt{np(1-p)}=5",
+      "answer": "P(X\\le55)\\approx P\\left(Z\\le\\frac{55.5-50}{5}\\right)",
+      "solutionSteps": [
+        "Approximate the binomial distribution with a normal distribution having the same mean and variance.",
+        "Use 55.5 for the continuity correction."
+      ],
+      "hints": [
+        "For a 'less than or equal to' event, shift the boundary up by 0.5."
+      ],
+      "sourceNumber": 200
     }
   ]
 }
