@@ -5979,6 +5979,185 @@
         "Significance addresses evidence, not necessarily magnitude or value."
       ],
       "sourceNumber": 350
+    },
+    {
+      "id": "stat-151",
+      "category": "statistics",
+      "topic": "mediation",
+      "difficulty": "hard",
+      "question": "In a linear mediation model, the estimated path from \\(X\\) to \\(M\\) is \\(a=0.60\\), and the estimated path from \\(M\\) to \\(Y\\), controlling for \\(X\\), is \\(b=0.40\\). Write the indirect effect and explain what it represents.",
+      "expression": "a=0.60,\\quad b=0.40",
+      "answer": "ab=(0.60)(0.40)=0.24,\\quad \\text{representing the estimated portion of the effect of }X\\text{ on }Y\\text{ transmitted through }M",
+      "solutionSteps": [
+        "In a simple linear mediation model, the indirect effect is the product \\(ab\\).",
+        "Multiply the path from \\(X\\) to \\(M\\) by the path from \\(M\\) to \\(Y\\) controlling for \\(X\\).",
+        "Interpret the result as the estimated mediated pathway."
+      ],
+      "hints": [
+        "Use the product-of-coefficients method."
+      ],
+      "sourceNumber": 351
+    },
+    {
+      "id": "stat-152",
+      "category": "statistics",
+      "topic": "moderated-mediation",
+      "difficulty": "hard",
+      "question": "Suppose the \\(X\\to M\\) path in a mediation model depends on moderator \\(W\\): \\(M=i+a_1X+a_2W+a_3XW+\\varepsilon\\), while the \\(M\\to Y\\) path is \\(b\\). Write the conditional indirect effect of \\(X\\) on \\(Y\\) through \\(M\\) at \\(W=w\\).",
+      "expression": "M=i+a_1X+a_2W+a_3XW+\\varepsilon,\\quad Y=j+c'X+bM+\\varepsilon_Y",
+      "answer": "\\text{Conditional indirect effect}=(a_1+a_3w)b",
+      "solutionSteps": [
+        "The conditional effect of \\(X\\) on \\(M\\) at \\(W=w\\) is \\(a_1+a_3w\\).",
+        "Multiply that conditional path by the \\(M\\to Y\\) coefficient \\(b\\)."
+      ],
+      "hints": [
+        "First compute the simple slope of \\(X\\) predicting \\(M\\)."
+      ],
+      "sourceNumber": 352
+    },
+    {
+      "id": "stat-153",
+      "category": "statistics",
+      "topic": "two-way-anova",
+      "difficulty": "hard",
+      "question": "In a two-way ANOVA, the main effect of factor \\(A\\) is not significant, but the \\(A\\times B\\) interaction is significant. What is the most appropriate interpretation strategy?",
+      "expression": "p_A>0.05,\\quad p_{A\\times B}<0.05",
+      "answer": "\\text{Examine simple effects or cell means because the effect of }A\\text{ depends on the level of }B",
+      "solutionSteps": [
+        "A significant interaction means the effect of one factor changes across levels of the other.",
+        "The averaged main effect of \\(A\\) may conceal important conditional differences.",
+        "Inspect simple effects, estimated marginal means, or interaction plots."
+      ],
+      "hints": [
+        "Do not interpret the nonsignificant main effect in isolation."
+      ],
+      "sourceNumber": 353
+    },
+    {
+      "id": "stat-154",
+      "category": "statistics",
+      "topic": "anova-contrasts",
+      "difficulty": "hard",
+      "question": "Three treatment groups have means \\(\\mu_1,\\mu_2,\\mu_3\\). Write a contrast that compares Group 1 with the average of Groups 2 and 3, and verify that the coefficients form a valid contrast.",
+      "expression": "\\mu_1,\\quad \\mu_2,\\quad \\mu_3",
+      "answer": "L=\\mu_1-\\frac12\\mu_2-\\frac12\\mu_3,\\quad 1-\\frac12-\\frac12=0",
+      "solutionSteps": [
+        "Assign coefficient 1 to Group 1.",
+        "Assign equal negative weights to Groups 2 and 3 so their average is subtracted.",
+        "A valid contrast must have coefficients summing to zero."
+      ],
+      "hints": [
+        "The comparison is Group 1 minus the mean of the other two groups."
+      ],
+      "sourceNumber": 354
+    },
+    {
+      "id": "stat-155",
+      "category": "statistics",
+      "topic": "bootstrap-inference",
+      "difficulty": "hard",
+      "question": "A bootstrap distribution for an indirect effect is strongly right-skewed. Why might a percentile bootstrap interval be preferred over a normal-theory interval?",
+      "expression": "\\hat\\theta^*_1,\\ldots,\\hat\\theta^*_B\\text{ are right-skewed}",
+      "answer": "\\text{The percentile interval uses empirical quantiles and can reflect asymmetry that a symmetric normal-theory interval cannot}",
+      "solutionSteps": [
+        "A normal-theory interval assumes approximate symmetry around the estimate.",
+        "A skewed bootstrap distribution violates that approximation.",
+        "Percentile intervals use the observed shape of the bootstrap distribution."
+      ],
+      "hints": [
+        "Compare a symmetric interval with one based on empirical quantiles."
+      ],
+      "sourceNumber": 355
+    },
+    {
+      "id": "stat-156",
+      "category": "statistics",
+      "topic": "multiple-regression",
+      "difficulty": "hard",
+      "question": "In a multiple regression, the coefficient of \\(X_1\\) changes substantially after adding \\(X_2\\), while model fit improves only slightly. Give a statistically plausible explanation.",
+      "expression": "Y=\\beta_0+\\beta_1X_1+\\beta_2X_2+\\varepsilon",
+      "answer": "\\text{\\(X_2\\) may be a confounder or strongly correlated with \\(X_1\\), changing the conditional interpretation of }\\beta_1",
+      "solutionSteps": [
+        "Regression coefficients are conditional on the predictors included in the model.",
+        "If \\(X_2\\) is associated with both \\(X_1\\) and \\(Y\\), omitting it can distort the coefficient of \\(X_1\\).",
+        "Strong correlation between predictors can also make coefficients unstable."
+      ],
+      "hints": [
+        "Think about confounding and multicollinearity."
+      ],
+      "sourceNumber": 356
+    },
+    {
+      "id": "stat-157",
+      "category": "statistics",
+      "topic": "multiple-regression",
+      "difficulty": "hard",
+      "question": "In the model \\(Y=\\beta_0+\\beta_1X+\\beta_2Z+\\beta_3XZ+\\varepsilon\\), write the value of \\(Z\\) at which the conditional effect of \\(X\\) is zero, assuming \\(\\beta_3\\ne0\\).",
+      "expression": "\\frac{\\partial E[Y\\mid X,Z]}{\\partial X}=\\beta_1+\\beta_3Z",
+      "answer": "Z=-\\frac{\\beta_1}{\\beta_3}",
+      "solutionSteps": [
+        "The conditional effect of \\(X\\) is \\(\\beta_1+\\beta_3Z\\).",
+        "Set this expression equal to zero.",
+        "Solve for \\(Z\\)."
+      ],
+      "hints": [
+        "Find where the simple slope crosses zero."
+      ],
+      "sourceNumber": 357
+    },
+    {
+      "id": "stat-158",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "hard",
+      "question": "A logistic regression coefficient for \\(X\\) is \\(\\beta_1=0.70\\). Write the odds ratio for a 3-unit increase in \\(X\\) and interpret it.",
+      "expression": "\\log\\left(\\frac{p}{1-p}\\right)=\\beta_0+0.70X",
+      "answer": "\\operatorname{OR}=e^{3(0.70)}=e^{2.1},\\quad \\text{so the odds are multiplied by }e^{2.1}\\text{ for a 3-unit increase in }X",
+      "solutionSteps": [
+        "A one-unit increase multiplies the odds by \\(e^{\\beta_1}\\).",
+        "A three-unit increase multiplies the log-odds change by 3.",
+        "Exponentiate \\(3\\beta_1\\)."
+      ],
+      "hints": [
+        "Use \\(e^{c\\beta_1}\\) for a \\(c\\)-unit increase."
+      ],
+      "sourceNumber": 358
+    },
+    {
+      "id": "stat-159",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "hard",
+      "question": "A logistic model has excellent discrimination but poor calibration. Explain what this means.",
+      "expression": "\\text{High AUC, poor calibration plot or calibration slope}",
+      "answer": "\\text{The model ranks positive cases above negative cases well, but its predicted probabilities do not match observed event frequencies}",
+      "solutionSteps": [
+        "Discrimination concerns ranking or separation of classes.",
+        "Calibration concerns agreement between predicted probabilities and observed proportions.",
+        "A model can perform well on one dimension and poorly on the other."
+      ],
+      "hints": [
+        "Separate ranking quality from probability accuracy."
+      ],
+      "sourceNumber": 359
+    },
+    {
+      "id": "stat-160",
+      "category": "statistics",
+      "topic": "mixed-effects-models",
+      "difficulty": "hard",
+      "question": "In a random-intercept and random-slope model, what does a negative covariance between the random intercept and random slope imply?",
+      "expression": "\\operatorname{Cov}(u_{0i},u_{1i})<0",
+      "answer": "\\text{Clusters or subjects with higher-than-average intercepts tend to have lower-than-average slopes}",
+      "solutionSteps": [
+        "The random intercept measures deviation in baseline level.",
+        "The random slope measures deviation in the effect of the predictor.",
+        "A negative covariance indicates an inverse relationship between those deviations."
+      ],
+      "hints": [
+        "Interpret the sign of the covariance between cluster-specific deviations."
+      ],
+      "sourceNumber": 360
     }
   ]
 }

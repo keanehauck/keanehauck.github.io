@@ -424,8 +424,8 @@
       answerPanel.hidden = true;
 
       hintText.textContent = "";
-      answerText.textContent =
-        `\\[${question.answer || ""}\\]`;
+      
+      setAnswerContent(question.answer);
 
       visibleHintIndex = 0;
 
@@ -563,6 +563,37 @@
     }
   } catch (error) {
     console.error("MathJax error:", error);
+  }
+}
+
+function unwrapPlainTextAnswer(value) {
+  const answerValue = String(value || "").trim();
+
+  if (
+    answerValue.startsWith("\\text{") &&
+    answerValue.endsWith("}")
+  ) {
+    return answerValue.slice(6, -1);
+  }
+
+  return null;
+}
+
+function setAnswerContent(value) {
+  const answerValue = String(value || "").trim();
+  const plainText = unwrapPlainTextAnswer(answerValue);
+
+  answerText.classList.remove(
+    "plain-answer",
+    "math-answer"
+  );
+
+  if (plainText !== null) {
+    answerText.textContent = plainText;
+    answerText.classList.add("plain-answer");
+  } else {
+    answerText.textContent = `\\[${answerValue}\\]`;
+    answerText.classList.add("math-answer");
   }
 }
 

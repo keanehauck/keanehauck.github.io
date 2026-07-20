@@ -54,3 +54,11 @@ Can linebreak in latex with \\
 
 can run local server with the command 'bundle exec jekyll serve' in website directory
 after installing ruby and running 'gem install jekyll bundler'
+
+If you do this, make SURE to not try and copy the address from the powershell. Ctrl+c will end server.
+
+editing the background image is in /css/custom.css. I overrode the default stylesheet in head.html (the only multi-line <link>).
+
+math practice script is /includes/math.refresher.html
+
+JSON is where the problems are stored. In assets/math-practice/problem-set.json
