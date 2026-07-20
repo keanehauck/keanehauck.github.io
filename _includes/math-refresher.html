@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Math Refresher</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #f4f6f8;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+    }
+
+    .app {
+      width: min(760px, 100%);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .controls,
+    .card {
+      background: white;
+      border: 1px solid #d9dee5;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: end;
+    }
+
+    .field {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    select,
+    button {
+      min-height: 42px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    select {
+      width: 100%;
+      border: 1px solid #aeb7c2;
+      background: white;
+    }
+
+    button {
+      border: none;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    button.secondary {
+      background: #4b5563;
+    }
+
+    button.secondary:hover {
+      background: #374151;
+    }
+
+    button.answer-button {
+      background: #15803d;
+    }
+
+    button.answer-button:hover {
+      background: #166534;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .metadata {
+      color: #667085;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+
+    .expression {
+      margin: 24px 0;
+      padding: 16px;
+      overflow-x: auto;
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      font-size: 1.15rem;
+    }
+
+    .panel {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .hint {
+      background: #fff7d6;
+      border: 1px solid #f0d56d;
+    }
+
+    .answer {
+      background: #e9f8ee;
+      border: 1px solid #8bd0a2;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .error {
+      color: #b42318;
+      font-weight: bold;
+    }
+
+    ol {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+    <h1>Math Refresher</h1>
+
+    <section class="controls">
+      <div class="field">
+        <label for="category">Category</label>
+
+        <select id="category">
+          <option value="all">All categories</option>
+          <option value="differentiation">Differentiation</option>
+          <option value="integration">Integration</option>
+          <option value="linear-algebra">Linear algebra</option>
+          <option value="probability">Probability</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="difficulty">Difficulty</label>
+
+        <select id="difficulty">
+          <option value="all">All difficulties</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <button id="new-question-button">
+        Show Question
+      </button>
+    </section>
+
+    <section id="question-card" class="card hidden">
+      <p id="metadata" class="metadata"></p>
+
+      <h2 id="question-text"></h2>
+
+      <div id="expression" class="expression"></div>
+
+      <div class="button-row">
+        <button
+          id="hint-button"
+          class="secondary"
+        >
+          Show Hint
+        </button>
+
+        <button
+          id="answer-button"
+          class="answer-button"
+        >
+          Reveal Answer
+        </button>
+      </div>
+
+      <div id="hint-panel" class="panel hint hidden">
+        <h3>Hint</h3>
+        <p id="hint-text"></p>
+      </div>
+
+      <div id="answer-panel" class="panel answer hidden">
+        <h3>Answer</h3>
+        <div id="answer-text"></div>
+
+        <h3>Solution</h3>
+        <ol id="solution-steps"></ol>
+      </div>
+    </section>
+
+    <p id="status-message"></p>
+  </main>
+
+  <script>
+    const JSON_FILE =
+      "problem_set.json";
+
+    let allQuestions = [];
+    let currentQuestion = null;
+    let previousQuestionId = null;
+    let visibleHintIndex = 0;
+
+    const categorySelect =
+      document.getElementById("category");
+
+    const difficultySelect =
+      document.getElementById("difficulty");
+
+    const newQuestionButton =
+      document.getElementById("new-question-button");
+
+    const hintButton =
+      document.getElementById("hint-button");
+
+    const answerButton =
+      document.getElementById("answer-button");
+
+    const questionCard =
+      document.getElementById("question-card");
+
+    const metadata =
+      document.getElementById("metadata");
+
+    const questionText =
+      document.getElementById("question-text");
+
+    const expression =
+      document.getElementById("expression");
+
+    const hintPanel =
+      document.getElementById("hint-panel");
+
+    const hintText =
+      document.getElementById("hint-text");
+
+    const answerPanel =
+      document.getElementById("answer-panel");
+
+    const answerText =
+      document.getElementById("answer-text");
+
+    const solutionSteps =
+      document.getElementById("solution-steps");
+
+    const statusMessage =
+      document.getElementById("status-message");
+
+    async function loadQuestions() {
+      try {
+        statusMessage.textContent =
+          "Loading questions...";
+
+        const response = await fetch(JSON_FILE);
+
+        if (!response.ok) {
+          throw new Error(
+            `Could not load the JSON file: ${response.status}`
+          );
+        }
+
+        const data = await response.json();
+
+        if (!Array.isArray(data.questions)) {
+          throw new Error(
+            "The JSON file does not contain a questions array."
+          );
+        }
+
+        allQuestions = data.questions;
+
+        statusMessage.textContent =
+          `${allQuestions.length} questions loaded.`;
+
+        newQuestionButton.disabled = false;
+      } catch (error) {
+        console.error(error);
+
+        statusMessage.classList.add("error");
+        statusMessage.textContent =
+          "Unable to load the question file. " +
+          "Make sure the JSON file is in the same folder " +
+          "and open the app through a local web server.";
+      }
+    }
+
+    function getEligibleQuestions() {
+      const selectedCategory =
+        categorySelect.value;
+
+      const selectedDifficulty =
+        difficultySelect.value;
+
+      return allQuestions.filter((question) => {
+        const matchesCategory =
+          selectedCategory === "all" ||
+          question.category === selectedCategory;
+
+        const matchesDifficulty =
+          selectedDifficulty === "all" ||
+          question.difficulty === selectedDifficulty;
+
+        return matchesCategory && matchesDifficulty;
+      });
+    }
+
+    function chooseRandomQuestion() {
+      let eligibleQuestions =
+        getEligibleQuestions();
+
+      if (eligibleQuestions.length === 0) {
+        statusMessage.classList.add("error");
+        statusMessage.textContent =
+          "No questions match those filters.";
+        return;
+      }
+
+      /*
+       * Avoid showing the same question twice in a row
+       * when more than one question is available.
+       */
+      if (
+        eligibleQuestions.length > 1 &&
+        previousQuestionId !== null
+      ) {
+        eligibleQuestions =
+          eligibleQuestions.filter(
+            (question) =>
+              question.id !== previousQuestionId
+          );
+      }
+
+      const randomIndex = Math.floor(
+        Math.random() * eligibleQuestions.length
+      );
+
+      currentQuestion =
+        eligibleQuestions[randomIndex];
+
+      previousQuestionId =
+        currentQuestion.id;
+
+      displayQuestion(currentQuestion);
+    }
+
+    function displayQuestion(question) {
+      visibleHintIndex = 0;
+
+      metadata.textContent =
+        `${formatCategory(question.category)} · ` +
+        `${question.topic.replaceAll("-", " ")} · ` +
+        `${question.difficulty}`;
+
+      questionText.textContent =
+        question.question;
+
+      /*
+       * The JSON expressions do not include MathJax
+       * display delimiters, so they are added here.
+       */
+      expression.textContent =
+        `\\[${question.expression}\\]`;
+
+      hintPanel.classList.add("hidden");
+      answerPanel.classList.add("hidden");
+
+      hintButton.disabled =
+        !question.hints ||
+        question.hints.length === 0;
+
+      hintButton.textContent =
+        "Show Hint";
+
+      answerText.textContent =
+        `\\[${question.answer}\\]`;
+
+      solutionSteps.innerHTML = "";
+
+      question.solutionSteps.forEach((step) => {
+        const listItem =
+          document.createElement("li");
+
+        listItem.textContent = step;
+        solutionSteps.appendChild(listItem);
+      });
+
+      questionCard.classList.remove("hidden");
+
+      statusMessage.classList.remove("error");
+      statusMessage.textContent = "";
+
+      renderMath(questionCard);
+    }
+
+    function showNextHint() {
+      if (
+        !currentQuestion ||
+        !currentQuestion.hints ||
+        currentQuestion.hints.length === 0
+      ) {
+        return;
+      }
+
+      hintPanel.classList.remove("hidden");
+
+      hintText.textContent =
+        currentQuestion.hints[
+          visibleHintIndex
+        ];
+
+      visibleHintIndex += 1;
+
+      if (
+        visibleHintIndex >=
+        currentQuestion.hints.length
+      ) {
+        hintButton.disabled = true;
+        hintButton.textContent =
+          "No More Hints";
+      } else {
+        hintButton.textContent =
+          "Show Another Hint";
+      }
+
+      renderMath(hintPanel);
+    }
+
+    function revealAnswer() {
+      if (!currentQuestion) {
+        return;
+      }
+
+      answerPanel.classList.remove("hidden");
+      renderMath(answerPanel);
+    }
+
+    function formatCategory(category) {
+      return category
+        .split("-")
+        .map(
+          (word) =>
+            word.charAt(0).toUpperCase() +
+            word.slice(1)
+        )
+        .join(" ");
+    }
+
+    function renderMath(element) {
+      if (
+        window.MathJax &&
+        typeof MathJax.typesetPromise === "function"
+      ) {
+        MathJax.typesetClear([element]);
+
+        MathJax.typesetPromise([element]).catch(
+          (error) => {
+            console.error(
+              "MathJax rendering error:",
+              error
+            );
+          }
+        );
+      }
+    }
+
+    newQuestionButton.addEventListener(
+      "click",
+      chooseRandomQuestion
+    );
+
+    hintButton.addEventListener(
+      "click",
+      showNextHint
+    );
+
+    answerButton.addEventListener(
+      "click",
+      revealAnswer
+    );
+
+    newQuestionButton.disabled = true;
+
+    loadQuestions();
+  </script>
+</body>
+</html>

@@ -1,0 +1,2595 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Differentiation, Integration, and Linear Algebra Refresher",
+  "questionCount": 150,
+  "categories": {
+    "differentiation": 50,
+    "integration": 50,
+    "linear-algebra": 50
+  },
+  "mathFormat": "LaTeX",
+  "questions": [
+    {
+      "id": "diff-001",
+      "category": "differentiation",
+      "topic": "power-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=7x^4-3x^2+5x-8",
+      "answer": "f'(x)=28x^3-6x+5",
+      "solutionSteps": [
+        "Differentiate term by term using \\(\\frac{d}{dx}x^n=nx^{n-1}\\).",
+        "f'(x)=28x^3-6x+5."
+      ],
+      "hints": [
+        "Apply the power rule to each term; constants differentiate to zero."
+      ],
+      "sourceNumber": 1
+    },
+    {
+      "id": "diff-002",
+      "category": "differentiation",
+      "topic": "power-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x^{-3}+4x^{1/2}",
+      "answer": "f'(x)=-3x^{-4}+2x^{-1/2}",
+      "solutionSteps": [
+        "\\(\\frac{d}{dx}x^{-3}=-3x^{-4}\\).",
+        "\\(\\frac{d}{dx}(4x^{1/2})=2x^{-1/2}\\).",
+        "Combine the results."
+      ],
+      "hints": [
+        "The power rule also applies to negative and fractional exponents."
+      ],
+      "sourceNumber": 2
+    },
+    {
+      "id": "diff-003",
+      "category": "differentiation",
+      "topic": "power-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\frac{5}{x^2}-\\frac{2}{x}",
+      "answer": "f'(x)=-\\frac{10}{x^3}+\\frac{2}{x^2}",
+      "solutionSteps": [
+        "Rewrite as \\(5x^{-2}-2x^{-1}\\).",
+        "Differentiate to get \\(-10x^{-3}+2x^{-2}\\)."
+      ],
+      "hints": [
+        "Rewrite quotients as negative powers."
+      ],
+      "sourceNumber": 3
+    },
+    {
+      "id": "diff-004",
+      "category": "differentiation",
+      "topic": "power-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\sqrt[3]{x^2}",
+      "answer": "f'(x)=\\frac{2}{3}x^{-1/3}",
+      "solutionSteps": [
+        "Rewrite \\(\\sqrt[3]{x^2}\\) as \\(x^{2/3}\\).",
+        "Apply the power rule."
+      ],
+      "hints": [
+        "Convert the radical to a fractional exponent."
+      ],
+      "sourceNumber": 4
+    },
+    {
+      "id": "diff-005",
+      "category": "differentiation",
+      "topic": "power-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\pi x^5-e^2x",
+      "answer": "f'(x)=5\\pi x^4-e^2",
+      "solutionSteps": [
+        "Treat \\(\\pi\\) and \\(e^2\\) as constants.",
+        "Differentiate each term."
+      ],
+      "hints": [
+        "Both \\(\\pi\\) and \\(e^2\\) are constants."
+      ],
+      "sourceNumber": 5
+    },
+    {
+      "id": "diff-006",
+      "category": "differentiation",
+      "topic": "tangent-lines",
+      "difficulty": "easy",
+      "question": "Find the tangent line at \\(x=2\\).",
+      "expression": "y=x^3-2x+1",
+      "answer": "y-5=10(x-2)",
+      "solutionSteps": [
+        "Differentiate: \\(y'=3x^2-2\\).",
+        "The slope at \\(x=2\\) is \\(10\\).",
+        "The point is \\((2,5)\\).",
+        "Use point-slope form: \\(y-5=10(x-2)\\)."
+      ],
+      "hints": [
+        "Find both the point on the curve and the derivative at that point."
+      ],
+      "sourceNumber": 6
+    },
+    {
+      "id": "diff-007",
+      "category": "differentiation",
+      "topic": "critical-points",
+      "difficulty": "medium",
+      "question": "Find all points where the graph has a horizontal tangent.",
+      "expression": "f(x)=x^3-3x^2-9x+4",
+      "answer": "(-1,9)\\text{ and }(3,-23)",
+      "solutionSteps": [
+        "Set \\(f'(x)=3x^2-6x-9=3(x-3)(x+1)\\) equal to zero.",
+        "Thus \\(x=-1\\) or \\(x=3\\).",
+        "Evaluate the function to obtain \\(f(-1)=9\\) and \\(f(3)=-23\\)."
+      ],
+      "hints": [
+        "Horizontal tangents occur where the derivative is zero."
+      ],
+      "sourceNumber": 7
+    },
+    {
+      "id": "diff-008",
+      "category": "differentiation",
+      "topic": "increasing-decreasing",
+      "difficulty": "easy",
+      "question": "Determine where the function is increasing and decreasing.",
+      "expression": "f(x)=x^2-6x+11",
+      "answer": "\\text{Decreasing on }(-\\infty,3),\\quad \\text{increasing on }(3,\\infty)",
+      "solutionSteps": [
+        "Compute \\(f'(x)=2x-6\\).",
+        "\\(f'(x)<0\\) for \\(x<3\\) and \\(f'(x)>0\\) for \\(x>3\\)."
+      ],
+      "hints": [
+        "Use the sign of the first derivative."
+      ],
+      "sourceNumber": 8
+    },
+    {
+      "id": "diff-009",
+      "category": "differentiation",
+      "topic": "critical-points",
+      "difficulty": "easy",
+      "question": "Find the critical points.",
+      "expression": "f(x)=x^4-8x^2",
+      "answer": "x=-2,\\ 0,\\ 2",
+      "solutionSteps": [
+        "Compute \\(f'(x)=4x^3-16x=4x(x-2)(x+2)\\).",
+        "Set the derivative equal to zero."
+      ],
+      "hints": [
+        "Factor the derivative completely."
+      ],
+      "sourceNumber": 9
+    },
+    {
+      "id": "diff-010",
+      "category": "differentiation",
+      "topic": "derivative-definition",
+      "difficulty": "medium",
+      "question": "Use the derivative definition to find \\(f'(x)\\).",
+      "expression": "f(x)=x^2+3x",
+      "answer": "f'(x)=2x+3",
+      "solutionSteps": [
+        "Start with \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
+        "The numerator simplifies to \\(2xh+h^2+3h\\).",
+        "Divide by \\(h\\) and take the limit to get \\(2x+3\\)."
+      ],
+      "hints": [
+        "Expand \\(f(x+h)\\), cancel, and factor out \\(h\\)."
+      ],
+      "sourceNumber": 10
+    },
+    {
+      "id": "diff-011",
+      "category": "differentiation",
+      "topic": "product-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=(x^2+1)(3x^4-2x)",
+      "answer": "f'(x)=18x^5+12x^3-6x^2-2",
+      "solutionSteps": [
+        "Use \\((uv)'=u'v+uv'\\).",
+        "Substitute \\(u=x^2+1\\) and \\(v=3x^4-2x\\).",
+        "Simplify the result."
+      ],
+      "hints": [
+        "Use the product rule before simplifying."
+      ],
+      "sourceNumber": 11
+    },
+    {
+      "id": "diff-012",
+      "category": "differentiation",
+      "topic": "product-and-chain-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x^3\\sqrt{x+2}",
+      "answer": "f'(x)=\\frac{x^2(7x+12)}{2\\sqrt{x+2}}",
+      "solutionSteps": [
+        "Use the product rule on \\(x^3(x+2)^{1/2}\\).",
+        "Obtain \\(3x^2\\sqrt{x+2}+\\frac{x^3}{2\\sqrt{x+2}}\\).",
+        "Combine into a single fraction."
+      ],
+      "hints": [
+        "Use both the product rule and chain rule."
+      ],
+      "sourceNumber": 12
+    },
+    {
+      "id": "diff-013",
+      "category": "differentiation",
+      "topic": "quotient-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\frac{x^2+3}{x-4}",
+      "answer": "f'(x)=\\frac{x^2-8x-3}{(x-4)^2}",
+      "solutionSteps": [
+        "Apply \\(\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}\\).",
+        "Simplify \\(2x(x-4)-(x^2+3)\\)."
+      ],
+      "hints": [
+        "Apply the quotient rule carefully."
+      ],
+      "sourceNumber": 13
+    },
+    {
+      "id": "diff-014",
+      "category": "differentiation",
+      "topic": "quotient-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\frac{\\sqrt{x}}{x^2+1}",
+      "answer": "f'(x)=\\frac{1-3x^2}{2\\sqrt{x}(x^2+1)^2}",
+      "solutionSteps": [
+        "Apply the quotient rule.",
+        "Use \\(\\frac{d}{dx}\\sqrt{x}=\\frac{1}{2\\sqrt{x}}\\).",
+        "Combine and simplify the numerator."
+      ],
+      "hints": [
+        "A common denominator in the numerator helps simplify."
+      ],
+      "sourceNumber": 14
+    },
+    {
+      "id": "diff-015",
+      "category": "differentiation",
+      "topic": "chain-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=(5x^2-3x+1)^6",
+      "answer": "f'(x)=6(5x^2-3x+1)^5(10x-3)",
+      "solutionSteps": [
+        "Differentiate the outer sixth power.",
+        "Multiply by the derivative of \\(5x^2-3x+1\\)."
+      ],
+      "hints": [
+        "Differentiate the outer function, then the inner function."
+      ],
+      "sourceNumber": 15
+    },
+    {
+      "id": "diff-016",
+      "category": "differentiation",
+      "topic": "chain-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\sqrt{4x^3+7}",
+      "answer": "f'(x)=\\frac{6x^2}{\\sqrt{4x^3+7}}",
+      "solutionSteps": [
+        "Rewrite as \\((4x^3+7)^{1/2}\\).",
+        "Apply the chain rule and simplify."
+      ],
+      "hints": [
+        "Treat the square root as a one-half power."
+      ],
+      "sourceNumber": 16
+    },
+    {
+      "id": "diff-017",
+      "category": "differentiation",
+      "topic": "chain-and-quotient-rule",
+      "difficulty": "hard",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\left(\\frac{x+1}{x-1}\\right)^4",
+      "answer": "f'(x)=-\\frac{8(x+1)^3}{(x-1)^5}",
+      "solutionSteps": [
+        "Apply the chain rule to the fourth power.",
+        "The derivative of \\(\\frac{x+1}{x-1}\\) is \\(-\\frac{2}{(x-1)^2}\\).",
+        "Multiply and simplify."
+      ],
+      "hints": [
+        "Differentiate the inner quotient first."
+      ],
+      "sourceNumber": 17
+    },
+    {
+      "id": "diff-018",
+      "category": "differentiation",
+      "topic": "product-and-chain-rule",
+      "difficulty": "hard",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x^2(x^3+1)^{-2}",
+      "answer": "f'(x)=\\frac{2x(1-2x^3)}{(x^3+1)^3}",
+      "solutionSteps": [
+        "Use the product rule.",
+        "Differentiate \\((x^3+1)^{-2}\\) with the chain rule.",
+        "Factor and combine over a common denominator."
+      ],
+      "hints": [
+        "Factor \\(2x(x^3+1)^{-3}\\) from the result."
+      ],
+      "sourceNumber": 18
+    },
+    {
+      "id": "diff-019",
+      "category": "differentiation",
+      "topic": "chain-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=(x^2+4x)^{3/2}",
+      "answer": "f'(x)=3(x+2)\\sqrt{x^2+4x}",
+      "solutionSteps": [
+        "Apply the chain rule.",
+        "\\(\\frac{3}{2}(x^2+4x)^{1/2}(2x+4)\\) simplifies to the answer."
+      ],
+      "hints": [
+        "Factor \\(2\\) from the derivative of the inner function."
+      ],
+      "sourceNumber": 19
+    },
+    {
+      "id": "diff-020",
+      "category": "differentiation",
+      "topic": "quotient-and-chain-rule",
+      "difficulty": "hard",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\frac{(2x-1)^5}{x^2+1}",
+      "answer": "f'(x)=\\frac{2(2x-1)^4(3x^2+x+5)}{(x^2+1)^2}",
+      "solutionSteps": [
+        "Apply the quotient rule.",
+        "The numerator derivative is \\(10(2x-1)^4\\).",
+        "Factor \\((2x-1)^4\\) and simplify."
+      ],
+      "hints": [
+        "Factor before fully expanding."
+      ],
+      "sourceNumber": 20
+    },
+    {
+      "id": "diff-021",
+      "category": "differentiation",
+      "topic": "exponential-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=e^{3x}",
+      "answer": "f'(x)=3e^{3x}",
+      "solutionSteps": [
+        "Use \\(\\frac{d}{dx}e^{u}=e^u u'\\)."
+      ],
+      "hints": [
+        "Multiply by the derivative of the exponent."
+      ],
+      "sourceNumber": 21
+    },
+    {
+      "id": "diff-022",
+      "category": "differentiation",
+      "topic": "exponential-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=e^{x^2-4x}",
+      "answer": "f'(x)=(2x-4)e^{x^2-4x}",
+      "solutionSteps": [
+        "Apply the chain rule to the exponent \\(x^2-4x\\)."
+      ],
+      "hints": [
+        "The derivative of the exponent is \\(2x-4\\)."
+      ],
+      "sourceNumber": 22
+    },
+    {
+      "id": "diff-023",
+      "category": "differentiation",
+      "topic": "product-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x^2e^{-x}",
+      "answer": "f'(x)=e^{-x}(2x-x^2)",
+      "solutionSteps": [
+        "Use the product rule.",
+        "\\((e^{-x})'=-e^{-x}\\).",
+        "Factor out \\(e^{-x}\\)."
+      ],
+      "hints": [
+        "Use the product rule and then factor."
+      ],
+      "sourceNumber": 23
+    },
+    {
+      "id": "diff-024",
+      "category": "differentiation",
+      "topic": "logarithmic-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\ln x",
+      "answer": "f'(x)=\\frac{1}{x}",
+      "solutionSteps": [
+        "Use the standard derivative of the natural logarithm."
+      ],
+      "hints": [
+        "Recall \\((\\ln x)'=1/x\\)."
+      ],
+      "sourceNumber": 24
+    },
+    {
+      "id": "diff-025",
+      "category": "differentiation",
+      "topic": "logarithmic-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\ln(5x^2+1)",
+      "answer": "f'(x)=\\frac{10x}{5x^2+1}",
+      "solutionSteps": [
+        "Use \\((\\ln u)'=u'/u\\).",
+        "Here \\(u'=10x\\)."
+      ],
+      "hints": [
+        "Differentiate the inside and divide by the inside."
+      ],
+      "sourceNumber": 25
+    },
+    {
+      "id": "diff-026",
+      "category": "differentiation",
+      "topic": "product-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x\\ln x",
+      "answer": "f'(x)=\\ln x+1",
+      "solutionSteps": [
+        "Use the product rule: \\(1\\cdot\\ln x+x\\cdot\\frac1x\\).",
+        "Simplify."
+      ],
+      "hints": [
+        "Apply the product rule."
+      ],
+      "sourceNumber": 26
+    },
+    {
+      "id": "diff-027",
+      "category": "differentiation",
+      "topic": "logarithmic-functions",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\ln\\left(\\frac{x+1}{x-1}\\right)",
+      "answer": "f'(x)=-\\frac{2}{x^2-1}",
+      "solutionSteps": [
+        "Rewrite as \\(\\ln(x+1)-\\ln(x-1)\\).",
+        "Differentiate and combine the fractions."
+      ],
+      "hints": [
+        "Use logarithm quotient properties first."
+      ],
+      "sourceNumber": 27
+    },
+    {
+      "id": "diff-028",
+      "category": "differentiation",
+      "topic": "exponential-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=3^x",
+      "answer": "f'(x)=3^x\\ln 3",
+      "solutionSteps": [
+        "Use \\(\\frac{d}{dx}a^x=a^x\\ln a\\)."
+      ],
+      "hints": [
+        "For a non-\\(e\\) base, include \\(\\ln a\\)."
+      ],
+      "sourceNumber": 28
+    },
+    {
+      "id": "diff-029",
+      "category": "differentiation",
+      "topic": "logarithmic-differentiation",
+      "difficulty": "hard",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x^x",
+      "answer": "f'(x)=x^x(\\ln x+1)",
+      "solutionSteps": [
+        "Let \\(y=x^x\\) and take logarithms: \\(\\ln y=x\\ln x\\).",
+        "Differentiate implicitly: \\(y'/y=\\ln x+1\\).",
+        "Multiply by \\(y=x^x\\)."
+      ],
+      "hints": [
+        "Take natural logarithms before differentiating."
+      ],
+      "sourceNumber": 29
+    },
+    {
+      "id": "diff-030",
+      "category": "differentiation",
+      "topic": "logarithmic-differentiation",
+      "difficulty": "hard",
+      "question": "Use logarithmic differentiation.",
+      "expression": "f(x)=\\frac{x^3\\sqrt{x+1}}{(x^2+4)^2}",
+      "answer": "f'(x)=f(x)\\left(\\frac{3}{x}+\\frac{1}{2(x+1)}-\\frac{4x}{x^2+4}\\right)",
+      "solutionSteps": [
+        "Take logarithms: \\(\\ln f=3\\ln x+\\frac12\\ln(x+1)-2\\ln(x^2+4)\\).",
+        "Differentiate both sides.",
+        "Multiply by \\(f(x)\\)."
+      ],
+      "hints": [
+        "Turn products, quotients, and powers into sums using logarithms."
+      ],
+      "sourceNumber": 30
+    },
+    {
+      "id": "diff-031",
+      "category": "differentiation",
+      "topic": "trigonometric-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=4\\sin x-3\\cos x",
+      "answer": "f'(x)=4\\cos x+3\\sin x",
+      "solutionSteps": [
+        "Use \\((\\sin x)'=\\cos x\\) and \\((\\cos x)'=-\\sin x\\)."
+      ],
+      "hints": [
+        "Watch the two negative signs in the cosine term."
+      ],
+      "sourceNumber": 31
+    },
+    {
+      "id": "diff-032",
+      "category": "differentiation",
+      "topic": "trigonometric-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\tan(2x)",
+      "answer": "f'(x)=2\\sec^2(2x)",
+      "solutionSteps": [
+        "Differentiate \\(\\tan u\\) as \\(\\sec^2u\\cdot u'\\)."
+      ],
+      "hints": [
+        "Use the chain rule."
+      ],
+      "sourceNumber": 32
+    },
+    {
+      "id": "diff-033",
+      "category": "differentiation",
+      "topic": "trigonometric-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\sin(x^2)",
+      "answer": "f'(x)=2x\\cos(x^2)",
+      "solutionSteps": [
+        "Differentiate the outer sine, then multiply by \\(2x\\)."
+      ],
+      "hints": [
+        "Apply the chain rule."
+      ],
+      "sourceNumber": 33
+    },
+    {
+      "id": "diff-034",
+      "category": "differentiation",
+      "topic": "product-rule",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x\\cos x",
+      "answer": "f'(x)=\\cos x-x\\sin x",
+      "solutionSteps": [
+        "Use the product rule.",
+        "\\((\\cos x)'=-\\sin x\\)."
+      ],
+      "hints": [
+        "Differentiate both factors using the product rule."
+      ],
+      "sourceNumber": 34
+    },
+    {
+      "id": "diff-035",
+      "category": "differentiation",
+      "topic": "trigonometric-functions",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\sec^2(3x-1)",
+      "answer": "f'(x)=6\\sec^2(3x-1)\\tan(3x-1)",
+      "solutionSteps": [
+        "Treat the function as \\([\\sec(3x-1)]^2\\).",
+        "Apply the chain rule twice and simplify."
+      ],
+      "hints": [
+        "There is an outer square and an inner linear function."
+      ],
+      "sourceNumber": 35
+    },
+    {
+      "id": "diff-036",
+      "category": "differentiation",
+      "topic": "trigonometric-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\sin^3x",
+      "answer": "f'(x)=3\\sin^2x\\cos x",
+      "solutionSteps": [
+        "Rewrite as \\((\\sin x)^3\\) and apply the chain rule."
+      ],
+      "hints": [
+        "Differentiate the outer cube first."
+      ],
+      "sourceNumber": 36
+    },
+    {
+      "id": "diff-037",
+      "category": "differentiation",
+      "topic": "quotient-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\frac{\\cos x}{1+\\sin x}",
+      "answer": "f'(x)=-\\frac{1}{1+\\sin x}",
+      "solutionSteps": [
+        "Apply the quotient rule.",
+        "The numerator simplifies to \\(-\\sin x(1+\\sin x)-\\cos^2x=-(1+\\sin x)\\).",
+        "Cancel a common factor."
+      ],
+      "hints": [
+        "Use \\(\\sin^2x+\\cos^2x=1\\) when simplifying."
+      ],
+      "sourceNumber": 37
+    },
+    {
+      "id": "diff-038",
+      "category": "differentiation",
+      "topic": "inverse-trigonometric-functions",
+      "difficulty": "easy",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\arctan(4x)",
+      "answer": "f'(x)=\\frac{4}{1+16x^2}",
+      "solutionSteps": [
+        "Use \\((\\arctan u)'=\\frac{u'}{1+u^2}\\)."
+      ],
+      "hints": [
+        "Here \\(u=4x\\)."
+      ],
+      "sourceNumber": 38
+    },
+    {
+      "id": "diff-039",
+      "category": "differentiation",
+      "topic": "inverse-trigonometric-functions",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=\\arcsin(x^2)",
+      "answer": "f'(x)=\\frac{2x}{\\sqrt{1-x^4}}",
+      "solutionSteps": [
+        "Use \\((\\arcsin u)'=\\frac{u'}{\\sqrt{1-u^2}}\\).",
+        "Substitute \\(u=x^2\\)."
+      ],
+      "hints": [
+        "Square the entire inner function in the denominator."
+      ],
+      "sourceNumber": 39
+    },
+    {
+      "id": "diff-040",
+      "category": "differentiation",
+      "topic": "product-rule",
+      "difficulty": "medium",
+      "question": "Differentiate the function.",
+      "expression": "f(x)=x\\arccos x",
+      "answer": "f'(x)=\\arccos x-\\frac{x}{\\sqrt{1-x^2}}",
+      "solutionSteps": [
+        "Use the product rule.",
+        "\\((\\arccos x)'=-1/\\sqrt{1-x^2}\\)."
+      ],
+      "hints": [
+        "Apply the product rule and remember the negative derivative of arccosine."
+      ],
+      "sourceNumber": 40
+    },
+    {
+      "id": "diff-041",
+      "category": "differentiation",
+      "topic": "implicit-differentiation",
+      "difficulty": "easy",
+      "question": "Find \\(\\frac{dy}{dx}\\).",
+      "expression": "x^2+y^2=25",
+      "answer": "\\frac{dy}{dx}=-\\frac{x}{y}",
+      "solutionSteps": [
+        "Differentiate implicitly: \\(2x+2yy'=0\\).",
+        "Solve for \\(y'\\)."
+      ],
+      "hints": [
+        "Differentiate \\(y^2\\) using the chain rule."
+      ],
+      "sourceNumber": 41
+    },
+    {
+      "id": "diff-042",
+      "category": "differentiation",
+      "topic": "implicit-differentiation",
+      "difficulty": "medium",
+      "question": "Find the slope at \\((1,2)\\).",
+      "expression": "x^2+xy+y^2=7",
+      "answer": "-\\frac45",
+      "solutionSteps": [
+        "Differentiate: \\(2x+y+xy'+2yy'=0\\).",
+        "Solve: \\(y'=-(2x+y)/(x+2y)\\).",
+        "Substitute \\((1,2)\\)."
+      ],
+      "hints": [
+        "Remember that \\((xy)'=x y'+y\\)."
+      ],
+      "sourceNumber": 42
+    },
+    {
+      "id": "diff-043",
+      "category": "differentiation",
+      "topic": "implicit-differentiation",
+      "difficulty": "hard",
+      "question": "Find \\(\\frac{dy}{dx}\\).",
+      "expression": "x^3+y^3=6xy",
+      "answer": "\\frac{dy}{dx}=\\frac{2y-x^2}{y^2-2x}",
+      "solutionSteps": [
+        "Differentiate: \\(3x^2+3y^2y'=6y+6xy'\\).",
+        "Collect the \\(y'\\) terms and solve."
+      ],
+      "hints": [
+        "Move all terms containing \\(y'\\) to one side."
+      ],
+      "sourceNumber": 43
+    },
+    {
+      "id": "diff-044",
+      "category": "differentiation",
+      "topic": "second-derivatives",
+      "difficulty": "hard",
+      "question": "Find \\(\\frac{d^2y}{dx^2}\\).",
+      "expression": "x^2+y^2=16",
+      "answer": "\\frac{d^2y}{dx^2}=-\\frac{16}{y^3}",
+      "solutionSteps": [
+        "First, \\(y'=-x/y\\).",
+        "Differentiate \\(-x/y\\) using the quotient rule.",
+        "Use \\(x^2+y^2=16\\) to simplify."
+      ],
+      "hints": [
+        "Substitute the original equation near the end."
+      ],
+      "sourceNumber": 44
+    },
+    {
+      "id": "diff-045",
+      "category": "differentiation",
+      "topic": "related-rates",
+      "difficulty": "medium",
+      "question": "A circle's radius increases at \\(3\\text{ cm/s}\\). How fast is its area increasing when \\(r=8\\text{ cm}\\)?",
+      "expression": "A=\\pi r^2",
+      "answer": "\\frac{dA}{dt}=48\\pi\\text{ cm}^2/\\text{s}",
+      "solutionSteps": [
+        "Differentiate \\(A=\\pi r^2\\): \\(dA/dt=2\\pi r\\,dr/dt\\).",
+        "Substitute \\(r=8\\) and \\(dr/dt=3\\)."
+      ],
+      "hints": [
+        "Differentiate with respect to time."
+      ],
+      "sourceNumber": 45
+    },
+    {
+      "id": "diff-046",
+      "category": "differentiation",
+      "topic": "related-rates",
+      "difficulty": "hard",
+      "question": "A 10-meter ladder slides down a wall. The bottom moves away at \\(2\\text{ m/s}\\). How fast is the top moving when the bottom is 6 meters from the wall?",
+      "expression": "x^2+y^2=100",
+      "answer": "\\frac{dy}{dt}=-\\frac32\\text{ m/s}",
+      "solutionSteps": [
+        "When \\(x=6\\), \\(y=8\\).",
+        "Differentiate: \\(2x\\,dx/dt+2y\\,dy/dt=0\\).",
+        "Substitute the known values and solve."
+      ],
+      "hints": [
+        "Use the Pythagorean relationship and note that downward velocity is negative."
+      ],
+      "sourceNumber": 46
+    },
+    {
+      "id": "diff-047",
+      "category": "differentiation",
+      "topic": "local-extrema",
+      "difficulty": "medium",
+      "question": "Find the local extrema.",
+      "expression": "f(x)=x^3-6x^2+9x+2",
+      "answer": "\\text{Local maximum }(1,6);\\quad \\text{local minimum }(3,2)",
+      "solutionSteps": [
+        "Set \\(f'(x)=3(x-1)(x-3)=0\\).",
+        "Use \\(f''(x)=6x-12\\) to classify the critical points.",
+        "Evaluate \\(f(1)\\) and \\(f(3)\\)."
+      ],
+      "hints": [
+        "Use the second derivative test."
+      ],
+      "sourceNumber": 47
+    },
+    {
+      "id": "diff-048",
+      "category": "differentiation",
+      "topic": "absolute-extrema",
+      "difficulty": "medium",
+      "question": "Find the absolute maximum and minimum on \\([-2,3]\\).",
+      "expression": "f(x)=x^3-3x",
+      "answer": "\\text{Maximum }18\\text{ at }x=3;\\quad \\text{minimum }-2\\text{ at }x=-2\\text{ and }x=1",
+      "solutionSteps": [
+        "Critical points satisfy \\(3x^2-3=0\\), so \\(x=\\pm1\\).",
+        "Evaluate \\(f\\) at \\(-2,-1,1,3\\).",
+        "Compare all values."
+      ],
+      "hints": [
+        "Check both critical points and endpoints."
+      ],
+      "sourceNumber": 48
+    },
+    {
+      "id": "diff-049",
+      "category": "differentiation",
+      "topic": "concavity",
+      "difficulty": "hard",
+      "question": "Determine intervals of concavity and inflection points.",
+      "expression": "f(x)=x^4-4x^3",
+      "answer": "\\text{Concave up on }(-\\infty,0)\\cup(2,\\infty);\\ \\text{concave down on }(0,2);\\ \\text{inflection points }(0,0),(2,-16)",
+      "solutionSteps": [
+        "Compute \\(f''(x)=12x(x-2)\\).",
+        "Make a sign chart around \\(x=0\\) and \\(x=2\\).",
+        "Evaluate the function at both sign-change locations."
+      ],
+      "hints": [
+        "Concavity is determined by the sign of the second derivative."
+      ],
+      "sourceNumber": 49
+    },
+    {
+      "id": "diff-050",
+      "category": "differentiation",
+      "topic": "optimization",
+      "difficulty": "medium",
+      "question": "A rectangle has perimeter 40. Find the dimensions that maximize its area.",
+      "expression": "2x+2y=40",
+      "answer": "10\\text{ by }10",
+      "solutionSteps": [
+        "Write \\(y=20-x\\).",
+        "Then \\(A(x)=x(20-x)=20x-x^2\\).",
+        "Set \\(A'(x)=20-2x=0\\), giving \\(x=10\\) and \\(y=10\\)."
+      ],
+      "hints": [
+        "Express the area using one variable."
+      ],
+      "sourceNumber": 50
+    },
+    {
+      "id": "int-001",
+      "category": "integration",
+      "topic": "basic-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int (6x^5-4x^2+7)\\,dx",
+      "answer": "x^6-\\frac{4}{3}x^3+7x+C",
+      "solutionSteps": [
+        "Integrate term by term.",
+        "\\(\\int 6x^5\\,dx=x^6\\), \\(\\int-4x^2\\,dx=-\\frac43x^3\\), and \\(\\int7\\,dx=7x\\).",
+        "Add the constant \\(C\\)."
+      ],
+      "hints": [
+        "Increase each power by one and divide by the new power."
+      ],
+      "sourceNumber": 51
+    },
+    {
+      "id": "int-002",
+      "category": "integration",
+      "topic": "basic-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int \\left(x^{-2}+3x^{1/2}\\right)\\,dx",
+      "answer": "-x^{-1}+2x^{3/2}+C",
+      "solutionSteps": [
+        "Apply the power rule to each term.",
+        "\\(\\int x^{-2}\\,dx=-x^{-1}\\) and \\(\\int3x^{1/2}\\,dx=2x^{3/2}\\)."
+      ],
+      "hints": [
+        "Use the integration power rule for both negative and fractional exponents."
+      ],
+      "sourceNumber": 52
+    },
+    {
+      "id": "int-003",
+      "category": "integration",
+      "topic": "logarithmic-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int \\frac{4}{x}\\,dx",
+      "answer": "4\\ln|x|+C",
+      "solutionSteps": [
+        "Use \\(\\int\\frac1x\\,dx=\\ln|x|+C\\).",
+        "Multiply by 4."
+      ],
+      "hints": [
+        "The \\(1/x\\) case is the logarithmic exception to the power rule."
+      ],
+      "sourceNumber": 53
+    },
+    {
+      "id": "int-004",
+      "category": "integration",
+      "topic": "exponential-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int e^{2x}\\,dx",
+      "answer": "\\frac12e^{2x}+C",
+      "solutionSteps": [
+        "Reverse the chain rule.",
+        "Divide by the derivative \\(2\\) of the exponent."
+      ],
+      "hints": [
+        "Differentiate your result to check the factor of \\(1/2\\)."
+      ],
+      "sourceNumber": 54
+    },
+    {
+      "id": "int-005",
+      "category": "integration",
+      "topic": "exponential-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int 5^x\\,dx",
+      "answer": "\\frac{5^x}{\\ln5}+C",
+      "solutionSteps": [
+        "Use \\(\\int a^x\\,dx=\\frac{a^x}{\\ln a}+C\\)."
+      ],
+      "hints": [
+        "For base \\(a\\neq e\\), divide by \\(\\ln a\\)."
+      ],
+      "sourceNumber": 55
+    },
+    {
+      "id": "int-006",
+      "category": "integration",
+      "topic": "trigonometric-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int(\\cos x-2\\sin x)\\,dx",
+      "answer": "\\sin x+2\\cos x+C",
+      "solutionSteps": [
+        "\\(\\int\\cos x\\,dx=\\sin x\\).",
+        "\\(\\int-2\\sin x\\,dx=2\\cos x\\)."
+      ],
+      "hints": [
+        "Check signs by differentiating the cosine term."
+      ],
+      "sourceNumber": 56
+    },
+    {
+      "id": "int-007",
+      "category": "integration",
+      "topic": "trigonometric-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sec^2x\\,dx",
+      "answer": "\\tan x+C",
+      "solutionSteps": [
+        "Use the derivative pair \\((\\tan x)'=\\sec^2x\\)."
+      ],
+      "hints": [
+        "Recall the derivative of tangent."
+      ],
+      "sourceNumber": 57
+    },
+    {
+      "id": "int-008",
+      "category": "integration",
+      "topic": "inverse-trigonometric-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{1}{1+x^2}\\,dx",
+      "answer": "\\arctan x+C",
+      "solutionSteps": [
+        "Match the standard arctangent antiderivative."
+      ],
+      "hints": [
+        "Recall \\((\\arctan x)'=1/(1+x^2)\\)."
+      ],
+      "sourceNumber": 58
+    },
+    {
+      "id": "int-009",
+      "category": "integration",
+      "topic": "inverse-trigonometric-antiderivatives",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{1}{\\sqrt{1-x^2}}\\,dx",
+      "answer": "\\arcsin x+C",
+      "solutionSteps": [
+        "Match the standard arcsine antiderivative."
+      ],
+      "hints": [
+        "Recall the derivative of \\(\\arcsin x\\)."
+      ],
+      "sourceNumber": 59
+    },
+    {
+      "id": "int-010",
+      "category": "integration",
+      "topic": "initial-value-problems",
+      "difficulty": "easy",
+      "question": "Find \\(F(x)\\) given the derivative and initial value.",
+      "expression": "F'(x)=3x^2-4x+1,\\quad F(0)=7",
+      "answer": "F(x)=x^3-2x^2+x+7",
+      "solutionSteps": [
+        "Integrate: \\(F(x)=x^3-2x^2+x+C\\).",
+        "Use \\(F(0)=7\\) to obtain \\(C=7\\)."
+      ],
+      "hints": [
+        "Integrate first, then use the initial condition."
+      ],
+      "sourceNumber": 60
+    },
+    {
+      "id": "int-011",
+      "category": "integration",
+      "topic": "definite-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_0^2(3x^2+1)\\,dx",
+      "answer": "10",
+      "solutionSteps": [
+        "An antiderivative is \\(x^3+x\\).",
+        "Evaluate \\([x^3+x]_0^2=10\\)."
+      ],
+      "hints": [
+        "Use the Fundamental Theorem of Calculus."
+      ],
+      "sourceNumber": 61
+    },
+    {
+      "id": "int-012",
+      "category": "integration",
+      "topic": "definite-integrals",
+      "difficulty": "medium",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_{-1}^{1}(x^3+2x^2-4)\\,dx",
+      "answer": "-\\frac{20}{3}",
+      "solutionSteps": [
+        "The odd term \\(x^3\\) integrates to zero on \\([-1,1]\\).",
+        "Evaluate the remaining even terms to get \\(\\frac43-8=-\\frac{20}{3}\\)."
+      ],
+      "hints": [
+        "Use symmetry to simplify the odd term."
+      ],
+      "sourceNumber": 62
+    },
+    {
+      "id": "int-013",
+      "category": "integration",
+      "topic": "definite-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_0^\\pi\\sin x\\,dx",
+      "answer": "2",
+      "solutionSteps": [
+        "An antiderivative is \\(-\\cos x\\).",
+        "Evaluate \\([-\\cos x]_0^\\pi=2\\)."
+      ],
+      "hints": [
+        "Evaluate the antiderivative at both endpoints."
+      ],
+      "sourceNumber": 63
+    },
+    {
+      "id": "int-014",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "medium",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_0^{\\pi/2}\\cos^2x\\,dx",
+      "answer": "\\frac{\\pi}{4}",
+      "solutionSteps": [
+        "Use \\(\\cos^2x=\\frac{1+\\cos2x}{2}\\).",
+        "Integrate from \\(0\\) to \\(\\pi/2\\); the sine term vanishes."
+      ],
+      "hints": [
+        "Use the cosine power-reduction identity."
+      ],
+      "sourceNumber": 64
+    },
+    {
+      "id": "int-015",
+      "category": "integration",
+      "topic": "definite-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_1^e\\frac{1}{x}\\,dx",
+      "answer": "1",
+      "solutionSteps": [
+        "Use \\([\\ln x]_1^e=\\ln e-\\ln1=1\\)."
+      ],
+      "hints": [
+        "The antiderivative is \\(\\ln x\\) on this positive interval."
+      ],
+      "sourceNumber": 65
+    },
+    {
+      "id": "int-016",
+      "category": "integration",
+      "topic": "average-value",
+      "difficulty": "easy",
+      "question": "Find the average value on \\([0,3]\\).",
+      "expression": "f(x)=x^2",
+      "answer": "3",
+      "solutionSteps": [
+        "Use \\(f_{\\mathrm{avg}}=\\frac{1}{3-0}\\int_0^3x^2\\,dx\\).",
+        "The integral is \\(9\\), so the average is \\(3\\)."
+      ],
+      "hints": [
+        "Divide the definite integral by the interval length."
+      ],
+      "sourceNumber": 66
+    },
+    {
+      "id": "int-017",
+      "category": "integration",
+      "topic": "area-between-curves",
+      "difficulty": "easy",
+      "question": "Find the area between the curves on \\([0,1]\\).",
+      "expression": "y=x,\\quad y=x^2",
+      "answer": "\\frac16",
+      "solutionSteps": [
+        "On \\([0,1]\\), \\(x\\ge x^2\\).",
+        "Compute \\(\\int_0^1(x-x^2)\\,dx=\\frac12-\\frac13=\\frac16\\)."
+      ],
+      "hints": [
+        "Integrate top curve minus bottom curve."
+      ],
+      "sourceNumber": 67
+    },
+    {
+      "id": "int-018",
+      "category": "integration",
+      "topic": "area-between-curves",
+      "difficulty": "hard",
+      "question": "Find the total area between the curve and the \\(x\\)-axis on \\([-3,3]\\).",
+      "expression": "y=x^2-4",
+      "answer": "\\frac{46}{3}",
+      "solutionSteps": [
+        "The zeros are \\(x=\\pm2\\).",
+        "Use symmetry and split where the function changes sign.",
+        "\\(2\\left[\\int_0^2(4-x^2)\\,dx+\\int_2^3(x^2-4)\\,dx\\right]=\\frac{46}{3}\\)."
+      ],
+      "hints": [
+        "Total area uses absolute value, so split at the intercepts."
+      ],
+      "sourceNumber": 68
+    },
+    {
+      "id": "int-019",
+      "category": "integration",
+      "topic": "fundamental-theorem",
+      "difficulty": "medium",
+      "question": "Find \\(F'(x)\\).",
+      "expression": "F(x)=\\int_1^{x^2}\\sqrt{1+t^3}\\,dt",
+      "answer": "F'(x)=2x\\sqrt{1+x^6}",
+      "solutionSteps": [
+        "Apply the Fundamental Theorem with upper limit \\(x^2\\).",
+        "Evaluate the integrand at \\(t=x^2\\) and multiply by \\(2x\\)."
+      ],
+      "hints": [
+        "Use the chain rule for the variable upper limit."
+      ],
+      "sourceNumber": 69
+    },
+    {
+      "id": "int-020",
+      "category": "integration",
+      "topic": "leibniz-rule",
+      "difficulty": "hard",
+      "question": "Find \\(G'(x)\\).",
+      "expression": "G(x)=\\int_x^{2x}\\ln(1+t^2)\\,dt",
+      "answer": "G'(x)=2\\ln(1+4x^2)-\\ln(1+x^2)",
+      "solutionSteps": [
+        "Use \\(d/dx\\int_{a(x)}^{b(x)}f(t)\\,dt=f(b)b'-f(a)a'\\).",
+        "Substitute \\(a=x\\) and \\(b=2x\\)."
+      ],
+      "hints": [
+        "Differentiate both variable limits."
+      ],
+      "sourceNumber": 70
+    },
+    {
+      "id": "int-021",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int2x(x^2+5)^4\\,dx",
+      "answer": "\\frac{(x^2+5)^5}{5}+C",
+      "solutionSteps": [
+        "Let \\(u=x^2+5\\), so \\(du=2x\\,dx\\).",
+        "Integrate \\(\\int u^4\\,du\\)."
+      ],
+      "hints": [
+        "The derivative of the inner expression is already present."
+      ],
+      "sourceNumber": 71
+    },
+    {
+      "id": "int-022",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int x\\sqrt{x^2+1}\\,dx",
+      "answer": "\\frac13(x^2+1)^{3/2}+C",
+      "solutionSteps": [
+        "Let \\(u=x^2+1\\), so \\(du=2x\\,dx\\).",
+        "The integral becomes \\(\\frac12\\int u^{1/2}\\,du\\)."
+      ],
+      "hints": [
+        "Use \\(u=x^2+1\\)."
+      ],
+      "sourceNumber": 72
+    },
+    {
+      "id": "int-023",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{3x^2}{x^3+7}\\,dx",
+      "answer": "\\ln|x^3+7|+C",
+      "solutionSteps": [
+        "Let \\(u=x^3+7\\), so \\(du=3x^2\\,dx\\).",
+        "Integrate \\(1/u\\)."
+      ],
+      "hints": [
+        "The numerator is the derivative of the denominator."
+      ],
+      "sourceNumber": 73
+    },
+    {
+      "id": "int-024",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int e^{4x-1}\\,dx",
+      "answer": "\\frac14e^{4x-1}+C",
+      "solutionSteps": [
+        "Let \\(u=4x-1\\), so \\(du=4\\,dx\\).",
+        "Divide by 4."
+      ],
+      "hints": [
+        "Reverse the chain rule."
+      ],
+      "sourceNumber": 74
+    },
+    {
+      "id": "int-025",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sin(5x)\\,dx",
+      "answer": "-\\frac15\\cos(5x)+C",
+      "solutionSteps": [
+        "Let \\(u=5x\\).",
+        "Integrate sine and include the factor \\(1/5\\)."
+      ],
+      "hints": [
+        "Differentiate the proposed result to check the sign."
+      ],
+      "sourceNumber": 75
+    },
+    {
+      "id": "int-026",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\cos^3x\\sin x\\,dx",
+      "answer": "-\\frac14\\cos^4x+C",
+      "solutionSteps": [
+        "Let \\(u=\\cos x\\), so \\(du=-\\sin x\\,dx\\).",
+        "Integrate \\(-\\int u^3\\,du\\)."
+      ],
+      "hints": [
+        "Use the factor \\(\\sin x\\,dx\\) for substitution."
+      ],
+      "sourceNumber": 76
+    },
+    {
+      "id": "int-027",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{\\ln x}{x}\\,dx",
+      "answer": "\\frac12(\\ln x)^2+C",
+      "solutionSteps": [
+        "Let \\(u=\\ln x\\), so \\(du=dx/x\\).",
+        "Integrate \\(\\int u\\,du\\)."
+      ],
+      "hints": [
+        "The derivative of \\(\\ln x\\) is \\(1/x\\)."
+      ],
+      "sourceNumber": 77
+    },
+    {
+      "id": "int-028",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{x}{(x^2+4)^2}\\,dx",
+      "answer": "-\\frac{1}{2(x^2+4)}+C",
+      "solutionSteps": [
+        "Let \\(u=x^2+4\\), so \\(du=2x\\,dx\\).",
+        "Integrate \\(\\frac12\\int u^{-2}\\,du\\)."
+      ],
+      "hints": [
+        "Rewrite the denominator using a negative exponent after substitution."
+      ],
+      "sourceNumber": 78
+    },
+    {
+      "id": "int-029",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_0^1xe^{x^2}\\,dx",
+      "answer": "\\frac{e-1}{2}",
+      "solutionSteps": [
+        "Let \\(u=x^2\\), so \\(du=2x\\,dx\\).",
+        "Change the bounds from \\(x=0,1\\) to \\(u=0,1\\).",
+        "Evaluate \\(\\frac12\\int_0^1e^u\\,du\\)."
+      ],
+      "hints": [
+        "Change the limits when using substitution in a definite integral."
+      ],
+      "sourceNumber": 79
+    },
+    {
+      "id": "int-030",
+      "category": "integration",
+      "topic": "substitution",
+      "difficulty": "easy",
+      "question": "Evaluate the definite integral.",
+      "expression": "\\int_0^{\\pi/4}\\tan x\\sec^2x\\,dx",
+      "answer": "\\frac12",
+      "solutionSteps": [
+        "Let \\(u=\\tan x\\), so \\(du=\\sec^2x\\,dx\\).",
+        "The new bounds are \\(0\\) and \\(1\\).",
+        "Evaluate \\(\\int_0^1u\\,du\\)."
+      ],
+      "hints": [
+        "Use \\(u=\\tan x\\)."
+      ],
+      "sourceNumber": 80
+    },
+    {
+      "id": "int-031",
+      "category": "integration",
+      "topic": "integration-by-parts",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int xe^x\\,dx",
+      "answer": "e^x(x-1)+C",
+      "solutionSteps": [
+        "Choose \\(u=x\\) and \\(dv=e^x\\,dx\\).",
+        "Then \\(\\int u\\,dv=uv-\\int v\\,du=xe^x-e^x+C\\)."
+      ],
+      "hints": [
+        "Let the algebraic factor be \\(u\\)."
+      ],
+      "sourceNumber": 81
+    },
+    {
+      "id": "int-032",
+      "category": "integration",
+      "topic": "integration-by-parts",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int x\\sin x\\,dx",
+      "answer": "-x\\cos x+\\sin x+C",
+      "solutionSteps": [
+        "Choose \\(u=x\\), \\(dv=\\sin x\\,dx\\).",
+        "Then \\(v=-\\cos x\\) and apply integration by parts."
+      ],
+      "hints": [
+        "Take \\(u=x\\) so its derivative becomes simpler."
+      ],
+      "sourceNumber": 82
+    },
+    {
+      "id": "int-033",
+      "category": "integration",
+      "topic": "integration-by-parts",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int x^2\\ln x\\,dx",
+      "answer": "\\frac{x^3}{3}\\ln x-\\frac{x^3}{9}+C",
+      "solutionSteps": [
+        "Choose \\(u=\\ln x\\) and \\(dv=x^2\\,dx\\).",
+        "Then \\(du=dx/x\\) and \\(v=x^3/3\\).",
+        "Apply integration by parts and simplify."
+      ],
+      "hints": [
+        "Choose the logarithm as \\(u\\)."
+      ],
+      "sourceNumber": 83
+    },
+    {
+      "id": "int-034",
+      "category": "integration",
+      "topic": "integration-by-parts",
+      "difficulty": "hard",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int e^x\\cos x\\,dx",
+      "answer": "\\frac12e^x(\\sin x+\\cos x)+C",
+      "solutionSteps": [
+        "Apply integration by parts twice.",
+        "After the second application, the original integral reappears.",
+        "Solve algebraically for the integral."
+      ],
+      "hints": [
+        "Two rounds of integration by parts are needed."
+      ],
+      "sourceNumber": 84
+    },
+    {
+      "id": "int-035",
+      "category": "integration",
+      "topic": "integration-by-parts",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\ln x\\,dx",
+      "answer": "x\\ln x-x+C",
+      "solutionSteps": [
+        "Write the integral as \\(\\int1\\cdot\\ln x\\,dx\\).",
+        "Choose \\(u=\\ln x\\) and \\(dv=dx\\)."
+      ],
+      "hints": [
+        "Treat the integrand as a product with 1."
+      ],
+      "sourceNumber": 85
+    },
+    {
+      "id": "int-036",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sin^2x\\,dx",
+      "answer": "\\frac{x}{2}-\\frac{\\sin2x}{4}+C",
+      "solutionSteps": [
+        "Use \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\).",
+        "Integrate term by term."
+      ],
+      "hints": [
+        "Use a power-reduction identity."
+      ],
+      "sourceNumber": 86
+    },
+    {
+      "id": "int-037",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sin^3x\\,dx",
+      "answer": "-\\cos x+\\frac13\\cos^3x+C",
+      "solutionSteps": [
+        "Write \\(\\sin^3x=\\sin x(1-\\cos^2x)\\).",
+        "Let \\(u=\\cos x\\), so \\(du=-\\sin x\\,dx\\)."
+      ],
+      "hints": [
+        "Save one sine factor and convert the rest using \\(1-\\cos^2x\\)."
+      ],
+      "sourceNumber": 87
+    },
+    {
+      "id": "int-038",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sin^2x\\cos^3x\\,dx",
+      "answer": "\\frac13\\sin^3x-\\frac15\\sin^5x+C",
+      "solutionSteps": [
+        "Write \\(\\cos^3x=\\cos x(1-\\sin^2x)\\).",
+        "Let \\(u=\\sin x\\), so \\(du=\\cos x\\,dx\\).",
+        "Integrate \\(u^2-u^4\\)."
+      ],
+      "hints": [
+        "Save one cosine factor because its power is odd."
+      ],
+      "sourceNumber": 88
+    },
+    {
+      "id": "int-039",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\tan^2x\\,dx",
+      "answer": "\\tan x-x+C",
+      "solutionSteps": [
+        "Use \\(\\tan^2x=\\sec^2x-1\\).",
+        "Integrate term by term."
+      ],
+      "hints": [
+        "Use the Pythagorean identity for tangent and secant."
+      ],
+      "sourceNumber": 89
+    },
+    {
+      "id": "int-040",
+      "category": "integration",
+      "topic": "trigonometric-integrals",
+      "difficulty": "hard",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\sec^3x\\,dx",
+      "answer": "\\frac12\\left(\\sec x\\tan x+\\ln|\\sec x+\\tan x|\\right)+C",
+      "solutionSteps": [
+        "Use integration by parts with \\(u=\\sec x\\) and \\(dv=\\sec^2x\\,dx\\).",
+        "Rewrite \\(\\tan^2x=\\sec^2x-1\\).",
+        "The original integral reappears; solve for it."
+      ],
+      "hints": [
+        "This standard integral requires integration by parts."
+      ],
+      "sourceNumber": 90
+    },
+    {
+      "id": "int-041",
+      "category": "integration",
+      "topic": "partial-fractions",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{1}{x^2-1}\\,dx",
+      "answer": "\\frac12\\ln\\left|\\frac{x-1}{x+1}\\right|+C",
+      "solutionSteps": [
+        "Factor \\(x^2-1=(x-1)(x+1)\\).",
+        "Decompose as \\(\\frac12\\frac1{x-1}-\\frac12\\frac1{x+1}\\).",
+        "Integrate both logarithmic terms."
+      ],
+      "hints": [
+        "Factor the denominator first."
+      ],
+      "sourceNumber": 91
+    },
+    {
+      "id": "int-042",
+      "category": "integration",
+      "topic": "partial-fractions",
+      "difficulty": "medium",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{3x+5}{x^2+3x+2}\\,dx",
+      "answer": "2\\ln|x+1|+\\ln|x+2|+C",
+      "solutionSteps": [
+        "Factor the denominator as \\((x+1)(x+2)\\).",
+        "Decompose into \\(\\frac2{x+1}+\\frac1{x+2}\\).",
+        "Integrate term by term."
+      ],
+      "hints": [
+        "Use partial fractions after factoring the quadratic."
+      ],
+      "sourceNumber": 92
+    },
+    {
+      "id": "int-043",
+      "category": "integration",
+      "topic": "partial-fractions",
+      "difficulty": "hard",
+      "question": "Evaluate the indefinite integral.",
+      "expression": "\\int\\frac{x^2+1}{x(x-1)(x+1)}\\,dx",
+      "answer": "-\\ln|x|+\\ln|x-1|+\\ln|x+1|+C",
+      "solutionSteps": [
+        "Decompose as \\(-\\frac1x+\\frac1{x-1}+\\frac1{x+1}\\).",
+        "Integrate each term."
+      ],
+      "hints": [
+        "Use one partial-fraction term for each linear factor."
+      ],
+      "sourceNumber": 93
+    },
+    {
+      "id": "int-044",
+      "category": "integration",
+      "topic": "improper-integrals",
+      "difficulty": "easy",
+      "question": "Determine convergence and evaluate if convergent.",
+      "expression": "\\int_1^\\infty\\frac{1}{x^2}\\,dx",
+      "answer": "\\text{Converges to }1",
+      "solutionSteps": [
+        "Replace infinity with \\(b\\) and integrate \\(x^{-2}\\).",
+        "\\(\\lim_{b\\to\\infty}[-1/x]_1^b=1\\)."
+      ],
+      "hints": [
+        "Use a limit at the infinite endpoint."
+      ],
+      "sourceNumber": 94
+    },
+    {
+      "id": "int-045",
+      "category": "integration",
+      "topic": "improper-integrals",
+      "difficulty": "easy",
+      "question": "Determine whether the integral converges.",
+      "expression": "\\int_1^\\infty\\frac{1}{x}\\,dx",
+      "answer": "\\text{Diverges}",
+      "solutionSteps": [
+        "Evaluate \\(\\lim_{b\\to\\infty}[\\ln x]_1^b\\).",
+        "Since \\(\\ln b\\to\\infty\\), the integral diverges."
+      ],
+      "hints": [
+        "The \\(p\\)-integral with \\(p=1\\) diverges."
+      ],
+      "sourceNumber": 95
+    },
+    {
+      "id": "int-046",
+      "category": "integration",
+      "topic": "improper-integrals",
+      "difficulty": "easy",
+      "question": "Evaluate the improper integral.",
+      "expression": "\\int_0^1\\frac{1}{\\sqrt{x}}\\,dx",
+      "answer": "2",
+      "solutionSteps": [
+        "Write the lower endpoint as a limit: \\(\\lim_{a\\to0^+}\\int_a^1x^{-1/2}\\,dx\\).",
+        "Evaluate \\([2\\sqrt{x}]_a^1\\) and take the limit."
+      ],
+      "hints": [
+        "The integrand is unbounded at zero, so use a limit."
+      ],
+      "sourceNumber": 96
+    },
+    {
+      "id": "int-047",
+      "category": "integration",
+      "topic": "volumes-of-revolution",
+      "difficulty": "medium",
+      "question": "Find the volume formed by rotating the region under the curve on \\([0,2]\\) about the \\(x\\)-axis.",
+      "expression": "y=x^2",
+      "answer": "\\frac{32\\pi}{5}",
+      "solutionSteps": [
+        "Use the disk method: \\(V=\\pi\\int_0^2(x^2)^2\\,dx\\).",
+        "Evaluate \\(\\pi[x^5/5]_0^2\\)."
+      ],
+      "hints": [
+        "The disk radius is \\(y=x^2\\)."
+      ],
+      "sourceNumber": 97
+    },
+    {
+      "id": "int-048",
+      "category": "integration",
+      "topic": "volumes-of-revolution",
+      "difficulty": "hard",
+      "question": "Find the volume formed by rotating the region bounded by the curves about the \\(y\\)-axis.",
+      "expression": "y=x,\\quad y=x^2",
+      "answer": "\\frac{\\pi}{6}",
+      "solutionSteps": [
+        "The curves intersect at \\(x=0,1\\).",
+        "Use cylindrical shells: \\(V=2\\pi\\int_0^1x(x-x^2)\\,dx\\).",
+        "Evaluate to obtain \\(\\pi/6\\)."
+      ],
+      "hints": [
+        "Shell radius is \\(x\\), and shell height is \\(x-x^2\\)."
+      ],
+      "sourceNumber": 98
+    },
+    {
+      "id": "int-049",
+      "category": "integration",
+      "topic": "arc-length",
+      "difficulty": "hard",
+      "question": "Find the arc length on \\([0,3]\\).",
+      "expression": "y=\\frac23x^{3/2}",
+      "answer": "\\frac{14}{3}",
+      "solutionSteps": [
+        "Compute \\(y'=\\sqrt{x}\\).",
+        "Use \\(L=\\int_0^3\\sqrt{1+(y')^2}\\,dx=\\int_0^3\\sqrt{1+x}\\,dx\\).",
+        "Evaluate to obtain \\(14/3\\)."
+      ],
+      "hints": [
+        "Start with the arc-length formula."
+      ],
+      "sourceNumber": 99
+    },
+    {
+      "id": "int-050",
+      "category": "integration",
+      "topic": "motion",
+      "difficulty": "hard",
+      "question": "Find displacement and total distance traveled from \\(t=0\\) to \\(t=5\\).",
+      "expression": "v(t)=t^2-4t+3",
+      "answer": "\\text{Displacement }=\\frac{20}{3};\\quad \\text{total distance }=\\frac{28}{3}",
+      "solutionSteps": [
+        "An antiderivative is \\(F(t)=t^3/3-2t^2+3t\\).",
+        "Displacement is \\(F(5)-F(0)=20/3\\).",
+        "Velocity changes sign at \\(t=1,3\\).",
+        "Sum the absolute changes on \\([0,1]\\), \\([1,3]\\), and \\([3,5]\\) to get \\(28/3\\)."
+      ],
+      "hints": [
+        "For total distance, split at every zero of velocity."
+      ],
+      "sourceNumber": 100
+    },
+    {
+      "id": "la-001",
+      "category": "linear-algebra",
+      "topic": "vector-operations",
+      "difficulty": "easy",
+      "question": "Compute the vector sum.",
+      "expression": "\\begin{bmatrix}2\\\\-1\\\\4\\end{bmatrix}+\\begin{bmatrix}5\\\\3\\\\-2\\end{bmatrix}",
+      "answer": "\\begin{bmatrix}7\\\\2\\\\2\\end{bmatrix}",
+      "solutionSteps": [
+        "Add corresponding components: \\(2+5=7\\), \\(-1+3=2\\), and \\(4-2=2\\)."
+      ],
+      "hints": [
+        "Add vectors component by component."
+      ],
+      "sourceNumber": 101
+    },
+    {
+      "id": "la-002",
+      "category": "linear-algebra",
+      "topic": "vector-operations",
+      "difficulty": "easy",
+      "question": "Compute the vector expression.",
+      "expression": "3\\begin{bmatrix}1\\\\-2\\\\5\\end{bmatrix}-2\\begin{bmatrix}4\\\\0\\\\-1\\end{bmatrix}",
+      "answer": "\\begin{bmatrix}-5\\\\-6\\\\17\\end{bmatrix}",
+      "solutionSteps": [
+        "Scale the vectors to obtain \\([3,-6,15]^T\\) and \\([8,0,-2]^T\\).",
+        "Subtract corresponding components."
+      ],
+      "hints": [
+        "Perform scalar multiplication before subtraction."
+      ],
+      "sourceNumber": 102
+    },
+    {
+      "id": "la-003",
+      "category": "linear-algebra",
+      "topic": "vector-norms",
+      "difficulty": "easy",
+      "question": "Find the magnitude of the vector.",
+      "expression": "\\mathbf v=(3,-4,12)",
+      "answer": "\\|\\mathbf v\\|=13",
+      "solutionSteps": [
+        "\\(\\|\\mathbf v\\|=\\sqrt{3^2+(-4)^2+12^2}=\\sqrt{169}=13\\)."
+      ],
+      "hints": [
+        "Square each component, add, and take the square root."
+      ],
+      "sourceNumber": 103
+    },
+    {
+      "id": "la-004",
+      "category": "linear-algebra",
+      "topic": "unit-vectors",
+      "difficulty": "easy",
+      "question": "Find a unit vector in the given direction.",
+      "expression": "\\mathbf v=(2,-1,2)",
+      "answer": "\\left(\\frac23,-\\frac13,\\frac23\\right)",
+      "solutionSteps": [
+        "The norm is \\(\\sqrt{4+1+4}=3\\).",
+        "Divide every component by 3."
+      ],
+      "hints": [
+        "A unit vector is \\(\\mathbf v/\\|\\mathbf v\\|\\)."
+      ],
+      "sourceNumber": 104
+    },
+    {
+      "id": "la-005",
+      "category": "linear-algebra",
+      "topic": "dot-product",
+      "difficulty": "easy",
+      "question": "Compute the dot product.",
+      "expression": "(1,3,-2)\\cdot(4,-1,5)",
+      "answer": "-9",
+      "solutionSteps": [
+        "Compute \\(1(4)+3(-1)+(-2)(5)=4-3-10=-9\\)."
+      ],
+      "hints": [
+        "Multiply corresponding components and add."
+      ],
+      "sourceNumber": 105
+    },
+    {
+      "id": "la-006",
+      "category": "linear-algebra",
+      "topic": "angles-between-vectors",
+      "difficulty": "medium",
+      "question": "Find the angle between the vectors.",
+      "expression": "\\mathbf u=(1,1,0),\\quad\\mathbf v=(1,0,1)",
+      "answer": "\\theta=\\frac{\\pi}{3}",
+      "solutionSteps": [
+        "\\(\\mathbf u\\cdot\\mathbf v=1\\), and both norms are \\(\\sqrt2\\).",
+        "Thus \\(\\cos\\theta=1/2\\), so \\(\\theta=\\pi/3\\)."
+      ],
+      "hints": [
+        "Use \\(\\cos\\theta=(\\mathbf u\\cdot\\mathbf v)/(\\|\\mathbf u\\|\\|\\mathbf v\\|)\\)."
+      ],
+      "sourceNumber": 106
+    },
+    {
+      "id": "la-007",
+      "category": "linear-algebra",
+      "topic": "vector-relations",
+      "difficulty": "easy",
+      "question": "Determine whether the vectors are parallel.",
+      "expression": "(2,-3,1),\\quad(-4,6,-2)",
+      "answer": "\\text{Parallel; the second vector is }-2\\text{ times the first}",
+      "solutionSteps": [
+        "Multiplying \\((2,-3,1)\\) by \\(-2\\) gives \\((-4,6,-2)\\)."
+      ],
+      "hints": [
+        "Check whether one vector is a scalar multiple of the other."
+      ],
+      "sourceNumber": 107
+    },
+    {
+      "id": "la-008",
+      "category": "linear-algebra",
+      "topic": "vector-projections",
+      "difficulty": "medium",
+      "question": "Find the projection of \\(\\mathbf u\\) onto \\(\\mathbf v\\).",
+      "expression": "\\mathbf u=(3,4),\\quad\\mathbf v=(1,2)",
+      "answer": "\\operatorname{proj}_{\\mathbf v}\\mathbf u=\\left(\\frac{11}{5},\\frac{22}{5}\\right)",
+      "solutionSteps": [
+        "Use \\(\\operatorname{proj}_{\\mathbf v}\\mathbf u=\\frac{\\mathbf u\\cdot\\mathbf v}{\\mathbf v\\cdot\\mathbf v}\\mathbf v\\).",
+        "The scalar is \\((3+8)/(1+4)=11/5\\)."
+      ],
+      "hints": [
+        "Use the projection formula."
+      ],
+      "sourceNumber": 108
+    },
+    {
+      "id": "la-009",
+      "category": "linear-algebra",
+      "topic": "cross-product",
+      "difficulty": "medium",
+      "question": "Find a vector orthogonal to both vectors.",
+      "expression": "\\mathbf u=(1,0,2),\\quad\\mathbf v=(2,-1,3)",
+      "answer": "(2,1,-1)",
+      "solutionSteps": [
+        "Compute the cross product \\(\\mathbf u\\times\\mathbf v\\).",
+        "The result is \\((2,1,-1)\\), which has zero dot product with each original vector."
+      ],
+      "hints": [
+        "Use the cross product in \\(\\mathbb R^3\\)."
+      ],
+      "sourceNumber": 109
+    },
+    {
+      "id": "la-010",
+      "category": "linear-algebra",
+      "topic": "cross-product",
+      "difficulty": "medium",
+      "question": "Find the area of the parallelogram spanned by the vectors.",
+      "expression": "\\mathbf u=(1,2,3),\\quad\\mathbf v=(2,-1,1)",
+      "answer": "5\\sqrt3",
+      "solutionSteps": [
+        "\\(\\mathbf u\\times\\mathbf v=(5,5,-5)\\).",
+        "The area is its norm: \\(\\sqrt{25+25+25}=5\\sqrt3\\)."
+      ],
+      "hints": [
+        "Parallelogram area equals the norm of the cross product."
+      ],
+      "sourceNumber": 110
+    },
+    {
+      "id": "la-011",
+      "category": "linear-algebra",
+      "topic": "systems-of-equations",
+      "difficulty": "easy",
+      "question": "Solve the system.",
+      "expression": "\\begin{cases}2x+y=7\\\\x-y=2\\end{cases}",
+      "answer": "x=3,\\quad y=1",
+      "solutionSteps": [
+        "Add the equations to get \\(3x=9\\).",
+        "Then \\(x=3\\), and substitution gives \\(y=1\\)."
+      ],
+      "hints": [
+        "Elimination is especially quick here."
+      ],
+      "sourceNumber": 111
+    },
+    {
+      "id": "la-012",
+      "category": "linear-algebra",
+      "topic": "systems-of-equations",
+      "difficulty": "medium",
+      "question": "Solve the system.",
+      "expression": "\\begin{cases}x+2y-z=3\\\\2x-y+3z=9\\\\3x+y+2z=10\\end{cases}",
+      "answer": "\\text{No solution}",
+      "solutionSteps": [
+        "Adding the first two equations gives \\(3x+y+2z=12\\).",
+        "The third equation requires the same left side to equal 10.",
+        "This contradiction means the system is inconsistent."
+      ],
+      "hints": [
+        "Compare the third equation with the sum of the first two."
+      ],
+      "sourceNumber": 112
+    },
+    {
+      "id": "la-013",
+      "category": "linear-algebra",
+      "topic": "row-reduction",
+      "difficulty": "medium",
+      "question": "Row-reduce the augmented matrix.",
+      "expression": "\\begin{bmatrix}1&2&-1&3\\\\2&4&1&8\\\\-1&-2&2&-1\\end{bmatrix}",
+      "answer": "\\operatorname{RREF}=\\begin{bmatrix}1&2&0&0\\\\0&0&1&0\\\\0&0&0&1\\end{bmatrix}",
+      "solutionSteps": [
+        "Apply elementary row operations to create pivots.",
+        "The final row represents \\(0=1\\), so the corresponding system is inconsistent."
+      ],
+      "hints": [
+        "A pivot in the augmented column signals a contradiction."
+      ],
+      "sourceNumber": 113
+    },
+    {
+      "id": "la-014",
+      "category": "linear-algebra",
+      "topic": "systems-of-equations",
+      "difficulty": "easy",
+      "question": "Classify the system.",
+      "expression": "\\begin{cases}x+2y+3z=4\\\\2x+4y+6z=8\\\\x+2y+3z=5\\end{cases}",
+      "answer": "\\text{No solution}",
+      "solutionSteps": [
+        "The first and third equations have identical left sides but different constants.",
+        "Therefore the system is inconsistent."
+      ],
+      "hints": [
+        "Look for contradictory equations before row-reducing."
+      ],
+      "sourceNumber": 114
+    },
+    {
+      "id": "la-015",
+      "category": "linear-algebra",
+      "topic": "parameterized-systems",
+      "difficulty": "medium",
+      "question": "Find all values of \\(a\\) for which the system has a unique solution.",
+      "expression": "\\begin{cases}x+ay=1\\\\ax+y=1\\end{cases}",
+      "answer": "a\\ne1\\text{ and }a\\ne-1",
+      "solutionSteps": [
+        "The coefficient determinant is \\(1-a^2\\).",
+        "A unique solution exists when \\(1-a^2\\ne0\\).",
+        "Thus \\(a\\ne\\pm1\\)."
+      ],
+      "hints": [
+        "A square system has a unique solution when its coefficient determinant is nonzero."
+      ],
+      "sourceNumber": 115
+    },
+    {
+      "id": "la-016",
+      "category": "linear-algebra",
+      "topic": "parametric-vector-form",
+      "difficulty": "easy",
+      "question": "Express the solution set in parametric vector form.",
+      "expression": "x+2y-z=0",
+      "answer": "\\begin{bmatrix}x\\\\y\\\\z\\end{bmatrix}=s\\begin{bmatrix}-2\\\\1\\\\0\\end{bmatrix}+t\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix}",
+      "solutionSteps": [
+        "Let \\(y=s\\) and \\(z=t\\).",
+        "Then \\(x=-2s+t\\).",
+        "Collect the coefficients of \\(s\\) and \\(t\\)."
+      ],
+      "hints": [
+        "Choose the free variables as parameters."
+      ],
+      "sourceNumber": 116
+    },
+    {
+      "id": "la-017",
+      "category": "linear-algebra",
+      "topic": "span",
+      "difficulty": "medium",
+      "question": "Determine whether \\(\\mathbf b\\) lies in the given span.",
+      "expression": "\\mathbf b=\\begin{bmatrix}4\\\\1\\\\7\\end{bmatrix},\\quad\\mathbf v_1=\\begin{bmatrix}1\\\\0\\\\2\\end{bmatrix},\\quad\\mathbf v_2=\\begin{bmatrix}0\\\\1\\\\-1\\end{bmatrix}",
+      "answer": "\\text{Yes; }\\mathbf b=4\\mathbf v_1+\\mathbf v_2",
+      "solutionSteps": [
+        "Set \\(c_1\\mathbf v_1+c_2\\mathbf v_2=\\mathbf b\\).",
+        "The first two components give \\(c_1=4\\) and \\(c_2=1\\).",
+        "The third component checks: \\(8-1=7\\)."
+      ],
+      "hints": [
+        "Solve for the coefficients using the easiest components first."
+      ],
+      "sourceNumber": 117
+    },
+    {
+      "id": "la-018",
+      "category": "linear-algebra",
+      "topic": "null-spaces",
+      "difficulty": "easy",
+      "question": "Find a basis for the solution space.",
+      "expression": "x+2y-3z=0",
+      "answer": "\\left\\{\\begin{bmatrix}-2\\\\1\\\\0\\end{bmatrix},\\begin{bmatrix}3\\\\0\\\\1\\end{bmatrix}\\right\\}",
+      "solutionSteps": [
+        "Let \\(y=s\\) and \\(z=t\\), so \\(x=-2s+3t\\).",
+        "Write the general solution as a linear combination of two vectors."
+      ],
+      "hints": [
+        "Use the free variables to generate basis vectors."
+      ],
+      "sourceNumber": 118
+    },
+    {
+      "id": "la-019",
+      "category": "linear-algebra",
+      "topic": "rank-nullity",
+      "difficulty": "medium",
+      "question": "Find the rank and nullity.",
+      "expression": "A=\\begin{bmatrix}1&2&3\\\\2&4&6\\\\1&1&1\\end{bmatrix}",
+      "answer": "\\operatorname{rank}(A)=2,\\quad\\operatorname{nullity}(A)=1",
+      "solutionSteps": [
+        "Row reduction produces two pivot rows.",
+        "Thus the rank is 2.",
+        "With three columns, rank-nullity gives nullity \\(3-2=1\\)."
+      ],
+      "hints": [
+        "Count pivots, then use rank plus nullity equals the number of columns."
+      ],
+      "sourceNumber": 119
+    },
+    {
+      "id": "la-020",
+      "category": "linear-algebra",
+      "topic": "linear-independence",
+      "difficulty": "easy",
+      "question": "Determine whether the vectors are linearly independent.",
+      "expression": "(1,2,3),\\quad(2,4,6),\\quad(0,1,1)",
+      "answer": "\\text{Linearly dependent}",
+      "solutionSteps": [
+        "The second vector is \\(2\\) times the first.",
+        "Therefore a nontrivial linear relation exists."
+      ],
+      "hints": [
+        "A set is dependent if one vector is a scalar multiple of another."
+      ],
+      "sourceNumber": 120
+    },
+    {
+      "id": "la-021",
+      "category": "linear-algebra",
+      "topic": "matrix-operations",
+      "difficulty": "easy",
+      "question": "Compute the matrix sum.",
+      "expression": "\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}+\\begin{bmatrix}-2&5\\\\1&0\\end{bmatrix}",
+      "answer": "\\begin{bmatrix}-1&7\\\\4&4\\end{bmatrix}",
+      "solutionSteps": [
+        "Add corresponding entries."
+      ],
+      "hints": [
+        "Matrix addition is entrywise."
+      ],
+      "sourceNumber": 121
+    },
+    {
+      "id": "la-022",
+      "category": "linear-algebra",
+      "topic": "matrix-multiplication",
+      "difficulty": "easy",
+      "question": "Compute the matrix product.",
+      "expression": "\\begin{bmatrix}1&2\\\\0&-1\\end{bmatrix}\\begin{bmatrix}3&1\\\\4&2\\end{bmatrix}",
+      "answer": "\\begin{bmatrix}11&5\\\\-4&-2\\end{bmatrix}",
+      "solutionSteps": [
+        "Take each row of the first matrix dotted with each column of the second matrix."
+      ],
+      "hints": [
+        "Use row-by-column multiplication."
+      ],
+      "sourceNumber": 122
+    },
+    {
+      "id": "la-023",
+      "category": "linear-algebra",
+      "topic": "matrix-multiplication",
+      "difficulty": "medium",
+      "question": "Compute \\(AB\\) and \\(BA\\).",
+      "expression": "A=\\begin{bmatrix}1&2\\\\3&0\\end{bmatrix},\\quad B=\\begin{bmatrix}-1&4\\\\2&1\\end{bmatrix}",
+      "answer": "AB=\\begin{bmatrix}3&6\\\\-3&12\\end{bmatrix},\\quad BA=\\begin{bmatrix}11&-2\\\\5&4\\end{bmatrix}",
+      "solutionSteps": [
+        "Multiply row by column to find \\(AB\\).",
+        "Reverse the order and repeat for \\(BA\\).",
+        "The results differ, illustrating that matrix multiplication is not generally commutative."
+      ],
+      "hints": [
+        "Keep the multiplication order explicit."
+      ],
+      "sourceNumber": 123
+    },
+    {
+      "id": "la-024",
+      "category": "linear-algebra",
+      "topic": "matrix-powers",
+      "difficulty": "easy",
+      "question": "Compute \\(A^2\\).",
+      "expression": "A=\\begin{bmatrix}2&1\\\\0&3\\end{bmatrix}",
+      "answer": "A^2=\\begin{bmatrix}4&5\\\\0&9\\end{bmatrix}",
+      "solutionSteps": [
+        "Multiply \\(A\\) by itself."
+      ],
+      "hints": [
+        "Matrix squaring means matrix multiplication, not entrywise squaring."
+      ],
+      "sourceNumber": 124
+    },
+    {
+      "id": "la-025",
+      "category": "linear-algebra",
+      "topic": "transpose",
+      "difficulty": "easy",
+      "question": "Find the transpose.",
+      "expression": "A=\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}",
+      "answer": "A^T=\\begin{bmatrix}1&4\\\\2&5\\\\3&6\\end{bmatrix}",
+      "solutionSteps": [
+        "Turn the rows of \\(A\\) into the columns of \\(A^T\\)."
+      ],
+      "hints": [
+        "Swap row and column indices."
+      ],
+      "sourceNumber": 125
+    },
+    {
+      "id": "la-026",
+      "category": "linear-algebra",
+      "topic": "matrix-inverses",
+      "difficulty": "easy",
+      "question": "Find the inverse.",
+      "expression": "A=\\begin{bmatrix}2&1\\\\5&3\\end{bmatrix}",
+      "answer": "A^{-1}=\\begin{bmatrix}3&-1\\\\-5&2\\end{bmatrix}",
+      "solutionSteps": [
+        "The determinant is \\(2(3)-1(5)=1\\).",
+        "Use \\(A^{-1}=\\frac1{\\det A}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\)."
+      ],
+      "hints": [
+        "Use the \\(2\\times2\\) inverse formula."
+      ],
+      "sourceNumber": 126
+    },
+    {
+      "id": "la-027",
+      "category": "linear-algebra",
+      "topic": "matrix-inverses",
+      "difficulty": "easy",
+      "question": "Use a matrix inverse to solve the system.",
+      "expression": "\\begin{cases}2x+3y=7\\\\x+2y=4\\end{cases}",
+      "answer": "x=2,\\quad y=1",
+      "solutionSteps": [
+        "Write \\(A\\mathbf x=\\mathbf b\\).",
+        "Compute \\(A^{-1}\\mathbf b\\), where \\(A=\\begin{bmatrix}2&3\\\\1&2\\end{bmatrix}\\).",
+        "The result is \\([2,1]^T\\)."
+      ],
+      "hints": [
+        "Solve \\(\\mathbf x=A^{-1}\\mathbf b\\)."
+      ],
+      "sourceNumber": 127
+    },
+    {
+      "id": "la-028",
+      "category": "linear-algebra",
+      "topic": "invertibility",
+      "difficulty": "easy",
+      "question": "Determine whether the matrix is invertible.",
+      "expression": "A=\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}",
+      "answer": "\\text{Not invertible}",
+      "solutionSteps": [
+        "\\(\\det A=1(4)-2(2)=0\\).",
+        "A matrix with zero determinant is singular."
+      ],
+      "hints": [
+        "Check the determinant."
+      ],
+      "sourceNumber": 128
+    },
+    {
+      "id": "la-029",
+      "category": "linear-algebra",
+      "topic": "matrix-equations",
+      "difficulty": "medium",
+      "question": "Solve for \\(X\\) in \\(AX=B\\).",
+      "expression": "A=\\begin{bmatrix}1&1\\\\0&2\\end{bmatrix},\\quad B=\\begin{bmatrix}3&1\\\\4&2\\end{bmatrix}",
+      "answer": "X=\\begin{bmatrix}1&0\\\\2&1\\end{bmatrix}",
+      "solutionSteps": [
+        "Multiply by \\(A^{-1}\\) on the left: \\(X=A^{-1}B\\).",
+        "\\(A^{-1}=\\begin{bmatrix}1&-1/2\\\\0&1/2\\end{bmatrix}\\).",
+        "Perform the multiplication."
+      ],
+      "hints": [
+        "Preserve multiplication order when isolating \\(X\\)."
+      ],
+      "sourceNumber": 129
+    },
+    {
+      "id": "la-030",
+      "category": "linear-algebra",
+      "topic": "inverse-properties",
+      "difficulty": "medium",
+      "question": "Verify \\((AB)^{-1}=B^{-1}A^{-1}\\).",
+      "expression": "A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix},\\quad B=\\begin{bmatrix}2&0\\\\0&3\\end{bmatrix}",
+      "answer": "(AB)^{-1}=B^{-1}A^{-1}=\\begin{bmatrix}\\frac12&-\\frac12\\\\0&\\frac13\\end{bmatrix}",
+      "solutionSteps": [
+        "Compute \\(AB=\\begin{bmatrix}2&3\\\\0&3\\end{bmatrix}\\) and invert it.",
+        "Compute \\(A^{-1}\\) and \\(B^{-1}\\), then multiply in the order \\(B^{-1}A^{-1}\\).",
+        "Both results match."
+      ],
+      "hints": [
+        "The inverse reverses the multiplication order."
+      ],
+      "sourceNumber": 130
+    },
+    {
+      "id": "la-031",
+      "category": "linear-algebra",
+      "topic": "determinants",
+      "difficulty": "easy",
+      "question": "Compute the determinant.",
+      "expression": "\\det\\begin{bmatrix}4&7\\\\2&5\\end{bmatrix}",
+      "answer": "6",
+      "solutionSteps": [
+        "Compute \\(4(5)-7(2)=20-14=6\\)."
+      ],
+      "hints": [
+        "For a \\(2\\times2\\) matrix, use \\(ad-bc\\)."
+      ],
+      "sourceNumber": 131
+    },
+    {
+      "id": "la-032",
+      "category": "linear-algebra",
+      "topic": "determinants",
+      "difficulty": "medium",
+      "question": "Compute the determinant.",
+      "expression": "\\det\\begin{bmatrix}1&2&3\\\\0&4&5\\\\1&0&6\\end{bmatrix}",
+      "answer": "22",
+      "solutionSteps": [
+        "Expand along the first row or use row reduction.",
+        "The cofactor calculation gives \\(24+10-12=22\\)."
+      ],
+      "hints": [
+        "Choose a convenient determinant method."
+      ],
+      "sourceNumber": 132
+    },
+    {
+      "id": "la-033",
+      "category": "linear-algebra",
+      "topic": "cofactor-expansion",
+      "difficulty": "medium",
+      "question": "Use cofactor expansion to compute the determinant.",
+      "expression": "\\det\\begin{bmatrix}2&0&1\\\\3&-1&4\\\\1&2&5\\end{bmatrix}",
+      "answer": "-19",
+      "solutionSteps": [
+        "Expand along the first row.",
+        "The result is \\(2((-1)(5)-4(2))+1(3(2)-(-1)(1))\\).",
+        "This equals \\(-26+7=-19\\)."
+      ],
+      "hints": [
+        "The zero in the first row eliminates one cofactor term."
+      ],
+      "sourceNumber": 133
+    },
+    {
+      "id": "la-034",
+      "category": "linear-algebra",
+      "topic": "determinants",
+      "difficulty": "easy",
+      "question": "Find all values of \\(k\\) for which the matrix is singular.",
+      "expression": "\\begin{bmatrix}k&2\\\\3&k\\end{bmatrix}",
+      "answer": "k=\\pm\\sqrt6",
+      "solutionSteps": [
+        "Set the determinant \\(k^2-6\\) equal to zero.",
+        "Solve \\(k^2=6\\)."
+      ],
+      "hints": [
+        "Singular means determinant zero."
+      ],
+      "sourceNumber": 134
+    },
+    {
+      "id": "la-035",
+      "category": "linear-algebra",
+      "topic": "polynomial-vector-spaces",
+      "difficulty": "medium",
+      "question": "Determine whether the polynomials are linearly independent in \\(P_2\\).",
+      "expression": "\\{1+x,\\ x+x^2,\\ 1+x^2\\}",
+      "answer": "\\text{Linearly independent}",
+      "solutionSteps": [
+        "Represent the polynomials by coefficient vectors \\((1,1,0)\\), \\((0,1,1)\\), and \\((1,0,1)\\).",
+        "The determinant of the coefficient matrix is nonzero.",
+        "Therefore the set is linearly independent."
+      ],
+      "hints": [
+        "Convert each polynomial to its coefficient vector."
+      ],
+      "sourceNumber": 135
+    },
+    {
+      "id": "la-036",
+      "category": "linear-algebra",
+      "topic": "basis-and-dimension",
+      "difficulty": "easy",
+      "question": "Find a basis and the dimension of the span.",
+      "expression": "\\operatorname{span}\\{(1,0,1),(2,1,3),(3,1,4)\\}",
+      "answer": "\\text{Basis }\\{(1,0,1),(2,1,3)\\};\\quad\\dim=2",
+      "solutionSteps": [
+        "The third vector equals the sum of the first two.",
+        "The first two are not scalar multiples, so they are independent."
+      ],
+      "hints": [
+        "Remove vectors that are combinations of earlier vectors."
+      ],
+      "sourceNumber": 136
+    },
+    {
+      "id": "la-037",
+      "category": "linear-algebra",
+      "topic": "fundamental-subspaces",
+      "difficulty": "hard",
+      "question": "Find bases for the column space and null space.",
+      "expression": "A=\\begin{bmatrix}1&2&1\\\\2&4&0\\\\3&6&1\\end{bmatrix}",
+      "answer": "\\operatorname{Col}(A)\\text{ basis }=\\left\\{\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix},\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix}\\right\\};\\quad\\operatorname{Null}(A)\\text{ basis }=\\left\\{\\begin{bmatrix}-2\\\\1\\\\0\\end{bmatrix}\\right\\}",
+      "solutionSteps": [
+        "Row reduction shows pivots in columns 1 and 3.",
+        "Use the corresponding original columns for a column-space basis.",
+        "Solving \\(A\\mathbf x=0\\) gives \\(\\mathbf x=t(-2,1,0)\\)."
+      ],
+      "hints": [
+        "Use pivot columns from the original matrix, not the reduced matrix."
+      ],
+      "sourceNumber": 137
+    },
+    {
+      "id": "la-038",
+      "category": "linear-algebra",
+      "topic": "linear-transformations",
+      "difficulty": "easy",
+      "question": "Find the standard matrix of the transformation.",
+      "expression": "T(x,y)=(2x-y,x+3y)",
+      "answer": "[T]=\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}",
+      "solutionSteps": [
+        "Compute \\(T(1,0)=(2,1)\\) and \\(T(0,1)=(-1,3)\\).",
+        "Use these vectors as the matrix columns."
+      ],
+      "hints": [
+        "The standard matrix columns are the images of the standard basis vectors."
+      ],
+      "sourceNumber": 138
+    },
+    {
+      "id": "la-039",
+      "category": "linear-algebra",
+      "topic": "kernel-and-range",
+      "difficulty": "medium",
+      "question": "Determine the kernel and range.",
+      "expression": "T(x,y,z)=(x+y,y+z)",
+      "answer": "\\ker T=\\operatorname{span}\\{(-1,1,-1)\\};\\quad\\operatorname{range}T=\\mathbb R^2",
+      "solutionSteps": [
+        "For the kernel, solve \\(x+y=0\\) and \\(y+z=0\\), giving \\((-y,y,-y)\\).",
+        "The transformation matrix has two pivot rows, so its range is all of \\(\\mathbb R^2\\)."
+      ],
+      "hints": [
+        "Solve \\(T(\\mathbf x)=\\mathbf0\\) for the kernel."
+      ],
+      "sourceNumber": 139
+    },
+    {
+      "id": "la-040",
+      "category": "linear-algebra",
+      "topic": "linear-transformations",
+      "difficulty": "easy",
+      "question": "Determine whether the transformation is linear.",
+      "expression": "T(x,y)=(x+1,y)",
+      "answer": "\\text{Not linear}",
+      "solutionSteps": [
+        "A linear transformation must satisfy \\(T(0,0)=(0,0)\\).",
+        "Here \\(T(0,0)=(1,0)\\), so the condition fails."
+      ],
+      "hints": [
+        "Check what the transformation does to the zero vector."
+      ],
+      "sourceNumber": 140
+    },
+    {
+      "id": "la-041",
+      "category": "linear-algebra",
+      "topic": "eigenvalues",
+      "difficulty": "easy",
+      "question": "Find the eigenvalues.",
+      "expression": "A=\\begin{bmatrix}3&0\\\\0&5\\end{bmatrix}",
+      "answer": "\\lambda_1=3,\\quad\\lambda_2=5",
+      "solutionSteps": [
+        "For a diagonal matrix, the eigenvalues are its diagonal entries."
+      ],
+      "hints": [
+        "Read the eigenvalues from the diagonal."
+      ],
+      "sourceNumber": 141
+    },
+    {
+      "id": "la-042",
+      "category": "linear-algebra",
+      "topic": "eigenvalues-and-eigenvectors",
+      "difficulty": "medium",
+      "question": "Find the eigenvalues and eigenvectors.",
+      "expression": "A=\\begin{bmatrix}2&1\\\\1&2\\end{bmatrix}",
+      "answer": "\\lambda=3:\\ \\operatorname{span}\\{(1,1)\\};\\quad\\lambda=1:\\ \\operatorname{span}\\{(1,-1)\\}",
+      "solutionSteps": [
+        "Compute \\(\\det(A-\\lambda I)=(2-\\lambda)^2-1\\).",
+        "The roots are \\(\\lambda=3,1\\).",
+        "Solve each null-space equation to obtain the eigenvectors."
+      ],
+      "hints": [
+        "Factor the characteristic polynomial as \\((\\lambda-3)(\\lambda-1)\\)."
+      ],
+      "sourceNumber": 142
+    },
+    {
+      "id": "la-043",
+      "category": "linear-algebra",
+      "topic": "characteristic-polynomial",
+      "difficulty": "easy",
+      "question": "Find the characteristic polynomial.",
+      "expression": "A=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}",
+      "answer": "p(\\lambda)=\\lambda^2-5\\lambda-2",
+      "solutionSteps": [
+        "Compute \\(\\det(\\lambda I-A)=(\\lambda-1)(\\lambda-4)-6\\).",
+        "Expand and simplify."
+      ],
+      "hints": [
+        "Use \\(p(\\lambda)=\\det(\\lambda I-A)\\)."
+      ],
+      "sourceNumber": 143
+    },
+    {
+      "id": "la-044",
+      "category": "linear-algebra",
+      "topic": "diagonalization",
+      "difficulty": "medium",
+      "question": "Determine whether the matrix is diagonalizable.",
+      "expression": "A=\\begin{bmatrix}4&1\\\\0&4\\end{bmatrix}",
+      "answer": "\\text{Not diagonalizable}",
+      "solutionSteps": [
+        "The only eigenvalue is \\(4\\), with algebraic multiplicity 2.",
+        "Solving \\((A-4I)\\mathbf v=0\\) gives a one-dimensional eigenspace.",
+        "There are not enough independent eigenvectors."
+      ],
+      "hints": [
+        "Compare algebraic and geometric multiplicities."
+      ],
+      "sourceNumber": 144
+    },
+    {
+      "id": "la-045",
+      "category": "linear-algebra",
+      "topic": "diagonalization",
+      "difficulty": "easy",
+      "question": "Diagonalize the matrix if possible.",
+      "expression": "A=\\begin{bmatrix}1&0\\\\0&-2\\end{bmatrix}",
+      "answer": "P=I,\\quad D=\\begin{bmatrix}1&0\\\\0&-2\\end{bmatrix},\\quad A=PDP^{-1}",
+      "solutionSteps": [
+        "The matrix is already diagonal.",
+        "Choose the standard basis eigenvectors, so \\(P=I\\) and \\(D=A\\)."
+      ],
+      "hints": [
+        "A diagonal matrix is already diagonalized."
+      ],
+      "sourceNumber": 145
+    },
+    {
+      "id": "la-046",
+      "category": "linear-algebra",
+      "topic": "matrix-powers",
+      "difficulty": "hard",
+      "question": "Use diagonalization to compute \\(A^5\\).",
+      "expression": "A=\\begin{bmatrix}2&1\\\\1&2\\end{bmatrix}",
+      "answer": "A^5=\\begin{bmatrix}122&121\\\\121&122\\end{bmatrix}",
+      "solutionSteps": [
+        "The eigenvalues are \\(3\\) and \\(1\\), with eigenvectors \\((1,1)\\) and \\((1,-1)\\).",
+        "Use \\(A^5=PD^5P^{-1}\\).",
+        "Equivalently, \\(A^n=\\frac12\\begin{bmatrix}3^n+1&3^n-1\\\\3^n-1&3^n+1\\end{bmatrix}\\).",
+        "Set \\(n=5\\)."
+      ],
+      "hints": [
+        "Raise the diagonal eigenvalue matrix to the fifth power."
+      ],
+      "sourceNumber": 146
+    },
+    {
+      "id": "la-047",
+      "category": "linear-algebra",
+      "topic": "gram-schmidt",
+      "difficulty": "medium",
+      "question": "Apply the Gram-Schmidt process.",
+      "expression": "\\mathbf v_1=(1,1,0),\\quad\\mathbf v_2=(1,0,1)",
+      "answer": "\\mathbf e_1=\\frac{1}{\\sqrt2}(1,1,0),\\quad\\mathbf e_2=\\frac{1}{\\sqrt6}(1,-1,2)",
+      "solutionSteps": [
+        "Normalize \\(\\mathbf v_1\\) to obtain \\(\\mathbf e_1\\).",
+        "Subtract the projection of \\(\\mathbf v_2\\) onto \\(\\mathbf v_1\\), giving a vector proportional to \\((1,-1,2)\\).",
+        "Normalize the second vector."
+      ],
+      "hints": [
+        "Orthogonalize first, then normalize."
+      ],
+      "sourceNumber": 147
+    },
+    {
+      "id": "la-048",
+      "category": "linear-algebra",
+      "topic": "orthonormal-bases",
+      "difficulty": "medium",
+      "question": "Find an orthonormal basis for the plane.",
+      "expression": "x+y+z=0",
+      "answer": "\\left\\{\\frac{1}{\\sqrt2}(1,-1,0),\\frac{1}{\\sqrt6}(1,1,-2)\\right\\}",
+      "solutionSteps": [
+        "Choose two independent vectors in the plane, such as \\((1,-1,0)\\) and \\((1,1,-2)\\).",
+        "They are already orthogonal.",
+        "Normalize both vectors."
+      ],
+      "hints": [
+        "Pick vectors perpendicular to the normal \\((1,1,1)\\)."
+      ],
+      "sourceNumber": 148
+    },
+    {
+      "id": "la-049",
+      "category": "linear-algebra",
+      "topic": "least-squares",
+      "difficulty": "hard",
+      "question": "Find the least-squares solution.",
+      "expression": "\\begin{bmatrix}1&1\\\\1&2\\\\1&3\\end{bmatrix}\\begin{bmatrix}a\\\\b\\end{bmatrix}\\approx\\begin{bmatrix}1\\\\2\\\\2\\end{bmatrix}",
+      "answer": "\\hat a=\\frac23,\\quad\\hat b=\\frac12",
+      "solutionSteps": [
+        "Form the normal equations \\(A^TA\\hat{\\mathbf x}=A^T\\mathbf b\\).",
+        "They become \\(\\begin{bmatrix}3&6\\\\6&14\\end{bmatrix}\\begin{bmatrix}a\\\\b\\end{bmatrix}=\\begin{bmatrix}5\\\\11\\end{bmatrix}\\).",
+        "Solving gives \\(a=2/3\\) and \\(b=1/2\\)."
+      ],
+      "hints": [
+        "Use the normal equations."
+      ],
+      "sourceNumber": 149
+    },
+    {
+      "id": "la-050",
+      "category": "linear-algebra",
+      "topic": "orthogonal-matrices",
+      "difficulty": "medium",
+      "question": "Determine whether \\(Q\\) is orthogonal and interpret its geometric effect.",
+      "expression": "Q=\\frac{1}{\\sqrt2}\\begin{bmatrix}1&-1\\\\1&1\\end{bmatrix}",
+      "answer": "\\text{Orthogonal; it rotates vectors counterclockwise by }\\frac{\\pi}{4}",
+      "solutionSteps": [
+        "Compute \\(Q^TQ=I\\), so \\(Q\\) is orthogonal.",
+        "Compare with \\(\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}\\).",
+        "Here \\(\\cos\\theta=\\sin\\theta=1/\\sqrt2\\), so \\(\\theta=\\pi/4\\)."
+      ],
+      "hints": [
+        "Check \\(Q^TQ\\) and compare with the standard rotation matrix."
+      ],
+      "sourceNumber": 150
+    }
+  ]
+}
