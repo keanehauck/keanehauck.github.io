@@ -1,12 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "title": "Differentiation, Integration, Probability, and Linear Algebra Refresher",
+  "title": "Differentiation, Integration, Probability, Statistics, and Linear Algebra Refresher",
   "questionCount": 200,
   "categories": {
     "differentiation": 50,
     "integration": 50,
     "linear-algebra": 50,
-    "probability": 50
+    "probability": 50,
+    "statistics": 50
   },
   "mathFormat": "LaTeX",
   "questions": [
@@ -3424,6 +3425,2560 @@
         "For a 'less than or equal to' event, shift the boundary up by 0.5."
       ],
       "sourceNumber": 200
+    },
+    {
+      "id": "stat-001",
+      "category": "statistics",
+      "topic": "data-types",
+      "difficulty": "easy",
+      "question": "A survey records each participant's favorite color. Classify this variable as categorical or quantitative.",
+      "expression": "\\text{Variable: favorite color}",
+      "answer": "\\text{Categorical}",
+      "solutionSteps": [
+        "Favorite color records a label rather than a numerical measurement.",
+        "Therefore, the variable is categorical."
+      ],
+      "hints": [
+        "Ask whether arithmetic operations on the values would be meaningful."
+      ],
+      "sourceNumber": 201
+    },
+    {
+      "id": "stat-002",
+      "category": "statistics",
+      "topic": "data-types",
+      "difficulty": "easy",
+      "question": "A study records the number of text messages sent by each participant in one day. Classify this variable as discrete or continuous.",
+      "expression": "\\text{Variable: number of text messages}",
+      "answer": "\\text{Discrete quantitative}",
+      "solutionSteps": [
+        "The variable is numerical.",
+        "It takes countable whole-number values, so it is discrete."
+      ],
+      "hints": [
+        "Counts are typically discrete."
+      ],
+      "sourceNumber": 202
+    },
+    {
+      "id": "stat-003",
+      "category": "statistics",
+      "topic": "levels-of-measurement",
+      "difficulty": "easy",
+      "question": "Classify temperature measured in degrees Celsius as nominal, ordinal, interval, or ratio.",
+      "expression": "\\text{Variable: temperature in degrees Celsius}",
+      "answer": "\\text{Interval}",
+      "solutionSteps": [
+        "Differences in Celsius temperature are meaningful.",
+        "Zero degrees Celsius is not a true absence of temperature, so the scale is interval rather than ratio."
+      ],
+      "hints": [
+        "A ratio scale requires a meaningful zero."
+      ],
+      "sourceNumber": 203
+    },
+    {
+      "id": "stat-004",
+      "category": "statistics",
+      "topic": "mean",
+      "difficulty": "easy",
+      "question": "Write the formula for the sample mean of observations \\(x_1,\\dots,x_n\\).",
+      "expression": "x_1,\\dots,x_n",
+      "answer": "\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i",
+      "solutionSteps": [
+        "Add all observations.",
+        "Divide the total by the number of observations."
+      ],
+      "hints": [
+        "The sample mean is the arithmetic average."
+      ],
+      "sourceNumber": 204
+    },
+    {
+      "id": "stat-005",
+      "category": "statistics",
+      "topic": "median",
+      "difficulty": "easy",
+      "question": "Describe how to find the median of a data set containing an even number \\(n\\) of observations.",
+      "expression": "x_{(1)}\\le x_{(2)}\\le\\cdots\\le x_{(n)}",
+      "answer": "\\operatorname{median}=\\frac{x_{(n/2)}+x_{(n/2+1)}}{2}",
+      "solutionSteps": [
+        "First sort the observations.",
+        "For even \\(n\\), average the two middle ordered values."
+      ],
+      "hints": [
+        "The median depends on position after sorting."
+      ],
+      "sourceNumber": 205
+    },
+    {
+      "id": "stat-006",
+      "category": "statistics",
+      "topic": "variance",
+      "difficulty": "easy",
+      "question": "Write the formula for the sample variance.",
+      "expression": "x_1,\\dots,x_n",
+      "answer": "s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2",
+      "solutionSteps": [
+        "Measure each observation\\'s deviation from the sample mean.",
+        "Square the deviations and divide their sum by \\(n-1\\)."
+      ],
+      "hints": [
+        "Use n-1, not n, for sample variance."
+      ],
+      "sourceNumber": 206
+    },
+    {
+      "id": "stat-007",
+      "category": "statistics",
+      "topic": "standard-deviation",
+      "difficulty": "easy",
+      "question": "Write the relationship between sample variance and sample standard deviation.",
+      "expression": "s^2=\\text{sample variance}",
+      "answer": "s=\\sqrt{s^2}",
+      "solutionSteps": [
+        "Standard deviation is defined as the positive square root of variance."
+      ],
+      "hints": [
+        "Variance is measured in squared units; standard deviation returns to the original units."
+      ],
+      "sourceNumber": 207
+    },
+    {
+      "id": "stat-008",
+      "category": "statistics",
+      "topic": "interquartile-range",
+      "difficulty": "easy",
+      "question": "Write the formula for the interquartile range.",
+      "expression": "Q_1=\\text{first quartile},\\quad Q_3=\\text{third quartile}",
+      "answer": "\\operatorname{IQR}=Q_3-Q_1",
+      "solutionSteps": [
+        "The interquartile range measures the spread of the middle 50 percent of the data.",
+        "Subtract the first quartile from the third quartile."
+      ],
+      "hints": [
+        "The IQR uses quartiles rather than the minimum and maximum."
+      ],
+      "sourceNumber": 208
+    },
+    {
+      "id": "stat-009",
+      "category": "statistics",
+      "topic": "outliers",
+      "difficulty": "medium",
+      "question": "Write the standard IQR-based lower and upper fences used to identify potential outliers.",
+      "expression": "\\operatorname{IQR}=Q_3-Q_1",
+      "answer": "\\text{Lower fence}=Q_1-1.5\\operatorname{IQR},\\quad \\text{Upper fence}=Q_3+1.5\\operatorname{IQR}",
+      "solutionSteps": [
+        "Compute the interquartile range.",
+        "Extend 1.5 IQRs below \\(Q_1\\) and above \\(Q_3\\)."
+      ],
+      "hints": [
+        "Potential outliers lie outside the two fences."
+      ],
+      "sourceNumber": 209
+    },
+    {
+      "id": "stat-010",
+      "category": "statistics",
+      "topic": "z-scores",
+      "difficulty": "easy",
+      "question": "Write the formula for the \\(z\\)-score of an observation \\(x\\) from a population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\).",
+      "expression": "x,\\quad \\mu,\\quad \\sigma",
+      "answer": "z=\\frac{x-\\mu}{\\sigma}",
+      "solutionSteps": [
+        "Subtract the population mean from the observation.",
+        "Divide by the population standard deviation."
+      ],
+      "hints": [
+        "A z-score measures distance from the mean in standard deviations."
+      ],
+      "sourceNumber": 210
+    },
+    {
+      "id": "stat-011",
+      "category": "statistics",
+      "topic": "histograms",
+      "difficulty": "easy",
+      "question": "Which graph is generally most appropriate for displaying the distribution of one quantitative variable?",
+      "expression": "\\text{One quantitative variable}",
+      "answer": "\\text{A histogram}",
+      "solutionSteps": [
+        "A histogram groups quantitative observations into intervals.",
+        "It displays shape, center, spread, and possible outliers."
+      ],
+      "hints": [
+        "Bar charts are primarily for categorical variables."
+      ],
+      "sourceNumber": 211
+    },
+    {
+      "id": "stat-012",
+      "category": "statistics",
+      "topic": "bar-charts",
+      "difficulty": "easy",
+      "question": "Which graph is generally most appropriate for comparing frequencies across categories?",
+      "expression": "\\text{One categorical variable}",
+      "answer": "\\text{A bar chart}",
+      "solutionSteps": [
+        "A bar chart uses one bar for each category.",
+        "Bar heights represent counts or proportions."
+      ],
+      "hints": [
+        "Categorical values form separate groups rather than numeric intervals."
+      ],
+      "sourceNumber": 212
+    },
+    {
+      "id": "stat-013",
+      "category": "statistics",
+      "topic": "skewness",
+      "difficulty": "easy",
+      "question": "A distribution has a long tail extending to the right. How should its shape be described?",
+      "expression": "\\text{Long right tail}",
+      "answer": "\\text{Right-skewed or positively skewed}",
+      "solutionSteps": [
+        "Skewness is named for the direction of the longer tail.",
+        "A long right tail indicates positive skew."
+      ],
+      "hints": [
+        "Name the skew by the direction of the tail."
+      ],
+      "sourceNumber": 213
+    },
+    {
+      "id": "stat-014",
+      "category": "statistics",
+      "topic": "robust-statistics",
+      "difficulty": "medium",
+      "question": "For a strongly right-skewed distribution with several large outliers, which measures of center and spread are usually preferred?",
+      "expression": "\\text{Right-skewed distribution with outliers}",
+      "answer": "\\text{Median and interquartile range}",
+      "solutionSteps": [
+        "The mean and standard deviation are sensitive to extreme values.",
+        "The median and IQR are more resistant to skewness and outliers."
+      ],
+      "hints": [
+        "Prefer resistant summaries when outliers are present."
+      ],
+      "sourceNumber": 214
+    },
+    {
+      "id": "stat-015",
+      "category": "statistics",
+      "topic": "sampling-methods",
+      "difficulty": "easy",
+      "question": "A researcher selects every 20th name from an alphabetized list after choosing a random starting point. Identify the sampling method.",
+      "expression": "\\text{Random start, then every 20th individual}",
+      "answer": "\\text{Systematic sampling}",
+      "solutionSteps": [
+        "Systematic sampling selects observations at a fixed interval.",
+        "A random starting point helps reduce selection bias."
+      ],
+      "hints": [
+        "Look for a fixed step size."
+      ],
+      "sourceNumber": 215
+    },
+    {
+      "id": "stat-016",
+      "category": "statistics",
+      "topic": "sampling-methods",
+      "difficulty": "easy",
+      "question": "A population is divided into age groups, and a random sample is taken from each age group. Identify the sampling method.",
+      "expression": "\\text{Random sample from every age group}",
+      "answer": "\\text{Stratified random sampling}",
+      "solutionSteps": [
+        "The population is divided into meaningful subgroups called strata.",
+        "Random observations are selected from each stratum."
+      ],
+      "hints": [
+        "Every subgroup contributes observations."
+      ],
+      "sourceNumber": 216
+    },
+    {
+      "id": "stat-017",
+      "category": "statistics",
+      "topic": "sampling-methods",
+      "difficulty": "medium",
+      "question": "A school randomly selects 5 classrooms and surveys every student in those classrooms. Identify the sampling method.",
+      "expression": "\\text{Randomly select classrooms, then survey all students within them}",
+      "answer": "\\text{Cluster sampling}",
+      "solutionSteps": [
+        "The population is divided into naturally occurring groups.",
+        "Whole selected groups are included in the sample."
+      ],
+      "hints": [
+        "Cluster sampling selects entire groups."
+      ],
+      "sourceNumber": 217
+    },
+    {
+      "id": "stat-018",
+      "category": "statistics",
+      "topic": "bias",
+      "difficulty": "easy",
+      "question": "An online news site asks visitors to click a link if they want to participate in a political poll. Identify the main source of bias.",
+      "expression": "\\text{Participation is voluntary}",
+      "answer": "\\text{Voluntary-response bias}",
+      "solutionSteps": [
+        "Individuals decide for themselves whether to participate.",
+        "People with strong opinions may be overrepresented."
+      ],
+      "hints": [
+        "The sample is self-selected."
+      ],
+      "sourceNumber": 218
+    },
+    {
+      "id": "stat-019",
+      "category": "statistics",
+      "topic": "observational-studies",
+      "difficulty": "medium",
+      "question": "A study observes that people who exercise more tend to report lower stress, but participants were not randomly assigned to exercise levels. What type of study is this?",
+      "expression": "\\text{No random assignment}",
+      "answer": "\\text{Observational study}",
+      "solutionSteps": [
+        "The researchers measured existing behavior rather than assigning treatments.",
+        "Therefore, the study is observational."
+      ],
+      "hints": [
+        "Random assignment distinguishes experiments from observational studies."
+      ],
+      "sourceNumber": 219
+    },
+    {
+      "id": "stat-020",
+      "category": "statistics",
+      "topic": "causation",
+      "difficulty": "medium",
+      "question": "Why can an observational study usually establish association but not causation?",
+      "expression": "\\text{Observational study}",
+      "answer": "\\text{Potential confounding variables and lack of random assignment prevent a clear causal conclusion}",
+      "solutionSteps": [
+        "Observed groups may differ in ways other than the explanatory variable.",
+        "Without random assignment, confounding cannot usually be ruled out."
+      ],
+      "hints": [
+        "Association alone does not show that one variable causes another."
+      ],
+      "sourceNumber": 220
+    },
+    {
+      "id": "stat-021",
+      "category": "statistics",
+      "topic": "normal-distribution",
+      "difficulty": "easy",
+      "question": "State the empirical rule for a normally distributed variable.",
+      "expression": "X\\sim N(\\mu,\\sigma^2)",
+      "answer": "\\text{About }68\\%\\text{ lie within }1\\sigma,\\ 95\\%\\text{ within }2\\sigma,\\ 99.7\\%\\text{ within }3\\sigma",
+      "solutionSteps": [
+        "The empirical rule summarizes approximate coverage around the mean in a normal distribution."
+      ],
+      "hints": [
+        "Think 68-95-99.7."
+      ],
+      "sourceNumber": 221
+    },
+    {
+      "id": "stat-022",
+      "category": "statistics",
+      "topic": "sampling-distributions",
+      "difficulty": "easy",
+      "question": "Write the expected value of the sample mean \\(\\bar X\\) for random samples from a population with mean \\(\\mu\\).",
+      "expression": "E[X]=\\mu",
+      "answer": "E[\\bar X]=\\mu",
+      "solutionSteps": [
+        "The sample mean is an unbiased estimator of the population mean."
+      ],
+      "hints": [
+        "Unbiased means its expected value equals the parameter."
+      ],
+      "sourceNumber": 222
+    },
+    {
+      "id": "stat-023",
+      "category": "statistics",
+      "topic": "standard-error",
+      "difficulty": "easy",
+      "question": "Write the standard error of the sample mean when the population standard deviation is \\(\\sigma\\) and the sample size is \\(n\\).",
+      "expression": "\\sigma,\\quad n",
+      "answer": "\\operatorname{SE}(\\bar X)=\\frac{\\sigma}{\\sqrt n}",
+      "solutionSteps": [
+        "The variability of the sample mean decreases as sample size increases.",
+        "Divide the population standard deviation by \\(\\sqrt n\\)."
+      ],
+      "hints": [
+        "Larger samples produce smaller standard errors."
+      ],
+      "sourceNumber": 223
+    },
+    {
+      "id": "stat-024",
+      "category": "statistics",
+      "topic": "central-limit-theorem",
+      "difficulty": "medium",
+      "question": "State the central limit theorem for the sample mean in conceptual terms.",
+      "expression": "\\bar X=\\frac{1}{n}\\sum_{i=1}^{n}X_i",
+      "answer": "\\text{For sufficiently large }n,\\ \\bar X\\text{ is approximately normal with mean }\\mu\\text{ and standard error }\\sigma/\\sqrt n",
+      "solutionSteps": [
+        "The theorem concerns the sampling distribution of the sample mean.",
+        "Its approximation improves as sample size grows under standard conditions."
+      ],
+      "hints": [
+        "The population itself need not be normal when n is large enough."
+      ],
+      "sourceNumber": 224
+    },
+    {
+      "id": "stat-025",
+      "category": "statistics",
+      "topic": "standard-error",
+      "difficulty": "medium",
+      "question": "If the sample size is multiplied by 4, how does the standard error of the sample mean change?",
+      "expression": "\\operatorname{SE}(\\bar X)=\\frac{\\sigma}{\\sqrt n}",
+      "answer": "\\text{The standard error is divided by }2",
+      "solutionSteps": [
+        "Replacing \\(n\\) by \\(4n\\) gives \\(\\sigma/\\sqrt{4n}\\).",
+        "Since \\(\\sqrt{4n}=2\\sqrt n\\), the standard error is halved."
+      ],
+      "hints": [
+        "Standard error changes with the square root of sample size."
+      ],
+      "sourceNumber": 225
+    },
+    {
+      "id": "stat-026",
+      "category": "statistics",
+      "topic": "sample-proportions",
+      "difficulty": "easy",
+      "question": "Write the expected value of the sample proportion \\(\\hat p\\) when the population proportion is \\(p\\).",
+      "expression": "\\hat p=\\frac{X}{n}",
+      "answer": "E[\\hat p]=p",
+      "solutionSteps": [
+        "The sample proportion is an unbiased estimator of the population proportion."
+      ],
+      "hints": [
+        "The estimator is centered at the true proportion."
+      ],
+      "sourceNumber": 226
+    },
+    {
+      "id": "stat-027",
+      "category": "statistics",
+      "topic": "sample-proportions",
+      "difficulty": "medium",
+      "question": "Write the standard error of the sample proportion \\(\\hat p\\).",
+      "expression": "p=\\text{population proportion},\\quad n=\\text{sample size}",
+      "answer": "\\operatorname{SE}(\\hat p)=\\sqrt{\\frac{p(1-p)}{n}}",
+      "solutionSteps": [
+        "The variance of a Bernoulli outcome is \\(p(1-p)\\).",
+        "Average over \\(n\\) independent observations."
+      ],
+      "hints": [
+        "Use the Bernoulli variance inside the square root."
+      ],
+      "sourceNumber": 227
+    },
+    {
+      "id": "stat-028",
+      "category": "statistics",
+      "topic": "normal-approximation",
+      "difficulty": "medium",
+      "question": "State the usual success-failure condition for using a normal approximation to the sampling distribution of \\(\\hat p\\).",
+      "expression": "n=\\text{sample size},\\quad p=\\text{population proportion}",
+      "answer": "np\\ge10\\quad\\text{and}\\quad n(1-p)\\ge10",
+      "solutionSteps": [
+        "The expected numbers of successes and failures should both be sufficiently large."
+      ],
+      "hints": [
+        "Check both expected counts."
+      ],
+      "sourceNumber": 228
+    },
+    {
+      "id": "stat-029",
+      "category": "statistics",
+      "topic": "finite-population-correction",
+      "difficulty": "hard",
+      "question": "When sampling without replacement from a finite population of size \\(N\\), write the finite population correction factor for the standard error.",
+      "expression": "n=\\text{sample size},\\quad N=\\text{population size}",
+      "answer": "\\sqrt{\\frac{N-n}{N-1}}",
+      "solutionSteps": [
+        "Sampling without replacement reduces variability.",
+        "The correction factor adjusts the usual standard error downward."
+      ],
+      "hints": [
+        "The factor approaches 1 when the sample is small relative to the population."
+      ],
+      "sourceNumber": 229
+    },
+    {
+      "id": "stat-030",
+      "category": "statistics",
+      "topic": "law-of-large-numbers",
+      "difficulty": "easy",
+      "question": "State the law of large numbers for the sample mean.",
+      "expression": "\\bar X_n=\\frac1n\\sum_{i=1}^{n}X_i",
+      "answer": "\\bar X_n\\xrightarrow{P}\\mu\\quad\\text{as }n\\to\\infty",
+      "solutionSteps": [
+        "As sample size grows, the sample mean becomes increasingly close to the population mean."
+      ],
+      "hints": [
+        "Use convergence in probability notation."
+      ],
+      "sourceNumber": 230
+    },
+    {
+      "id": "stat-031",
+      "category": "statistics",
+      "topic": "confidence-intervals",
+      "difficulty": "easy",
+      "question": "Write the general form of a confidence interval.",
+      "expression": "\\text{Point estimate},\\quad \\text{critical value},\\quad \\text{standard error}",
+      "answer": "\\text{Point estimate}\\pm(\\text{critical value})(\\text{standard error})",
+      "solutionSteps": [
+        "A confidence interval is centered at an estimate.",
+        "The margin of error is the critical value times the standard error."
+      ],
+      "hints": [
+        "Think estimate plus or minus margin of error."
+      ],
+      "sourceNumber": 231
+    },
+    {
+      "id": "stat-032",
+      "category": "statistics",
+      "topic": "confidence-intervals",
+      "difficulty": "medium",
+      "question": "Write the \\(z\\)-interval for a population mean when the population standard deviation \\(\\sigma\\) is known.",
+      "expression": "\\bar x,\\quad \\sigma,\\quad n,\\quad z^*",
+      "answer": "\\bar x\\pm z^*\\frac{\\sigma}{\\sqrt n}",
+      "solutionSteps": [
+        "Use the sample mean as the point estimate.",
+        "Use \\(\\sigma/\\sqrt n\\) as the standard error."
+      ],
+      "hints": [
+        "Known sigma leads to a z-critical value."
+      ],
+      "sourceNumber": 232
+    },
+    {
+      "id": "stat-033",
+      "category": "statistics",
+      "topic": "confidence-intervals",
+      "difficulty": "medium",
+      "question": "Write the t-interval for a population mean when the population standard deviation is unknown.",
+      "expression": "\\bar x,\\quad s,\\quad n,\\quad t^*_{n-1}",
+      "answer": "\\bar x\\pm t^*_{n-1}\\frac{s}{\\sqrt n}",
+      "solutionSteps": [
+        "Replace the unknown population standard deviation with the sample standard deviation.",
+        "Use a t-critical value with \\(n-1\\) degrees of freedom."
+      ],
+      "hints": [
+        "Unknown sigma leads to a t-interval."
+      ],
+      "sourceNumber": 233
+    },
+    {
+      "id": "stat-034",
+      "category": "statistics",
+      "topic": "confidence-intervals",
+      "difficulty": "medium",
+      "question": "Write the confidence interval for a population proportion \\(p\\).",
+      "expression": "\\hat p,\\quad n,\\quad z^*",
+      "answer": "\\hat p\\pm z^*\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}}",
+      "solutionSteps": [
+        "Use the sample proportion as the point estimate.",
+        "Estimate the standard error using \\(\\hat p\\)."
+      ],
+      "hints": [
+        "The proportion interval uses the sample proportion inside the standard error."
+      ],
+      "sourceNumber": 234
+    },
+    {
+      "id": "stat-035",
+      "category": "statistics",
+      "topic": "confidence-level",
+      "difficulty": "easy",
+      "question": "What happens to the width of a confidence interval when the confidence level increases while all other quantities remain fixed?",
+      "expression": "\\text{Higher confidence level}",
+      "answer": "\\text{The interval becomes wider}",
+      "solutionSteps": [
+        "A higher confidence level requires a larger critical value.",
+        "A larger critical value increases the margin of error."
+      ],
+      "hints": [
+        "More confidence requires a broader range."
+      ],
+      "sourceNumber": 235
+    },
+    {
+      "id": "stat-036",
+      "category": "statistics",
+      "topic": "margin-of-error",
+      "difficulty": "medium",
+      "question": "What happens to the margin of error when the sample size increases while all other quantities remain fixed?",
+      "expression": "\\operatorname{ME}=(\\text{critical value})(\\text{standard error})",
+      "answer": "\\text{The margin of error decreases}",
+      "solutionSteps": [
+        "Standard error typically contains a factor of \\(1/\\sqrt n\\).",
+        "Therefore, larger samples reduce the margin of error."
+      ],
+      "hints": [
+        "Larger samples improve precision."
+      ],
+      "sourceNumber": 236
+    },
+    {
+      "id": "stat-037",
+      "category": "statistics",
+      "topic": "hypothesis-testing",
+      "difficulty": "easy",
+      "question": "Write the standard structure of a null hypothesis and an alternative hypothesis for testing a population mean against a specific value \\(\\mu_0\\).",
+      "expression": "\\mu_0=\\text{hypothesized population mean}",
+      "answer": "H_0:\\mu=\\mu_0,\\quad H_A:\\mu\\ne\\mu_0\\ \\text{or}\\ \\mu>\\mu_0\\ \\text{or}\\ \\mu<\\mu_0",
+      "solutionSteps": [
+        "The null hypothesis contains equality.",
+        "The alternative reflects the research question and may be two-sided or one-sided."
+      ],
+      "hints": [
+        "Equality belongs in H0."
+      ],
+      "sourceNumber": 237
+    },
+    {
+      "id": "stat-038",
+      "category": "statistics",
+      "topic": "p-values",
+      "difficulty": "easy",
+      "question": "Define a p-value in conceptual terms.",
+      "expression": "H_0=\\text{null hypothesis}",
+      "answer": "\\text{The probability, assuming }H_0\\text{ is true, of observing a result at least as extreme as the one obtained}",
+      "solutionSteps": [
+        "The p-value is calculated under the null hypothesis.",
+        "It measures how unusual the observed evidence would be if the null were true."
+      ],
+      "hints": [
+        "A p-value is not the probability that H0 is true."
+      ],
+      "sourceNumber": 238
+    },
+    {
+      "id": "stat-039",
+      "category": "statistics",
+      "topic": "decision-rules",
+      "difficulty": "easy",
+      "question": "State the usual decision rule comparing a p-value with a significance level \\(\\alpha\\).",
+      "expression": "p\\text{-value},\\quad \\alpha",
+      "answer": "\\text{Reject }H_0\\text{ if }p\\text{-value}\\le\\alpha;\\ \\text{otherwise fail to reject }H_0",
+      "solutionSteps": [
+        "Compare the observed p-value with the chosen significance threshold."
+      ],
+      "hints": [
+        "Smaller p-values provide stronger evidence against H0."
+      ],
+      "sourceNumber": 239
+    },
+    {
+      "id": "stat-040",
+      "category": "statistics",
+      "topic": "type-i-error",
+      "difficulty": "easy",
+      "question": "Define a Type I error.",
+      "expression": "H_0=\\text{null hypothesis}",
+      "answer": "\\text{Rejecting }H_0\\text{ when }H_0\\text{ is actually true}",
+      "solutionSteps": [
+        "A Type I error is a false positive.",
+        "Its probability is controlled by the significance level \\(\\alpha\\)."
+      ],
+      "hints": [
+        "Type I means rejecting a true null."
+      ],
+      "sourceNumber": 240
+    },
+    {
+      "id": "stat-041",
+      "category": "statistics",
+      "topic": "type-ii-error",
+      "difficulty": "easy",
+      "question": "Define a Type II error.",
+      "expression": "H_0=\\text{null hypothesis}",
+      "answer": "\\text{Failing to reject }H_0\\text{ when }H_0\\text{ is actually false}",
+      "solutionSteps": [
+        "A Type II error is a false negative.",
+        "Its probability is commonly denoted by \\(\\beta\\)."
+      ],
+      "hints": [
+        "Type II means missing a real effect."
+      ],
+      "sourceNumber": 241
+    },
+    {
+      "id": "stat-042",
+      "category": "statistics",
+      "topic": "power",
+      "difficulty": "medium",
+      "question": "Write the relationship between statistical power and the Type II error probability \\(\\beta\\).",
+      "expression": "\\beta=P(\\text{Type II error})",
+      "answer": "\\text{Power}=1-\\beta",
+      "solutionSteps": [
+        "Power is the probability of correctly rejecting a false null hypothesis."
+      ],
+      "hints": [
+        "Power and Type II error are complements."
+      ],
+      "sourceNumber": 242
+    },
+    {
+      "id": "stat-043",
+      "category": "statistics",
+      "topic": "one-sample-t-test",
+      "difficulty": "medium",
+      "question": "Write the test statistic for a one-sample t-test of a population mean.",
+      "expression": "\\bar x,\\quad \\mu_0,\\quad s,\\quad n",
+      "answer": "t=\\frac{\\bar x-\\mu_0}{s/\\sqrt n}",
+      "solutionSteps": [
+        "Subtract the hypothesized mean from the sample mean.",
+        "Divide by the estimated standard error."
+      ],
+      "hints": [
+        "Use the sample standard deviation because sigma is unknown."
+      ],
+      "sourceNumber": 243
+    },
+    {
+      "id": "stat-044",
+      "category": "statistics",
+      "topic": "one-proportion-z-test",
+      "difficulty": "medium",
+      "question": "Write the test statistic for a one-proportion z-test.",
+      "expression": "\\hat p,\\quad p_0,\\quad n",
+      "answer": "z=\\frac{\\hat p-p_0}{\\sqrt{p_0(1-p_0)/n}}",
+      "solutionSteps": [
+        "Center the sample proportion at the null value \\(p_0\\).",
+        "Use the null proportion in the standard error."
+      ],
+      "hints": [
+        "Hypothesis-test standard errors use the null value."
+      ],
+      "sourceNumber": 244
+    },
+    {
+      "id": "stat-045",
+      "category": "statistics",
+      "topic": "paired-data",
+      "difficulty": "medium",
+      "question": "For matched-pairs data, what quantity is analyzed in a paired t-test?",
+      "expression": "(x_i,y_i)\\text{ are paired observations}",
+      "answer": "d_i=x_i-y_i,\\quad \\text{then perform a one-sample t-test on the differences}",
+      "solutionSteps": [
+        "Each pair produces one difference score.",
+        "The analysis focuses on the mean of those differences."
+      ],
+      "hints": [
+        "Reduce each pair to one difference."
+      ],
+      "sourceNumber": 245
+    },
+    {
+      "id": "stat-046",
+      "category": "statistics",
+      "topic": "correlation",
+      "difficulty": "easy",
+      "question": "What does the sample correlation coefficient \\(r\\) measure?",
+      "expression": "-1\\le r\\le1",
+      "answer": "\\text{The direction and strength of a linear relationship between two quantitative variables}",
+      "solutionSteps": [
+        "The sign indicates direction.",
+        "The magnitude indicates the strength of the linear association."
+      ],
+      "hints": [
+        "Correlation describes linear association, not causation."
+      ],
+      "sourceNumber": 246
+    },
+    {
+      "id": "stat-047",
+      "category": "statistics",
+      "topic": "least-squares-regression",
+      "difficulty": "medium",
+      "question": "Write the form of a simple least-squares regression line.",
+      "expression": "x=\\text{explanatory variable},\\quad y=\\text{response variable}",
+      "answer": "\\hat y=b_0+b_1x",
+      "solutionSteps": [
+        "The intercept is \\(b_0\\).",
+        "The slope is \\(b_1\\), representing the predicted change in y for a one-unit increase in x."
+      ],
+      "hints": [
+        "A simple regression line has one predictor."
+      ],
+      "sourceNumber": 247
+    },
+    {
+      "id": "stat-048",
+      "category": "statistics",
+      "topic": "residuals",
+      "difficulty": "easy",
+      "question": "Write the formula for a residual in a regression model.",
+      "expression": "y=\\text{observed value},\\quad \\hat y=\\text{predicted value}",
+      "answer": "e=y-\\hat y",
+      "solutionSteps": [
+        "A residual compares the observed response with the fitted response."
+      ],
+      "hints": [
+        "Residual equals observed minus predicted."
+      ],
+      "sourceNumber": 248
+    },
+    {
+      "id": "stat-049",
+      "category": "statistics",
+      "topic": "coefficient-of-determination",
+      "difficulty": "medium",
+      "question": "Interpret the coefficient of determination \\(R^2\\) in a simple regression model.",
+      "expression": "0\\le R^2\\le1",
+      "answer": "R^2\\text{ is the proportion of variability in the response explained by the regression model}",
+      "solutionSteps": [
+        "R-squared compares explained variation with total variation.",
+        "It is commonly expressed as a proportion or percentage."
+      ],
+      "hints": [
+        "Focus on explained variability in the response."
+      ],
+      "sourceNumber": 249
+    },
+    {
+      "id": "stat-050",
+      "category": "statistics",
+      "topic": "chi-square-tests",
+      "difficulty": "hard",
+      "question": "Write the chi-square test statistic used for a contingency table.",
+      "expression": "O_{ij}=\\text{observed count},\\quad E_{ij}=\\text{expected count}",
+      "answer": "\\chi^2=\\sum_i\\sum_j\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}",
+      "solutionSteps": [
+        "Compare each observed cell count with its expected count.",
+        "Square the difference, divide by the expected count, and sum across all cells."
+      ],
+      "hints": [
+        "Large discrepancies between observed and expected counts increase chi-square."
+      ],
+      "sourceNumber": 250
+    },
+    {
+      "id": "stat-051",
+      "category": "statistics",
+      "topic": "bootstrapping",
+      "difficulty": "easy",
+      "question": "Describe the basic idea of a nonparametric bootstrap for estimating the sampling distribution of a statistic.",
+      "expression": "\\text{Observed sample: }x_1,\\ldots,x_n",
+      "answer": "\\text{Repeatedly sample }n\\text{ observations with replacement from the observed data and recompute the statistic}",
+      "solutionSteps": [
+        "Treat the observed sample as an empirical approximation to the population.",
+        "Create many resamples of the same size using sampling with replacement.",
+        "Use the resulting statistics to approximate the statistic's sampling distribution."
+      ],
+      "hints": [
+        "A bootstrap sample has the same size as the original sample."
+      ],
+      "sourceNumber": 251
+    },
+    {
+      "id": "stat-052",
+      "category": "statistics",
+      "topic": "bootstrapping",
+      "difficulty": "easy",
+      "question": "In a nonparametric bootstrap, should observations be sampled with or without replacement?",
+      "expression": "\\text{Bootstrap resampling}",
+      "answer": "\\text{With replacement}",
+      "solutionSteps": [
+        "Sampling with replacement allows an observation to appear multiple times in one resample.",
+        "This mimics repeated sampling from the empirical distribution."
+      ],
+      "hints": [
+        "Duplicate observations are allowed in a bootstrap sample."
+      ],
+      "sourceNumber": 252
+    },
+    {
+      "id": "stat-053",
+      "category": "statistics",
+      "topic": "bootstrapping",
+      "difficulty": "medium",
+      "question": "Write the percentile-bootstrap confidence interval for a parameter using bootstrap estimates \\(\\hat\\theta^{*(1)},\\ldots,\\hat\\theta^{*(B)}\\).",
+      "expression": "\\hat\\theta^{*(1)},\\ldots,\\hat\\theta^{*(B)},\\quad \\alpha",
+      "answer": "\\left[\\hat\\theta^*_{(\\alpha/2)},\\ \\hat\\theta^*_{(1-\\alpha/2)}\\right]",
+      "solutionSteps": [
+        "Order the bootstrap estimates.",
+        "Use the lower and upper empirical quantiles corresponding to the desired confidence level."
+      ],
+      "hints": [
+        "For a 95% interval, use the 2.5th and 97.5th percentiles."
+      ],
+      "sourceNumber": 253
+    },
+    {
+      "id": "stat-054",
+      "category": "statistics",
+      "topic": "bootstrapping",
+      "difficulty": "medium",
+      "question": "Write the bootstrap estimate of the standard error of a statistic from bootstrap estimates \\(\\hat\\theta^{*(1)},\\ldots,\\hat\\theta^{*(B)}\\).",
+      "expression": "\\hat\\theta^{*(1)},\\ldots,\\hat\\theta^{*(B)}",
+      "answer": "\\widehat{\\operatorname{SE}}_{\\mathrm{boot}}(\\hat\\theta)=\\sqrt{\\frac{1}{B-1}\\sum_{b=1}^{B}\\left(\\hat\\theta^{*(b)}-\\bar{\\hat\\theta}^{*}\\right)^2}",
+      "solutionSteps": [
+        "Treat the bootstrap estimates as an empirical sampling distribution.",
+        "Compute their sample standard deviation."
+      ],
+      "hints": [
+        "The bootstrap standard error is the spread of the bootstrap statistics."
+      ],
+      "sourceNumber": 254
+    },
+    {
+      "id": "stat-055",
+      "category": "statistics",
+      "topic": "bootstrapping",
+      "difficulty": "medium",
+      "question": "Why is bootstrapping especially useful for a statistic whose analytic standard error is difficult to derive?",
+      "expression": "\\text{Complex statistic }T(X_1,\\ldots,X_n)",
+      "answer": "\\text{It approximates the sampling distribution empirically without requiring a closed-form variance formula}",
+      "solutionSteps": [
+        "Many statistics have complicated or unknown sampling distributions.",
+        "Repeated resampling provides a numerical approximation to that distribution."
+      ],
+      "hints": [
+        "Bootstrapping replaces difficult algebra with resampling."
+      ],
+      "sourceNumber": 255
+    },
+    {
+      "id": "stat-056",
+      "category": "statistics",
+      "topic": "bootstrap-bias",
+      "difficulty": "intermediate",
+      "question": "Write the bootstrap estimate of the bias of an estimator \\(\\hat\\theta\\).",
+      "expression": "\\hat\\theta,\\quad \\bar{\\hat\\theta}^{*}=\\frac{1}{B}\\sum_{b=1}^{B}\\hat\\theta^{*(b)}",
+      "answer": "\\widehat{\\operatorname{Bias}}_{\\mathrm{boot}}(\\hat\\theta)=\\bar{\\hat\\theta}^{*}-\\hat\\theta",
+      "solutionSteps": [
+        "Compare the center of the bootstrap distribution with the statistic from the original sample.",
+        "The difference estimates the estimator's bias."
+      ],
+      "hints": [
+        "Bootstrap bias is bootstrap mean minus original estimate."
+      ],
+      "sourceNumber": 256
+    },
+    {
+      "id": "stat-057",
+      "category": "statistics",
+      "topic": "bootstrap-validity",
+      "difficulty": "intermediate",
+      "question": "Why can the ordinary nonparametric bootstrap perform poorly for very small samples or highly irregular estimators?",
+      "expression": "\\text{Small }n\\text{ or nonsmooth statistic}",
+      "answer": "\\text{The empirical distribution may poorly approximate the population, and the estimator's sampling behavior may not be well reproduced}",
+      "solutionSteps": [
+        "The bootstrap relies on the observed sample representing the population adequately.",
+        "Nonsmooth statistics or boundary parameters may violate regularity conditions."
+      ],
+      "hints": [
+        "Bootstrap accuracy depends on both sample size and estimator behavior."
+      ],
+      "sourceNumber": 257
+    },
+    {
+      "id": "stat-058",
+      "category": "statistics",
+      "topic": "permutation-tests",
+      "difficulty": "medium",
+      "question": "Describe the null hypothesis represented by a two-group permutation test that randomly reassigns group labels.",
+      "expression": "\\text{Observed outcomes and two group labels}",
+      "answer": "\\text{Under }H_0,\\text{ the outcomes are exchangeable across groups and the group labels carry no systematic effect}",
+      "solutionSteps": [
+        "Permutation tests generate a null distribution by relabeling observations.",
+        "This is justified when labels are interchangeable under the null."
+      ],
+      "hints": [
+        "Think of the null as no meaningful connection between labels and outcomes."
+      ],
+      "sourceNumber": 258
+    },
+    {
+      "id": "stat-059",
+      "category": "statistics",
+      "topic": "permutation-tests",
+      "difficulty": "medium",
+      "question": "Write the general permutation-test \\(p\\)-value using \\(B\\) permuted statistics and an observed statistic \\(T_{\\mathrm{obs}}\\).",
+      "expression": "T_{\\mathrm{obs}},\\quad T^{*(1)},\\ldots,T^{*(B)}",
+      "answer": "p\\approx\\frac{1+\\sum_{b=1}^{B}I\\!\\left(|T^{*(b)}|\\ge|T_{\\mathrm{obs}}|\\right)}{B+1}",
+      "solutionSteps": [
+        "Count the permuted statistics at least as extreme as the observed statistic.",
+        "The plus-one adjustment prevents a zero estimated \\(p\\)-value."
+      ],
+      "hints": [
+        "For a two-sided test, compare absolute values."
+      ],
+      "sourceNumber": 259
+    },
+    {
+      "id": "stat-060",
+      "category": "statistics",
+      "topic": "jackknife",
+      "difficulty": "intermediate",
+      "question": "Describe the leave-one-out jackknife procedure for a statistic \\(\\hat\\theta\\).",
+      "expression": "\\text{Sample size }n",
+      "answer": "\\text{Recompute }\\hat\\theta\\text{ }n\\text{ times, each time omitting one observation}",
+      "solutionSteps": [
+        "Create \\(n\\) reduced samples.",
+        "Each reduced sample leaves out a different observation.",
+        "Use the variation among the resulting estimates to assess bias or standard error."
+      ],
+      "hints": [
+        "The jackknife removes one observation at a time rather than resampling with replacement."
+      ],
+      "sourceNumber": 260
+    },
+    {
+      "id": "stat-061",
+      "category": "statistics",
+      "topic": "simple-linear-regression",
+      "difficulty": "easy",
+      "question": "Write the simple linear regression model for response \\(Y_i\\) and predictor \\(X_i\\).",
+      "expression": "i=1,\\ldots,n",
+      "answer": "Y_i=\\beta_0+\\beta_1X_i+\\varepsilon_i",
+      "solutionSteps": [
+        "\\(\\beta_0\\) is the intercept.",
+        "\\(\\beta_1\\) is the expected change in the response for a one-unit increase in the predictor.",
+        "\\(\\varepsilon_i\\) represents unexplained variation."
+      ],
+      "hints": [
+        "A simple regression model has one predictor and one error term."
+      ],
+      "sourceNumber": 261
+    },
+    {
+      "id": "stat-062",
+      "category": "statistics",
+      "topic": "simple-linear-regression",
+      "difficulty": "easy",
+      "question": "Interpret the slope \\(\\beta_1\\) in a simple linear regression model.",
+      "expression": "E[Y\\mid X=x]=\\beta_0+\\beta_1x",
+      "answer": "\\beta_1\\text{ is the expected change in }Y\\text{ associated with a one-unit increase in }X",
+      "solutionSteps": [
+        "The slope describes the change in the conditional mean of the response.",
+        "Its units are response units per predictor unit."
+      ],
+      "hints": [
+        "Interpret the slope in the context of the variables and their units."
+      ],
+      "sourceNumber": 262
+    },
+    {
+      "id": "stat-063",
+      "category": "statistics",
+      "topic": "simple-linear-regression",
+      "difficulty": "easy",
+      "question": "Interpret the intercept \\(\\beta_0\\) in a simple linear regression model.",
+      "expression": "E[Y\\mid X=x]=\\beta_0+\\beta_1x",
+      "answer": "\\beta_0=E[Y\\mid X=0]",
+      "solutionSteps": [
+        "The intercept is the expected response when the predictor equals zero.",
+        "Its practical meaning depends on whether \\(X=0\\) is meaningful and within the observed range."
+      ],
+      "hints": [
+        "An intercept can be mathematically valid but contextually unhelpful."
+      ],
+      "sourceNumber": 263
+    },
+    {
+      "id": "stat-064",
+      "category": "statistics",
+      "topic": "least-squares",
+      "difficulty": "medium",
+      "question": "Write the least-squares objective minimized to estimate \\(\\beta_0\\) and \\(\\beta_1\\).",
+      "expression": "\\hat y_i=b_0+b_1x_i",
+      "answer": "\\operatorname{SSE}(b_0,b_1)=\\sum_{i=1}^{n}\\left[y_i-(b_0+b_1x_i)\\right]^2",
+      "solutionSteps": [
+        "Compute each residual as observed minus predicted.",
+        "Square the residuals and sum them.",
+        "Choose the coefficients that minimize this sum."
+      ],
+      "hints": [
+        "Least squares minimizes squared residuals."
+      ],
+      "sourceNumber": 264
+    },
+    {
+      "id": "stat-065",
+      "category": "statistics",
+      "topic": "least-squares",
+      "difficulty": "medium",
+      "question": "Write the least-squares slope estimator in simple linear regression.",
+      "expression": "\\bar x,\\quad \\bar y,\\quad (x_i,y_i)",
+      "answer": "b_1=\\frac{\\sum_{i=1}^{n}(x_i-\\bar x)(y_i-\\bar y)}{\\sum_{i=1}^{n}(x_i-\\bar x)^2}",
+      "solutionSteps": [
+        "The numerator measures how \\(X\\) and \\(Y\\) vary together.",
+        "The denominator measures variation in \\(X\\)."
+      ],
+      "hints": [
+        "The slope is a covariance-like quantity divided by predictor variability."
+      ],
+      "sourceNumber": 265
+    },
+    {
+      "id": "stat-066",
+      "category": "statistics",
+      "topic": "least-squares",
+      "difficulty": "medium",
+      "question": "Write the least-squares intercept estimator after the slope \\(b_1\\) has been obtained.",
+      "expression": "\\bar x,\\quad \\bar y,\\quad b_1",
+      "answer": "b_0=\\bar y-b_1\\bar x",
+      "solutionSteps": [
+        "The fitted least-squares line passes through \\((\\bar x,\\bar y)\\).",
+        "Rearrange \\(\\bar y=b_0+b_1\\bar x\\)."
+      ],
+      "hints": [
+        "Use the fact that the regression line passes through the sample means."
+      ],
+      "sourceNumber": 266
+    },
+    {
+      "id": "stat-067",
+      "category": "statistics",
+      "topic": "regression-inference",
+      "difficulty": "medium",
+      "question": "Write the test statistic for testing \\(H_0:\\beta_1=0\\) in simple linear regression.",
+      "expression": "b_1,\\quad \\operatorname{SE}(b_1)",
+      "answer": "t=\\frac{b_1-0}{\\operatorname{SE}(b_1)},\\quad df=n-2",
+      "solutionSteps": [
+        "Compare the estimated slope with the null value.",
+        "Scale the difference by the slope's standard error."
+      ],
+      "hints": [
+        "Simple regression uses \\(n-2\\) residual degrees of freedom."
+      ],
+      "sourceNumber": 267
+    },
+    {
+      "id": "stat-068",
+      "category": "statistics",
+      "topic": "regression-intervals",
+      "difficulty": "intermediate",
+      "question": "Distinguish a confidence interval for the mean response at \\(X=x_0\\) from a prediction interval for a new observation at \\(X=x_0\\).",
+      "expression": "X=x_0",
+      "answer": "\\text{A prediction interval is wider because it includes both uncertainty in the mean response and individual-level error variation}",
+      "solutionSteps": [
+        "Both intervals center on the fitted value at \\(x_0\\).",
+        "The confidence interval targets the average response.",
+        "The prediction interval targets one future observation and includes additional residual variability."
+      ],
+      "hints": [
+        "Predicting one person is less precise than estimating a group mean."
+      ],
+      "sourceNumber": 268
+    },
+    {
+      "id": "stat-069",
+      "category": "statistics",
+      "topic": "regression-diagnostics",
+      "difficulty": "medium",
+      "question": "What residual pattern would suggest that the linearity assumption is violated?",
+      "expression": "\\text{Residuals plotted against fitted values or }X",
+      "answer": "\\text{A systematic curved pattern}",
+      "solutionSteps": [
+        "Under linearity, residuals should fluctuate randomly around zero.",
+        "Curvature indicates that a straight line is missing structure."
+      ],
+      "hints": [
+        "Random scatter supports linearity; shape indicates misspecification."
+      ],
+      "sourceNumber": 269
+    },
+    {
+      "id": "stat-070",
+      "category": "statistics",
+      "topic": "regression-diagnostics",
+      "difficulty": "medium",
+      "question": "What residual pattern would suggest heteroskedasticity?",
+      "expression": "\\text{Residuals versus fitted values}",
+      "answer": "\\text{A changing vertical spread, such as a funnel shape}",
+      "solutionSteps": [
+        "Homoskedasticity means constant residual variance.",
+        "A widening or narrowing spread indicates nonconstant variance."
+      ],
+      "hints": [
+        "Look for changes in residual spread rather than changes in the mean pattern."
+      ],
+      "sourceNumber": 270
+    },
+    {
+      "id": "stat-071",
+      "category": "statistics",
+      "topic": "multiple-regression",
+      "difficulty": "easy",
+      "question": "Write a multiple linear regression model with predictors \\(X_{1i},\\ldots,X_{pi}\\).",
+      "expression": "i=1,\\ldots,n",
+      "answer": "Y_i=\\beta_0+\\beta_1X_{1i}+\\cdots+\\beta_pX_{pi}+\\varepsilon_i",
+      "solutionSteps": [
+        "The model contains one intercept and one coefficient for each predictor.",
+        "The error term captures unexplained variation."
+      ],
+      "hints": [
+        "Multiple regression extends simple regression by including several predictors."
+      ],
+      "sourceNumber": 271
+    },
+    {
+      "id": "stat-072",
+      "category": "statistics",
+      "topic": "multiple-regression",
+      "difficulty": "medium",
+      "question": "Interpret \\(\\beta_j\\) in a multiple regression model.",
+      "expression": "E[Y\\mid X_1,\\ldots,X_p]=\\beta_0+\\sum_{k=1}^{p}\\beta_kX_k",
+      "answer": "\\beta_j\\text{ is the expected change in }Y\\text{ for a one-unit increase in }X_j\\text{ while holding the other predictors constant}",
+      "solutionSteps": [
+        "Multiple-regression coefficients are conditional effects.",
+        "The interpretation compares observations that are equal on the other modeled predictors."
+      ],
+      "hints": [
+        "Include the phrase 'holding other predictors constant.'"
+      ],
+      "sourceNumber": 272
+    },
+    {
+      "id": "stat-073",
+      "category": "statistics",
+      "topic": "dummy-variables",
+      "difficulty": "medium",
+      "question": "A categorical predictor has four levels. How many indicator variables are usually included when the model contains an intercept?",
+      "expression": "K=4\\text{ category levels}",
+      "answer": "K-1=3\\text{ indicator variables}",
+      "solutionSteps": [
+        "Choose one category as the reference level.",
+        "Create one indicator for each remaining category."
+      ],
+      "hints": [
+        "Using all four indicators with an intercept creates perfect collinearity."
+      ],
+      "sourceNumber": 273
+    },
+    {
+      "id": "stat-074",
+      "category": "statistics",
+      "topic": "dummy-variables",
+      "difficulty": "medium",
+      "question": "Interpret the coefficient of an indicator variable \\(D\\) for a treatment group when the reference group has \\(D=0\\).",
+      "expression": "E[Y\\mid D]=\\beta_0+\\beta_1D",
+      "answer": "\\beta_1\\text{ is the expected mean difference between the treatment group and the reference group}",
+      "solutionSteps": [
+        "When \\(D=0\\), the expected response is \\(\\beta_0\\).",
+        "When \\(D=1\\), the expected response is \\(\\beta_0+\\beta_1\\).",
+        "The difference is \\(\\beta_1\\)."
+      ],
+      "hints": [
+        "Compare the fitted means for \\(D=1\\) and \\(D=0\\)."
+      ],
+      "sourceNumber": 274
+    },
+    {
+      "id": "stat-075",
+      "category": "statistics",
+      "topic": "interaction-effects",
+      "difficulty": "medium",
+      "question": "Write a regression model containing an interaction between predictors \\(X_1\\) and \\(X_2\\).",
+      "expression": "X_1,\\quad X_2",
+      "answer": "Y=\\beta_0+\\beta_1X_1+\\beta_2X_2+\\beta_3X_1X_2+\\varepsilon",
+      "solutionSteps": [
+        "Include both main effects.",
+        "Add the product term \\(X_1X_2\\) to allow the effect of one predictor to depend on the other."
+      ],
+      "hints": [
+        "An interaction is represented by a product term."
+      ],
+      "sourceNumber": 275
+    },
+    {
+      "id": "stat-076",
+      "category": "statistics",
+      "topic": "interaction-effects",
+      "difficulty": "intermediate",
+      "question": "In the model \\(Y=\\beta_0+\\beta_1X_1+\\beta_2X_2+\\beta_3X_1X_2+\\varepsilon\\), write the marginal effect of \\(X_1\\) on the expected response.",
+      "expression": "E[Y\\mid X_1,X_2]=\\beta_0+\\beta_1X_1+\\beta_2X_2+\\beta_3X_1X_2",
+      "answer": "\\frac{\\partial E[Y\\mid X_1,X_2]}{\\partial X_1}=\\beta_1+\\beta_3X_2",
+      "solutionSteps": [
+        "Differentiate the conditional mean with respect to \\(X_1\\).",
+        "The interaction makes the effect depend on \\(X_2\\)."
+      ],
+      "hints": [
+        "With an interaction, a main-effect coefficient is not the effect at every value of the other predictor."
+      ],
+      "sourceNumber": 276
+    },
+    {
+      "id": "stat-077",
+      "category": "statistics",
+      "topic": "confounding",
+      "difficulty": "medium",
+      "question": "How can adding a confounder \\(Z\\) to a regression model change the estimated coefficient of \\(X\\)?",
+      "expression": "Y=\\beta_0+\\beta_1X+\\beta_2Z+\\varepsilon",
+      "answer": "\\text{Adjustment can change }\\hat\\beta_1\\text{ because it compares observations with similar values of }Z",
+      "solutionSteps": [
+        "A confounder is associated with both the predictor and outcome.",
+        "Failing to adjust can mix the effect of \\(X\\) with differences in \\(Z\\)."
+      ],
+      "hints": [
+        "Regression adjustment changes the comparison being made."
+      ],
+      "sourceNumber": 277
+    },
+    {
+      "id": "stat-078",
+      "category": "statistics",
+      "topic": "multicollinearity",
+      "difficulty": "medium",
+      "question": "What is multicollinearity in a multiple regression model?",
+      "expression": "X_1,\\ldots,X_p",
+      "answer": "\\text{Strong linear relationships among predictors that make individual coefficient estimates unstable or imprecise}",
+      "solutionSteps": [
+        "Highly related predictors contain overlapping information.",
+        "This can inflate coefficient standard errors without necessarily harming overall prediction."
+      ],
+      "hints": [
+        "Multicollinearity is a predictor-to-predictor issue."
+      ],
+      "sourceNumber": 278
+    },
+    {
+      "id": "stat-079",
+      "category": "statistics",
+      "topic": "multicollinearity",
+      "difficulty": "intermediate",
+      "question": "Write the variance inflation factor for predictor \\(X_j\\).",
+      "expression": "R_j^2=\\text{the }R^2\\text{ from regressing }X_j\\text{ on the other predictors}",
+      "answer": "\\operatorname{VIF}_j=\\frac{1}{1-R_j^2}",
+      "solutionSteps": [
+        "Regress the predictor of interest on the remaining predictors.",
+        "Use the resulting \\(R_j^2\\) to measure how much its coefficient variance is inflated."
+      ],
+      "hints": [
+        "A VIF near 1 indicates little linear dependence on the other predictors."
+      ],
+      "sourceNumber": 279
+    },
+    {
+      "id": "stat-080",
+      "category": "statistics",
+      "topic": "adjusted-r-squared",
+      "difficulty": "medium",
+      "question": "Why is adjusted \\(R^2\\) often preferred to ordinary \\(R^2\\) when comparing models with different numbers of predictors?",
+      "expression": "R^2,\\quad p=\\text{number of predictors}",
+      "answer": "\\text{Adjusted }R^2\\text{ penalizes model complexity, whereas ordinary }R^2\\text{ never decreases when predictors are added}",
+      "solutionSteps": [
+        "Ordinary \\(R^2\\) rewards even weak predictors.",
+        "Adjusted \\(R^2\\) balances fit with the number of predictors."
+      ],
+      "hints": [
+        "Model comparison should consider both fit and complexity."
+      ],
+      "sourceNumber": 280
+    },
+    {
+      "id": "stat-081",
+      "category": "statistics",
+      "topic": "partial-f-test",
+      "difficulty": "intermediate",
+      "question": "Write the partial \\(F\\)-test statistic for comparing a reduced model with a full nested model.",
+      "expression": "\\operatorname{SSE}_R,\\quad \\operatorname{SSE}_F,\\quad df_R,\\quad df_F",
+      "answer": "F=\\frac{(\\operatorname{SSE}_R-\\operatorname{SSE}_F)/(df_R-df_F)}{\\operatorname{SSE}_F/df_F}",
+      "solutionSteps": [
+        "Measure the improvement in residual sum of squares from adding predictors.",
+        "Scale that improvement by the number of added parameters.",
+        "Compare it with the full model's residual mean square."
+      ],
+      "hints": [
+        "The models must be nested for this test."
+      ],
+      "sourceNumber": 281
+    },
+    {
+      "id": "stat-082",
+      "category": "statistics",
+      "topic": "regression-assumptions",
+      "difficulty": "medium",
+      "question": "List the main assumptions commonly used for classical multiple linear regression inference.",
+      "expression": "Y=X\\beta+\\varepsilon",
+      "answer": "\\text{Linearity, independent errors, constant variance, approximately normal errors for small-sample inference, and no perfect multicollinearity}",
+      "solutionSteps": [
+        "Linearity concerns the conditional mean.",
+        "Independence and constant variance concern the errors.",
+        "Normality supports exact small-sample tests and intervals."
+      ],
+      "hints": [
+        "Separate assumptions about the mean structure from assumptions about the errors."
+      ],
+      "sourceNumber": 282
+    },
+    {
+      "id": "stat-083",
+      "category": "statistics",
+      "topic": "omitted-variable-bias",
+      "difficulty": "intermediate",
+      "question": "When can omitting a variable \\(Z\\) bias the estimated coefficient of \\(X\\) in a regression of \\(Y\\) on \\(X\\)?",
+      "expression": "\\text{Potential omitted variable }Z",
+      "answer": "\\text{Bias can occur when }Z\\text{ affects }Y\\text{ and is associated with }X",
+      "solutionSteps": [
+        "An omitted variable must matter for the response.",
+        "It must also be related to an included predictor for its influence to be transferred to that predictor's coefficient."
+      ],
+      "hints": [
+        "Both outcome relevance and predictor association are required."
+      ],
+      "sourceNumber": 283
+    },
+    {
+      "id": "stat-084",
+      "category": "statistics",
+      "topic": "standardized-coefficients",
+      "difficulty": "medium",
+      "question": "How is a standardized regression coefficient interpreted?",
+      "expression": "X_j\\text{ and }Y\\text{ standardized to mean }0\\text{ and standard deviation }1",
+      "answer": "\\text{It is the expected change in }Y\\text{ standard deviations for a one-standard-deviation increase in }X_j\\text{, holding other predictors constant}",
+      "solutionSteps": [
+        "Standardization removes the original measurement units.",
+        "This can aid comparisons across predictors measured on different scales."
+      ],
+      "hints": [
+        "Standardized coefficients are expressed in standard-deviation units."
+      ],
+      "sourceNumber": 284
+    },
+    {
+      "id": "stat-085",
+      "category": "statistics",
+      "topic": "polynomial-regression",
+      "difficulty": "medium",
+      "question": "Write a quadratic regression model for a continuous predictor \\(X\\).",
+      "expression": "X",
+      "answer": "Y=\\beta_0+\\beta_1X+\\beta_2X^2+\\varepsilon",
+      "solutionSteps": [
+        "Include the linear term and the squared term.",
+        "The quadratic term allows curvature in the conditional mean."
+      ],
+      "hints": [
+        "A quadratic model is still linear in its coefficients."
+      ],
+      "sourceNumber": 285
+    },
+    {
+      "id": "stat-086",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "easy",
+      "question": "Write the logistic regression model for a binary response \\(Y\\) and predictor \\(X\\).",
+      "expression": "p(X)=P(Y=1\\mid X)",
+      "answer": "\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X",
+      "solutionSteps": [
+        "Model the log-odds rather than the probability directly.",
+        "The linear predictor can take any real value while the implied probability remains between 0 and 1."
+      ],
+      "hints": [
+        "The link function is the logit."
+      ],
+      "sourceNumber": 286
+    },
+    {
+      "id": "stat-087",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "easy",
+      "question": "Solve the logistic regression model for the predicted probability \\(p(X)\\).",
+      "expression": "\\eta=\\beta_0+\\beta_1X",
+      "answer": "p(X)=\\frac{e^\\eta}{1+e^\\eta}=\\frac{1}{1+e^{-\\eta}}",
+      "solutionSteps": [
+        "Begin with the log-odds equation.",
+        "Exponentiate to obtain the odds.",
+        "Convert odds to probability."
+      ],
+      "hints": [
+        "The inverse-logit maps the real line to \\((0,1)\\)."
+      ],
+      "sourceNumber": 287
+    },
+    {
+      "id": "stat-088",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "medium",
+      "question": "Interpret the coefficient \\(\\beta_1\\) in a logistic regression model.",
+      "expression": "\\log\\left(\\frac{p}{1-p}\\right)=\\beta_0+\\beta_1X",
+      "answer": "\\text{A one-unit increase in }X\\text{ changes the log-odds by }\\beta_1\\text{ and multiplies the odds by }e^{\\beta_1}",
+      "solutionSteps": [
+        "Logistic coefficients are naturally expressed on the log-odds scale.",
+        "Exponentiating converts the effect to an odds ratio."
+      ],
+      "hints": [
+        "Use \\(e^{\\beta_1}\\) for the multiplicative effect on odds."
+      ],
+      "sourceNumber": 288
+    },
+    {
+      "id": "stat-089",
+      "category": "statistics",
+      "topic": "odds-ratios",
+      "difficulty": "medium",
+      "question": "Write the odds ratio associated with a \\(c\\)-unit increase in a logistic-regression predictor \\(X\\).",
+      "expression": "\\text{Coefficient }\\beta_1,\\quad \\Delta X=c",
+      "answer": "\\operatorname{OR}=e^{c\\beta_1}",
+      "solutionSteps": [
+        "A one-unit increase multiplies the odds by \\(e^{\\beta_1}\\).",
+        "A \\(c\\)-unit increase multiplies the log-odds change by \\(c\\)."
+      ],
+      "hints": [
+        "Scale the coefficient before exponentiating."
+      ],
+      "sourceNumber": 289
+    },
+    {
+      "id": "stat-090",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "medium",
+      "question": "Why does a constant logistic-regression coefficient not imply a constant change in probability?",
+      "expression": "p(X)=\\frac{1}{1+e^{-(\\beta_0+\\beta_1X)}}",
+      "answer": "\\text{The probability scale is nonlinear, so the same log-odds change produces different probability changes at different baseline probabilities}",
+      "solutionSteps": [
+        "The logistic curve is steepest near probability \\(0.5\\).",
+        "It flattens near probabilities 0 and 1."
+      ],
+      "hints": [
+        "Distinguish effects on log-odds from effects on probability."
+      ],
+      "sourceNumber": 290
+    },
+    {
+      "id": "stat-091",
+      "category": "statistics",
+      "topic": "logistic-regression",
+      "difficulty": "medium",
+      "question": "Write a multiple logistic regression model with predictors \\(X_1,\\ldots,X_p\\).",
+      "expression": "p_i=P(Y_i=1\\mid X_{i1},\\ldots,X_{ip})",
+      "answer": "\\log\\left(\\frac{p_i}{1-p_i}\\right)=\\beta_0+\\beta_1X_{i1}+\\cdots+\\beta_pX_{ip}",
+      "solutionSteps": [
+        "Use a linear predictor containing all predictors.",
+        "Apply the logit link to the conditional probability."
+      ],
+      "hints": [
+        "Interpret each coefficient while holding the other predictors constant."
+      ],
+      "sourceNumber": 291
+    },
+    {
+      "id": "stat-092",
+      "category": "statistics",
+      "topic": "logistic-regression-inference",
+      "difficulty": "intermediate",
+      "question": "Write the Wald test statistic for testing \\(H_0:\\beta_j=0\\) in logistic regression.",
+      "expression": "\\hat\\beta_j,\\quad \\operatorname{SE}(\\hat\\beta_j)",
+      "answer": "z=\\frac{\\hat\\beta_j}{\\operatorname{SE}(\\hat\\beta_j)}",
+      "solutionSteps": [
+        "Compare the estimated coefficient with the null value zero.",
+        "Scale by its estimated standard error."
+      ],
+      "hints": [
+        "Large absolute Wald statistics provide evidence against the null."
+      ],
+      "sourceNumber": 292
+    },
+    {
+      "id": "stat-093",
+      "category": "statistics",
+      "topic": "logistic-model-fit",
+      "difficulty": "intermediate",
+      "question": "What does a likelihood-ratio test compare in logistic regression?",
+      "expression": "\\ell_R=\\text{reduced-model log-likelihood},\\quad \\ell_F=\\text{full-model log-likelihood}",
+      "answer": "\\text{It tests whether the additional predictors in the full nested model improve fit, using }2(\\ell_F-\\ell_R)",
+      "solutionSteps": [
+        "Fit a reduced and a full nested model.",
+        "Compare their maximized log-likelihoods.",
+        "The statistic is approximately chi-square under standard conditions."
+      ],
+      "hints": [
+        "The likelihood-ratio test is based on improvement in likelihood."
+      ],
+      "sourceNumber": 293
+    },
+    {
+      "id": "stat-094",
+      "category": "statistics",
+      "topic": "classification",
+      "difficulty": "medium",
+      "question": "Define sensitivity and specificity for a binary classifier.",
+      "expression": "\\text{Positive class and negative class}",
+      "answer": "\\operatorname{Sensitivity}=P(\\widehat Y=1\\mid Y=1),\\quad \\operatorname{Specificity}=P(\\widehat Y=0\\mid Y=0)",
+      "solutionSteps": [
+        "Sensitivity measures the true-positive rate.",
+        "Specificity measures the true-negative rate."
+      ],
+      "hints": [
+        "Condition on the true class."
+      ],
+      "sourceNumber": 294
+    },
+    {
+      "id": "stat-095",
+      "category": "statistics",
+      "topic": "roc-curves",
+      "difficulty": "intermediate",
+      "question": "What does the area under the ROC curve measure?",
+      "expression": "\\operatorname{AUC}\\in[0,1]",
+      "answer": "\\text{The model's ability to rank a randomly chosen positive case above a randomly chosen negative case}",
+      "solutionSteps": [
+        "The ROC curve summarizes sensitivity and false-positive rate over thresholds.",
+        "AUC measures discrimination rather than calibration."
+      ],
+      "hints": [
+        "AUC concerns ranking, not whether predicted probabilities are numerically accurate."
+      ],
+      "sourceNumber": 295
+    },
+    {
+      "id": "stat-096",
+      "category": "statistics",
+      "topic": "one-way-anova",
+      "difficulty": "easy",
+      "question": "State the null and alternative hypotheses for a one-way ANOVA comparing \\(k\\) population means.",
+      "expression": "\\mu_1,\\ldots,\\mu_k",
+      "answer": "H_0:\\mu_1=\\cdots=\\mu_k,\\quad H_A:\\text{not all population means are equal}",
+      "solutionSteps": [
+        "The null asserts equality across all groups.",
+        "The alternative does not require every pair of means to differ."
+      ],
+      "hints": [
+        "ANOVA tests a global mean-equality hypothesis."
+      ],
+      "sourceNumber": 296
+    },
+    {
+      "id": "stat-097",
+      "category": "statistics",
+      "topic": "one-way-anova",
+      "difficulty": "easy",
+      "question": "Write the one-way ANOVA \\(F\\)-statistic.",
+      "expression": "\\operatorname{MS}_{\\mathrm{between}},\\quad \\operatorname{MS}_{\\mathrm{within}}",
+      "answer": "F=\\frac{\\operatorname{MS}_{\\mathrm{between}}}{\\operatorname{MS}_{\\mathrm{within}}}",
+      "solutionSteps": [
+        "The numerator measures variation among group means.",
+        "The denominator measures variation within groups."
+      ],
+      "hints": [
+        "Large values indicate between-group variation is large relative to within-group variation."
+      ],
+      "sourceNumber": 297
+    },
+    {
+      "id": "stat-098",
+      "category": "statistics",
+      "topic": "one-way-anova",
+      "difficulty": "medium",
+      "question": "Write the decomposition of total variability in a one-way ANOVA.",
+      "expression": "\\operatorname{SS}_{\\mathrm{total}},\\quad \\operatorname{SS}_{\\mathrm{between}},\\quad \\operatorname{SS}_{\\mathrm{within}}",
+      "answer": "\\operatorname{SS}_{\\mathrm{total}}=\\operatorname{SS}_{\\mathrm{between}}+\\operatorname{SS}_{\\mathrm{within}}",
+      "solutionSteps": [
+        "Total variation around the grand mean can be separated into between-group and within-group components."
+      ],
+      "hints": [
+        "ANOVA partitions sums of squares."
+      ],
+      "sourceNumber": 298
+    },
+    {
+      "id": "stat-099",
+      "category": "statistics",
+      "topic": "one-way-anova",
+      "difficulty": "medium",
+      "question": "Write the degrees of freedom for the between-group and within-group components in a one-way ANOVA with \\(k\\) groups and \\(N\\) observations.",
+      "expression": "k=\\text{number of groups},\\quad N=\\text{total sample size}",
+      "answer": "df_{\\mathrm{between}}=k-1,\\quad df_{\\mathrm{within}}=N-k",
+      "solutionSteps": [
+        "Estimating \\(k\\) group means leaves \\(N-k\\) residual degrees of freedom.",
+        "The group effect has \\(k-1\\) independent contrasts."
+      ],
+      "hints": [
+        "The two degrees of freedom add to \\(N-1\\)."
+      ],
+      "sourceNumber": 299
+    },
+    {
+      "id": "stat-100",
+      "category": "statistics",
+      "topic": "anova-assumptions",
+      "difficulty": "medium",
+      "question": "List the usual assumptions for classical one-way ANOVA.",
+      "expression": "Y_{ij}=\\mu_i+\\varepsilon_{ij}",
+      "answer": "\\text{Independent observations, approximately normal errors within groups, and equal population variances}",
+      "solutionSteps": [
+        "Independence comes from the study design.",
+        "Normality and equal variance concern the within-group errors."
+      ],
+      "hints": [
+        "ANOVA assumptions concern errors, not necessarily the raw response alone."
+      ],
+      "sourceNumber": 300
+    },
+    {
+      "id": "stat-101",
+      "category": "statistics",
+      "topic": "anova-robustness",
+      "difficulty": "intermediate",
+      "question": "When is classical one-way ANOVA relatively robust to moderate nonnormality?",
+      "expression": "\\text{Moderate departures from normality}",
+      "answer": "\\text{When group sample sizes are reasonably large and the design is not severely unbalanced or dominated by extreme outliers}",
+      "solutionSteps": [
+        "The central limit theorem helps stabilize group-mean behavior.",
+        "Severe skewness, outliers, or unequal variances combined with unequal group sizes can still be problematic."
+      ],
+      "hints": [
+        "Robustness improves with larger, balanced groups."
+      ],
+      "sourceNumber": 301
+    },
+    {
+      "id": "stat-102",
+      "category": "statistics",
+      "topic": "post-hoc-comparisons",
+      "difficulty": "medium",
+      "question": "Why are post-hoc multiple-comparison procedures used after a significant omnibus ANOVA?",
+      "expression": "\\text{Significant global }F\\text{-test}",
+      "answer": "\\text{To identify which group means differ while controlling the familywise error rate}",
+      "solutionSteps": [
+        "The omnibus test only indicates that not all means are equal.",
+        "Multiple-comparison procedures address pairwise or planned contrasts with adjusted error control."
+      ],
+      "hints": [
+        "A significant ANOVA does not identify the differing groups by itself."
+      ],
+      "sourceNumber": 302
+    },
+    {
+      "id": "stat-103",
+      "category": "statistics",
+      "topic": "tukey-hsd",
+      "difficulty": "intermediate",
+      "question": "What family of comparisons is Tukey's honestly significant difference procedure designed to control?",
+      "expression": "k\\text{ group means}",
+      "answer": "\\text{All pairwise comparisons among the group means with familywise error-rate control}",
+      "solutionSteps": [
+        "Tukey's method is tailored to pairwise mean differences.",
+        "It adjusts for the fact that many comparisons are made."
+      ],
+      "hints": [
+        "Tukey HSD is not primarily a method for arbitrary contrasts."
+      ],
+      "sourceNumber": 303
+    },
+    {
+      "id": "stat-104",
+      "category": "statistics",
+      "topic": "effect-size",
+      "difficulty": "medium",
+      "question": "Write the ANOVA effect-size measure \\(\\eta^2\\).",
+      "expression": "\\operatorname{SS}_{\\mathrm{between}},\\quad \\operatorname{SS}_{\\mathrm{total}}",
+      "answer": "\\eta^2=\\frac{\\operatorname{SS}_{\\mathrm{between}}}{\\operatorname{SS}_{\\mathrm{total}}}",
+      "solutionSteps": [
+        "The numerator represents variation explained by group membership.",
+        "The denominator represents total variation."
+      ],
+      "hints": [
+        "\\(\\eta^2\\) is a proportion of total variance explained."
+      ],
+      "sourceNumber": 304
+    },
+    {
+      "id": "stat-105",
+      "category": "statistics",
+      "topic": "two-way-anova",
+      "difficulty": "medium",
+      "question": "Name the three effects examined in a two-way ANOVA with factors \\(A\\) and \\(B\\).",
+      "expression": "A,\\quad B",
+      "answer": "\\text{The main effect of }A,\\text{ the main effect of }B,\\text{ and the }A\\times B\\text{ interaction}",
+      "solutionSteps": [
+        "Each factor has a marginal or main effect.",
+        "The interaction tests whether the effect of one factor depends on the level of the other."
+      ],
+      "hints": [
+        "Two factors imply two main effects plus one interaction."
+      ],
+      "sourceNumber": 305
+    },
+    {
+      "id": "stat-106",
+      "category": "statistics",
+      "topic": "two-way-anova",
+      "difficulty": "medium",
+      "question": "Write a two-way ANOVA model with an interaction.",
+      "expression": "A_i,\\quad B_j",
+      "answer": "Y_{ijk}=\\mu+\\alpha_i+\\beta_j+(\\alpha\\beta)_{ij}+\\varepsilon_{ijk}",
+      "solutionSteps": [
+        "\\(\\mu\\) is the grand mean.",
+        "\\(\\alpha_i\\) and \\(\\beta_j\\) are factor main effects.",
+        "\\((\\alpha\\beta)_{ij}\\) is the interaction."
+      ],
+      "hints": [
+        "Include both main effects before the interaction."
+      ],
+      "sourceNumber": 306
+    },
+    {
+      "id": "stat-107",
+      "category": "statistics",
+      "topic": "anova-interactions",
+      "difficulty": "intermediate",
+      "question": "How should a strong interaction affect interpretation of main effects in a factorial ANOVA?",
+      "expression": "\\text{Large }A\\times B\\text{ interaction}",
+      "answer": "\\text{Main effects should be interpreted cautiously because the effect of one factor changes across levels of the other}",
+      "solutionSteps": [
+        "A main effect averages over the other factor.",
+        "When effects differ greatly across levels, that average can conceal important patterns."
+      ],
+      "hints": [
+        "Examine simple effects or cell means when an interaction is present."
+      ],
+      "sourceNumber": 307
+    },
+    {
+      "id": "stat-108",
+      "category": "statistics",
+      "topic": "ancova",
+      "difficulty": "medium",
+      "question": "Write a basic ANCOVA model with one categorical treatment indicator \\(D\\) and one continuous covariate \\(X\\).",
+      "expression": "D\\in\\{0,1\\},\\quad X\\text{ continuous}",
+      "answer": "Y=\\beta_0+\\beta_1D+\\beta_2X+\\varepsilon",
+      "solutionSteps": [
+        "ANCOVA combines categorical group comparisons with regression adjustment for a continuous covariate.",
+        "The treatment coefficient compares adjusted group means."
+      ],
+      "hints": [
+        "ANCOVA can be written as a linear regression model."
+      ],
+      "sourceNumber": 308
+    },
+    {
+      "id": "stat-109",
+      "category": "statistics",
+      "topic": "ancova",
+      "difficulty": "intermediate",
+      "question": "What assumption is tested by adding a treatment-by-covariate interaction in ANCOVA?",
+      "expression": "Y=\\beta_0+\\beta_1D+\\beta_2X+\\beta_3DX+\\varepsilon",
+      "answer": "\\text{The homogeneity-of-regression-slopes assumption}",
+      "solutionSteps": [
+        "Without the interaction, both groups share the same covariate slope.",
+        "A nonzero interaction indicates that the covariate-response relationship differs by group."
+      ],
+      "hints": [
+        "Parallel slopes correspond to no treatment-by-covariate interaction."
+      ],
+      "sourceNumber": 309
+    },
+    {
+      "id": "stat-110",
+      "category": "statistics",
+      "topic": "welch-anova",
+      "difficulty": "intermediate",
+      "question": "When is Welch's ANOVA generally preferred to the classical one-way ANOVA?",
+      "expression": "\\text{Multiple independent groups}",
+      "answer": "\\text{When group variances are unequal, especially when group sample sizes are also unequal}",
+      "solutionSteps": [
+        "Classical ANOVA pools within-group variance under homogeneity.",
+        "Welch's method adjusts for heteroskedasticity."
+      ],
+      "hints": [
+        "Unequal variances plus unequal group sizes are a key warning sign."
+      ],
+      "sourceNumber": 310
+    },
+    {
+      "id": "stat-111",
+      "category": "statistics",
+      "topic": "mediation",
+      "difficulty": "easy",
+      "question": "In a simple mediation model, identify the roles of \\(X\\), \\(M\\), and \\(Y\\).",
+      "expression": "X\\rightarrow M\\rightarrow Y",
+      "answer": "X\\text{ is the predictor, }M\\text{ is the mediator, and }Y\\text{ is the outcome}",
+      "solutionSteps": [
+        "The mediator represents a proposed pathway through which \\(X\\) relates to \\(Y\\)."
+      ],
+      "hints": [
+        "The mediator lies conceptually between the predictor and outcome."
+      ],
+      "sourceNumber": 311
+    },
+    {
+      "id": "stat-112",
+      "category": "statistics",
+      "topic": "mediation",
+      "difficulty": "medium",
+      "question": "Write the two regression equations commonly used in a simple linear mediation analysis.",
+      "expression": "X=\\text{predictor},\\quad M=\\text{mediator},\\quad Y=\\text{outcome}",
+      "answer": "M=i_M+aX+\\varepsilon_M,\\quad Y=i_Y+c'X+bM+\\varepsilon_Y",
+      "solutionSteps": [
+        "The first equation estimates path \\(a\\) from \\(X\\) to \\(M\\).",
+        "The second estimates path \\(b\\) from \\(M\\) to \\(Y\\) while controlling for \\(X\\), along with direct effect \\(c'\\)."
+      ],
+      "hints": [
+        "One equation predicts the mediator; the other predicts the outcome."
+      ],
+      "sourceNumber": 312
+    },
+    {
+      "id": "stat-113",
+      "category": "statistics",
+      "topic": "mediation",
+      "difficulty": "medium",
+      "question": "Write the indirect effect in a simple linear mediation model.",
+      "expression": "a=\\text{effect of }X\\text{ on }M,\\quad b=\\text{effect of }M\\text{ on }Y\\text{ controlling for }X",
+      "answer": "\\text{Indirect effect}=ab",
+      "solutionSteps": [
+        "The mediated pathway combines the \\(X\\to M\\) and \\(M\\to Y\\) paths.",
+        "Under a linear model, the product of coefficients represents the indirect effect."
+      ],
+      "hints": [
+        "Multiply the two mediation-path coefficients."
+      ],
+      "sourceNumber": 313
+    },
+    {
+      "id": "stat-114",
+      "category": "statistics",
+      "topic": "mediation",
+      "difficulty": "medium",
+      "question": "Write the relationship among the total effect \\(c\\), direct effect \\(c'\\), and indirect effect \\(ab\\) in a simple linear mediation model.",
+      "expression": "c,\\quad c',\\quad a,\\quad b",
+      "answer": "c=c'+ab",
+      "solutionSteps": [
+        "The total effect can be decomposed into direct and indirect components under the standard linear mediation setup."
+      ],
+      "hints": [
+        "Total equals direct plus indirect."
+      ],
+      "sourceNumber": 314
+    },
+    {
+      "id": "stat-115",
+      "category": "statistics",
+      "topic": "mediation-inference",
+      "difficulty": "intermediate",
+      "question": "Why is a bootstrap confidence interval often used for the mediation indirect effect \\(ab\\)?",
+      "expression": "\\text{Indirect effect}=ab",
+      "answer": "\\text{The sampling distribution of a product of coefficients is often asymmetric and poorly approximated by a normal distribution}",
+      "solutionSteps": [
+        "The indirect effect is a product rather than a single regression coefficient.",
+        "Bootstrap resampling can approximate its sampling distribution without imposing symmetry."
+      ],
+      "hints": [
+        "The product \\(ab\\) is not generally normally distributed."
+      ],
+      "sourceNumber": 315
+    },
+    {
+      "id": "stat-116",
+      "category": "statistics",
+      "topic": "mediation-causality",
+      "difficulty": "intermediate",
+      "question": "Why does a statistically significant indirect effect not automatically prove causal mediation?",
+      "expression": "X\\rightarrow M\\rightarrow Y",
+      "answer": "\\text{Causal mediation requires additional assumptions about temporal order, confounding, measurement, and model specification}",
+      "solutionSteps": [
+        "Association among the variables is not enough to establish a causal pathway.",
+        "Unmeasured confounders can affect the mediator-outcome or predictor-mediator relationships."
+      ],
+      "hints": [
+        "Statistical mediation and causal mediation are not identical."
+      ],
+      "sourceNumber": 316
+    },
+    {
+      "id": "stat-117",
+      "category": "statistics",
+      "topic": "moderation",
+      "difficulty": "easy",
+      "question": "What is moderation in regression analysis?",
+      "expression": "X=\\text{predictor},\\quad W=\\text{moderator}",
+      "answer": "\\text{Moderation occurs when the effect of }X\\text{ on }Y\\text{ depends on the value of }W",
+      "solutionSteps": [
+        "A moderator changes the strength or direction of an association.",
+        "It is usually represented by an interaction term."
+      ],
+      "hints": [
+        "Moderation asks 'when' or 'for whom' an effect differs."
+      ],
+      "sourceNumber": 317
+    },
+    {
+      "id": "stat-118",
+      "category": "statistics",
+      "topic": "moderation",
+      "difficulty": "medium",
+      "question": "Write a regression model for moderation by a continuous variable \\(W\\).",
+      "expression": "X,\\quad W",
+      "answer": "Y=\\beta_0+\\beta_1X+\\beta_2W+\\beta_3XW+\\varepsilon",
+      "solutionSteps": [
+        "Include both main effects.",
+        "Add the interaction \\(XW\\) to allow the slope of \\(X\\) to vary with \\(W\\)."
+      ],
+      "hints": [
+        "The interaction coefficient tests moderation."
+      ],
+      "sourceNumber": 318
+    },
+    {
+      "id": "stat-119",
+      "category": "statistics",
+      "topic": "moderation",
+      "difficulty": "intermediate",
+      "question": "In the moderation model \\(Y=\\beta_0+\\beta_1X+\\beta_2W+\\beta_3XW+\\varepsilon\\), write the conditional effect of \\(X\\) at \\(W=w\\).",
+      "expression": "W=w",
+      "answer": "\\frac{\\partial E[Y\\mid X,W]}{\\partial X}=\\beta_1+\\beta_3w",
+      "solutionSteps": [
+        "Differentiate the conditional mean with respect to \\(X\\).",
+        "Substitute the moderator value \\(w\\)."
+      ],
+      "hints": [
+        "A simple slope is evaluated at a particular moderator value."
+      ],
+      "sourceNumber": 319
+    },
+    {
+      "id": "stat-120",
+      "category": "statistics",
+      "topic": "moderated-mediation",
+      "difficulty": "intermediate",
+      "question": "What does moderated mediation mean conceptually?",
+      "expression": "X\\rightarrow M\\rightarrow Y,\\quad W=\\text{moderator}",
+      "answer": "\\text{The size of the indirect effect of }X\\text{ on }Y\\text{ through }M\\text{ varies across values of }W",
+      "solutionSteps": [
+        "An indirect pathway contains at least two component paths.",
+        "Moderation of one or more component paths can make the indirect effect conditional."
+      ],
+      "hints": [
+        "The mediated effect is not constant across all cases."
+      ],
+      "sourceNumber": 320
+    },
+    {
+      "id": "stat-121",
+      "category": "statistics",
+      "topic": "experimental-design",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of random assignment in an experiment?",
+      "expression": "\\text{Treatment groups}",
+      "answer": "\\text{To make treatment groups comparable on average and reduce confounding, supporting causal inference}",
+      "solutionSteps": [
+        "Random assignment balances observed and unobserved characteristics probabilistically.",
+        "It separates treatment assignment from participant characteristics."
+      ],
+      "hints": [
+        "Random assignment supports causation; random sampling supports generalization."
+      ],
+      "sourceNumber": 321
+    },
+    {
+      "id": "stat-122",
+      "category": "statistics",
+      "topic": "blocking",
+      "difficulty": "medium",
+      "question": "What is blocking in an experimental design?",
+      "expression": "\\text{Known source of variability }B",
+      "answer": "\\text{Grouping similar experimental units by }B\\text{ and randomizing treatments within each block}",
+      "solutionSteps": [
+        "Blocking controls a known nuisance source of variation.",
+        "Within-block comparisons can improve precision."
+      ],
+      "hints": [
+        "Blocks are formed before treatment assignment."
+      ],
+      "sourceNumber": 322
+    },
+    {
+      "id": "stat-123",
+      "category": "statistics",
+      "topic": "factorial-designs",
+      "difficulty": "medium",
+      "question": "What is a \\(2\\times3\\) factorial design?",
+      "expression": "\\text{Factor }A\\text{ has 2 levels; factor }B\\text{ has 3 levels}",
+      "answer": "\\text{A design containing all }2\\cdot3=6\\text{ combinations of the two factors}",
+      "solutionSteps": [
+        "A factorial design crosses the levels of its factors.",
+        "This allows estimation of main effects and interactions."
+      ],
+      "hints": [
+        "Multiply the numbers of factor levels to count treatment combinations."
+      ],
+      "sourceNumber": 323
+    },
+    {
+      "id": "stat-124",
+      "category": "statistics",
+      "topic": "repeated-measures",
+      "difficulty": "easy",
+      "question": "Why are observations from the same participant in a repeated-measures study not independent?",
+      "expression": "Y_{i1},Y_{i2},\\ldots\\text{ measured on participant }i",
+      "answer": "\\text{Measurements from the same participant share person-specific characteristics and are typically correlated}",
+      "solutionSteps": [
+        "Repeated observations share the same experimental unit.",
+        "Standard independent-observation methods ignore this within-person correlation."
+      ],
+      "hints": [
+        "Measurements within a person tend to be more alike than measurements across people."
+      ],
+      "sourceNumber": 324
+    },
+    {
+      "id": "stat-125",
+      "category": "statistics",
+      "topic": "paired-tests",
+      "difficulty": "medium",
+      "question": "Write the paired-samples \\(t\\)-test statistic in terms of difference scores \\(d_i\\).",
+      "expression": "\\bar d,\\quad s_d,\\quad n,\\quad H_0:\\mu_d=0",
+      "answer": "t=\\frac{\\bar d}{s_d/\\sqrt n},\\quad df=n-1",
+      "solutionSteps": [
+        "Convert each pair into one difference score.",
+        "Perform a one-sample \\(t\\)-test on those differences."
+      ],
+      "hints": [
+        "The sample size is the number of pairs."
+      ],
+      "sourceNumber": 325
+    },
+    {
+      "id": "stat-126",
+      "category": "statistics",
+      "topic": "mixed-effects-models",
+      "difficulty": "medium",
+      "question": "Write a random-intercept model for repeated observations \\(j\\) nested within subject \\(i\\).",
+      "expression": "Y_{ij},\\quad X_{ij}",
+      "answer": "Y_{ij}=\\beta_0+\\beta_1X_{ij}+u_i+\\varepsilon_{ij}",
+      "solutionSteps": [
+        "\\(\\beta_0+\\beta_1X_{ij}\\) is the fixed-effects component.",
+        "\\(u_i\\) allows each subject to have a subject-specific intercept.",
+        "\\(\\varepsilon_{ij}\\) is the observation-level error."
+      ],
+      "hints": [
+        "The random intercept captures stable between-subject differences."
+      ],
+      "sourceNumber": 326
+    },
+    {
+      "id": "stat-127",
+      "category": "statistics",
+      "topic": "mixed-effects-models",
+      "difficulty": "medium",
+      "question": "What distinction separates fixed effects from random effects in a mixed model?",
+      "expression": "Y=X\\beta+Zu+\\varepsilon",
+      "answer": "\\text{Fixed effects describe population-average coefficients, while random effects describe group- or subject-specific deviations}",
+      "solutionSteps": [
+        "Fixed effects are common across the population.",
+        "Random effects model structured heterogeneity across clusters."
+      ],
+      "hints": [
+        "Think population-average pattern versus cluster-specific variation."
+      ],
+      "sourceNumber": 327
+    },
+    {
+      "id": "stat-128",
+      "category": "statistics",
+      "topic": "mixed-effects-models",
+      "difficulty": "intermediate",
+      "question": "Write a random-intercept and random-slope model for repeated observations \\(j\\) nested within subject \\(i\\).",
+      "expression": "Y_{ij},\\quad X_{ij}",
+      "answer": "Y_{ij}=\\beta_0+\\beta_1X_{ij}+u_{0i}+u_{1i}X_{ij}+\\varepsilon_{ij}",
+      "solutionSteps": [
+        "The random intercept allows subjects to start at different levels.",
+        "The random slope allows the effect of \\(X\\) to vary across subjects."
+      ],
+      "hints": [
+        "Random slopes create subject-specific trajectories."
+      ],
+      "sourceNumber": 328
+    },
+    {
+      "id": "stat-129",
+      "category": "statistics",
+      "topic": "intraclass-correlation",
+      "difficulty": "intermediate",
+      "question": "Write the intraclass correlation coefficient for a random-intercept model with between-cluster variance \\(\\tau^2\\) and residual variance \\(\\sigma^2\\).",
+      "expression": "\\operatorname{Var}(u_i)=\\tau^2,\\quad \\operatorname{Var}(\\varepsilon_{ij})=\\sigma^2",
+      "answer": "\\operatorname{ICC}=\\frac{\\tau^2}{\\tau^2+\\sigma^2}",
+      "solutionSteps": [
+        "The numerator is variation attributable to clusters.",
+        "The denominator is total variation."
+      ],
+      "hints": [
+        "ICC is the proportion of variance between clusters."
+      ],
+      "sourceNumber": 329
+    },
+    {
+      "id": "stat-130",
+      "category": "statistics",
+      "topic": "clustered-data",
+      "difficulty": "medium",
+      "question": "Why can ordinary regression standard errors be too small when clustered observations are treated as independent?",
+      "expression": "\\text{Observations nested within clusters}",
+      "answer": "\\text{Positive within-cluster correlation reduces the effective amount of independent information}",
+      "solutionSteps": [
+        "Clustered observations partially duplicate information.",
+        "Ignoring that dependence overstates precision."
+      ],
+      "hints": [
+        "More rows do not always mean the same number of independent units."
+      ],
+      "sourceNumber": 330
+    },
+    {
+      "id": "stat-131",
+      "category": "statistics",
+      "topic": "influential-observations",
+      "difficulty": "medium",
+      "question": "What is an influential observation in regression?",
+      "expression": "\\text{Regression data point }i",
+      "answer": "\\text{An observation whose removal would meaningfully change fitted coefficients, predictions, or conclusions}",
+      "solutionSteps": [
+        "Influence combines unusual predictor values and residual behavior.",
+        "An outlier in the response is not automatically influential."
+      ],
+      "hints": [
+        "Influence is defined by impact on the fitted model."
+      ],
+      "sourceNumber": 331
+    },
+    {
+      "id": "stat-132",
+      "category": "statistics",
+      "topic": "leverage",
+      "difficulty": "medium",
+      "question": "What does leverage measure in linear regression?",
+      "expression": "h_{ii}\\text{ from the hat matrix }H=X(X^\\top X)^{-1}X^\\top",
+      "answer": "\\text{How unusual an observation's predictor values are relative to the rest of the data}",
+      "solutionSteps": [
+        "Leverage depends only on the predictor matrix.",
+        "High-leverage observations lie far from the center of predictor space."
+      ],
+      "hints": [
+        "Leverage is about unusual \\(X\\)-values, not unusual \\(Y\\)-values."
+      ],
+      "sourceNumber": 332
+    },
+    {
+      "id": "stat-133",
+      "category": "statistics",
+      "topic": "cooks-distance",
+      "difficulty": "intermediate",
+      "question": "What does Cook's distance summarize?",
+      "expression": "D_i",
+      "answer": "\\text{The overall influence of observation }i\\text{ on the fitted regression model}",
+      "solutionSteps": [
+        "Cook's distance combines residual size and leverage.",
+        "Large values suggest that removing the observation would noticeably change the fit."
+      ],
+      "hints": [
+        "Cook's distance is a combined influence diagnostic."
+      ],
+      "sourceNumber": 333
+    },
+    {
+      "id": "stat-134",
+      "category": "statistics",
+      "topic": "residual-diagnostics",
+      "difficulty": "medium",
+      "question": "What does a normal Q-Q plot of regression residuals assess?",
+      "expression": "\\text{Ordered residuals versus theoretical normal quantiles}",
+      "answer": "\\text{Whether the residual distribution is approximately normal}",
+      "solutionSteps": [
+        "Points near a straight line support approximate normality.",
+        "Systematic tail departures indicate skewness or heavy tails."
+      ],
+      "hints": [
+        "Normality matters mainly for small-sample inference, not for the fitted mean alone."
+      ],
+      "sourceNumber": 334
+    },
+    {
+      "id": "stat-135",
+      "category": "statistics",
+      "topic": "cross-validation",
+      "difficulty": "easy",
+      "question": "Describe \\(K\\)-fold cross-validation.",
+      "expression": "K\\text{ folds}",
+      "answer": "\\text{Split the data into }K\\text{ parts, train on }K-1\\text{ parts and validate on the remaining part, repeating so each part is used once for validation}",
+      "solutionSteps": [
+        "Each observation is used for validation exactly once.",
+        "Average the validation performance across folds."
+      ],
+      "hints": [
+        "Cross-validation estimates out-of-sample performance."
+      ],
+      "sourceNumber": 335
+    },
+    {
+      "id": "stat-136",
+      "category": "statistics",
+      "topic": "cross-validation",
+      "difficulty": "medium",
+      "question": "What is the main purpose of cross-validation in model building?",
+      "expression": "\\text{Candidate models}",
+      "answer": "\\text{To estimate generalization performance and guide model or tuning-parameter selection}",
+      "solutionSteps": [
+        "Training error is optimistically biased.",
+        "Validation on held-out data better reflects performance on new observations."
+      ],
+      "hints": [
+        "Cross-validation is about prediction beyond the training sample."
+      ],
+      "sourceNumber": 336
+    },
+    {
+      "id": "stat-137",
+      "category": "statistics",
+      "topic": "bias-variance-tradeoff",
+      "difficulty": "medium",
+      "question": "Describe the bias-variance tradeoff in predictive modeling.",
+      "expression": "\\text{Model complexity}",
+      "answer": "\\text{More flexible models often reduce bias but increase variance, while simpler models often increase bias but reduce variance}",
+      "solutionSteps": [
+        "Underfitting is associated with excessive bias.",
+        "Overfitting is associated with excessive variance.",
+        "Good prediction balances the two."
+      ],
+      "hints": [
+        "Prediction error can rise at both very low and very high complexity."
+      ],
+      "sourceNumber": 337
+    },
+    {
+      "id": "stat-138",
+      "category": "statistics",
+      "topic": "aic",
+      "difficulty": "intermediate",
+      "question": "Write the Akaike information criterion and state its model-selection goal.",
+      "expression": "\\ell=\\text{maximized log-likelihood},\\quad k=\\text{number of estimated parameters}",
+      "answer": "\\operatorname{AIC}=2k-2\\ell,\\quad \\text{with smaller values preferred}",
+      "solutionSteps": [
+        "The likelihood term rewards fit.",
+        "The parameter penalty discourages unnecessary complexity."
+      ],
+      "hints": [
+        "AIC compares candidate models fit to the same outcome data."
+      ],
+      "sourceNumber": 338
+    },
+    {
+      "id": "stat-139",
+      "category": "statistics",
+      "topic": "regularization",
+      "difficulty": "intermediate",
+      "question": "Write the ridge-regression objective function.",
+      "expression": "Y,\\quad X,\\quad \\lambda\\ge0",
+      "answer": "\\min_{\\beta_0,\\beta}\\left\\{\\sum_{i=1}^{n}(y_i-\\beta_0-x_i^\\top\\beta)^2+\\lambda\\sum_{j=1}^{p}\\beta_j^2\\right\\}",
+      "solutionSteps": [
+        "Begin with the residual sum of squares.",
+        "Add an \\(L_2\\) penalty on the slope coefficients.",
+        "The penalty shrinks coefficients toward zero."
+      ],
+      "hints": [
+        "The intercept is commonly left unpenalized."
+      ],
+      "sourceNumber": 339
+    },
+    {
+      "id": "stat-140",
+      "category": "statistics",
+      "topic": "regularization",
+      "difficulty": "intermediate",
+      "question": "How does the lasso differ from ridge regression?",
+      "expression": "\\lambda\\sum_{j=1}^{p}|\\beta_j|\\quad\\text{versus}\\quad \\lambda\\sum_{j=1}^{p}\\beta_j^2",
+      "answer": "\\text{The lasso uses an }L_1\\text{ penalty and can set coefficients exactly to zero, while ridge uses an }L_2\\text{ penalty and usually only shrinks them}",
+      "solutionSteps": [
+        "Both methods trade fit for coefficient shrinkage.",
+        "The geometry of the \\(L_1\\) penalty enables variable selection."
+      ],
+      "hints": [
+        "Lasso can produce sparse models."
+      ],
+      "sourceNumber": 340
+    },
+    {
+      "id": "stat-141",
+      "category": "statistics",
+      "topic": "missing-data",
+      "difficulty": "easy",
+      "question": "Define data missing completely at random (MCAR).",
+      "expression": "R=\\text{missingness indicator}",
+      "answer": "R\\text{ is independent of both observed and unobserved data values}",
+      "solutionSteps": [
+        "Under MCAR, missingness is unrelated to the variables in the analysis.",
+        "Complete cases behave like a random subsample."
+      ],
+      "hints": [
+        "MCAR is the strongest standard missing-data assumption."
+      ],
+      "sourceNumber": 341
+    },
+    {
+      "id": "stat-142",
+      "category": "statistics",
+      "topic": "missing-data",
+      "difficulty": "medium",
+      "question": "Define data missing at random (MAR) in conceptual terms.",
+      "expression": "R=\\text{missingness indicator},\\quad X_{\\mathrm{obs}}=\\text{observed data}",
+      "answer": "\\text{After conditioning on observed variables, missingness does not depend on the missing values themselves}",
+      "solutionSteps": [
+        "Missingness may depend on recorded information.",
+        "It should not depend on the unobserved value after that recorded information is taken into account."
+      ],
+      "hints": [
+        "MAR allows missingness to depend on observed variables."
+      ],
+      "sourceNumber": 342
+    },
+    {
+      "id": "stat-143",
+      "category": "statistics",
+      "topic": "multiple-imputation",
+      "difficulty": "medium",
+      "question": "Describe the main steps of multiple imputation.",
+      "expression": "m\\text{ imputed data sets}",
+      "answer": "\\text{Create several plausible completed data sets, analyze each one, and combine estimates and uncertainties using Rubin's rules}",
+      "solutionSteps": [
+        "Imputation reflects uncertainty by producing multiple completed versions.",
+        "Separate analyses preserve ordinary complete-data methods.",
+        "Pooling incorporates both within- and between-imputation variability."
+      ],
+      "hints": [
+        "Multiple imputation is more than filling in one value per missing entry."
+      ],
+      "sourceNumber": 343
+    },
+    {
+      "id": "stat-144",
+      "category": "statistics",
+      "topic": "robust-standard-errors",
+      "difficulty": "medium",
+      "question": "What problem are heteroskedasticity-robust standard errors designed to address?",
+      "expression": "\\operatorname{Var}(\\varepsilon_i\\mid X_i)\\text{ may vary with }X_i",
+      "answer": "\\text{They provide standard-error estimates that remain valid under nonconstant error variance, given other assumptions}",
+      "solutionSteps": [
+        "Ordinary least-squares coefficients can remain unbiased under heteroskedasticity.",
+        "Conventional standard errors may then be incorrect.",
+        "Robust standard errors adjust the estimated covariance matrix."
+      ],
+      "hints": [
+        "They change inference, not the OLS coefficient estimates themselves."
+      ],
+      "sourceNumber": 344
+    },
+    {
+      "id": "stat-145",
+      "category": "statistics",
+      "topic": "causal-inference",
+      "difficulty": "medium",
+      "question": "Define the average treatment effect using potential outcomes.",
+      "expression": "Y(1)=\\text{outcome under treatment},\\quad Y(0)=\\text{outcome under control}",
+      "answer": "\\operatorname{ATE}=E[Y(1)-Y(0)]",
+      "solutionSteps": [
+        "Each unit has a potential outcome under each treatment condition.",
+        "The average treatment effect is the population mean of the unit-level differences."
+      ],
+      "hints": [
+        "The fundamental challenge is that both potential outcomes are never observed for the same unit."
+      ],
+      "sourceNumber": 345
+    },
+    {
+      "id": "stat-146",
+      "category": "statistics",
+      "topic": "propensity-scores",
+      "difficulty": "intermediate",
+      "question": "Define the propensity score.",
+      "expression": "T\\in\\{0,1\\},\\quad X=\\text{observed covariates}",
+      "answer": "e(X)=P(T=1\\mid X)",
+      "solutionSteps": [
+        "The propensity score is the conditional probability of treatment.",
+        "It summarizes observed covariate information relevant to treatment assignment."
+      ],
+      "hints": [
+        "It is a treatment model, not an outcome model."
+      ],
+      "sourceNumber": 346
+    },
+    {
+      "id": "stat-147",
+      "category": "statistics",
+      "topic": "propensity-scores",
+      "difficulty": "intermediate",
+      "question": "What is the goal of propensity-score matching or weighting?",
+      "expression": "e(X)=P(T=1\\mid X)",
+      "answer": "\\text{To create treated and comparison groups that are balanced on observed covariates}",
+      "solutionSteps": [
+        "Adjustment aims to reduce observed confounding.",
+        "Balance should be checked after matching or weighting."
+      ],
+      "hints": [
+        "Propensity methods do not automatically solve unmeasured confounding."
+      ],
+      "sourceNumber": 347
+    },
+    {
+      "id": "stat-148",
+      "category": "statistics",
+      "topic": "multiple-testing",
+      "difficulty": "medium",
+      "question": "Write the Bonferroni-adjusted significance threshold for \\(m\\) hypothesis tests with familywise level \\(\\alpha\\).",
+      "expression": "m\\text{ tests},\\quad \\alpha",
+      "answer": "\\alpha_{\\mathrm{per\\ test}}=\\frac{\\alpha}{m}",
+      "solutionSteps": [
+        "Bonferroni divides the desired familywise error rate across the tests.",
+        "Reject an individual null only when its \\(p\\)-value is at most \\(\\alpha/m\\)."
+      ],
+      "hints": [
+        "The method is simple and conservative."
+      ],
+      "sourceNumber": 348
+    },
+    {
+      "id": "stat-149",
+      "category": "statistics",
+      "topic": "false-discovery-rate",
+      "difficulty": "intermediate",
+      "question": "What error criterion is controlled by the Benjamini-Hochberg procedure?",
+      "expression": "\\text{Multiple hypothesis tests}",
+      "answer": "\\text{The expected proportion of false rejections among all rejected hypotheses}",
+      "solutionSteps": [
+        "False discovery rate differs from familywise error rate.",
+        "It is often less conservative when many tests are performed."
+      ],
+      "hints": [
+        "FDR focuses on the quality of the rejected set."
+      ],
+      "sourceNumber": 349
+    },
+    {
+      "id": "stat-150",
+      "category": "statistics",
+      "topic": "statistical-significance",
+      "difficulty": "easy",
+      "question": "Why should a statistically significant result not be interpreted as automatically important in practice?",
+      "expression": "p<\\alpha",
+      "answer": "\\text{Statistical significance depends on sample size and uncertainty, whereas practical importance depends on effect size, context, and consequences}",
+      "solutionSteps": [
+        "A very small effect can be statistically significant in a large sample.",
+        "Report effect sizes and confidence intervals alongside \\(p\\)-values."
+      ],
+      "hints": [
+        "Significance addresses evidence, not necessarily magnitude or value."
+      ],
+      "sourceNumber": 350
     }
   ]
 }

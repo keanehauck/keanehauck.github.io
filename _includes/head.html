@@ -44,6 +44,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
     {% endif %}
 
+    <link
+    rel="stylesheet"
+    href="{{ '/css/custom.css' | prepend: site.baseurl }}?{{ site.time | date: '%Y%m%d%H%M' }}"
+    >
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

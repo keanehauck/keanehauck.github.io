@@ -1,0 +1,40 @@
+
+{% assign activeresearch_count = site.activeresearch | size %}
+{% assign previousresearch_count = site.previousresearch | size %}
+
+
+<h2>Active Projects</h2>
+{% if activeresearch_count > 0 %}
+  <div class="activeresearch">
+    {% for activeresearch in site.activeresearch %}
+      <h3>
+        <a href="{{ activeresearch.url }}">
+          {{ activeresearch.title }}
+        </a>
+      </h3>
+      <p>
+        {{ activeresearch.summary }}
+      </p>
+    {% endfor %}
+</div>
+{% else %}
+<h1 class="center">{{ site.text.index.coming_soon }}</h1>
+{% endif %}
+
+<h2>Former Projects</h2>
+{% if previousresearch_count > 0 %}
+  <div class="previousresearch">
+    {% for previousresearch in site.previousresearch %}
+      <h3>
+        <a href="{{ previousresearch.url }}">
+          {{ previousresearch.title }}
+        </a>
+      </h3>
+      <p>
+        {{ previousresearch.summary }}
+      </p>
+    {% endfor %}
+</div>
+{% include pagination.html %} {% else %}
+<h1 class="center">{{ site.text.index.coming_soon }}</h1>
+{% endif %}
