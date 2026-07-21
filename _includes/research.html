@@ -6,7 +6,7 @@
 <h2>Active Projects</h2>
 {% if activeresearch_count > 0 %}
   <div class="activeresearch">
-    {% for activeresearch in site.activeresearch %}
+    {% for activeresearch in site.activeresearch reversed %}
       <h3>
         <a href="{{ activeresearch.url }}">
           {{ activeresearch.title }}
@@ -24,7 +24,7 @@
 <h2>Former Projects</h2>
 {% if previousresearch_count > 0 %}
   <div class="previousresearch">
-    {% for previousresearch in site.previousresearch %}
+    {% for previousresearch in site.previousresearch reversed %}
       <h3>
         <a href="{{ previousresearch.url }}">
           {{ previousresearch.title }}

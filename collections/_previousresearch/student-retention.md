@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Student Retention Prediction
-date: 2024-05-14
+date: 2025-05-16
 summary: Utilizing regression and machine learning to predict first-year student retention. 
 tags: Research, student, academics, machine learning, regression
 ---

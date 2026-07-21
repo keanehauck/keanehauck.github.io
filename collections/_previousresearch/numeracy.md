@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Numeracy and Statistical Literacy"
-date: 2022-01-26
+date: 2022-06-26
 summary: How can we train individuals to be more statistically literate?
 tags: numeracy, statistical literacy, research
 ---
