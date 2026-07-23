@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Quantitative Psychology—A Primer
+title: What is Quantitative Psychology?
 date: 2026-07-22
 summary: What I do, explained simply.
 categories: statistics quantitative psychology
 ---
 
-[quant meme](/images/quant-psych/quantmeme.png)
+![quant meme](/images/quant-psych/quantmeme.png)
 
 It's a running joke for those in the quant world that it's really hard to describe what we do. When someone asks what we study and we respond with "quantitative psychology", the near-universal response is either "What?" or "Oh, psychology? Can you read my mind?" That is—if they respond at all. The mere mention of anything statistics-related seems to evoke a trauma response (usually nausea or fear) in many people outside the field. 
 
