@@ -84,7 +84,7 @@ If you don't totally understand what that means, that's OK! The point is that I 
 
 Distinctions between "types of effects" might sound technical and overly pedantic, but they can meaningfully change the conclusions researchers draw. If we confuse differences between people with changes within a person, we might conclude that increasing workplace acceptance will improve life satisfaction when the data do not actually support that claim. That's why it's really important to model these effects as accurately as possible.
 
-In general, what seem like statistical minutiae can seriously impact real-world events. Consider a mental health screening aimed at determining whether or not they're fit to fly a plane. You'd better make damn sure it's as reliable, valid, and statistically-supported as possible. Psychometrics can help you answer the question "does this really measure mental health?" Statistical modeling can help you answer the question "how can we predict and model different levels of mental health among pilots?" Quantitative psychology works to constantly improve these methods of analysis.
+In general, what seem like statistical minutiae can seriously impact real-world events. Consider a mental health screening aimed at pilots to determine whether or not they're fit to fly a plane. You'd better make damn sure it's as reliable, valid, and statistically-supported as possible. Psychometrics can help you answer the question "does this really measure mental health?" Statistical modeling can help you answer the question "how can we predict and model different levels of mental health among pilots?" Quantitative psychology works to constantly improve these methods of analysis.
 
 ### Conclusion
 
