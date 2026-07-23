@@ -2,7 +2,7 @@
 layout: post
 title: What is Quantitative Psychology?
 date: 2026-07-22
-summary: What I do, explained simply.
+summary: What I do, explained somewhat simply.
 categories: statistics quantitative psychology
 ---
 
