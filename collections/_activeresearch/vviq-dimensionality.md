@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Psychometric Analysis of the VVIQ
-date: 2026-03-19
+date: 2026-03-18
 summary: Exploring the dimensionality and item response characteristics of a visualization scale.
 tags: psychometrics, dimensionality, vviq, factor analysis, irt
 ---
