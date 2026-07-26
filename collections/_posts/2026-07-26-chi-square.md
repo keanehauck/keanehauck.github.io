@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Grad School Scramble IV: Chi-Squared Distribution"
+title: "Grad School Scramble IV: The Chi-Square Distribution"
 date: 2026-07-26
 summary: Part 4 of a multi-part series dedicated to investigating quant topics in grad school.
 categories: quantitative statistics modeling
@@ -78,7 +78,7 @@ When you have a contingency table, the data in each cell is assumed Poisson, mea
 
 ### Model fit information
 
-In SEM models, model fit is often conceptualized as how well the model-implied covariance matrix matches the sample data covariance matrix. According to [Jöreskog, 1969](https://link.springer.com/article/10.1007/BF02289343), the log-likelihood function for a model is given by $F(\Lambda, \Phi, \Psi)=log|\Sigma| + tr(S \Sigma^{-1}) - log|S|-p$. When this function is minimized, $n$ times the resulting value is equal to the chi-square distributed likelihood ratio test statistic of goodness of fit. What this means is that one common model fit statistic is chi-square distributed.
+In SEM models, model fit is often conceptualized as how well the model-implied covariance matrix matches the sample data covariance matrix. According to [Jöreskog, 1969](https://link.springer.com/article/10.1007/BF02289343), the log-likelihood function for a model is given by $F(\Lambda, \Phi, \Psi)=log \lvert \Sigma \rvert + tr(S \Sigma^{-1}) - log \lvert S \rvert -p$. When this function is minimized, $n$ times the resulting value is equal to the chi-square distributed likelihood ratio test statistic of goodness of fit. What this means is that one common model fit statistic is chi-square distributed.
 
 Of course, this statistic has been criticized for being overly sensitive to sample size. Because the $F$ value is multiplied by $n$, large sample sizes will almost always be significant, even for arbitrary deviations from chi-square.
 
