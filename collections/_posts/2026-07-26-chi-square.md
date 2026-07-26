@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Grad School Scramble IV: The Chi-Square Distribution"
+title: "Grad School Scramble IV: The Chi-Squared Distribution"
 date: 2026-07-26
 summary: Part 4 of a multi-part series dedicated to investigating quant topics in grad school.
 categories: quantitative statistics modeling
@@ -61,7 +61,7 @@ Often, we may also want to compare the frequencies of two categorical variables 
 
 This is known as a contingency table: the frequencies of one variable *contingent* upon the other.
 
-The $\chi^2$ statistic is calculated exactly the same way as before, with one important caveat. Now, the expected value for each cell is determined by the formula $E(r,c)=\frac{N(r) \cdot N(c)}{N}$ where $N$ is the total number of observations, $r$ is the row total, and $c$ is the column total. The logic for this formula is that we want to calculate the expected proportion of data in a cell, given the row and column totals. For each cell, the expected proportion can be found by multiplying the two row and column proportions together: $\frac{r}{N} \cdot \frac{c}{N} = \frac{rc}{N^2}$. Multiplying again by $N$ rescales it to be the overall expected proportion in the cell. So, our expected cell values are conditional on the row and column totals. This is what we want. If one column total is simply more frequent in the population, we want to determine if it has an effect across our other variable above-and-beyond its simple popularity. Considering row and column totals allows us to test for independence.
+The $\chi^2$ statistic is calculated exactly the same way as before, with one important caveat. Now, the expected value for each cell is determined by the formula $E(r,c)=\frac{N(r) \cdot N(c)}{N}$ where $N$ is the total number of observations, $r$ is the row total, and $c$ is the column total. The logic for this formula is that we want to calculate the expected proportion of data in a cell, given the row and column totals. For each cell, the expected proportion can be found by multiplying the two row and column proportions together: $\frac{r}{N} \cdot \frac{c}{N} = \frac{rc}{N^2}$. Multiplying again by $N$ rescales it to be the overall expected proportion in the cell. So, our expected cell values are conditional on the row and column totals. This is what we want. If one column total is simply more frequent in the population, we want to determine if it has an effect across our other variable above and beyond its simple popularity. Considering row and column totals allows us to test for independence.
 
 In this example, our chi-square statistic can be calculated as $\chi^2=\sum_j^k \sum_i^h \frac{(O_{ij}-E_{ij})^2}{E_{ij}}$ where one variable has $k$ levels and the other has $h$ levels.
 
@@ -80,7 +80,7 @@ When you have a contingency table, the data in each cell is assumed Poisson, mea
 
 ### Model fit information
 
-In SEM models, model fit is often conceptualized as how well the model-implied covariance matrix matches the sample data covariance matrix. According to [Jöreskog, 1969](https://link.springer.com/article/10.1007/BF02289343), the log-likelihood function for a model is given by $F(\Lambda, \Phi, \Psi)=log \lvert \Sigma \rvert + tr(S \Sigma^{-1}) - log \lvert S \rvert -p$. When this function is minimized, $n$ times the resulting value is equal to the chi-square distributed likelihood ratio test statistic of goodness of fit. What this means is that one common model fit statistic is chi-square distributed.
+In structural equation models, model fit is often conceptualized as how well the model-implied covariance matrix matches the sample data covariance matrix. According to [Jöreskog, 1969](https://link.springer.com/article/10.1007/BF02289343), the log-likelihood function for a model is given by $F(\Lambda, \Phi, \Psi)=log \lvert \Sigma \rvert + tr(S \Sigma^{-1}) - log \lvert S \rvert -p$. When this function is minimized, $n$ times the resulting value is equal to the chi-square distributed likelihood ratio test statistic of goodness of fit. What this means is that one common model fit statistic is chi-square distributed.
 
 Of course, this statistic has been criticized for being overly sensitive to sample size. Because the $F$ value is multiplied by $n$, large sample sizes will almost always be significant, even for arbitrary deviations from chi-square.
 
