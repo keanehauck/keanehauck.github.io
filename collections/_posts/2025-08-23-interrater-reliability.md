@@ -3,7 +3,7 @@ layout: post
 title: "Grad School Scramble III: Inter-rater Reliability"
 date: 2025-08-23
 summary: Part 3 of a multi-part series dedicated to investigating quant topics in preparation for grad school.
-categories: quantitative statistics school reliability
+categories: quantitative reliability gss
 ---
 
 ![tens](/images/posts/interrater-reliability/tens.png)

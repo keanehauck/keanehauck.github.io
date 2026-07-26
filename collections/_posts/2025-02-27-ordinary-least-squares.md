@@ -4,7 +4,7 @@ title: >
   Grad School Scramble I: Ordinary Least Squares Estimation
 date: 2025-02-26
 summary: Part 1 of a multi-part series dedicated to investigating quant topics in preparation for grad school.
-categories: quantitative methodology statistics data science
+categories: quantitative statistics gss
 ---
 
 ![logo](/images/posts/ordinary-least-squares/logo.png)

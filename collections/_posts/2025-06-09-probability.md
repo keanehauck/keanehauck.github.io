@@ -4,7 +4,7 @@ title: >
   Grad School Scramble II: Much Ado About Probability
 date: 2025-06-09
 summary: Part 2 of a multi-part series dedicated to investigating quant topics in preparation for grad school.
-categories: quantitative methodology statistics data science
+categories: quantitative probability gss
 ---
 
 Recently, I woke up to a phone call from my grandfather asking me to explain the [Monty Hall Problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) in simple terms. For those of you who are unfamiliar, this problem is famous in the field of probability for confounding even highly-training individuals (like mathematicians and academics) due to its unintuitive nature.

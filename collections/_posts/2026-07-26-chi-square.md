@@ -3,7 +3,7 @@ layout: post
 title: "Grad School Scramble IV: The Chi-Squared Distribution"
 date: 2026-07-26
 summary: Part 4 of a multi-part series dedicated to investigating quant topics in grad school.
-categories: quantitative statistics modeling
+categories: quantitative modeling gss
 ---
 
 The chi-squared distribution comes up frequently in statistical modeling in psychology. It is often encountered very early in one's statistical training, but it holds important relevance even in more advanced applications. The goals of this blog post—the fourth installment of Grad School Scramble—are describing the chi-squared distribution itself, showing examples of the basic chi-square test, and demonstrating more advanced examples of where chi-squared distributions result in structural equation modeling.
