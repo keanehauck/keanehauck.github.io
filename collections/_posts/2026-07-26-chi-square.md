@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Grad School Scramble IV: Chi-Squared Distribution"
-date: 2026-05-20
+date: 2026-07-26
 summary: Part 4 of a multi-part series dedicated to investigating quant topics in grad school.
 categories: quantitative statistics modeling
 ---
