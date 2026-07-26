@@ -66,9 +66,13 @@ The $\chi^2$ statistic is calculated exactly the same way as before, with one im
 In this example, our chi-square statistic can be calculated as $\chi^2=\sum_j^k \sum_i^h \frac{(O_{ij}-E_{ij})^2}{E_{ij}}$ where one variable has $k$ levels and the other has $h$ levels.
 
 $$\chi^2=\sum_j^k \sum_i^h \frac{(O_{ij}-E_{ij})^2}{E_{ij}}=f
-\chi^2=\frac{(15-25.71)^2}{25.71}+\frac{(45-33.43)^2}{33.43}+\frac{(30-30.86)^2}{30.86}+$$
+\chi^2=\frac{(15-25.71)^2}{25.71}+$$
 
-$$\frac{(35-24.29)^2}{24.29}+\frac{(20-31.57)^2}{31.57}+\frac{(30-29.14)^2}{29.14}=17.49$$
+$$\frac{(45-33.43)^2}{33.43}+\frac{(30-30.86)^2}{30.86}+$$
+
+$$\frac{(35-24.29)^2}{24.29}+\frac{(20-31.57)^2}{31.57}+\frac{(30-29.14)^2}{29.14}$$
+
+$$=17.49$$
 
 The degrees of freedom can be calculated the same way, except we subtract $1$ from the levels of categories in each group: $df=(h-1)(k-1)=(2-1)(3-1)=2$. So, our critical value is the same as in the previous example: $\chi^2_{crit}=5.991$. Because our observed $\chi^2$ statistic is greater than the critical value, we once again reject the null hypothesis and conclude that there is a statistically significant relationship between our two nominal variables.
 
