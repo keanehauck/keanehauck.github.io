@@ -62,3 +62,5 @@ editing the background image is in /css/custom.css. I overrode the default style
 math practice script is /includes/math.refresher.html
 
 JSON is where the problems are stored. In assets/math-practice/problem-set.json
+
+site info is on google search console.
